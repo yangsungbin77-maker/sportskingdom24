@@ -26,8 +26,8 @@ const post = readFileSync(postPath, 'utf8');
 const body = post.replace(/^---[\s\S]*?\n---\s*/, '').trim();
 const bodyLen = body.replace(/\s/g, '').length; // 공백 제외 글자 수
 const h2Count = (body.match(/^##\s/gm) || []).length;
-const MIN_BODY = 1700; // 공백 제외 최소 글자 수(전문가 분량 강제)
-const MIN_H2 = 4;
+const MIN_BODY = 2200; // 공백 제외 최소 글자 수(전문가 분량 강제)
+const MIN_H2 = 6;
 
 // 발행 조건 검증: 외부링크 1·내부링크 1·이미지 1 + 최소 분량·소제목 수.
 const checks = [
