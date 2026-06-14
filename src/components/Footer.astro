@@ -1,0 +1,48 @@
+---
+const today = new Date();
+---
+
+<footer>
+	<div class="inner">
+		<span class="brand"><span class="logo">⚽</span> 스포츠킹덤24</span>
+		<nav class="links">
+			<a href="/">홈</a>
+			<a href="/blog">전체 글</a>
+			<a href="/about">소개</a>
+			<a href="/rss.xml">RSS</a>
+		</nav>
+		<span class="copy">&copy; {today.getFullYear()} 스포츠킹덤24</span>
+	</div>
+</footer>
+<style>
+	footer {
+		border-top: 1px solid var(--border);
+		margin-top: 4rem;
+		background: rgba(11, 14, 20, 0.6);
+	}
+	.inner {
+		width: var(--maxw);
+		max-width: calc(100% - 2.5em);
+		margin: 0 auto;
+		padding: 2rem 0 3rem;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		gap: 1rem;
+		flex-wrap: wrap;
+	}
+	.brand {
+		font-family: var(--font-heading);
+		font-weight: 800;
+		color: #fff;
+	}
+	.logo { filter: drop-shadow(0 0 8px var(--accent-glow)); }
+	.links { display: flex; gap: 1.2rem; }
+	.links a {
+		color: var(--text-muted);
+		font-weight: 600;
+		font-size: 0.9rem;
+	}
+	.links a:hover { color: var(--accent); }
+	.copy { color: var(--text-dim); font-size: 0.85rem; }
+</style>

@@ -1,0 +1,209 @@
+---
+import { Image } from 'astro:assets';
+import BaseHead from '../components/BaseHead.astro';
+import Footer from '../components/Footer.astro';
+import Header from '../components/Header.astro';
+import { SITE_DESCRIPTION, SITE_TITLE } from '../consts';
+import { getCollection } from 'astro:content';
+import FormattedDate from '../components/FormattedDate.astro';
+
+const posts = (await getCollection('blog')).sort(
+	(a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf(),
+);
+const featured = posts[0];
+const rest = posts.slice(1, 7);
+---
+
+<!doctype html>
+<html lang="ko">
+	<head>
+		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+	</head>
+	<body>
+		<Header />
+		<main>
+			<section class="hero">
+				<span class="tag">스포츠 · 분석 · 일정</span>
+				<h1>스포츠의 <span class="neon">모든 것</span>,<br />가장 빠르게.</h1>
+				<p class="lead">{SITE_DESCRIPTION}</p>
+				<div class="hero-actions">
+					<a href="/blog" class="btn">최신 글 보기</a>
+					<a href="/about" class="btn-ghost btn">소개</a>
+				</div>
+			</section>
+
+			{
+				featured && (
+					<a href={`/${featured.id}/`} class="featured">
+						{featured.data.heroImage && (
+							<div class="featured-image">
+								<Image src={featured.data.heroImage} width={1200} height={600} alt={featured.data.title} />
+							</div>
+						)}
+						<div class="featured-body">
+							<span class="tag">최신 글</span>
+							<h2>{featured.data.title}</h2>
+							<p>{featured.data.description}</p>
+							<span class="meta">
+								<FormattedDate date={featured.data.pubDate} /> · 읽어보기 →
+							</span>
+						</div>
+					</a>
+				)
+			}
+
+			{
+				rest.length > 0 && (
+					<>
+						<div class="section-head">
+							<h2>더 많은 글</h2>
+							<a href="/blog" class="more">전체 보기 →</a>
+						</div>
+						<ul class="grid">
+							{rest.map((post) => (
+								<li>
+									<a href={`/${post.id}/`} class="card">
+										{post.data.heroImage && (
+											<div class="card-image">
+												<Image src={post.data.heroImage} width={600} height={300} alt={post.data.title} />
+											</div>
+										)}
+										<div class="card-body">
+											<h3>{post.data.title}</h3>
+											<p>{post.data.description}</p>
+											<span class="meta">
+												<FormattedDate date={post.data.pubDate} />
+											</span>
+										</div>
+									</a>
+								</li>
+							))}
+						</ul>
+					</>
+				)
+			}
+		</main>
+		<Footer />
+	</body>
+</html>
+
+<style>
+	.hero {
+		padding: 2.5rem 0 3rem;
+		border-bottom: 1px solid var(--border);
+		margin-bottom: 2.5rem;
+	}
+	.hero h1 {
+		font-size: clamp(2.4rem, 6vw, 4rem);
+		margin: 0.6rem 0 0.8rem;
+	}
+	.neon {
+		color: var(--accent);
+		text-shadow: 0 0 24px var(--accent-glow);
+	}
+	.lead {
+		color: var(--text-muted);
+		font-size: 1.15rem;
+		max-width: 38ch;
+		margin-bottom: 1.6rem;
+	}
+	.hero-actions {
+		display: flex;
+		gap: 0.8rem;
+		flex-wrap: wrap;
+	}
+
+	.featured {
+		display: block;
+		background:
+			linear-gradient(180deg, rgba(62, 245, 139, 0.08), transparent 40%),
+			var(--bg-elev);
+		border: 1px solid var(--border);
+		border-radius: var(--radius);
+		overflow: hidden;
+		margin-bottom: 3rem;
+		transition: border-color 0.2s ease, transform 0.15s ease, box-shadow 0.2s ease;
+	}
+	.featured:hover {
+		border-color: var(--accent);
+		transform: translateY(-2px);
+		box-shadow: 0 14px 40px rgba(0, 0, 0, 0.4);
+	}
+	.featured-image img {
+		display: block;
+		width: 100%;
+		aspect-ratio: 2 / 1;
+		object-fit: cover;
+		border-bottom: 1px solid var(--border);
+	}
+	.featured-body { padding: 2rem; }
+	.featured h2 {
+		margin: 0.8rem 0 0.5rem;
+		font-size: clamp(1.6rem, 3.5vw, 2.3rem);
+	}
+	.featured p {
+		color: var(--text-muted);
+		margin-bottom: 1rem;
+	}
+
+	.section-head {
+		display: flex;
+		align-items: baseline;
+		justify-content: space-between;
+		margin-bottom: 1.4rem;
+	}
+	.section-head h2 { margin: 0; }
+	.more { font-weight: 600; font-size: 0.95rem; }
+
+	.grid {
+		list-style: none;
+		padding: 0;
+		margin: 0;
+		display: grid;
+		grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+		gap: 1.2rem;
+	}
+	.card {
+		display: flex;
+		flex-direction: column;
+		height: 100%;
+		background: var(--bg-elev);
+		border: 1px solid var(--border);
+		border-radius: var(--radius);
+		overflow: hidden;
+		transition: border-color 0.2s ease, transform 0.15s ease, background 0.2s ease;
+	}
+	.card:hover {
+		border-color: var(--accent);
+		transform: translateY(-2px);
+		background: var(--bg-elev-2);
+	}
+	.card-image img {
+		display: block;
+		width: 100%;
+		aspect-ratio: 2 / 1;
+		object-fit: cover;
+		border-bottom: 1px solid var(--border);
+	}
+	.card-body {
+		display: flex;
+		flex-direction: column;
+		flex: 1;
+		padding: 1.5rem;
+	}
+	.card h3 {
+		margin: 0 0 0.5rem;
+		font-size: 1.25rem;
+	}
+	.card p {
+		color: var(--text-muted);
+		font-size: 0.95rem;
+		margin-bottom: 1rem;
+		flex: 1;
+	}
+	.meta {
+		color: var(--text-dim);
+		font-size: 0.85rem;
+		font-weight: 600;
+	}
+</style>

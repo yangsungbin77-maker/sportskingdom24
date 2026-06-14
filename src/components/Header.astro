@@ -1,0 +1,83 @@
+---
+import { SITE_TITLE } from '../consts';
+import HeaderLink from './HeaderLink.astro';
+---
+
+<header>
+	<nav>
+		<a href="/" class="brand">
+			<span class="logo">⚽</span>
+			<span class="brand-name">{SITE_TITLE}</span>
+		</a>
+		<div class="internal-links">
+			<HeaderLink href="/">홈</HeaderLink>
+			<HeaderLink href="/blog">전체 글</HeaderLink>
+			<HeaderLink href="/about">소개</HeaderLink>
+		</div>
+	</nav>
+</header>
+<style>
+	header {
+		position: sticky;
+		top: 0;
+		z-index: 50;
+		background: rgba(11, 14, 20, 0.8);
+		backdrop-filter: blur(12px);
+		border-bottom: 1px solid var(--border);
+	}
+	nav {
+		width: var(--maxw);
+		max-width: calc(100% - 2.5em);
+		margin: 0 auto;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		padding: 0.9rem 0;
+	}
+	.brand {
+		display: flex;
+		align-items: center;
+		gap: 0.5em;
+		text-decoration: none;
+	}
+	.logo {
+		font-size: 1.5rem;
+		line-height: 1;
+		filter: drop-shadow(0 0 8px var(--accent-glow));
+	}
+	.brand-name {
+		font-family: var(--font-heading);
+		font-weight: 800;
+		font-size: 1.25rem;
+		letter-spacing: -0.02em;
+		color: #fff;
+	}
+	.brand:hover .brand-name {
+		color: var(--accent);
+	}
+	.internal-links {
+		display: flex;
+		gap: 0.4em;
+	}
+	.internal-links :global(a) {
+		padding: 0.5em 0.9em;
+		color: var(--text-muted);
+		border-radius: 999px;
+		font-weight: 600;
+		font-size: 0.95rem;
+		text-decoration: none;
+		transition: color 0.15s ease, background 0.15s ease;
+	}
+	.internal-links :global(a:hover) {
+		color: var(--text);
+		background: var(--bg-elev);
+	}
+	.internal-links :global(a.active) {
+		color: var(--accent);
+		background: rgba(62, 245, 139, 0.1);
+	}
+	@media (max-width: 520px) {
+		.brand-name { font-size: 1.05rem; }
+		.internal-links :global(a) { padding: 0.4em 0.6em; font-size: 0.88rem; }
+	}
+</style>
