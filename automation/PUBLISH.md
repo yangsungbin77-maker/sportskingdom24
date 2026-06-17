@@ -49,6 +49,10 @@ node automation/finalize.mjs <slug>
 - **내부링크 1개**: `[자연스러운 앵커](internalLink.url)`. **외부링크 1개**: `[자연스러운 앵커](externalLink.url)`.
 - **이미지**: frontmatter `heroImage`만 지정(레이아웃이 alt·OG·배너를 자동 처리). 본문에 따로 넣지 않는다.
 - **slug**: 키워드를 영문/로마자로 옮긴 짧고 의미 있는 kebab-case.
+- **본문 끝 관련 키워드(필수)**: 글 맨 마지막에 `---` 구분선 뒤 한 줄로 관련 키워드 묶음을 넣는다. 형식 `**관련 키워드** — #키워드1 #키워드2 …`(타겟·동의어·세부 변형 8~12개, 띄어쓰기 없는 해시태그). 타겟과 실제로 관련된 것만 넣고 무관한 키워드 스터핑은 금지.
+- **표·콜아웃 박스로 가독성(권장)**: 비교·정리는 마크다운 표로 쓴다(레이아웃이 자동으로 보기 좋게 스타일). 핵심 요약·주의·팁은 콜아웃 박스를 쓴다. 박스는 raw HTML로 쓰되 **안쪽도 마크다운이 아닌 HTML 태그**로 작성한다(div 안에서는 마크다운이 렌더되지 않음). 글 맨 위에 `cg-summary` 3줄 요약 박스 1개를 권장.
+  - 형식: `<div class="cg-box cg-summary"><span class="cg-title">📌 3줄 요약</span><p>…</p><p>…</p></div>`
+  - 종류: `cg-summary`(요약·오렌지) · `cg-tip`(팁·초록) · `cg-warn`(주의·노랑) · `cg-danger`(위험·빨강). 박스 스타일은 `src/layouts/BlogPost.astro`에 정의돼 있다.
 - frontmatter 형식:
   ```markdown
   ---

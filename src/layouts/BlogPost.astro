@@ -67,6 +67,62 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
 			.prose :global(ul),
 			.prose :global(ol) { padding-left: 1.3em; }
 			.prose :global(li) { margin-bottom: 0.4em; }
+
+			/* 표 — 보기 좋게 */
+			.prose :global(table) {
+				width: 100%;
+				border-collapse: collapse;
+				margin: 0 0 1.8em;
+				font-size: 0.97rem;
+				border: 1px solid var(--border);
+				border-radius: var(--radius-sm);
+				overflow: hidden;
+			}
+			.prose :global(thead th) {
+				background: rgba(255, 122, 26, 0.14);
+				color: #fff;
+				font-weight: 700;
+				text-align: left;
+			}
+			.prose :global(th),
+			.prose :global(td) {
+				padding: 0.7em 0.95em;
+				border-bottom: 1px solid var(--border);
+				border-right: 1px solid var(--border);
+				vertical-align: top;
+			}
+			.prose :global(tbody tr:nth-child(even)) { background: rgba(255, 255, 255, 0.025); }
+			.prose :global(tbody tr:hover) { background: rgba(255, 122, 26, 0.07); }
+			.prose :global(tr:last-child td) { border-bottom: none; }
+			.prose :global(th:last-child),
+			.prose :global(td:last-child) { border-right: none; }
+
+			/* 콜아웃 박스 */
+			.prose :global(.cg-box) {
+				border: 1px solid var(--border);
+				border-left: 4px solid var(--accent);
+				background: var(--bg-elev);
+				border-radius: var(--radius-sm);
+				padding: 1em 1.3em;
+				margin: 0 0 1.7em;
+			}
+			.prose :global(.cg-box > :first-child) { margin-top: 0; }
+			.prose :global(.cg-box > :last-child) { margin-bottom: 0; }
+			.prose :global(.cg-box p) { margin: 0.4em 0; }
+			.prose :global(.cg-box .cg-title) {
+				display: block;
+				font-weight: 800;
+				color: #fff;
+				margin-bottom: 0.35em;
+			}
+			.prose :global(.cg-summary) { border-left-color: var(--accent); background: rgba(255, 122, 26, 0.09); }
+			.prose :global(.cg-tip)     { border-left-color: #34d399; background: rgba(52, 211, 153, 0.08); }
+			.prose :global(.cg-warn)    { border-left-color: #fbbf24; background: rgba(251, 191, 36, 0.09); }
+			.prose :global(.cg-danger)  { border-left-color: #f87171; background: rgba(248, 113, 113, 0.10); }
+
+			@media (max-width: 720px) {
+				.prose :global(table) { display: block; overflow-x: auto; white-space: nowrap; }
+			}
 		</style>
 	</head>
 
