@@ -15,6 +15,7 @@ interface Props {
 	type?: 'website' | 'article';
 	publishedTime?: Date;
 	modifiedTime?: Date;
+	faq?: { q: string; a: string }[];
 }
 
 const canonicalURL = new URL(Astro.url.pathname, Astro.site);
@@ -25,29 +26,54 @@ const {
 	type = 'website',
 	publishedTime,
 	modifiedTime,
+	faq = [],
 } = Astro.props;
 const imageURL = new URL(image.src, Astro.site);
 
-// 기사 페이지에는 BlogPosting 구조화 데이터(JSON-LD)를 넣어 구글 리치 결과를 노린다.
-const jsonLd =
-	type === 'article'
-		? {
-				'@context': 'https://schema.org',
-				'@type': 'BlogPosting',
-				headline: title,
-				description,
-				image: imageURL.href,
-				datePublished: publishedTime?.toISOString(),
-				dateModified: (modifiedTime ?? publishedTime)?.toISOString(),
-				author: { '@type': 'Organization', name: SITE_TITLE, url: Astro.site?.href },
-				publisher: {
-					'@type': 'Organization',
-					name: SITE_TITLE,
-					logo: { '@type': 'ImageObject', url: new URL('/favicon.svg', Astro.site).href },
-				},
-				mainEntityOfPage: { '@type': 'WebPage', '@id': canonicalURL.href },
-			}
-		: null;
+// 기사 페이지에는 여러 구조화 데이터(JSON-LD)를 넣어 구글 리치 결과를 노린다.
+const schemas: object[] = [];
+if (type === 'article') {
+	schemas.push({
+		'@context': 'https://schema.org',
+		'@type': 'BlogPosting',
+		headline: title,
+		description,
+		image: imageURL.href,
+		datePublished: publishedTime?.toISOString(),
+		dateModified: (modifiedTime ?? publishedTime)?.toISOString(),
+		author: { '@type': 'Organization', name: SITE_TITLE, url: Astro.site?.href },
+		publisher: {
+			'@type': 'Organization',
+			name: SITE_TITLE,
+			logo: { '@type': 'ImageObject', url: new URL('/favicon.svg', Astro.site).href },
+		},
+		mainEntityOfPage: { '@type': 'WebPage', '@id': canonicalURL.href },
+	});
+
+	// 빵부스러기(경로) — 검색결과에 사이트 > 블로그 > 글 경로 노출
+	schemas.push({
+		'@context': 'https://schema.org',
+		'@type': 'BreadcrumbList',
+		itemListElement: [
+			{ '@type': 'ListItem', position: 1, name: SITE_TITLE, item: Astro.site?.href },
+			{ '@type': 'ListItem', position: 2, name: '블로그', item: new URL('/blog', Astro.site).href },
+			{ '@type': 'ListItem', position: 3, name: title, item: canonicalURL.href },
+		],
+	});
+
+	// FAQ가 있으면 FAQPage — 검색결과에 Q&A가 펼쳐져 클릭률↑
+	if (faq.length > 0) {
+		schemas.push({
+			'@context': 'https://schema.org',
+			'@type': 'FAQPage',
+			mainEntity: faq.map((f) => ({
+				'@type': 'Question',
+				name: f.q,
+				acceptedAnswer: { '@type': 'Answer', text: f.a },
+			})),
+		});
+	}
+}
 ---
 
 <!-- Global Metadata -->
@@ -98,4 +124,4 @@ const jsonLd =
 <meta property="twitter:image" content={imageURL} />
 
 <!-- Structured data -->
-{jsonLd && <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />}
+{schemas.map((s) => <script type="application/ld+json" set:html={JSON.stringify(s)} />)}
