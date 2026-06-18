@@ -5,6 +5,7 @@
   { "label": "KBO(한국야구위원회)", "url": "https://www.koreabaseball.com/", "tags": ["야구", "프로야구", "기록", "일정"] },
   { "label": "KBL(한국프로농구)", "url": "https://www.kbl.or.kr/", "tags": ["농구", "프로농구", "규칙", "일정"] },
   { "label": "KOVO(한국배구연맹)", "url": "https://www.kovo.co.kr/", "tags": ["배구", "프로배구", "규칙", "일정"] },
+  { "label": "대한골프협회(KGA)", "url": "https://www.kgagolf.or.kr/", "tags": ["골프", "라운딩", "규칙", "협회"] },
   { "label": "올림픽 공식", "url": "https://olympics.com/", "tags": ["올림픽", "국제", "종목", "기록"] },
   { "label": "ESPN", "url": "https://www.espn.com/", "tags": ["스포츠", "해외", "뉴스", "기록"] },
   { "label": "대한체육회", "url": "https://www.sports.or.kr/", "tags": ["체육", "생활체육", "종목", "협회"] },
