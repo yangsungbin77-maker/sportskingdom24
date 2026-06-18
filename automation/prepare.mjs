@@ -45,7 +45,14 @@ const internal = posts.slice().sort((a, b) => scorePost(b) - scorePost(a))[0];
 
 // 5) 외부링크를 고른다(주제 단어와 태그가 가장 많이 겹치는 출처, 없으면 순환 선택).
 const sources = JSON.parse(readFileSync(join(__dirname, 'sources.json'), 'utf8'));
-const scoreSrc = (s) => words.reduce((acc, w) => acc + (s.tags.some((t) => t.includes(w) || w.includes(t)) ? 1 : 0), 0);
+const scoreSrc = (s) => words.reduce((acc, w) => {
+  let best = 0;
+  for (const t of s.tags) {
+    if (t === w) best = Math.max(best, 3);               // 정확히 일치하는 태그(예: 주제 '야구' ↔ KBO 태그 '야구')는 강하게
+    else if (t.includes(w) || w.includes(t)) best = Math.max(best, 1); // '규칙과'↔'규칙' 같은 부분일치는 약하게
+  }
+  return acc + best;
+}, 0);
 const ranked = sources.map((s) => ({ s, score: scoreSrc(s) })).sort((a, b) => b.score - a.score);
 const external = ranked[0].score > 0 ? ranked[0].s : sources[state.usedImages.length % sources.length];
 
