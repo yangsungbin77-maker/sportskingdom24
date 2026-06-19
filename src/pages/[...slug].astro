@@ -13,7 +13,7 @@ export async function getStaticPaths() {
 type Props = CollectionEntry<'blog'>;
 
 const post = Astro.props;
-const { Content } = await render(post);
+const { Content, headings } = await render(post);
 
 // 본문 마크다운에서 FAQ(**Q. …** / A. …)를 자동 추출해 FAQPage 구조화 데이터로 넘긴다.
 const stripMd = (s: string) =>
@@ -30,6 +30,6 @@ while ((fm = faqRe.exec(post.body ?? '')) !== null) {
 }
 ---
 
-<BlogPost {...post.data} faq={faq}>
+<BlogPost {...post.data} faq={faq} headings={headings}>
 	<Content />
 </BlogPost>

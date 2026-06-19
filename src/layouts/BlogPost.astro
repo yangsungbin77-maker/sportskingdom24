@@ -6,9 +6,14 @@ import Footer from '../components/Footer.astro';
 import FormattedDate from '../components/FormattedDate.astro';
 import Header from '../components/Header.astro';
 
-type Props = CollectionEntry<'blog'>['data'] & { faq?: { q: string; a: string }[] };
+type Heading = { depth: number; slug: string; text: string };
+type Props = CollectionEntry<'blog'>['data'] & {
+	faq?: { q: string; a: string }[];
+	headings?: Heading[];
+};
 
-const { title, description, pubDate, updatedDate, heroImage, faq } = Astro.props;
+const { title, description, pubDate, updatedDate, heroImage, faq, headings = [] } = Astro.props;
+const toc = headings.filter((h) => h.depth === 2);
 ---
 
 <html lang="ko">
@@ -28,6 +33,19 @@ const { title, description, pubDate, updatedDate, heroImage, faq } = Astro.props
 				max-width: 100%;
 				margin: 0 auto;
 			}
+			.toc {
+				background: var(--bg-elev);
+				border: 1px solid var(--border);
+				border-left: 4px solid var(--accent);
+				border-radius: var(--radius-sm);
+				padding: 1em 1.3em;
+				margin: 0 0 2.2rem;
+			}
+			.toc-title { display: block; font-weight: 800; color: var(--text); margin-bottom: 0.5em; font-size: 0.95rem; }
+			.toc ol { margin: 0; padding-left: 1.3em; }
+			.toc li { margin: 0.3em 0; }
+			.toc a { color: var(--text-muted); text-decoration: none; }
+			.toc a:hover { color: var(--accent); text-decoration: underline; }
 			.back {
 				display: inline-block;
 				margin-bottom: 1.5rem;
@@ -151,6 +169,16 @@ const { title, description, pubDate, updatedDate, heroImage, faq } = Astro.props
 						}
 					</div>
 				</div>
+				{toc.length >= 3 && (
+					<nav class="toc" aria-label="목차">
+						<span class="toc-title">목차</span>
+						<ol>
+							{toc.map((h) => (
+								<li><a href={`#${h.slug}`}>{h.text}</a></li>
+							))}
+						</ol>
+					</nav>
+				)}
 				<div class="prose">
 					<slot />
 				</div>
