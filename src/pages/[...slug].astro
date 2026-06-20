@@ -23,7 +23,8 @@ const stripMd = (s: string) =>
 		.replace(/\s+/g, ' ')
 		.trim();
 const faq: { q: string; a: string }[] = [];
-const faqRe = /\*\*Q\.\s*([^*]+?)\*\*\s*\n+A\.\s*([\s\S]*?)(?=\n\s*\n|\n\*\*Q\.|$)/g;
+// 형식 둘 다 허용: `**Q. 질문?** 답변`(한 줄) / `**Q. 질문?**` 다음 줄 `A. 답변`.
+const faqRe = /\*\*Q\.\s*([^*]+?)\s*\*\*\s*(?:A\.\s*)?([\s\S]*?)(?=\n\s*\n|\n\*\*Q\.|$)/g;
 let fm: RegExpExecArray | null;
 while ((fm = faqRe.exec(post.body ?? '')) !== null) {
 	faq.push({ q: stripMd(fm[1]), a: stripMd(fm[2]) });
