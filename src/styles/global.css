@@ -1,37 +1,35 @@
 /*
-  스포츠킹덤24 다크 스포츠 테마 — 전역 스타일 (에너제틱 오렌지 포인트)
+  스포츠킹덤24 — 라이트 에디토리얼(스포츠 매거진) 테마
+  종이 배경 + 잉크블랙 헤드라인 + 일렉트릭 블루 1색 액센트 + 헤어라인 룰
 */
 
 :root {
-	--bg: #0b0e14;
-	--bg-elev: #141a26;
-	--bg-elev-2: #1b2230;
-	--border: #242c3d;
-	--border-strong: #344056;
+	--bg: #f6f6f2;          /* 따뜻한 종이 (크림 아님) */
+	--bg-elev: #ffffff;     /* 카드·표면 */
+	--bg-elev-2: #eeeee9;   /* 살짝 눌린 면 */
+	--border: #e3e3dc;      /* 헤어라인 */
+	--border-strong: #14161b; /* 잉크 룰(강조 구분선) */
 
-	--text: #e7ebf3;
-	--text-muted: #9aa6bd;
-	--text-dim: #6b7689;
+	--ink: #14161b;         /* 마스트헤드·헤드라인 잉크 */
+	--text: #2a2e36;        /* 본문 */
+	--text-muted: #5f6775;
+	--text-dim: #8b929e;
 
-	--accent: #ff7a1a;
-	--accent-dim: #e85d00;
-	--accent-ink: #1a0d04;
-	--accent-glow: rgba(255, 122, 26, 0.35);
+	--accent: #1452ff;      /* 일렉트릭 블루 */
+	--accent-dim: #0d3ad0;
+	--accent-ink: #ffffff;  /* 액센트 위 글자 */
+	--accent-soft: rgba(20, 82, 255, 0.08);
+	--accent-glow: rgba(20, 82, 255, 0.18);
 
-	--radius: 14px;
-	--radius-sm: 10px;
+	--radius: 10px;
+	--radius-sm: 8px;
 	--maxw: 1120px;
 	--font-heading: var(--font-atkinson), "Pretendard", system-ui, sans-serif;
 	--font-body: var(--font-atkinson), "Pretendard", system-ui, sans-serif;
 }
 
-* {
-	box-sizing: border-box;
-}
-
-html {
-	scroll-behavior: smooth;
-}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
 
 body {
 	font-family: var(--font-body);
@@ -40,8 +38,7 @@ body {
 	text-align: left;
 	background: var(--bg);
 	background-image:
-		radial-gradient(900px 400px at 80% -8%, rgba(255, 122, 26, 0.12), transparent 60%),
-		radial-gradient(700px 360px at 0% 0%, rgba(80, 120, 255, 0.08), transparent 55%);
+		radial-gradient(1100px 380px at 88% -10%, var(--accent-soft), transparent 60%);
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	color: var(--text);
@@ -57,30 +54,30 @@ main {
 	width: var(--maxw);
 	max-width: calc(100% - 2.5em);
 	margin: auto;
-	padding: 3.5rem 0 2rem;
+	padding: 3rem 0 2rem;
 }
 
 h1, h2, h3, h4, h5, h6 {
 	margin: 0 0 0.6rem 0;
-	color: #fff;
-	line-height: 1.15;
+	color: var(--ink);
+	line-height: 1.12;
 	font-family: var(--font-heading);
 	font-weight: 800;
-	letter-spacing: -0.02em;
+	letter-spacing: -0.03em;
 }
 h1 { font-size: 2.6rem; }
 h2 { font-size: 1.9rem; }
 h3 { font-size: 1.45rem; }
 h4 { font-size: 1.2rem; }
 
-strong, b { font-weight: 700; color: #fff; }
+strong, b { font-weight: 800; color: var(--ink); }
 
 a {
 	color: var(--accent);
 	text-decoration: none;
 	transition: color 0.15s ease;
 }
-a:hover { color: #ffb273; }
+a:hover { color: var(--accent-dim); }
 
 p { margin-bottom: 1.1em; }
 .prose p { margin-bottom: 1.6em; }
@@ -100,18 +97,18 @@ code {
 	border: 1px solid var(--border);
 	border-radius: 6px;
 	font-size: 0.9em;
-	color: #ffd2ab;
+	color: var(--accent-dim);
 }
 pre {
 	padding: 1.4em;
 	border-radius: var(--radius-sm);
-	background: #0d1119 !important;
-	border: 1px solid var(--border);
+	background: #14161b !important;
+	border: 1px solid var(--border-strong);
 	overflow-x: auto;
 }
 pre > code {
 	all: unset;
-	color: var(--text);
+	color: #e7ebf3;
 }
 
 blockquote {
@@ -130,7 +127,7 @@ hr {
 	margin: 2.5rem 0;
 }
 
-/* 네온 버튼 */
+/* 액센트 버튼 */
 .btn {
 	display: inline-flex;
 	align-items: center;
@@ -141,35 +138,44 @@ hr {
 	background: var(--accent);
 	color: var(--accent-ink) !important;
 	border: 1px solid var(--accent);
-	box-shadow: 0 0 0 rgba(255, 122, 26, 0);
-	transition: box-shadow 0.2s ease, transform 0.1s ease;
+	box-shadow: 0 0 0 rgba(20, 82, 255, 0);
+	transition: box-shadow 0.2s ease, transform 0.1s ease, background 0.15s ease;
 }
 .btn:hover {
-	box-shadow: 0 8px 26px var(--accent-glow);
+	background: var(--accent-dim);
+	box-shadow: 0 10px 26px var(--accent-glow);
 	transform: translateY(-1px);
 	color: var(--accent-ink) !important;
 }
 .btn-ghost {
 	background: transparent;
-	color: var(--accent) !important;
+	color: var(--ink) !important;
 	border: 1px solid var(--border-strong);
 }
 .btn-ghost:hover {
-	border-color: var(--accent);
+	background: var(--ink);
+	color: #fff !important;
 	box-shadow: none;
 }
 
-/* 태그 칩 */
+/* 에디토리얼 키커(말머리 라벨) */
 .tag {
-	display: inline-block;
-	padding: 0.25em 0.8em;
-	font-size: 0.78rem;
-	font-weight: 700;
-	letter-spacing: 0.02em;
+	display: inline-flex;
+	align-items: center;
+	gap: 0.45em;
+	padding: 0;
+	font-size: 0.74rem;
+	font-weight: 800;
+	letter-spacing: 0.14em;
+	text-transform: uppercase;
 	color: var(--accent);
-	background: rgba(255, 122, 26, 0.1);
-	border: 1px solid rgba(255, 122, 26, 0.25);
-	border-radius: 999px;
+}
+.tag::before {
+	content: "";
+	width: 1.4em;
+	height: 2px;
+	background: var(--accent);
+	display: inline-block;
 }
 
 @media (max-width: 720px) {

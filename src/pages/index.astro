@@ -97,10 +97,7 @@ const rest = posts.slice(1, 7);
 		font-size: clamp(2.4rem, 6vw, 4rem);
 		margin: 0.6rem 0 0.8rem;
 	}
-	.neon {
-		color: var(--accent);
-		text-shadow: 0 0 24px var(--accent-glow);
-	}
+	.neon { color: var(--accent); }
 	.lead {
 		color: var(--text-muted);
 		font-size: 1.15rem;
@@ -115,19 +112,18 @@ const rest = posts.slice(1, 7);
 
 	.featured {
 		display: block;
-		background:
-			linear-gradient(180deg, rgba(62, 245, 139, 0.08), transparent 40%),
-			var(--bg-elev);
+		background: var(--bg-elev);
 		border: 1px solid var(--border);
 		border-radius: var(--radius);
 		overflow: hidden;
 		margin-bottom: 3rem;
+		box-shadow: 0 1px 2px rgba(20, 22, 27, 0.04);
 		transition: border-color 0.2s ease, transform 0.15s ease, box-shadow 0.2s ease;
 	}
 	.featured:hover {
 		border-color: var(--accent);
 		transform: translateY(-2px);
-		box-shadow: 0 14px 40px rgba(0, 0, 0, 0.4);
+		box-shadow: 0 16px 40px rgba(20, 22, 27, 0.12);
 	}
 	.featured-image img {
 		display: block;
@@ -171,12 +167,13 @@ const rest = posts.slice(1, 7);
 		border: 1px solid var(--border);
 		border-radius: var(--radius);
 		overflow: hidden;
-		transition: border-color 0.2s ease, transform 0.15s ease, background 0.2s ease;
+		box-shadow: 0 1px 2px rgba(20, 22, 27, 0.04);
+		transition: border-color 0.2s ease, transform 0.15s ease, box-shadow 0.2s ease;
 	}
 	.card:hover {
 		border-color: var(--accent);
 		transform: translateY(-2px);
-		background: var(--bg-elev-2);
+		box-shadow: 0 14px 32px rgba(20, 22, 27, 0.12);
 	}
 	.card-image img {
 		display: block;

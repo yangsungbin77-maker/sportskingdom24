@@ -17,9 +17,9 @@ const today = new Date();
 </footer>
 <style>
 	footer {
-		border-top: 1px solid var(--border);
+		border-top: 2px solid var(--ink);
 		margin-top: 4rem;
-		background: rgba(11, 14, 20, 0.6);
+		background: transparent;
 	}
 	.inner {
 		width: var(--maxw);
@@ -35,9 +35,9 @@ const today = new Date();
 	.brand {
 		font-family: var(--font-heading);
 		font-weight: 800;
-		color: #fff;
+		color: var(--ink);
 	}
-	.logo { filter: drop-shadow(0 0 8px var(--accent-glow)); }
+	.logo {}
 	.links { display: flex; gap: 1.2rem; }
 	.links a {
 		color: var(--text-muted);
