@@ -5,7 +5,7 @@
 import '../styles/global.css';
 import type { ImageMetadata } from 'astro';
 import FallbackImage from '../assets/blog-placeholder-1.jpg';
-import { SITE_TITLE, GSC_VERIFICATION } from '../consts';
+import { SITE_TITLE, GSC_VERIFICATION, NAVER_VERIFICATION } from '../consts';
 import { Font } from 'astro:assets';
 
 interface Props {
@@ -100,6 +100,7 @@ if (type === 'article') {
 />
 <meta name="generator" content={Astro.generator} />
 {GSC_VERIFICATION && <meta name="google-site-verification" content={GSC_VERIFICATION} />}
+{NAVER_VERIFICATION && <meta name="naver-site-verification" content={NAVER_VERIFICATION} />}
 
 <Font cssVariable="--font-atkinson" preload />
 
