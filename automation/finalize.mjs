@@ -2,7 +2,7 @@
 import { readFileSync, writeFileSync, existsSync } from 'node:fs';
 import { execSync } from 'node:child_process';
 import { fileURLToPath } from 'node:url';
-import { dirname, join } from 'node:path';
+import { dirname, join, basename } from 'node:path';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const root = join(__dirname, '..');
@@ -117,5 +117,24 @@ console.log('▶ 커밋·푸시...');
 run('git add -A');
 run(`git commit -m "자동 발행: ${assignment.topic}"`);
 run('git push');
+
+// 5) 대시보드(블로그자동발행-full)의 발행 큐 자동 동기화.
+//    queue.json에서 방금 쓴 글을 '완료'로 바꿔 localhost:8501에 즉시 반영.
+//    실패해도 발행 자체엔 영향 없음(best-effort).
+try {
+  const dashDir = process.env.BLOG_DASHBOARD_DIR
+    || 'C:\\Users\\use\\클로드 코드\\블로그자동발행-full';
+  const syncScript = join(dashDir, 'sync_done.py');
+  if (existsSync(syncScript)) {
+    console.log('▶ 대시보드 발행 큐 동기화...');
+    const site = basename(root); // 저장소 폴더명 = 큐의 사이트 라벨
+    // 큐 키워드를 정확히 알면 QUEUE_KW로 넘기면 100% 매칭, 없으면 제목 토큰 매칭.
+    const kwArg = process.env.QUEUE_KW ? ` --kw "${process.env.QUEUE_KW}"` : '';
+    execSync(`py "${syncScript}" --site "${site}" --title "${assignment.topic}"${kwArg}`,
+      { stdio: 'inherit' });
+  }
+} catch (e) {
+  console.warn('⚠️ 대시보드 큐 동기화 실패(발행은 정상 완료됨):', e.message);
+}
 
 console.log(`\n✅ 발행 완료: /${slug}/`);

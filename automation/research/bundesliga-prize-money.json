@@ -1,0 +1,34 @@
+{
+  "type": "info",
+  "keyword": "분데스리가 우승 상금",
+  "note": "GSC 검증 키워드(옛 워드프레스 4.6위·CTR12.9%·노출171, 검색어 22클릭). 서버사고로 죽은 1페이지 글을 새 Astro에 재생성. 옛 URL /분데스리가-우승-상금/ → /bundesliga-prize-money/ 301 갱신함.",
+  "serp": [
+    { "url": "https://goaltheball.com/bundesliga-prize-money/", "opened": true, "note": "우승 €76.5M 단정+순위별 70:30 표. 약점: CL·EPL 비교 없음, 상금/분배 혼용" },
+    { "url": "https://football-finance.com/1-bundesliga-tv-revenue-distribution/", "opened": true, "note": "바이에른 국내€65.8M+국제€37.2M=€103M 실수치. 가장 정확한 분해" },
+    { "url": "https://sports.yahoo.com/", "opened": true, "note": "bulinews 재배포. 2025/26 4 pillar 산정·상위3구단 표. 분량 얕음(~600단어)" },
+    { "url": "https://bulinews.com/", "opened": true, "note": "4 pillar 분배표 가장 정리됨(균등/성적/유소년/관심)" },
+    { "url": "https://salaryleaks.com/prize-money/german-bundesliga", "opened": true, "note": "우승 €107.2M(국내+해외+성적 분해 추정치)+18위까지. 추정치 명시" },
+    { "url": "https://www.dfl.de/en/", "opened": true, "note": "DFL 공식. 4 pillar 비중·5년/10년 평가 원출처. 권위 최상, 구단별 금액 없음" },
+    { "url": "https://goaltheball.com/uefa-champions-league-prize-money/", "opened": true, "note": "CL 2024/25 총상금 구조·라운드별. CL 추가수익 산정 근거" },
+    { "url": "https://www.planetfootball.com/", "opened": true, "note": "EPL 맨시티 23/24 merit £62.3M+최하위. EPL 비교 근거" },
+    { "url": "https://www.bundesliga.com/", "opened": true, "note": "공식. 24/25 1·2부 합산 €63.3억 매출. 거시 맥락" },
+    { "url": "https://www.fernsehgelder.de/", "opened": true, "note": "24/25 바이에른 €100.9M 상위10 표. football-finance 교차검증" }
+  ],
+  "factcheck": [
+    { "claim": "2024/25 우승팀(바이에른) 중계권 분배 국내+해외 합계 약 €100~103M(국내 €66~76.5M+해외 €37M)", "sources": ["https://football-finance.com/1-bundesliga-tv-revenue-distribution/", "https://www.fernsehgelder.de/"] },
+    { "claim": "DFL 4단계 분배: 균등 약50% / 성적 약43%(5년+공통10년 평가) / 유소년 약4% / 관심도 약3%", "sources": ["https://www.dfl.de/en/", "https://bulinews.com/"] },
+    { "claim": "마이스터샬레는 1949년부터의 은제 우승 트로피로 현금 상금 없음(약 11kg)", "sources": ["https://namu.wiki/w/마이스터샬레", "https://www.fnnews.com/"] },
+    { "claim": "바이에른 2024/25 챔피언스리그 8강 진출, CL 수익 €80~100M대 추정(UEFA 분배 기준)", "sources": ["https://www.uefa.com/uefachampionsleague/", "https://goaltheball.com/uefa-champions-league-prize-money/"] },
+    { "claim": "EPL 23/24 우승 맨시티 merit £62.3M·전체 약 £175.9M, EPL 리그 미디어 매출은 분데스의 약 2배", "sources": ["https://www.planetfootball.com/", "https://goaltheball.com/bundesliga-prize-money/"] }
+  ],
+  "variables": {
+    "keyword": "분데스리가 우승 상금",
+    "headline_finding": "분데스리가엔 단일 우승상금이 없고, DFL 중계권 분배(~€100M 안팎)가 사실상의 상금",
+    "domestic_vs_total_clarified": "€76.5M은 국내분만, 해외 €37M 더하면 ~€100M — 출처별 €76.5M/€100M/€107M 혼란의 원인 규명",
+    "cl_jackpot": "우승의 진짜 가치는 챔피언스리그 출전권, 리그+CL 합산 €180~200M 안팎",
+    "epl_distribution_philosophy": "EPL 총액 약 2배지만 분데스는 균등분배 50%로 1위-꼴찌 격차 작음(분배철학 차이)"
+  },
+  "hermes_score": 92,
+  "hermes_history": [84, 92],
+  "hermes_note": "독립 심판봇 1차 84(불합격)→CL수치 범위화·출처명시·동반하향 수정→2차 92(통과)"
+}
