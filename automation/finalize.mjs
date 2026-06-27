@@ -43,6 +43,54 @@ if (failed.length) {
   process.exit(1);
 }
 
+// ── 글쓰기 절차 증거 게이트 ──────────────────────────────────────────────
+// SERP 해부·팩트체크·독립 심판을 "빼먹지 않고 매번" 강제한다. 증거는 사람 기억이
+// 아니라 automation/research/<slug>.json 파일로 남기고, 미달이면 빌드 전에 차단한다.
+const researchPath = join(__dirname, 'research', `${slug}.json`);
+if (!existsSync(researchPath)) {
+  console.error(`FINALIZE_ERROR: 증거 파일이 없습니다 → automation/research/${slug}.json
+이 글의 SERP 해부·팩트체크·헤르메스 심판 증거를 아래 형식으로 남겨야 발행됩니다.
+{
+  "serp":     [ { "url": "경쟁글 URL", "opened": true, "note": "분석 메모" }, ... 상위 10개 시도 ],
+  "factcheck":[ { "claim": "핵심 수치/사실", "sources": ["출처1","출처2"] }, ... 핵심마다 2곳+ ],
+  "variables":{ "keyword": "...", "headline_finding": "...", ... 데이터 변수 주입 },
+  "hermes_score": 91
+}`);
+  process.exit(1);
+}
+
+const RG = JSON.parse(readFileSync(researchPath, 'utf8'));
+const SERP_MIN_OPENED = 8; // 직접 연 경쟁글 최소 수(상위 10개 시도, 서버차단 2개까지 허용)
+const FACTCHECK_MIN = 3;   // 1차/신뢰 출처로 교차한 핵심 수치 최소 개수
+const HERMES_PASS = 90;    // 독립 심판(헤르메스) 통과 점수
+
+const serp = Array.isArray(RG.serp) ? RG.serp : [];
+const openedCount = serp.filter((s) => s && s.opened === true).length;
+const factcheck = Array.isArray(RG.factcheck) ? RG.factcheck : [];
+const factOk = factcheck.length >= FACTCHECK_MIN
+  && factcheck.every((f) => Array.isArray(f.sources) && f.sources.length >= 2);
+const hermes = Number(RG.hermes_score);
+
+const varCount = RG.variables ? Object.keys(RG.variables).length : 0;
+const VAR_MIN = 3; // 리뷰·비교 글의 데이터 변수 주입 최소 개수
+const isReview = ['review', 'comparison', '리뷰', '비교'].includes(String(RG.type || '').trim().toLowerCase());
+
+const gate = [
+  [openedCount >= SERP_MIN_OPENED, `SERP 경쟁글을 ${openedCount}개만 직접 열었습니다. 상위 10개를 시도해 최소 ${SERP_MIN_OPENED}개를 research.json의 serp[].opened=true로 기록하세요.`],
+  [factOk, `팩트체크가 부족합니다. 핵심 수치/사실 ${FACTCHECK_MIN}건 이상을 각각 출처 2곳 이상으로 교차한 기록(factcheck[].sources)이 필요합니다.`],
+  [Number.isFinite(hermes) && hermes >= HERMES_PASS, `헤르메스 심판 점수가 ${RG.hermes_score ?? '없음'}입니다. ${HERMES_PASS}점 이상이어야 발행됩니다.`],
+];
+// 리뷰·비교 글(type=review/comparison/리뷰/비교)은 데이터 변수 주입을 게이트로 강제. 그 외 유형은 권장(경고만).
+if (isReview) gate.push([varCount >= VAR_MIN, `리뷰·비교 글(type=${RG.type})은 데이터 변수 주입(variables) ${VAR_MIN}개 이상이 필요합니다. 현재 ${varCount}개 — research.json의 variables를 채우세요.`]);
+
+const gateFailed = gate.filter(([ok]) => !ok).map(([, m]) => m);
+if (gateFailed.length) {
+  console.error('FINALIZE_ERROR: 글쓰기 절차 증거 게이트 미충족\n- ' + gateFailed.join('\n- '));
+  process.exit(1);
+}
+if (!isReview && varCount < VAR_MIN) console.warn(`⚠️ 데이터 변수 주입이 ${varCount}개뿐입니다(권장 5개). 리뷰·비교 글이면 research.json에 "type":"review"를 넣어 강제하세요.`);
+console.log(`✔ 증거 게이트 통과 — SERP ${openedCount}개 열람 · 팩트체크 ${factcheck.length}건 · 헤르메스 ${hermes}점${isReview ? ` · 변수 ${varCount}개(리뷰형)` : ''}`);
+
 const run = (cmd) => execSync(cmd, { cwd: root, stdio: 'inherit' });
 
 // 1) 빌드가 깨지면 발행 중단.
