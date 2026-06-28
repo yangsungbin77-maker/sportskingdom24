@@ -1,0 +1,32 @@
+{
+  "type": "정보",
+  "serp": [
+    { "url": "https://ko.wikipedia.org/wiki/FIFA_월드컵_트로피", "opened": true, "note": "월드컵 트로피 18K 금 약 5kg/총 6.175kg, 높이 36.5cm, 1974 도입, 가자니가/베르토니, 우승국 도금 복제품·원본 FIFA 보관, 받침대 명판 17개→2014 원형 교체. 쥘리메컵 35cm 3.8kg 1983 도난." },
+    { "url": "https://www.coca-cola.com/kr/ko/about-us/history/fifaworldcuptrophy", "opened": true, "note": "월드컵 트로피 36.8cm 6.175kg 18K 금, 디자인 의미(지구 떠받침), 쥘리메 1970 브라질 영구소장, 현재 원본 FIFA 소유·복제품만 우승국 보유." },
+    { "url": "https://en.wikipedia.org/wiki/European_Champion_Clubs'_Cup", "opened": true, "note": "빅 이어 높이 74cm, 무게 11kg, 은, 디자이너 Jörg Stadelmann(베른), 1966-67부터 현 디자인, 별명 큰 손잡이=귀, 5회/3연패 영구소장 규정 2008-09 이후 폐지." },
+    { "url": "https://en.wikipedia.org/wiki/UEFA_Europa_League", "opened": true, "note": "유로파리그 트로피 디자이너 가자니가, 1972, Bertoni, 무게 15kg, 높이 67cm, 은+노란 대리석." },
+    { "url": "https://en.wikipedia.org/wiki/FA_Cup", "opened": true, "note": "FA컵 현 디자인 1911 Fattorini & Sons(Bradford) 61.5cm, 워킹 레플리카 2014 Thomas Lyte 6.3kg, 원조 little tin idol 1895 도난, 우승팀 영구소장 아님(매년 반환)." },
+    { "url": "https://en.wikipedia.org/wiki/Ballon_d'Or", "opened": true, "note": "발롱도르=개인상(팀 트로피 아님), 황금 공+받침, France Football 1956~ 수여, 팀 우승과 별개." },
+    { "url": "https://ko.wikipedia.org/wiki/UEFA_챔피언스리그", "opened": true, "note": "챔스 트로피=빅 이어, 우승팀은 다음 시즌 추첨까지 보유. 물리 스펙은 미기재(빈약)." },
+    { "url": "https://en.wikipedia.org/wiki/Premier_League", "opened": true, "note": "프리미어리그 페이지 — 트로피 섹션 본문 미수신(요약만). 각국 리그 트로피 존재 확인용." },
+    { "url": "https://namu.wiki/w/빅_이어", "opened": false, "note": "403 차단 — en.wiki/ko.wiki로 빅이어 스펙 교차." },
+    { "url": "https://www.fifa.com/ko/tournaments/mens/club-world-cup/usa-2025/trophy", "opened": false, "note": "JS 렌더 빈 응답 — 클럽월드컵 트로피, 본문엔 미반영." }
+  ],
+  "factcheck": [
+    { "claim": "FIFA 월드컵 트로피 18K(75%) 금, 높이 약 36.8cm, 무게 약 6.175kg, 1974년 도입, 디자이너 실비오 가자니가", "sources": ["https://ko.wikipedia.org/wiki/FIFA_월드컵_트로피", "https://www.coca-cola.com/kr/ko/about-us/history/fifaworldcuptrophy"] },
+    { "claim": "월드컵 우승국은 도금 복제품(위너스 트로피)을 받고 원본은 FIFA가 보관", "sources": ["https://ko.wikipedia.org/wiki/FIFA_월드컵_트로피", "https://www.coca-cola.com/kr/ko/about-us/history/fifaworldcuptrophy"] },
+    { "claim": "쥘리메컵 1930~1970, 1970 브라질 3회우승으로 영구소장, 1983 도난 후 미회수", "sources": ["https://ko.wikipedia.org/wiki/FIFA_월드컵_트로피", "https://www.coca-cola.com/kr/ko/about-us/history/fifaworldcuptrophy"] },
+    { "claim": "빅 이어(챔스 트로피) 은 재질, 높이 약 74cm, 1967년부터 현 디자인, 디자이너 Jörg Stadelmann, 영구소장 규정(5회/3연패) 2008-09 이후 폐지", "sources": ["https://en.wikipedia.org/wiki/European_Champion_Clubs'_Cup", "https://ko.wikipedia.org/wiki/UEFA_챔피언스리그"] },
+    { "claim": "유로파리그 트로피 가자니가 디자인 1972, 무게 약 15kg, 높이 67cm, 은", "sources": ["https://en.wikipedia.org/wiki/UEFA_Europa_League", "WebSearch 축구 트로피 종류 종합"] },
+    { "claim": "FA컵 현 디자인 1911 Fattorini & Sons, 높이 약 61.5cm, 우승팀 영구소장 아님", "sources": ["https://en.wikipedia.org/wiki/FA_Cup", "WebSearch 축구 트로피 종류 종합"] },
+    { "claim": "발롱도르는 개인상(팀 트로피 아님), France Football이 1956년부터 수여", "sources": ["https://en.wikipedia.org/wiki/Ballon_d'Or", "WebSearch 발롱도르 개인상 종합"] }
+  ],
+  "variables": {
+    "keyword": "축구 트로피 종류",
+    "headline_finding": "경쟁 상위가 트로피별 백과(나무위키·위키) 단편 — 우리는 국가대표/클럽/개인상 3분류 + 비교표로 한눈에 묶음",
+    "misconception": "우승국이 진짜 금트로피를 영구히 가져가는 줄 아는 오해 → 실제론 복제품, 원본은 협회 보관",
+    "size_contrast": "빅 이어 74cm가 월드컵 트로피 36.8cm보다 훨씬 큼(권위≠크기)",
+    "trophy_vs_award": "발롱도르는 팀 트로피가 아니라 선수 개인상 — 섞이는 지점 분리"
+  },
+  "hermes_score": 92
+}
