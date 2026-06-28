@@ -32,6 +32,19 @@ const imageURL = new URL(image.src, Astro.site);
 
 // 기사 페이지에는 여러 구조화 데이터(JSON-LD)를 넣어 구글 리치 결과를 노린다.
 const schemas: object[] = [];
+	// 전역 엔티티 — Organization + WebSite (모든 페이지, AI 엔티티 인식용)
+	schemas.push({
+		'@context': 'https://schema.org', '@type': 'Organization',
+		'@id': new URL('/#org', Astro.site).href,
+		name: SITE_TITLE, url: Astro.site?.href,
+		logo: new URL('/favicon.svg', Astro.site).href,
+	});
+	schemas.push({
+		'@context': 'https://schema.org', '@type': 'WebSite',
+		'@id': new URL('/#website', Astro.site).href,
+		name: SITE_TITLE, url: Astro.site?.href, inLanguage: 'ko-KR',
+		publisher: { '@id': new URL('/#org', Astro.site).href },
+	});
 if (type === 'article') {
 	schemas.push({
 		'@context': 'https://schema.org',
@@ -41,7 +54,7 @@ if (type === 'article') {
 		image: imageURL.href,
 		datePublished: publishedTime?.toISOString(),
 		dateModified: (modifiedTime ?? publishedTime)?.toISOString(),
-		author: { '@type': 'Organization', name: SITE_TITLE, url: Astro.site?.href },
+			author: { '@type': 'Person', name: '킹덤', url: new URL('/about/', Astro.site).href, worksFor: { '@type': 'Organization', name: SITE_TITLE, url: Astro.site?.href } },
 		publisher: {
 			'@type': 'Organization',
 			name: SITE_TITLE,
