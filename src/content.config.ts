@@ -14,6 +14,8 @@ const blog = defineCollection({
 			pubDate: z.coerce.date(),
 			updatedDate: z.coerce.date().optional(),
 			heroImage: z.optional(image()),
+			// true면 목록(홈·가이드·블로그)에서 숨기고 robots noindex 처리(축구 집중 — 비축구 레거시 글).
+			noindex: z.boolean().optional(),
 		}),
 });
 

@@ -7,9 +7,9 @@ import { SITE_DESCRIPTION, SITE_TITLE } from '../consts';
 import { getCollection } from 'astro:content';
 import FormattedDate from '../components/FormattedDate.astro';
 
-const posts = (await getCollection('blog')).sort(
-	(a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf(),
-);
+const posts = (await getCollection('blog'))
+	.filter((p) => !p.data.noindex)
+	.sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
 const featured = posts[0];
 const rest = posts.slice(1, 7);
 ---
@@ -23,12 +23,12 @@ const rest = posts.slice(1, 7);
 		<Header />
 		<main>
 			<section class="hero">
-				<span class="tag">스포츠 · 분석 · 일정</span>
-				<h1>스포츠의 <span class="neon">모든 것</span>,<br />가장 빠르게.</h1>
+				<span class="tag">⚽ 축구 · 규칙 · 전술 · 중계</span>
+				<h1>축구의 <span class="neon">모든 것</span>,<br />여기 다 있습니다.</h1>
 				<p class="lead">{SITE_DESCRIPTION}</p>
 				<div class="hero-actions">
-					<a href="/blog" class="btn">최신 글 보기</a>
-					<a href="/about" class="btn-ghost btn">소개</a>
+					<a href="/guide" class="btn">축구 가이드</a>
+					<a href="/blog" class="btn-ghost btn">최신 글</a>
 				</div>
 			</section>
 

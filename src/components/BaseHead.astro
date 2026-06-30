@@ -16,6 +16,7 @@ interface Props {
 	publishedTime?: Date;
 	modifiedTime?: Date;
 	faq?: { q: string; a: string }[];
+	noindex?: boolean;
 }
 
 const canonicalURL = new URL(Astro.url.pathname, Astro.site);
@@ -27,6 +28,7 @@ const {
 	publishedTime,
 	modifiedTime,
 	faq = [],
+	noindex = false,
 } = Astro.props;
 const imageURL = new URL(image.src, Astro.site);
 
@@ -92,6 +94,7 @@ if (type === 'article') {
 <!-- Global Metadata -->
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width,initial-scale=1" />
+{noindex && <meta name="robots" content="noindex,follow" />}
 <!-- Google AdSense -->
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8312549013849190" crossorigin="anonymous" is:inline></script>
 <!-- Google Analytics 4 (gtag.js) -->

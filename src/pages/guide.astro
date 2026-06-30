@@ -1,0 +1,273 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import Footer from '../components/Footer.astro';
+import Header from '../components/Header.astro';
+import { SITE_TITLE } from '../consts';
+import { getCollection } from 'astro:content';
+
+// 발행된 모든 글(현재는 축구 중심). 하단 '전체 글'에 자동 반영된다.
+const posts = (await getCollection('blog'))
+	.filter((p) => !p.data.noindex)
+	.sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
+const has = (slug) => posts.some((p) => p.id === slug);
+const link = (slug, label) =>
+	has(slug) ? { slug, label, live: true } : { slug, label, live: false };
+
+// 나무위키형 클러스터 지도. live=true(발행됨)는 링크, false는 '준비 중' 표시.
+const clusters = [
+	{
+		title: '입문 · 규칙',
+		emoji: '📘',
+		items: [
+			link('soccer-offside-rule', '오프사이드 규칙 쉽게 이해하기'),
+			link('soccer-offside-exceptions', '오프사이드 예외 상황 정리'),
+			link('soccer-match-time-rules', '경기 시간과 추가시간 규칙'),
+			link('soccer-var-explained', 'VAR이란? 판독 대상과 절차'),
+			link('soccer-set-piece', '세트피스 — 코너킥·프리킥·페널티킥'),
+			link('soccer-fouls-cards', '파울과 카드 규칙'),
+		],
+	},
+	{
+		title: '포지션 · 전술',
+		emoji: '🧠',
+		items: [
+			link('soccer-positions-guide', '포지션 완전 정리 — GK부터 윙어까지'),
+			link('soccer-formation-basics', '포메이션 기초 — 4-4-2와 4-3-3'),
+			link('soccer-formation-counters', '포메이션 상성 — 맞불 전술'),
+			link('soccer-formation-pros-cons', '포메이션 장단점 정리'),
+			link('soccer-pressing-tactics', '게겐프레싱·티키타카 전술 트렌드'),
+			link('soccer-buildup', '빌드업 축구란?'),
+		],
+	},
+	{
+		title: '리그 · 대회',
+		emoji: '🏆',
+		items: [
+			link('champions-league-guide', '챔피언스리그란? 방식·일정·우승팀'),
+			link('league-comparison', '라리가 vs EPL vs 분데스리가 비교'),
+			link('bundesliga-prize-money', '분데스리가 상금 규모'),
+			link('worldcup-2026-prize-money-champions', '2026 월드컵 상금·역대 우승국'),
+			link('euro-guide', '유로(유럽 선수권) 완전 정리'),
+			link('soccer-trophy-types', '축구 트로피 종류 총정리'),
+		],
+	},
+	{
+		title: '관전 · 중계',
+		emoji: '📺',
+		items: [
+			link('watch-overseas-soccer', '해외축구 무료로 보는 법 총정리'),
+			link('epl-broadcast-korea', 'EPL 중계 한국 시청 방법'),
+			link('soccer-stadium-guide', '축구 직관 가이드 — 준비물·꿀팁'),
+			link('kleague-guide', 'K리그 입문 — 팀·일정·티켓·중계'),
+		],
+	},
+	{
+		title: '선수',
+		emoji: '⭐',
+		items: [
+			link('son-heung-min-profile', '손흥민 소속팀·등번호·기록'),
+			link('kim-min-jae-profile', '김민재 소속팀·포지션·기록'),
+			link('messi-vs-ronaldo', '메시 vs 호날두 통산 기록 비교'),
+		],
+	},
+	{
+		title: '장비 · 풋살 · 용어',
+		emoji: '🥅',
+		items: [
+			link('soccer-shoes-guide', '축구화 고르는 법 — 잔디·풋살용'),
+			link('soccer-jersey-numbers', '유니폼 등번호의 의미'),
+			link('futsal-rules', '풋살 규칙과 축구와의 차이'),
+			link('soccer-glossary', '축구 용어사전 — xG·클린시트 등'),
+		],
+	},
+];
+
+const liveCount = posts.length;
+---
+
+<!doctype html>
+<html lang="ko">
+	<head>
+		<BaseHead
+			title={`축구 가이드 | ${SITE_TITLE}`}
+			description="축구의 규칙·포지션·전술·리그·선수·관전법까지 한눈에. 입문부터 심화까지 축구의 모든 주제를 클러스터로 정리한 종합 가이드입니다."
+		/>
+	</head>
+	<body>
+		<Header />
+		<main>
+			<section class="guide-hero">
+				<span class="tag">⚽ 축구 완전 가이드</span>
+				<h1>축구, 여기서 <span class="neon">전부</span> 끝냅니다.</h1>
+				<p class="lead">
+					규칙·포지션·전술·리그·선수·중계까지 — 축구의 모든 주제를 한곳에 정리하고 있습니다.
+					아래 분야별로 원하는 글을 찾아보세요. (현재 {liveCount}편 발행 · 계속 추가 중)
+				</p>
+			</section>
+
+			<div class="clusters">
+				{
+					clusters.map((c) => (
+						<section class="cluster">
+							<h2>
+								<span class="c-emoji">{c.emoji}</span> {c.title}
+							</h2>
+							<ul>
+								{c.items.map((it) =>
+									it.live ? (
+										<li>
+											<a href={`/${it.slug}/`}>{it.label}</a>
+										</li>
+									) : (
+										<li class="soon">
+											{it.label} <span class="badge">준비 중</span>
+										</li>
+									),
+								)}
+							</ul>
+						</section>
+					))
+				}
+			</div>
+
+			<section class="all-posts">
+				<div class="section-head">
+					<h2>전체 축구 글</h2>
+					<a href="/blog" class="more">블로그 전체 →</a>
+				</div>
+				<ul class="post-list">
+					{
+						posts.map((p) => (
+							<li>
+								<a href={`/${p.id}/`}>{p.data.title}</a>
+							</li>
+						))
+					}
+				</ul>
+			</section>
+		</main>
+		<Footer />
+	</body>
+</html>
+
+<style>
+	main {
+		width: var(--maxw, 960px);
+		max-width: calc(100% - 2.5em);
+		margin: 0 auto;
+		padding: 2rem 0 4rem;
+	}
+	.guide-hero {
+		padding: 1rem 0 2rem;
+		border-bottom: 2px solid var(--ink, #1a1a1a);
+		margin-bottom: 2rem;
+	}
+	.tag {
+		display: inline-block;
+		font-weight: 700;
+		font-size: 0.85rem;
+		opacity: 0.8;
+	}
+	.guide-hero h1 {
+		font-family: var(--font-heading, sans-serif);
+		font-size: clamp(1.8rem, 5vw, 2.8rem);
+		font-weight: 800;
+		line-height: 1.15;
+		margin: 0.4em 0 0.3em;
+	}
+	.neon {
+		background: linear-gradient(transparent 60%, #c8ff00 60%);
+	}
+	.lead {
+		font-size: 1.05rem;
+		line-height: 1.6;
+		opacity: 0.85;
+		max-width: 46em;
+	}
+	.clusters {
+		display: grid;
+		grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+		gap: 1.25rem;
+	}
+	.cluster {
+		border: 2px solid var(--ink, #1a1a1a);
+		border-radius: 14px;
+		padding: 1.1rem 1.2rem 1.3rem;
+		background: #fff;
+	}
+	.cluster h2 {
+		font-size: 1.15rem;
+		font-weight: 800;
+		margin: 0 0 0.7rem;
+		display: flex;
+		align-items: center;
+		gap: 0.4em;
+	}
+	.cluster ul {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+		display: flex;
+		flex-direction: column;
+		gap: 0.5rem;
+	}
+	.cluster a {
+		text-decoration: none;
+		font-weight: 600;
+		border-bottom: 2px solid transparent;
+	}
+	.cluster a:hover {
+		border-bottom-color: #c8ff00;
+	}
+	.soon {
+		opacity: 0.5;
+		font-size: 0.95rem;
+	}
+	.badge {
+		font-size: 0.7rem;
+		border: 1px solid currentColor;
+		border-radius: 999px;
+		padding: 0.05em 0.5em;
+		vertical-align: middle;
+	}
+	.all-posts {
+		margin-top: 3rem;
+		border-top: 2px solid var(--ink, #1a1a1a);
+		padding-top: 1.5rem;
+	}
+	.section-head {
+		display: flex;
+		align-items: baseline;
+		justify-content: space-between;
+		margin-bottom: 1rem;
+	}
+	.section-head h2 {
+		font-size: 1.4rem;
+		font-weight: 800;
+		margin: 0;
+	}
+	.more {
+		text-decoration: none;
+		font-weight: 700;
+	}
+	.post-list {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+		columns: 2;
+		gap: 1.5rem;
+	}
+	.post-list li {
+		margin-bottom: 0.6rem;
+		break-inside: avoid;
+	}
+	.post-list a {
+		text-decoration: none;
+		font-weight: 600;
+	}
+	@media (max-width: 600px) {
+		.post-list {
+			columns: 1;
+		}
+	}
+</style>

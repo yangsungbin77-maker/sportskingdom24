@@ -12,7 +12,7 @@ type Props = CollectionEntry<'blog'>['data'] & {
 	headings?: Heading[];
 };
 
-const { title, description, pubDate, updatedDate, heroImage, faq, headings = [] } = Astro.props;
+const { title, description, pubDate, updatedDate, heroImage, faq, headings = [], noindex } = Astro.props;
 const toc = headings.filter((h) => h.depth === 2);
 ---
 
@@ -26,6 +26,7 @@ const toc = headings.filter((h) => h.depth === 2);
 				publishedTime={pubDate}
 				modifiedTime={updatedDate}
 				faq={faq}
+				noindex={noindex}
 			/>
 		<style>
 			.article {
