@@ -137,4 +137,24 @@ try {
   console.warn('⚠️ 대시보드 큐 동기화 실패(발행은 정상 완료됨):', e.message);
 }
 
+// IndexNow 즉시 색인 요청 (Bing·네이버·Yandex). 발행 직후 '극최신' 노출 극대화. 실패해도 발행엔 영향 없음.
+try {
+  const __cfg = readFileSync(join(root, 'astro.config.mjs'), 'utf8');
+  const __siteUrl = ((__cfg.match(/site:\s*['"]([^'"]+)['"]/) || [])[1] || '').replace(/\/+$/, '');
+  const __KEY = '08d35b8779806b9edf8ef0ed944d239e';
+  if (__siteUrl) {
+    const __url = `${__siteUrl}/${slug}/`;
+    const __res = await fetch('https://api.indexnow.org/indexnow', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json; charset=utf-8' },
+      body: JSON.stringify({ host: new URL(__siteUrl).host, key: __KEY, keyLocation: `${__siteUrl}/${__KEY}.txt`, urlList: [__url] }),
+    });
+    console.log(`▶ IndexNow 색인 요청(Bing·네이버·Yandex): ${__url} → HTTP ${__res.status}`);
+  } else {
+    console.warn('⚠️ astro.config.mjs에서 site URL을 못 찾아 IndexNow 생략');
+  }
+} catch (e) {
+  console.warn('⚠️ IndexNow 색인 요청 실패(발행은 정상 완료됨):', e.message);
+}
+
 console.log(`\n✅ 발행 완료: /${slug}/`);
