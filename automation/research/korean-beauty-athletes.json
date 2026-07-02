@@ -1,0 +1,44 @@
+{
+  "type": "listicle",
+  "keyword": "한국 미녀 운동선수",
+  "serp": [
+    { "url": "https://www.1boonnews.com/news/articleView.html?idxno=3936", "opened": true, "note": "육상 3대 미녀(김민지·김지은·최예은) 기사. 소속·기록·프로필 상세. 단일 종목 3인만 다룸 — 종목 확장이 우리 차별화" },
+    { "url": "https://m.swtvnews.com/news/newsview.php?ncode=1065599181963042", "opened": true, "note": "김민지 단독 기사. 진천군청·400m·2022 고성대회 메달·'한국의 알리샤 슈미트'. 개인 기사라 총정리 수요 못 채움" },
+    { "url": "https://brunch.co.kr/@leedh200/141", "opened": true, "note": "여자 스포츠 스타 10인 — 전원 해외 선수(알렉스 모건 등). 한국 선수 검색 의도와 불일치 = 갭" },
+    { "url": "https://v.daum.net/v/bB3mpu8tO7", "opened": true, "note": "씨름 박민지 단독. 투포환 전향·화성시청→영동군청·2019 대통령기·피지컬100. 팩트 소스로도 활용" },
+    { "url": "https://mennoblesse.com/article/외모와-실력-모두-갖춘-여자-스포츠-선수-6", "opened": true, "note": "6인 리스트 — 전원 해외 선수. 국내 통합 리스트 부재 확인" },
+    { "url": "https://kipic.co.kr/en/recreating-the-dynamic-charm-of-a-korean-beauty-track-athlete-with-ai/", "opened": true, "note": "AI 생성 이미지 글. 실제 선수 정보 없음 — SERP 품질 낮음(진입 여지)" },
+    { "url": "http://m.ppomppu.co.kr/new/bbs_view.php?id=freeboard&no=7505997", "opened": true, "note": "커뮤니티 나열글. 인코딩 깨져 부분 확인 — 사진 나열형, 커리어 정보 없음" },
+    { "url": "https://ko.wikipedia.org/wiki/분류:대한민국의_여자_스포츠_선수", "opened": true, "note": "위키 분류 페이지 — 종목별 하위분류만. 큐레이션 없음(정보성 리스트 수요 미충족)" },
+    { "url": "https://sportskingdom24.com/한국-예쁜-운동선-한국-미녀-운동선수들/", "opened": false, "note": "이 키워드 구글 1위 = 우리 옛 워드프레스 글(현재 홈 리다이렉트로 콘텐츠 소실). 아카이브 접근 차단으로 열람 실패. 새 글 발행 후 이 URL을 새 글로 301 예정" },
+    { "url": "https://namu.wiki/w/김민지(육상)", "opened": false, "note": "나무위키 403 차단. 1boonnews·swtvnews로 동일 팩트 교차 확인" },
+    { "url": "https://dprime.kr/g2/bbs/board.php?bo_table=comm&wr_id=16938565", "opened": false, "note": "301→dvdprime, 재시도 2회 모두 429" }
+  ],
+  "serp_summary": {
+    "intent": "정보성 리스트(국내 미녀 운동선수 총정리)",
+    "common_items": "선수 이름·종목·화제가 된 계기(SNS/방송)",
+    "gaps": "①국내 선수 다종목 통합 리스트 부재 ②커리어·기록 정보 부실 ③현역/은퇴·근황 구분 없음 ④경기 시청 안내 전무",
+    "our_angle": "7종목 9인 통합 + 기록 중심 서술 + 현역/은퇴 근황 + 종목별 시청·직관 가이드 + 비교표"
+  },
+  "factcheck": [
+    { "claim": "김연아 2010 밴쿠버 금(228.56 세계신기록)·2014 소치 은·올 포디움", "sources": ["https://ko.wikipedia.org/wiki/김연아", "공지 사실(올림픽 공식 기록과 일치)"] },
+    { "claim": "손연재 2014 인천 AG 개인종합 금, 2016 리우 4위, 2017-02 은퇴", "sources": ["https://ko.wikipedia.org/wiki/손연재", "2012 런던 5위·리우 4위 아시아 최고 성적 — 위키 및 당시 보도 일치"] },
+    { "claim": "신수지 2008 베이징 올림픽 리듬체조 자력 출전, 2012년 초 발목 인대 파열로 체조 은퇴, 2014-11 프로볼링 선발전 합격 → 2015-03 프로 데뷔", "sources": ["https://ko.wikipedia.org/wiki/신수지 (은퇴 사유 '발목 인대 파열·2012' 명시)", "https://namu.wiki/w/신수지 (검색 스니펫 교차 — 베이징 자력 출전 동일)"] },
+    { "claim": "강소휘 2015-16 드래프트 전체 1순위 GS칼텍스 입단, 2020-21 V리그 우승, KOVO컵 3회 우승, 2018 AG 동메달, 2024 FA로 김천 한국도로공사 이적", "sources": ["https://ko.wikipedia.org/wiki/강소휘 (KOVO컵 3회 우승·FA 이적 명시)", "위키미디어 공용 2025 Korea Invitational 사진 캡션(한국도로공사 소속 확인)"] },
+    { "claim": "박민지(씨름) 투포환 선수였다가 허리 부상 이후 2013 씨름 전향, 2019 대통령기 우승, 화성시청→영동군청 소속, 피지컬100 출연", "sources": ["https://v.daum.net/v/bB3mpu8tO7 (전향 사유 back injury·2013 명시)", "넷플릭스 피지컬100 출연진 공지 사실"] },
+    { "claim": "김민지(육상) 1996년생·진천군청·주종목 400m와 400m 허들·173cm (2022 고성 실업대회 계주 금·400m 은·400mH 동)", "sources": ["https://www.1boonnews.com/news/articleView.html?idxno=3936 (events: 400m, 400m hurdles)", "https://m.swtvnews.com/news/newsview.php?ncode=1065599181963042 (2022 고성대회 메달 상세)"] },
+    { "claim": "김지은 전북개발공사 소속 400m, 2022년 400m 5회 우승(국내 1인자), 15세 국가대표 발탁, 아킬레스건 부상 복귀, 부모 모두 육상 국가대표", "sources": ["https://www.1boonnews.com/news/articleView.html?idxno=3936 (소속·15세 발탁·아킬레스건·부모 이력 모두 명시)", "구글 검색 결과 요약 교차(전북개발공사 육상단 400m 1위 동일)"] },
+    { "claim": "이민아 인천현대제철 WK리그 5회 우승, A매치 83경기 17골, 2017 KFA 올해의 여자선수, 현 해외(캐나다) 리그", "sources": ["https://ko.wikipedia.org/wiki/이민아_(축구_선수)", "위키 문서 내 KFA 수상·오타와 래피드 FC 기재"] },
+    { "claim": "유현주 2011 KLPGA 프로 데뷔, 투어 우승 없음(최고 공동14위), 2022 SBS 연예대상 소셜스타상", "sources": ["https://ko.wikipedia.org/wiki/유현주_(골프_선수)", "2022 SBS 연예대상 수상 보도 공지 사실"] }
+  ],
+  "variables": {
+    "keyword": "한국 미녀 운동선수",
+    "headline_finding": "SERP 상위가 해외 선수 리스트·단일 종목 기사뿐 — 국내 다종목 통합 정리가 공백",
+    "dataset": "7종목 9인 커리어·근황 비교표 직접 작성(현역 6/은퇴 3 구분)",
+    "process_exposure": "상위 SERP 8곳 직접 열람 후 갭 4개 도출, 위키백과 6문서 교차 팩트체크",
+    "unique_asset": "종목별 경기 시청·직관 가이드(경쟁글 전무) + Wikimedia CC 실사진 4장 합법 수급",
+    "recovery_context": "이 키워드 구글 1위였던 자사 옛 워드프레스 글을 새 글로 301 연결해 랭킹 자산 회수"
+  },
+  "cluster_keywords": ["예쁜 여자 운동선수", "미녀 스포츠 스타", "여자 운동선수 현역", "미녀 육상선수 김민지", "피지컬100 씨름 박민지", "강소휘 소속팀", "신수지 볼링", "유현주 골프", "여자축구 이민아", "손연재 근황", "김연아 기록"],
+  "hermes_score": 95
+}
