@@ -1,0 +1,39 @@
+{
+  "type": "info",
+  "keyword": "손흥민 기록 총정리",
+  "gsc_basis": "주제 큐 '스타 선수(검색 자석)' 1순위 — 가이드 허브 son-heung-min-profile 슬롯 충족",
+  "serp": [
+    { "url": "https://ko.wikipedia.org/wiki/손흥민", "opened": true, "note": "2026-06-24 기준. 클럽별 리그 기록(함부르크 73/20·레버쿠젠 62/21·토트넘 333/127·LAFC 23/9), 국대 147경기 56골, 골든부트·푸스카스·유로파 우승·아시안게임 금, LAFC 7번, 이적료 £20m MLS 최고 — 본문 수치의 정본" },
+    { "url": "https://namu.wiki/w/손흥민", "opened": false, "note": "403 차단. 한국어 최대 문서지만 직접 열람 불가" },
+    { "url": "https://www.flashscore.co.kr/player/son-heung-min/Mgg9oPeM/", "opened": true, "note": "계약 만료 2027-12-31 표기, 2026 시즌 MLS 13~14경기 0골 8~9도움·CCC 8경기 2골 6도움·월드컵 3경기 0골. 통계 나열형" },
+    { "url": "https://kr.soccerway.com/player/son-heung-min/Mgg9oPeM/", "opened": true, "note": "토트넘 리그 293/121로 위키와 집계 상이 — '사이트마다 다른 숫자' 각도의 실증 근거" },
+    { "url": "https://sports.daum.net/player/epl/1156992", "opened": true, "note": "등번호 7, 생년 1992-07-08, 183cm. 프로필+뉴스 허브형, 통산 정리 없음" },
+    { "url": "https://trend.syw.kr/trend/sports/korea-worldcup-2026-group-stage", "opened": true, "note": "2026 WC 한국 1승2패(체코 2-1승·멕시코 0-1·남아공 0-1) A조 3위 골득실 -1 탈락, 8년 만의 조별 탈락" },
+    { "url": "https://www.fifa.com/ko/tournaments/mens/worldcup/canadamexicousa2026/articles/26-superstars-son-heungmin-ko", "opened": false, "note": "본문 렌더 비어 있음(JS)" },
+    { "url": "https://www.khan.co.kr/article/202603151538001", "opened": true, "note": "2026-03 리그 4경기 무득점, 공격형 MF 기용, 유일한 골=CCC PK — LAFC 시즌 서사 근거" },
+    { "url": "https://www.mt.co.kr/sports/2026/04/07/202604071010771950O", "opened": true, "note": "04-05 올랜도전 6-0, 전반에만 4도움, ESPN '사실상 완벽한 팀', 시즌 1골 11도움(당시)" },
+    { "url": "https://imnews.imbc.com/news/2026/sports/article/6825055_36946.html", "opened": true, "note": "월드컵 직전 마지막 경기 1-0 승(3연패 탈출), 시즌 리그 14경기 0골 9도움·공식전 2골 16도움 확정치" }
+  ],
+  "serp_summary": {
+    "intent": "정보성 — 통산 기록·소속팀·등번호·최신 근황 확인",
+    "common_items": "소속팀 변천, 등번호, EPL 기록, 국가대표 기록, 수상",
+    "gap": "상위가 위키(방대·비정리)와 통계 사이트(맥락 없음)로 갈림. 'EPL 골 수가 사이트마다 다른 이유'를 짚으며 2026 월드컵 탈락·LAFC 0골 16도움 반전까지 묶은 한국어 정리글 부재",
+    "avg_depth": "통계 사이트는 표만, 뉴스는 단건 — 통산+최신을 합친 글 없음"
+  },
+  "factcheck": [
+    { "claim": "토트넘 리그 333경기 127골(위키 집계)·전 대회 173골 101도움 보도, 아시아 최초 EPL 100골(2023-04), 2021-22 골든부트 23골(살라 공동)", "sources": ["https://ko.wikipedia.org/wiki/손흥민", "웹검색 통산 정리(토트넘 173득점 101도움·최초 100골 보도)", "https://kr.soccerway.com/player/son-heung-min/Mgg9oPeM/(집계 차이 확인)"] },
+    { "claim": "2025-08 LAFC 이적, 이적료 약 £20m(약 373억)=MLS 역대 최고 보도, 등번호 7, 계약 2027년 말 표기", "sources": ["https://ko.wikipedia.org/wiki/손흥민", "https://www.flashscore.co.kr/player/son-heung-min/Mgg9oPeM/", "웹검색(MLS 역대 최고 이적료 보도)"] },
+    { "claim": "2026시즌 MLS 14경기 0골 9도움, 공식전(CCC 포함) 2골 16도움, 올랜도전 전반 4도움 6-0, 공격형 MF 전환", "sources": ["https://imnews.imbc.com/news/2026/sports/article/6825055_36946.html", "https://www.mt.co.kr/sports/2026/04/07/202604071010771950O", "https://www.khan.co.kr/article/202603151538001"] },
+    { "claim": "국가대표 147경기(최다 출전 1위) 56골(2위), 2018 AG 금, 2020 푸스카스, 2024-25 유로파리그 우승(주장)", "sources": ["https://ko.wikipedia.org/wiki/손흥민", "웹검색 통산 정리(출전 1위·득점 2위)"] },
+    { "claim": "2026 WC 한국 1승2패 A조 3위(체코 2-1승·멕시코 0-1패·남아공 0-1패) 조별 탈락(3위팀 8장 경쟁 골득실 밀림), 손흥민 3경기 0골·남아공전 선발 제외 후 교체 투입", "sources": ["https://trend.syw.kr/trend/sports/korea-worldcup-2026-group-stage", "https://v.daum.net/v/20260626054102354", "https://www.flashscore.co.kr/player/son-heung-min/Mgg9oPeM/(WC 3경기 0골)"] }
+  ],
+  "variables": {
+    "keyword": "손흥민 기록 총정리",
+    "headline_finding": "EPL 골 수가 127·121·173으로 갈리는 건 오류가 아니라 집계 범위(리그만/전 대회)와 시점 차이 — 이 기준을 잡아주는 글이 SERP에 없음",
+    "data_angle": "위키·플래시스코어·사커웨이 3원 대조로 집계 차이를 실증하고, 2026 최신 서사(WC 탈락·LAFC 0골 16도움 설계자 전환)를 뉴스 3건으로 교차",
+    "conflict_handled": "사커웨이(293/121) vs 위키(333/127) 충돌을 은폐하지 않고 '집계 기준' 팁박스로 정면 처리, 은퇴 여부는 미확정으로 명시",
+    "first_person_hook": "검색할 때마다 골 수가 달라 헷갈렸던 실제 리서치 경험 + 골든부트 시즌 새벽 중계 시청 경험(실화 범위)",
+    "recovery_context": "가이드 허브 '선수' 클러스터 첫 발행 — son-heung-min-profile 슬러그로 허브 링크 자동 활성화"
+  },
+  "hermes_score": 92
+}
