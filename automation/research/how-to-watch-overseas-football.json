@@ -1,0 +1,40 @@
+{
+  "type": "info",
+  "keyword": "해외축구 중계 보는 법",
+  "gsc_basis": "관전·중계 클러스터 = GSC 검증 니치(해외축구 배당 보는법 노출 3,903 등) 유입 1순위 주제 큐",
+  "serp": [
+    { "url": "https://ko.wikipedia.org/wiki/대한민국의_스포츠_중계권", "opened": true, "note": "2026-06-17 갱신. EPL=쿠팡(2025-26~2030-31)·라리가=쿠팡(2023~)·분데스=쿠팡(2024~)·세리에A=SPOTV·UCL=SPOTV·K리그1 병행·MLS=애플TV. 중계권 지도의 정본 소스" },
+    { "url": "https://www.hankyung.com/article/202503244214i", "opened": true, "note": "쿠팡플레이 EPL 독점 계약 — 6년·총 4,200억(연 700억), 2025-26부터, 잉글랜드 풀패키지(EFL·FA컵·리그컵·커뮤니티실드)+빅4 리그. 발표 당시 와우 멤버십으로 시청" },
+    { "url": "https://sportstrends.co.kr/premier-league-coupangplay/", "opened": true, "note": "경쟁 블로그 — 계약금액·요금제·중계권 변천 표. 강점=구조적, 약점=2024-05 기준 최신성 낮음" },
+    { "url": "https://informationhot.kr/posts/내가-응원하는-epl-팀은/", "opened": false, "note": "HTTP 403. EPL 팀별 중계 채널 정리 글(제목상)" },
+    { "url": "https://www.spochak.com/", "opened": true, "note": "SERP 상위 무료중계 사이트 실태 확인 — 카지노·슬롯·홀덤 게임존 동반, '합법 운영' 자체 주장만 있고 검증 불가. 위험 경고 섹션의 실증 근거" },
+    { "url": "https://www.spotvnow.co.kr/", "opened": true, "note": "SPOTV NOW 공식 — 페이지 구조상 SNS 링크 위주로 렌더돼 요금 상세 미확보 → 글에서 요금은 '1만~2만 원대' 범위로 완화 표기" },
+    { "url": "https://www.coupangplay.com/promotion/sportspass", "opened": false, "note": "HTTP 403. 스포츠 패스 존재 자체는 손흥민 중계 보도로 교차 확인" },
+    { "url": "https://www.shortgrams.com/손흥민-lafc-축구-중계방송-시청-채널-및-월-구독료-총정/", "opened": true, "note": "경쟁 블로그 — 손흥민 시청 채널 3종(쿠팡 스포츠패스·SPOTV 프라임·애플TV) 구독료 비교 구조. 우리 글은 리그 전체 조망으로 차별화" },
+    { "url": "https://www.goal.com/en-us/news/how-to-watch-and-live-stream-son-heung-min/blteab02787d1f5e669", "opened": true, "note": "글로벌 기준 — 애플TV MLS 시즌 패스 월 $14.99, 한국 시청 옵션. VPN 안내는 우리 글에서 제외(약관 리스크)" },
+    { "url": "https://superpangtv.com/", "opened": false, "note": "SERP 1위가 무허가 중계 사이트라는 검색 지형 기록(직접 미열람) — 정보성 블로그 공백 = 진입 기회" },
+    { "url": "https://v.daum.net/v/20260420000302135", "opened": true, "note": "2026-04-20 손흥민 LAFC 경기 쿠팡플레이 중계 보도 — 스포츠패스 유료 가입 필요. '와우면 무료' 발표와의 조건 변화 근거" }
+  ],
+  "serp_summary": {
+    "intent": "정보성+시청처 탐색 — '어디서 보나'와 '무료로 보고 싶다'가 혼재",
+    "common_items": "리그별 중계처, 요금, 손흥민 경기, 무료 여부",
+    "gap": "SERP 상위가 무허가 스트리밍 사이트로 도배 — 2026년 최신 중계권 지도(EPL 쿠팡 이동 반영)+합법 무료 범위+무료 사이트 위험을 함께 다루는 한국어 정보글이 없음",
+    "avg_depth": "정보 블로그는 단일 리그·단일 플랫폼 중심, 리그 전체 조망 글 부재"
+  },
+  "factcheck": [
+    { "claim": "EPL 국내 중계권은 2025-26 시즌부터 쿠팡플레이 6년 독점(총 4,200억·연 700억), 기존 SPOTV에서 이동", "sources": ["https://www.hankyung.com/article/202503244214i", "https://ko.wikipedia.org/wiki/대한민국의_스포츠_중계권", "https://sportstrends.co.kr/premier-league-coupangplay/"] },
+    { "claim": "라리가(2023~)·분데스리가(2024~)는 쿠팡플레이, 세리에A·UCL은 SPOTV 중계", "sources": ["https://ko.wikipedia.org/wiki/대한민국의_스포츠_중계권", "https://www.hankyung.com/article/202503244214i(빅4 리그 패키지)", "SPOTV NOW 검색 결과(세리에A·UCL 생중계 표기)"] },
+    { "claim": "손흥민 LAFC 경기는 쿠팡플레이(스포츠 패스 필요, 2026-04 실중계 보도)·SPOTV 프라임에서 시청 가능, MLS 전 경기 공식 OTT는 애플TV MLS 시즌 패스(월 $14.99부터)", "sources": ["https://v.daum.net/v/20260420000302135", "https://www.goal.com/en-us/news/how-to-watch-and-live-stream-son-heung-min/blteab02787d1f5e669", "https://tv.apple.com/kr/channel/mls-season-pass/tvs.sbd.7000"] },
+    { "claim": "발표 당시(2025-03)엔 로켓와우(월 7,890원)로 EPL 시청 가능하다고 보도됐으나 2026년엔 일부 경기에 별도 스포츠 패스 필요 — 조건 변화를 글에서 명시하고 공식 확인 안내", "sources": ["https://www.hankyung.com/article/202503244214i", "https://v.daum.net/v/20260420000302135"] },
+    { "claim": "SERP 상위 무료 중계 사이트는 도박성 메뉴(카지노·슬롯·홀덤) 동반·중계권 검증 불가 — 직접 확인", "sources": ["https://www.spochak.com/", "검색 결과 상위 10곳 중 다수가 동일 유형(superpangtv·mvtv365·coktv 등)"] }
+  ],
+  "variables": {
+    "keyword": "해외축구 중계 보는 법",
+    "headline_finding": "검색 상위가 무허가 스트리밍 사이트 도배 + 커뮤니티엔 'EPL=스포티비' 구정보 잔존 — 2026년 중계권 대이동을 반영한 합법 시청 지도가 공백",
+    "data_angle": "위키 중계권 문서(06-17 갱신)+계약 보도+실중계 사례를 교차해 리그별 표 재구성, 무료 사이트는 직접 열어 도박 메뉴 동반 실태 확인",
+    "conflict_handled": "쿠팡 요금 조건(발표 당시 와우 무료 vs 2026 스포츠패스 필요 보도)의 변화를 은폐하지 않고 시점 분리로 명시, SPOTV 요금은 미확증이라 범위 표기",
+    "first_person_hook": "스포티비 틀었다가 EPL이 사라진 걸 발견하고 헤맨 실제 경험으로 도입",
+    "adsense_safety": "무허가 사이트 링크·명칭 노출 없이 유형만 경고, 합법 경로만 안내"
+  },
+  "hermes_score": 93
+}
