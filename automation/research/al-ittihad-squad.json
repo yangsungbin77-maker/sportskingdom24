@@ -1,0 +1,41 @@
+{
+  "type": "info",
+  "keyword": "알이티하드 선수 명단",
+  "gsc_basis": "GSC 16개월 실측 — 노출 6,551·평균 11위 옛 워드프레스 URL /알-이티하드-스쿼드-선수-명단/ 회수 재생성",
+  "serp": [
+    { "url": "https://en.wikipedia.org/wiki/Al-Ittihad_Club_(Jeddah)", "opened": true, "note": "감독 공석·2025-26 리그 5위(18팀)·홈구장 66,345석 표기. 역사·시즌 기록 중심, 한국어 아님" },
+    { "url": "https://www.aiscore.com/team-al-ittihad/5wv78xio2ehnkrj/squad", "opened": false, "note": "소켓 오류로 열람 실패. 시즌별 페이지가 다수 색인돼 구버전 노출 문제 확인" },
+    { "url": "https://kr.soccerway.com/team/al-ittihad/QmsyAjWh/squad/", "opened": true, "note": "GK4·DF8·MF10·FW10 등록, 라이코비치1·카데시15·다닐루2·아우아르10·엔네시리21·베르흐베인34, 감독 콘세이상(구버전). 통계 나열형, 맥락 없음" },
+    { "url": "https://namu.wiki/w/알 이티하드 FC", "opened": false, "note": "HTTP 403 차단. 한국어 종합 문서지만 직접 열람 불가" },
+    { "url": "https://www.flashscore.co.kr/team/al-ittihad/QmsyAjWh/squad/", "opened": true, "note": "포지션별 등번호·나이 확보(라이코비치30·알압시23·시미치21·미타이22·알샨키티27·카데시33·파비뉴32·다닐루34·아우아르28·둠비아22·엔네시리29·베르흐베인28·디아비26). 표만 있고 설명 없음" },
+    { "url": "https://ko.wikipedia.org/wiki/알이티하드_클럽", "opened": true, "note": "2026-02-04 기준 명단(벤제마 9번 주장 포함=구버전), 리그 우승 10회·ACL 2회, 콘세이상 2025~. 최신 이적 미반영이 약점" },
+    { "url": "https://m.aiscore.com/team-ittihad-club/5wv78xio2ehnkrj/squad", "opened": false, "note": "소켓 오류 재시도 실패" },
+    { "url": "http://team.7mkr.com/1333/index.shtml", "opened": false, "note": "HTTP 403" },
+    { "url": "https://football.scoreman123.com/team/summary/1912", "opened": true, "note": "템플릿만 있고 실데이터 '데이터 없음' — 콘텐츠 부실 확인" },
+    { "url": "https://www.flashscore.co.kr/team/al-ittihad/QmsyAjWh/", "opened": true, "note": "홈구장 킹 압둘라 스포츠시티 62,345석, 8/16 알나즈마전 일정. en.wiki(66,345)와 수용인원 충돌 → 글에 '자료마다 다름' 처리" },
+    { "url": "https://ko.wikipedia.org/wiki/분류:알이티하드_클럽의_축구_선수", "opened": true, "note": "역대 선수 64명 분류. 현재 스쿼드 아님" },
+    { "url": "https://www.ittihadclub.sa/", "opened": true, "note": "공식 홈페이지 라이브 확인(영/아랍어, 뉴스·팀 명단·감독 교체 소식) → 외부링크로 채택" }
+  ],
+  "serp_summary": {
+    "intent": "정보성 — 최신 스쿼드·등번호·감독 확인",
+    "common_items": "포지션별 명단, 등번호, 나이, 감독",
+    "gap": "상위 결과 전부 통계 나열 또는 구버전(벤제마·캉테 포함). 2026년 2월 대격변(벤제마→알힐랄, 캉테→페네르바흐체, 엔네시리 합류)과 6월 감독 사임을 한국어로 맥락 정리한 글이 없음 = 우리 정보 게인",
+    "avg_depth": "통계 사이트는 표만, 위키는 방대하나 최신성 늦음"
+  },
+  "factcheck": [
+    { "claim": "벤제마는 2026년 2월 알이티하드를 떠나 알힐랄로 이적(계약 2027 여름까지), 알이티하드 기록 83경기 54골 17도움, 재계약 조건('무급+이미지 수익') 갈등 보도", "sources": ["https://www.espn.com/soccer/story/_/id/47807157/karim-benzema-joins-al-hilal-delay-ngolo-kante-fenerbahce-deadline-day-football-transfers", "https://www.beinsports.com/en-us/soccer/articles/saudi-pro-league-shake-up-karim-benzema-signs-for-leaders-after-split-with-al-ittihad-2026-02-03", "https://www.espn.com/soccer/story/_/id/47768592/karim-benzema-feels-disrespected-al-ittihad-contract-offer-sources"] },
+    { "claim": "캉테는 2026-02-04 페네르바흐체로 이적, 딜 과정에서 서류 분쟁, 엔네시리가 페네르바흐체→알이티하드로 맞물려 이동, 캉테는 2024-25 리그·킹컵 더블 주역", "sources": ["https://www.espn.com/soccer/story/_/id/47824501/ngolo-kante-joins-fenerbahce-al-ittihad", "https://www.beinsports.com/en-us/soccer/sper-lig/articles/fenerbahce-sign-kante-from-al-ittihad-after-transfer-saga-2026-02-04"] },
+    { "claim": "콘세이상 감독은 2026년 6월 초 상호 합의로 사임(원계약 2028년까지), 2025-26 시즌 알이티하드는 리그 5위·우승 알나스르에 30점 이상 차. 2026년 7월 현재 감독 공석", "sources": ["https://saudigazette.com.sa/article/661816", "https://www.goal.com/en/lists/sergio-conceicao-leaves-al-ittihad-saudi-pro-league-title-cristiano-ronaldo-al-nassr/bltf007abb33ab1926f", "https://en.wikipedia.org/wiki/Al-Ittihad_Club_(Jeddah)"] },
+    { "claim": "알이티하드는 사우디 프로리그 우승 10회(마지막 2024-25=2025)·AFC 챔피언스리그 2회(2004·2005), 홈구장 킹 압둘라 스포츠 시티(수용 62,345/66,345 자료 충돌 → 글에서 병기)", "sources": ["https://ko.wikipedia.org/wiki/알이티하드_클럽", "https://en.wikipedia.org/wiki/Al-Ittihad_Club_(Jeddah)", "https://www.flashscore.co.kr/team/al-ittihad/QmsyAjWh/"] },
+    { "claim": "현 스쿼드 등번호(라이코비치1·시미치4·미타이12·알샨키티13·카데시15·다닐루2·파비뉴8·아우아르10·둠비아17·알셰흐리11·디아비19·엔네시리21·베르흐베인34·알압시50)", "sources": ["https://www.flashscore.co.kr/team/al-ittihad/QmsyAjWh/squad/", "https://kr.soccerway.com/team/al-ittihad/QmsyAjWh/squad/"] }
+  ],
+  "variables": {
+    "keyword": "알이티하드 선수 명단",
+    "headline_finding": "검색 상위 명단 다수가 벤제마·캉테가 남아 있는 2026년 2월 이전 구버전 — 최신 대격변 미반영이 검색자 혼란의 원인",
+    "data_angle": "플래시스코어·사커웨이·위키 3원 교차 확인 + 이적 뉴스(ESPN·beIN) 대조로 '2026년 7월 기준' 명단 표 재구성",
+    "conflict_handled": "홈구장 수용 인원 62,345 vs 66,345 충돌을 은폐하지 않고 '자료마다 다름'으로 병기",
+    "first_person_hook": "검색했더니 사이트마다 벤제마가 있다 없다 해서 헤맨 실제 리서치 경험으로 도입",
+    "recovery_context": "GSC 검증 승자 키워드(노출 6,551·11위) 재생성 — 발행 후 옛 URL 301 도착지 갱신"
+  },
+  "hermes_score": 91
+}
