@@ -1,0 +1,40 @@
+{
+  "type": "info",
+  "keyword": "쿠팡플레이 스포츠 패스",
+  "gsc_basis": "관전·중계 클러스터 — 어제 발행한 해외축구 중계 글과 카니벌 없는 하위 주제(요금·가입 특화), 가이드 허브 coupang-play-sports-pass 슬롯 충족",
+  "serp": [
+    { "url": "https://www.hankyung.com/article/202506196771g", "opened": true, "note": "2025-06-19 — 일반 요금제 출시(일반 16,600·와우 9,900), 48개 대회, EPL·NBA는 '내년 하반기 추가' 발표. 연대기 3단계 근거" },
+    { "url": "https://www.newsis.com/view/NISX20260512_0003626314", "opened": true, "note": "2026-05-12 — 6/1부터 와우 9,900→12,400·일반 16,600→19,300(최대 25%↑), 신규만 적용, 51개 대회(티빙 18·스포티비 31 대비), EPL 중계권료 연 700억, 인상 배경. 현행 요금의 정본" },
+    { "url": "https://www.insight.co.kr/news/553826", "opened": true, "note": "기존 가입자 동결 조건 — 변경일 이후 신규만 인상, '인상 전 가입 서두르라' 프레임. 동결 만료일은 미제시(글에서 '유지 시'로 한정)" },
+    { "url": "https://sports.news.nate.com/view/20250612n19824", "opened": true, "note": "2025-06-12 단독 — 첫 도입 시점(6/15~)·초기 요금(월 1만 원 안팎 보도), 초기 포함 대회. 연대기 2단계 근거" },
+    { "url": "https://newneek.co/@newneek/article/33233", "opened": true, "note": "패스 필요(EPL 등 해외축구·NBA·F1·골프) vs 와우 기본(K리그·국대) 구분 정리 — 구분 다이어그램의 근거" },
+    { "url": "https://www.businesspost.co.kr/BP?command=article_view&num=437709", "opened": true, "note": "전략 분석 — '미끼→독자 수익원' 전환, MAU 910만(국내 OTT 2위, 2026-04), 와우 기본=국대·아시안컵·K리그. 구조 섹션 근거" },
+    { "url": "https://m.mdilbo.com/newsroom/6468239", "opened": true, "note": "인상 교차 확인 — 수치 동일, 출시 후 첫 인상, EPL 4K 중계, 51개 대회" },
+    { "url": "https://yoozz001.com/entry/쿠팡플레이-스포츠-패스란", "opened": true, "note": "경쟁 블로그 — 2025-06 기준 구정보(1만원→1.2만원 시절), 인상 미반영 = 우리 글의 최신성 갭 확인" },
+    { "url": "https://news.coupang.com/archives/54044/", "opened": false, "note": "쿠팡 뉴스룸 공식 보도자료 HTTP 403 — 제목 스니펫으로 요금·8월 출시 확인, 본문은 언론 보도로 대체" },
+    { "url": "https://www.coupangplay.com/promotion/sportspass", "opened": false, "note": "공식 페이지 403(어제도 동일) — 글에서 '결제 화면 최종 확인' 안내로 처리" },
+    { "url": "https://namu.wiki/w/쿠팡플레이", "opened": false, "note": "403 상시 차단" }
+  ],
+  "serp_summary": {
+    "intent": "정보성/구매결정 — 현재 가격, 뭘 볼 수 있나, 가입·해지 방법",
+    "common_items": "요금(와우/일반), 포함 대회, 가입 조건, 해지",
+    "gap": "뉴스는 인상 단신뿐, 블로그는 전부 2025년 구요금 기준 — 2026-06 인상 반영 + 요금 연대기(검색마다 다른 가격의 이유) + 패스 필요/불필요 구분 다이어그램을 갖춘 글이 없음",
+    "avg_depth": "뉴스 단신 또는 구정보 블로그, 최신 종합 정리 부재"
+  },
+  "factcheck": [
+    { "claim": "2026-06-01부터 신규 가입 요금 와우 12,400원·일반 19,300원(각 +2,500·+2,700, 최대 25% 인상), 기존 가입자는 인상 전 요금 동결", "sources": ["https://www.newsis.com/view/NISX20260512_0003626314", "https://m.mdilbo.com/newsroom/6468239", "https://www.insight.co.kr/news/553826"] },
+    { "claim": "요금 연대기 — 2025-03 EPL 계약 발표('와우면 시청') → 2025-06-15 패스 도입(월 1만 원 안팎 보도) → 2025-08 일반 요금제(16,600/9,900) → 2026-06-01 인상", "sources": ["https://www.hankyung.com/article/202503244214i(발표 당시 와우 시청)", "https://sports.news.nate.com/view/20250612n19824", "https://www.hankyung.com/article/202506196771g"] },
+    { "claim": "패스 필요 = EPL 등 해외축구·NBA·F1·골프, 와우 기본 = 축구 국가대표 경기·K리그·쿠팡플레이 시리즈", "sources": ["https://newneek.co/@newneek/article/33233", "https://www.businesspost.co.kr/BP?command=article_view&num=437709", "웹검색 요약(국대·K리그·쿠팡플레이 시리즈는 와우로 시청)"] },
+    { "claim": "손흥민 LAFC(MLS) 경기가 스포츠 패스 대상으로 중계된 사례(2026-04 보도)", "sources": ["https://v.daum.net/v/20260420000302135", "https://www.insight.co.kr/news/553826(손흥민 경기=패스 프레임)"] },
+    { "claim": "쿠팡플레이 51개 대회 중계(티빙 18·스포티비 31 대비 최다), EPL 중계권료 연 700억, MAU 910만(2026-04 국내 OTT 2위), 세리에A·챔스는 SPOTV 소관", "sources": ["https://www.newsis.com/view/NISX20260512_0003626314", "https://www.businesspost.co.kr/BP?command=article_view&num=437709", "https://ko.wikipedia.org/wiki/대한민국의_스포츠_중계권(세리에A·UCL=SPOTV)"] }
+  ],
+  "variables": {
+    "keyword": "쿠팡플레이 스포츠 패스",
+    "headline_finding": "검색 결과의 가격이 1만원·9,900원·12,400원으로 제각각인 건 1년 새 요금이 3번 바뀌어서 — 연대기로 풀어주는 글이 SERP에 없음",
+    "data_angle": "보도 6건을 시간순 정렬해 요금 연대기 표 재구성 + 패스 필요/와우 기본 구분 다이어그램 자체 제작 + 와우 결합 실부담 계산(20,290원 vs 단독 19,300원)",
+    "conflict_handled": "동결 만료 조건 미보도 → '유지 시' 한정, NBA는 '편입 발표' 단계로 구분, 편성 변동 가능성 명시('결제 화면 최종 확인'), 초기 요금은 '보도 기준 1만 원 안팎'",
+    "first_person_hook": "검색할 때마다 가격이 달라 헷갈렸던 리서치 경험 — 검색자와 동일한 페인포인트",
+    "cluster_links": "how-to-watch-overseas-football 내부링크 2회 — 관전·중계 클러스터 그물, 가이드 허브 슬롯 자동 활성화"
+  },
+  "hermes_score": 91
+}
