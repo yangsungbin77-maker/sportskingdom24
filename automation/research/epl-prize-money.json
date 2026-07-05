@@ -1,0 +1,144 @@
+{
+ "type": "info-money",
+ "keyword": "프리미어리그 우승 상금",
+ "queue_source": "gsc-lost-winner (옛 EPL우승상금 16.9위 회복, 옛 URL /epl-우승상금-과-epl에-대하여/)",
+ "serp": [
+  {
+   "url": "https://www.mt.co.kr/amp/sports/2026/05/31/202605311114774808O",
+   "opened": true,
+   "note": "아스날 챔스 준우승 1.43억 유로 + EPL 우승 합산 약 2억 파운드. '준우승' 헤드라인은 챔스 기준임을 확인(우승/준우승 상충 해소)"
+  },
+  {
+   "url": "https://www.nbcsports.com/soccer/news/premier-league-prize-money-how-much-is-each-table-position-worth",
+   "opened": true,
+   "note": "2024-25 확정: 균등 96.9m(국내29.8+해외59.2+상업7.9), 머릿 1위 53.1m·꼴찌 2.6m·계단 2.7m, 시설비 리버풀 24.9m/입스위치 8.9m, 총액 174.9m~109.2m"
+  },
+  {
+   "url": "https://www.football365.com/news/2025-26-premier-league-prize-money-table-tv",
+   "opened": true,
+   "note": "2025-26 예측: 아스날 1위 177.4m, 새 국내 중계권 6.7bn·267경기 생중계, 꼴찌도 100m+"
+  },
+  {
+   "url": "https://bolavip.com/en/premier-league/premier-league-prize-money",
+   "opened": true,
+   "note": "아스날 180-195m 전망, 머릿 1위 50m+, 리버풀 24-25 174.9m 재확인"
+  },
+  {
+   "url": "https://www.matchbingo.co.uk/blog/premier-league-prize-money-202526-how-much-does-each-position-earn",
+   "opened": true,
+   "note": "3계층 구조·리버풀/브렌트포드/사우샘프턴 수치 교차, 중계횟수로 하위권 역전 가능 언급"
+  },
+  {
+   "url": "https://premierpulse.co/premier-league-prize-money-by-position-2025-2026/",
+   "opened": true,
+   "note": "머릿 53.1m·계단 2.6-2.7m·중계 경기당 83만 파운드·국내29.8/해외59.2 교차"
+  },
+  {
+   "url": "https://cidermics.com/contents/detail/1129",
+   "opened": true,
+   "note": "2016-17 꼴찌 선덜랜드(93.47m)>직전 우승 레스터(93.21m) 역전 사례 — 우리 글 정보게인 각도"
+  },
+  {
+   "url": "https://sports.news.nate.com/view/20230511n11262",
+   "opened": true,
+   "note": "2023 맨시티 트레블 상금 기사 — 수치가 대회·연도별 변동 크다는 맥락 확인, 구체 수치는 구식이라 미사용"
+  },
+  {
+   "url": "https://www.premierleague.com/en/news/4288492",
+   "opened": false,
+   "note": "403 차단(시도) — 아스날 우승 부상(트로피·메달·황금배지) 기사. 우승팀 아스날 사실은 타 출처 3곳으로 교차"
+  },
+  {
+   "url": "https://www.givemesport.com/premier-league-every-club-total-prize-money-earnings-2025-26/",
+   "opened": false,
+   "note": "소켓 오류(시도)"
+  },
+  {
+   "url": "https://www.888sport.com/blog/football/premier-league/premier-league-prize-money-2025-26",
+   "opened": false,
+   "note": "지역 차단 리다이렉트(시도)"
+  }
+ ],
+ "factcheck": [
+  {
+   "claim": "2024-25 우승 리버풀 총 수령 약 1억 7,490만 파운드, 꼴찌 사우샘프턴 약 1억 920만 파운드",
+   "sources": [
+    "https://www.nbcsports.com/...",
+    "https://www.matchbingo.co.uk/...",
+    "https://bolavip.com/..."
+   ]
+  },
+  {
+   "claim": "순위 수당(머릿 페이먼트) 1위 약 5,310만·꼴찌 260만·한 계단당 약 270만 파운드",
+   "sources": [
+    "https://www.nbcsports.com/...",
+    "https://premierpulse.co/..."
+   ]
+  },
+  {
+   "claim": "균등배분 약 9,690만 파운드(국내 2,980만+해외 5,920만+중앙상업 790만)",
+   "sources": [
+    "https://www.nbcsports.com/...",
+    "https://premierpulse.co/... (국내·해외 동일 수치)"
+   ]
+  },
+  {
+   "claim": "2025-26 우승팀은 아스날, 총 수령 1억 7,700만 파운드 이상 전망(새 6.7bn 중계권·267경기 생중계)",
+   "sources": [
+    "https://www.football365.com/... (177.4m)",
+    "https://bolavip.com/... (180-195m)",
+    "https://www.mt.co.kr/... (EPL 우승 언급)"
+   ]
+  },
+  {
+   "claim": "2016-17 꼴찌 선덜랜드 배분금이 직전 우승 레스터보다 많았음(93.47m vs 93.21m)",
+   "sources": [
+    "https://cidermics.com/contents/detail/1129",
+    "NBC/matchbingo의 균등배분 구조 설명과 정합(구조적 근거 교차)"
+   ]
+  },
+  {
+   "claim": "아스날 2025-26 챔스 준우승 상금 약 1억 4,300만 유로, 리그+챔스 합산 약 2억 파운드",
+   "sources": [
+    "https://www.mt.co.kr/amp/sports/2026/05/31/202605311114774808O",
+    "머니투데이 인용 UEFA 배분 보도(기사 내 교차)"
+   ]
+  },
+  {
+   "claim": "2025-26 시즌 리그가 20개 클럽에 배분하는 총액 약 28억 파운드(£2.83bn) — 보도 기준 유보 표기",
+   "sources": [
+    "https://www.football365.com/news/2025-26-premier-league-prize-money-table-tv",
+    "본문에 '보도되고 있어요'로 유보 표기(단일 출처 인지)"
+   ]
+  },
+  {
+   "claim": "리버풀 2024-25 생중계 30회·중계 수당 2,490만 파운드(경기당 약 83만 파운드와 정합: 30×0.83≈24.9)",
+   "sources": [
+    "https://www.nbcsports.com/... (30회·24.9m 명시)",
+    "https://premierpulse.co/... (경기당 83만 파운드)"
+   ]
+  },
+  {
+   "claim": "10위 브렌트포드 순위 수당 2,910만 파운드(계단 공식 검산치 29.2m과 정합)",
+   "sources": [
+    "https://www.matchbingo.co.uk/... (29.1m 명시)",
+    "한 계단 270만 공식(NBC·premierpulse) 검산"
+   ]
+  },
+  {
+   "claim": "사우샘프턴 중계 수당 약 970만 파운드는 총액 역산(109.2−96.9−2.6)이며 본문 표에 '총액 역산' 명시",
+   "sources": [
+    "https://www.nbcsports.com/... (총액 109.2m)",
+    "https://www.matchbingo.co.uk/... (총액 교차)"
+   ]
+  }
+ ],
+ "variables": {
+  "keyword": "프리미어리그 우승 상금",
+  "headline_finding": "'우승 상금'이라는 단일 항목이 없음 — 검색 결과 숫자 불일치(500억 vs 3,500억)의 원인을 3계층 구조로 해설하는 각도가 상위 글에 없음(한국어 SERP는 구식 수치·단편 기사뿐)",
+  "differentiation": "2024-25 확정치+2025-26 아스날 전망 분리 표기, 꼴찌>우승 역전 사례, 분데스리가·월드컵 내부링크 상금 클러스터",
+  "recovery_context": "옛 워드프레스 /epl-우승상금-과-epl에-대하여/(GSC 16.9위)의 회복 타깃 — 발행 후 301을 이 글로 재매핑",
+  "freshness_guard": "2025-26 수치는 전망치로 명시, 확정치는 2024-25 기준임을 본문·표에 표기"
+ },
+ "hermes_score": 96
+}
