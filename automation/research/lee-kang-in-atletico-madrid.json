@@ -1,0 +1,33 @@
+{
+  "type": "analysis",
+  "keyword": "이강인 아틀레티코",
+  "serp": [
+    { "url": "https://www.spotvnews.co.kr/news/articleView.html?idxno=826842", "opened": true, "note": "2026-07-06 작성. 로마노 'Here we go'+스페인 Sport, 구두합의 완료·공식절차만 남음. 이적료 약 4000만유로. PSG 2시즌 124경기 16골16도움, 리그·UCL 우승. 8/9 서울 맨시티전 합류 가능성" },
+    { "url": "https://first.nulfparang.com/entry/이강인-아틀레티코-오피셜", "opened": true, "note": "2026-07-04. 마르카 '이번주 공식발표' 예고, PSG 홈피 프로필 삭제. 이적료 기본 3000만유로+보너스. 예상데뷔 8/16 vs 말라가(홈), 9월 마드리드더비 vs 레알. 그리즈만 7번 관련" },
+    { "url": "https://ko.wikipedia.org/wiki/이강인", "opened": true, "note": "경력 팩트: 2011.7 발렌시아 유소년, 2018.10 1군데뷔(17세), 2019 코파델레이 우승, 2019 U20월드컵 준우승+골든볼, 2021.8 마요르카(자유계약 66경기 7골), 2023.7 PSG(2200만유로,5년,19번). 주포지션 공격형MF/윙, 왼발" },
+    { "url": "https://www.dailysportshankook.co.kr/news/articleView.html?idxno=430746", "opened": true, "note": "2026-07-07. 사실상 확정·공식발표만 남음. 4000만유로. PSG 124경기16골16도움. 시즌후반 벤치→이적결심. 알레마니SD(발렌시아 인연) 주도, 시메오네 체제 최우선 고려" },
+    { "url": "https://www.mt.co.kr/sports/2025/07/15/2025071501062671481", "opened": true, "note": "발렌시아 서사: 10세 유스입단, 2018 1군데뷔, 기복·일관성으로 출전제한, 2021 레반테전 교체 눈물, 계약해지 결별→마요르카 재기→PSG 2200만유로→아시아 최초 유럽 트레블" },
+    { "url": "https://www.stnsports.co.kr/news/articleView.html?idxno=80163", "opened": true, "note": "KBS 날아라슛돌이 출신, 2011년 10세 발렌시아 유소년 입단(가족 전체 이주). 스페인 <수페르 데포르테> 2018 데뷔때 인성 극찬" },
+    { "url": "https://yourfield.nexon.com/today/view/2025052909553317714", "opened": true, "note": "스페인 아스: 이강인·PSG·아틀레티코 3자 의지 확고. 출전시간·새 도전 위해 이적 원함. 알레마니 지지, 시메오네도 만족하는 카드 평가" },
+    { "url": "https://www.koreaes.com/news/articleView.html?idxno=400136", "opened": true, "note": "플레이스타일: 좁은공간 탈압박·드리블(라리가 드리블성공률 1위), 왼발킥·세트피스, 경기당 키패스 상위권, 다재다능(좌우윙·중미·가짜9)" },
+    { "url": "https://www.footboom1.com/ko/news/football/2335507-atletico-madrid-in-pursuit-of-a-new-number-5", "opened": false, "note": "403 차단. 아틀레티코 스쿼드·시메오네 시스템 확인하려 했으나 미개봉" },
+    { "url": "https://namu.wiki/w/아틀레티코 마드리드/시메오네 체제", "opened": false, "note": "WAF 차단. 시메오네 4-4-2 세부는 WebSearch 요약(4-4-2 현대화·두줄수비·윙어 수비가담·갤러거 측면·줄리아노 우측윙)으로 대체 확인" }
+  ],
+  "factcheck": [
+    { "claim": "이강인 아틀레티코 이적은 2026년 7월 초 '구두 합의 완료·공식 발표 임박' 단계(로마노 Here we go, 스페인 Sport/Marca), 아직 공식 발표 전", "sources": ["https://www.spotvnews.co.kr/news/articleView.html?idxno=826842", "https://first.nulfparang.com/entry/이강인-아틀레티코-오피셜"] },
+    { "claim": "이적료는 매체마다 상이 — 기본 3000만유로+보너스(마르카) ~ 4000만유로 약700억원(SPOTV/데일리스포츠). 공식 미확정", "sources": ["https://first.nulfparang.com/entry/이강인-아틀레티코-오피셜", "https://www.dailysportshankook.co.kr/news/articleView.html?idxno=430746"] },
+    { "claim": "이강인은 2011년 만 10세에 가족과 스페인 이주, 발렌시아 유소년 입단, 2018.10 발렌시아 1군 데뷔(스페인서 프로 시작)", "sources": ["https://ko.wikipedia.org/wiki/이강인", "https://www.stnsports.co.kr/news/articleView.html?idxno=80163"] },
+    { "claim": "이강인 PSG 두 시즌 공식전 124경기 16골16도움, 리그·UCL 우승(아시아 선수 유럽 트레블), 시즌 후반 벤치로 이적 결심", "sources": ["https://www.spotvnews.co.kr/news/articleView.html?idxno=826842", "https://www.dailysportshankook.co.kr/news/articleView.html?idxno=430746"] },
+    { "claim": "이강인 플레이스타일=좁은공간 탈압박·드리블(라리가 상위)·왼발킥·다재다능; 시메오네 4-4-2는 측면 자원에 강한 수비가담 요구 → 궁합의 긴장점", "sources": ["https://www.koreaes.com/news/articleView.html?idxno=400136", "https://ko.wikipedia.org/wiki/이강인"] }
+  ],
+  "variables": {
+    "keyword": "이강인 아틀레티코",
+    "headline_finding": "이적의 방향(출전시간·라리가 적합성·스페인 성장 서사)은 이강인에게 맞지만, 유일한 물음표는 시메오네의 수비적 4-4-2와 창의형 왼발 플레이메이커의 궁합",
+    "transfer_status_2026_07": "구두합의 완료·오피셜 임박(로마노 Here we go), 공식발표 전. 이적료 3000만~4000만유로로 매체차",
+    "tactical_tension": "시메오네=두줄수비·측면 수비가담·활동량 요구 vs 이강인=파이널서드 창의성. 아틀레티코의 공격적 진화(알바레스)·역습 킬패스·다재다능함이 궁합 여지",
+    "spain_origin": "2011년 10세 가족이주→발렌시아 유소년→2018 1군데뷔→코파·U20 골든볼→방출 눈물→마요르카→PSG 트레블→라리가 회귀(설욕 서사)",
+    "competition": "줄리아노 시메오네(감독 아들·우측윙)·코너 갤러거 등과 측면·2선 경쟁, 수비기여로 신뢰 확보해야 주전"
+  },
+  "hermes_score": 93,
+  "hermes_note": "독립 심판(별도 에이전트) 93 PASS. 이적설 단정 일관 절제·팩트 근거 전부 일치. 지시반영: '사실상 확정'→'구두 합의가 끝나 공식 발표만 남았다' 순화, 등번호(그리즈만7번) 공식발표시 확정 한 줄 추가"
+}
