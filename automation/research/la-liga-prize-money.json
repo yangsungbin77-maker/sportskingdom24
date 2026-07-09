@@ -1,0 +1,34 @@
+{
+  "type": "info",
+  "keyword": "라리가 우승 상금",
+  "note": "EPL·분데스리가 우승상금 글과 같은 리그별 상금 클러스터. 차별화 각도=성적배분금(€54.91M) vs 총 중계권 배분금(€156M) 분리 + 우승팀 바르셀로나가 배분금 1위 아님(레알 €157.52M) 반전 + EPL 강등 번리>라리가 우승 바르셀로나 역전. 내부링크 EPL/분데스/월드컵 3개로 클러스터 결속.",
+  "serp": [
+    { "url": "https://goaltheball.com/la-liga-prize-money/", "opened": true, "note": "성적배분 17%=€58.4M(€343.5M 풀 기준)+순위별 %표. 5시즌 분할지급·초기 €20M 언급. 우승 상금 정의 혼용" },
+    { "url": "https://bolavip.com/en/soccer/laliga-prize-money", "opened": true, "note": "우승 시 약 €60M(성적 TV분배), 50/25/25 구조 명시. 24/25 바르사€157.9M·레알€156.4M(수치 뒤바뀜 있음), 총 오디오비주얼>€150M" },
+    { "url": "https://sports.yahoo.com/articles/official-real-madrid-earn-157-140700151.html", "opened": true, "note": "공식. 24/25 레알€157.52M(1위)·바르사€156.45M(2위)·아틀레티€108.17M. 총 €1.432B(1·2부). 50/25/25 공식 원문. 우승팀 아닌 레알이 배분금 1위 근거" },
+    { "url": "https://sillyseason.com/payout/la-liga-prize-money-101083/", "opened": true, "note": "23/24 레알€158M 우승·바르사€154M·헤로나€115M·그라나다(20위)€48.5M. 50/25/25, 최소보장 ~€50M, 총풀 ~€1B/계약 €2.65B" },
+    { "url": "https://www.e360hubs.com/2023/04/spanish-la-liga-prize-money-for-each.html", "opened": true, "note": "균등€500M/성적€250M/자원€250M=총~€1B. 순위별 추정표(1위 바르사€160M~10위€65M), 최소보장 €50M. 1위17%~20위0.25%" },
+    { "url": "https://sports.khan.co.kr/article/202605211619003", "opened": true, "note": "스포츠경향. 번리(EPL강등) 총 €160M(약2798억, 배분£96.9M+파라슈트£50~55M) > 바르사 라리가배분€155M(약2710억). 바르사 성적배분 €54.91M(17%). 바르사 총수입 딜로이트 €974.8M" },
+    { "url": "https://en.wikipedia.org/wiki/2024%E2%80%9325_La_Liga", "opened": true, "note": "24/25 우승=바르셀로나 28번째 우승, 승점88 vs 레알84. 성적 팩트 확정" },
+    { "url": "https://www.si.com/soccer/barcelona-2024-25-la-liga-title-by-the-numbers-", "opened": true, "note": "바르사 24/25 우승 확정(15 May 2025, 2경기 남기고), 102득점 88승점 교차확인" },
+    { "url": "https://cidermics.com/contents/detail/1080", "opened": true, "note": "레알 CL 우승상금 €97.8M(약1237억) — 라리가 아닌 챔스 수치. 챔스 비교 근거로만 사용" },
+    { "url": "https://tribuna.com/en/blogs/heres-how-much-all-20-la-liga-teams-will-earn-this-season-ba/", "opened": false, "note": "403 차단. 제목상 20개 구단 배분·바르사 레알 대비 2% 차이 — yahoo 공식으로 대체 확인" }
+  ],
+  "factcheck": [
+    { "claim": "라리가 중계권 배분 공식: 균등 50% + 성적(최근5시즌) 25% + 상업(시청자·팬덤·사회영향) 25%, 1부 구단 최소 ~€50M 보장", "sources": ["https://sports.yahoo.com/articles/official-real-madrid-earn-157-140700151.html", "https://bolavip.com/en/soccer/laliga-prize-money", "https://www.e360hubs.com/2023/04/spanish-la-liga-prize-money-for-each.html"] },
+    { "claim": "2024/25 공식 중계권 배분 1위=레알 €157.52M, 2위=바르셀로나 €156.45M, 3위=아틀레티코 €108.17M — 우승팀 바르사가 아닌 준우승 레알이 배분금 1위", "sources": ["https://sports.yahoo.com/articles/official-real-madrid-earn-157-140700151.html", "https://bolavip.com/en/soccer/laliga-prize-money"] },
+    { "claim": "우승 성적 배분금은 성적 몫의 17%=약 €54.91M(약 961억원). 순위 비중 1위17%→2위15%→3위13%→4위11%…20위0.25%", "sources": ["https://sports.khan.co.kr/article/202605211619003", "https://goaltheball.com/la-liga-prize-money/", "https://www.e360hubs.com/2023/04/spanish-la-liga-prize-money-for-each.html"] },
+    { "claim": "2024-25 라리가 우승=바르셀로나(28번째 우승, 승점88 vs 레알84)", "sources": ["https://en.wikipedia.org/wiki/2024%E2%80%9325_La_Liga", "https://www.si.com/soccer/barcelona-2024-25-la-liga-title-by-the-numbers-"] },
+    { "claim": "EPL 강등 번리 수입(약 €160M/2798억, 중계배분£96.9M+파라슈트 1년차 £48.95M) > 라리가 우승 바르셀로나 리그배분(€155M/2710억). EPL 리그 미디어매출 라리가의 약 2배, 파라슈트 1년차 £48.95M(55%)", "sources": ["https://sports.khan.co.kr/article/202605211619003", "https://en.wikipedia.org/wiki/Premier_League_parachute_and_solidarity_payments"] },
+    { "claim": "배분금은 5시즌에 걸쳐 분할 지급, 우승팀 초기 수령 ~€20M(성적 배분은 최근 5시즌 성적 기준)", "sources": ["https://goaltheball.com/la-liga-prize-money/", "https://sillyseason.com/payout/la-liga-prize-money-101083/"] }
+  ],
+  "variables": {
+    "keyword": "라리가 우승 상금",
+    "headline_finding": "라리가엔 단일 우승상금 없음. 성적배분금 €54.91M vs 총 배분금 €156M — 기준 차이가 검색 숫자 혼란의 원인",
+    "reversal_champion_not_top": "2024-25 우승팀 바르셀로나(€156.45M)가 배분금 1위 아님, 준우승 레알(€157.52M)이 1위 — 성적25%는 5년평균·상업25%는 팬덤이라 우승≠돈1등",
+    "reversal_epl_relegation": "EPL 강등 번리(~€160M)가 라리가 우승 바르셀로나 리그배분(~€155M)보다 많이 벌었다(중계권 규모 EPL이 약 2배)",
+    "distribution_philosophy": "균등 50%가 절반이라 순위별 격차가 EPL보다 완만, 꼴찌도 ~€50M 보장",
+    "cl_is_real_jackpot": "빅클럽 진짜 돈방석은 리그 우승보다 챔피언스리그 출전권·성적(우승 시 UEFA 배분 €100M+)"
+  },
+  "hermes_score": 91
+}
