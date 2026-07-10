@@ -1,0 +1,136 @@
+{
+  "type": "analysis",
+  "keyword_root": "이정효 감독 전술",
+  "keyword_cluster": [
+    "이정효 포메이션",
+    "이정효 4-4-2",
+    "이정효 감독 기록",
+    "이정효 수원 삼성",
+    "이정효 광주FC 성적",
+    "이정효 빌드업",
+    "인버티드 풀백",
+    "2-3 빌드업",
+    "하프 스페이스",
+    "아이솔레이션 축구",
+    "이정효 데 제르비",
+    "이정효 감독 약점"
+  ],
+  "keyword_filters": {
+    "competition": "낮음 — 상위 1페이지가 나무위키·개인블로그·소형 매체. 전술을 실제로 해설한 글은 거의 없고 인물 소개나 단신 기사 위주",
+    "demand": "구글 자동완성에 '이정효 감독 전술/포메이션/기록' 노출. 2026년 수원 삼성 부임 + K리그2 선두 경쟁으로 검색 수요 상승 구간",
+    "intent": "정보성 — 상위 결과가 위키·블로그·칼럼. 쇼핑탭·지도팩 없음"
+  },
+  "serp": [
+    { "url": "https://namu.wiki/w/이정효", "opened": true, "note": "Cloudflare 챌린지로 WebFetch·Jina 실패 → Chrome MCP 실브라우저로 열람. 프로필·선수경력·수상·어록. 생년월일 1975-05-15(음력) 표기, 포털은 7월 23일" },
+    { "url": "https://namu.wiki/w/이정효/감독 스타일", "opened": true, "note": "전술 원문. 포지션 플레이, 2-3 빌드업+인버티드 풀백, 측면 압박 트리거, 하프 스페이스, 아이솔레이션, 데 제르비·브라이튼·맥케나 비교. 단점=체력 소모" },
+    { "url": "https://namu.wiki/w/광주 FC/이정효호", "opened": true, "note": "시즌별 실적 표. 통산 180전 85승 40무 55패, 2022 K2 우승(25승11무4패), 2023 3위, 2024 9위, 2025 7위+코리아컵 준우승, 전술스타일 4-4-2 명기" },
+    { "url": "https://namu.wiki/w/수원 삼성 블루윙즈/이정효호", "opened": true, "note": "2026 수원 체제. 선임 과정, 4+1년, 사단 전원 이적, 전술에 스위퍼 키퍼·수비 중심 후방 빌드업 추가. 15경기 10승2무3패 21득점 12실점(문서 내 승률 표기 90%는 오기로 판단, 채택 안 함)" },
+    { "url": "https://ko.wikipedia.org/wiki/이정효", "opened": true, "note": "연도별 지도자 경력. 선수 통산 222경기 13골. 나무위키와 아주대 감독 연도 표기가 미세하게 다름" },
+    { "url": "https://www.starnewskorea.com/sports/2026/03/15/2026031412272024375", "opened": true, "note": "수원에서 전술을 '비밀 레시피'라며 비공개. 훈련으로 몸에 익히게 하는 방식. 노출되면 상대가 대응한다는 이유" },
+    { "url": "https://www.dailysportshankook.co.kr/news/articleView.html?idxno=401292", "opened": true, "note": "약 1400자 평론. 강한 전방압박·빠른 역습·무명 선수 육성. 전술 메커니즘 설명은 얕음(우리 차별화 지점)" },
+    { "url": "https://blog.plco.pro/userstory-leejunghyo/", "opened": true, "note": "훈련 준비 방식. 다이어리 3권, 훈련 전 세션·볼 위치까지 사전 확정, 분석팀 협업" },
+    { "url": "https://tsnkoreanews.com/news/article.html?no=25619", "opened": true, "note": "알 힐랄전 프리뷰 칼럼. 수적 우위 빌드업·전방압박·역습 서술" },
+    { "url": "https://www.seoul.co.kr/news/sport/soccer/2026/02/24/20260224500271", "opened": true, "note": "2025 KFA 어워즈 '올해의 지도자' 수상(2026-02-24 시상). '한국 축구 틀 깨겠다' 소감" }
+  ],
+  "serp_summary": {
+    "intent": "정보성 — 이정효가 실제로 어떤 축구를 하는지 알고 싶어함",
+    "common_required": [
+      "프로필·경력",
+      "광주에서의 성과",
+      "공격 축구·전방 압박이라는 키워드",
+      "수원 삼성 부임 사실"
+    ],
+    "gaps": [
+      "2-3 빌드업이 구체적으로 어떤 구조인지 설명한 글이 나무위키 외에 사실상 없음",
+      "'압박 트리거가 측면 전개 순간'이라는 핵심 원리를 짚은 대중글 없음",
+      "기본 4-4-2인데 4-3-3처럼 보이는 이유를 설명한 글 없음",
+      "약점(체력·5백 상대 결정력·퇴장)을 정면으로 다룬 글 거의 없음",
+      "시즌별 기록을 표로 묶어 한눈에 보여주는 글 없음"
+    ],
+    "avg_length": "1,000~1,500자 수준의 단신·칼럼이 다수(나무위키 제외). 우리 5,500자대로 상회"
+  },
+  "factcheck": [
+    {
+      "claim": "광주 FC 4시즌 통산 180경기 85승 40무 55패",
+      "sources": [
+        "https://namu.wiki/w/광주 FC/이정효호",
+        "https://ko.wikipedia.org/wiki/이정효"
+      ]
+    },
+    {
+      "claim": "2022 K리그2 우승, 25승 11무 4패 승점 86으로 당시 K리그2 한 시즌 최다 승점",
+      "sources": [
+        "https://v.daum.net/v/20221116131638185",
+        "https://ko.wikipedia.org/wiki/광주_FC"
+      ]
+    },
+    {
+      "claim": "2024-25 ACL 엘리트 8강 진출(K리그 시·도민구단 최초), 8강에서 알 힐랄에 0-7 패",
+      "sources": [
+        "https://news.tf.co.kr/read/soccer/2200903.htm",
+        "https://biz.heraldcorp.com/article/10474420"
+      ]
+    },
+    {
+      "claim": "ACL 엘리트 요코하마 F. 마리노스전 7-3 승리. ACL에서 일본 팀이 7실점한 첫 사례",
+      "sources": [
+        "https://isplus.com/article/view/isp202409170107",
+        "https://www.newspim.com/news/view/20240918000015"
+      ]
+    },
+    {
+      "claim": "2025 코리아컵 결승 전북전 1-2 패배(전북 이동준 선제 → 광주 프리드욘슨 동점 → 연장 전반 추가시간 이승우 결승골), 이정효는 전반 경고누적 퇴장",
+      "sources": [
+        "https://ko.wikipedia.org/wiki/2025년_코리아컵_결승전",
+        "https://v.daum.net/v/20251207094250385"
+      ]
+    },
+    {
+      "claim": "K리그 이달의 감독상 3회 — 2022년 4월·9월(1·2부 통합 시상), 2023년 6월",
+      "sources": [
+        "https://www.kleague.com/news_view.do?seq=85792",
+        "https://namu.wiki/w/이정효"
+      ]
+    },
+    {
+      "claim": "2025시즌 대한축구협회(KFA) 어워즈 올해의 지도자 수상(2026-02-24 시상)",
+      "sources": [
+        "https://www.seoul.co.kr/news/sport/soccer/2026/02/24/20260224500271",
+        "https://namu.wiki/w/이정효"
+      ]
+    },
+    {
+      "claim": "2025-12-24 수원 삼성 제11대 감독 선임, 2026-01-02 취임, 4+1년 계약",
+      "sources": [
+        "https://www.kleague.com/news_view.do?seq=93902",
+        "https://www.bluewings.kr/media/news/51"
+      ]
+    },
+    {
+      "claim": "2026 K리그2 개막 5연승(창단 첫), 7월 4일 성남전까지 15경기 10승 2무 3패 승점 32로 부산과 동률 2위(다득점 열세)",
+      "sources": [
+        "https://www.newspim.com/news/view/20260704000074",
+        "https://namu.wiki/w/수원 삼성 블루윙즈/이정효호"
+      ]
+    },
+    {
+      "claim": "선수 시절 부산 원클럽맨, 통산 222경기 13골 9도움",
+      "sources": [
+        "https://ko.wikipedia.org/wiki/이정효",
+        "https://namu.wiki/w/이정효"
+      ]
+    }
+  ],
+  "variables": {
+    "keyword": "이정효 감독 전술",
+    "headline_finding": "기본 4-4-2가 소유 시 2-3 빌드업으로 변형되고, 압박 스위치는 상대가 공을 측면으로 흘리는 순간에만 켜진다 — 이 두 문장이 이정효 축구의 전부",
+    "unique_angle_1": "'4-4-2인데 왜 4-3-3처럼 보이나'를 인버티드 풀백으로 설명 — SERP 상위 대중글 중 설명 0곳",
+    "unique_angle_2": "압박 트리거가 '무조건 전방압박'이 아니라 '측면 전개 순간'이라는 점",
+    "unique_angle_3": "시즌별 기록 표 + 약점 3종(체력·5백 상대 결정력·퇴장) 정면 서술",
+    "career_record": "광주 180경기 85승 40무 55패(승률 47.22%)",
+    "serp_median_length": "약 1,300자(우리 5,500자대)",
+    "judge_rounds": "1차 86점 → 3건 정정 후 재채점"
+  },
+  "hermes_score": 94,
+  "hermes_note": "독립 심판 2라운드. 1차 86점 → 요코하마 최다실점 과확대·코리아컵 '역전패' 오표현·라운드/경기수 불일치 정정 후 94점 통과. '2022년 이달의 감독상 9월 → 6월' 지적은 K리그 공식 뉴스 재검증 결과 원문(4월·9월)이 맞아 심판이 철회. 심판이 확인 못 한 수원 득실(21-12)은 1차 출처가 없어 본문에서 수치를 빼고 정성 서술로 대체."
+}
