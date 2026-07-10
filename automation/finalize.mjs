@@ -93,6 +93,41 @@ console.log(`✔ 증거 게이트 통과 — SERP ${openedCount}개 열람 · �
 
 const run = (cmd) => execSync(cmd, { cwd: root, stdio: 'inherit' });
 
+// 0) 가이드 허브(/guide/) 클러스터 등록. 하단 '전체 축구 글'은 자동이지만 상단 클러스터
+//    지도는 수동이라, 등록을 빠뜨리면 새 글이 주제별 지도에서 영영 빠진다.
+//    빌드 전에 넣어야 이번 빌드 결과물에 반영된다.
+// 순서가 곧 우선순위다. 좁은 주제를 먼저 두어야 "K리그 중계"가 '리그 · 대회'로 새지 않는다.
+const GUIDE_RULES = [
+  ['감독 · 지도자', /감독|사령탑|지도자/],
+  ['입문 · 규칙', /규칙|오프사이드|파울|카드|VAR|세트피스|추가시간/],
+  ['관전 · 중계', /중계|직관|티켓|경기장|응원|시청|쿠팡|스포츠 ?패스|구독/],
+  ['장비 · 풋살 · 용어', /축구화|유니폼|등번호|보호대|장비|풋살|용어/],
+  ['포지션 · 전술', /전술|포메이션|포지션|압박|빌드업|프레싱/],
+  ['선수', /선수|프로필|기록 비교|이적/],
+  ['리그 · 대회', /리그|상금|월드컵|챔피언스|ACL|아시안|아시아|유로|트로피|우승|대회|컵|스쿼드|명단/],
+];
+const guidePath = join(root, 'src', 'pages', 'guide.astro');
+let guideSrc = readFileSync(guidePath, 'utf8');
+
+if (new RegExp(`link\\('${slug}'`).test(guideSrc)) {
+  console.log(`▶ 가이드 등록 생략 — 이미 등록된 글입니다(${slug}).`);
+} else {
+  const hint = `${assignment.topic} ${slug}`;
+  const cluster = (GUIDE_RULES.find(([, re]) => re.test(hint)) || [])[0] || '이슈 · 핫토픽';
+  const label = String(assignment.topic).replace(/'/g, "\\'");
+
+  const cStart = guideSrc.indexOf(`title: '${cluster}'`);
+  if (cStart === -1) {
+    console.error(`FINALIZE_ERROR: guide.astro에 '${cluster}' 클러스터가 없습니다. 클러스터를 먼저 만들거나 GUIDE_RULES를 고치세요.`);
+    process.exit(1);
+  }
+  const itemsStart = guideSrc.indexOf('items: [', cStart);
+  const insertAt = itemsStart + 'items: ['.length;
+  guideSrc = guideSrc.slice(0, insertAt) + `\n\t\t\tlink('${slug}', '${label}'),` + guideSrc.slice(insertAt);
+  writeFileSync(guidePath, guideSrc);
+  console.log(`▶ 가이드 등록: ${cluster} ← ${slug}`);
+}
+
 // 1) 빌드가 깨지면 발행 중단.
 console.log('▶ 빌드 검증...');
 run('npm run build');
