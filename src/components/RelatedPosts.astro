@@ -1,0 +1,88 @@
+---
+// 글 하단 "함께 보면 좋은 글" — 내부링크 메시 강화(색인 경로 확보)
+// 슬러그 해시로 시작점을 분산시켜 모든 글이 고르게 링크를 받도록 한다.
+import { getCollection } from 'astro:content';
+import FormattedDate from './FormattedDate.astro';
+
+interface Props {
+	currentSlug: string;
+}
+
+const { currentSlug } = Astro.props;
+const all = (await getCollection('blog'))
+	.filter((p) => p.id !== currentSlug && !p.data.noindex) // noindex 글은 추천 제외
+	.sort((a, b) => a.id.localeCompare(b.id)); // 빌드 간 결정적 순서
+
+let h = 0;
+for (const ch of currentSlug) h = (h * 31 + ch.charCodeAt(0)) % 997;
+
+const picks: typeof all = [];
+if (all.length > 0) {
+	const start = h % all.length;
+	for (let i = 0; i < Math.min(4, all.length); i++) {
+		picks.push(all[(start + i) % all.length]);
+	}
+}
+---
+
+{
+	picks.length > 0 && (
+		<aside class="related" aria-label="함께 보면 좋은 글">
+			<h2>함께 보면 좋은 글</h2>
+			<ul>
+				{picks.map((p) => (
+					<li>
+						<a href={`/${p.id}/`}>{p.data.title}</a>
+						<span class="d">
+							<FormattedDate date={p.data.pubDate} />
+						</span>
+					</li>
+				))}
+			</ul>
+		</aside>
+	)
+}
+
+<style>
+	.related {
+		margin-top: 3rem;
+		padding: 1.4rem 1.6rem;
+		background: var(--bg-elev);
+		border: 1px solid var(--border);
+		border-left: 4px solid var(--accent);
+		border-radius: var(--radius-sm);
+	}
+	.related h2 {
+		margin: 0 0 0.9rem;
+		font-size: 1.15rem;
+	}
+	.related ul {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+	}
+	.related li {
+		display: flex;
+		align-items: baseline;
+		justify-content: space-between;
+		gap: 1rem;
+		padding: 0.45rem 0;
+		border-bottom: 1px dashed var(--border);
+	}
+	.related li:last-child {
+		border-bottom: none;
+	}
+	.related a {
+		font-weight: 600;
+		text-decoration: none;
+	}
+	.related a:hover {
+		color: var(--accent);
+		text-decoration: underline;
+	}
+	.related .d {
+		color: var(--text-dim);
+		font-size: 0.82rem;
+		white-space: nowrap;
+	}
+</style>
