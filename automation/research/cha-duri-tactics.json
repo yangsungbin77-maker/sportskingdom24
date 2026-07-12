@@ -1,0 +1,40 @@
+{
+  "type": "analysis",
+  "keyword": "차두리 감독 전술",
+  "serp": [
+    { "url": "https://star.ohmynews.com/NWS_Web/OhmyStar/at_pg.aspx?CNTN_CD=A0003236974", "opened": true, "note": "5/24 청주 3-2 승. 7경기 무패·3위·13경기 19골. 전술=3-4-3/5-4-1 병행, 빠른 직선 패턴, 측면 제갈재민·플라나, 최전방 김병오·페트로프" },
+    { "url": "https://star.ohmynews.com/NWS_Web/OhmyStar/at_pg.aspx?CNTN_CD=A0003167829", "opened": true, "note": "2025-09-23. 선임 배경(프로화 직후), 지도자 경력 연표(2016 분석관→2017 코치→2018 러시아WC→2019 오산고→2021 유스강화실장→2023 클린스만호), 30R 기준 8승10무12패 10위·37실점 최소 5위" },
+    { "url": "https://www.mt.co.kr/sports/2026/05/09/2026050913095382120", "opened": true, "note": "5/9. 4승3무3패 5위. 차범근 조언 '순위 중요하지 않다, 이제 시작'. 3-4-3·조직적 간격·약속된 움직임" },
+    { "url": "https://v.daum.net/v/20260226005724638", "opened": true, "note": "2/26 SPO. 철학 인용 '에너지와 열정으로 상대를 아프게 만드는 많이 뛰는 축구'. 1년차 10위, 2년차=색깔 공고히. 페트로프·김정민 보강" },
+    { "url": "https://www.mt.co.kr/sports/2026/03/22/2026032211503364659", "opened": true, "note": "3/22 용인전 프리뷰. 세트피스 수비 집중, 유머러스한 화법" },
+    { "url": "https://www.starnewskorea.com/sports/2026/05/09/2026050916534831691", "opened": true, "note": "5/9 수원FC 1-1. 5경기 무패(3승2무). '골을 넣어야 이긴다 1-0에서 2-0 3-0으로 제압해야' = 결정력 과제 근거" },
+    { "url": "https://www.mt.co.kr/sports/2026/06/06/2026060617540137746", "opened": true, "note": "6/6 수원 1-2 역전패로 8경기 무패(6승2무) 마감. '100분간 잘 싸웠다, 운이 수원 쪽으로' 선수 감싸는 화법" },
+    { "url": "https://www.newsis.com/view/NISX20260605_0003657443", "opened": true, "note": "6/5 공식. 5월 이달의 감독상(생애 첫). 5경기 4승1무 11득5실, 안산2-0·수원FC1-1·부산3-2·청주3-2·경남2-0" },
+    { "url": "https://namu.wiki/w/화성 FC/차두리호", "opened": false, "note": "403(Cloudflare). 검색 스니펫: 4-4-2 주전술+최근 3-4-3, 빌드업 3-1-3-3, 두줄수비+전방압박" },
+    { "url": "https://namu.wiki/w/차두리/지도자 경력", "opened": false, "note": "403(Cloudflare)" },
+    { "url": "https://www.youtube.com/watch?v=KX1cHuOKCrE", "opened": false, "note": "K썰전 '감독 차두리 전술 대박난 이유' — 영상이라 미열람, 전술 관심 수요 방증" },
+    { "url": "https://www.besteleven.com/news/articleView.html?idxno=303130", "opened": false, "note": "검색 결과로 확인: 2025시즌 결산 '성공과 아쉬움 모두 2026 자산' 인용, 9승13무17패 승점40 10위" }
+  ],
+  "serp_summary": {
+    "intent": "정보(인물 전술 분석). 상위=단신 기사·나무위키·유튜브. 경력+전술+2026 돌풍을 통합 정리한 블로그 글 없음",
+    "common_items": ["화성FC 감독(2024-12 선임)", "많이 뛰는 압박 축구 철학", "2026 돌풍·이달의 감독상", "3-4-3/5-4-1", "차범근 부자 서사"],
+    "gap": "기사들은 경기 단신 위주, 나무위키는 접근성 낮음. ①경력 연표+전술 원리+돌풍 타임라인 통합 ②이정효(시리즈 1편)와의 스타일 비교가 정보 게인 ③포메이션 표기가 자료마다 다른 이유 해설",
+    "cluster_keywords": ["차두리 화성FC", "화성FC 전술", "차두리 감독 경력", "차두리 이달의 감독상", "화성FC 순위", "3-4-3 포메이션", "전방 압박", "차범근 차두리", "K리그2 돌풍", "차두리 포메이션"]
+  },
+  "factcheck": [
+    { "claim": "차두리는 2024-12-24 화성FC 7대 감독으로 선임, 프로 1군 사령탑은 처음(2025=데뷔 시즌)", "sources": ["https://star.ohmynews.com/NWS_Web/OhmyStar/at_pg.aspx?CNTN_CD=A0003167829 (프로화 직후 선임·첫 프로 지휘)", "나무위키/스포키 검색 결과(2024-12-24 7대 감독 정식 선임)"] },
+    { "claim": "2025시즌 화성FC 최종 성적 9승 13무 17패 승점 40, K리그2 10위", "sources": ["나무위키 화성FC/2025년 검색 결과(9승13무17패 승점40 10위)", "https://v.daum.net/v/20260226005724638 (첫해 10위 안착)", "https://www.besteleven.com/news/articleView.html?idxno=303130 (시즌 결산)"] },
+    { "claim": "2026년 5월 이달의 감독상 생애 첫 수상(6/5 발표) — 5월 5경기 4승1무·11득점 5실점, 부산·청주 3-2, 안산·경남 2-0, 수원FC 1-1", "sources": ["https://www.newsis.com/view/NISX20260605_0003657443", "https://www.starnewskorea.com/sports/2026/06/05/2026060510542386852 및 스포츠경향 등 다수 오피셜 보도"] },
+    { "claim": "전술 철학 인용 '에너지와 열정으로 상대를 아프게 만드는 축구, 많이 뛰는 축구' + 2026 기본 3-4-3(수비 시 5-4-1), 측면 제갈재민·플라나, 최전방 김병오·페트로프", "sources": ["https://v.daum.net/v/20260226005724638 (철학 인용 원문)", "https://star.ohmynews.com/NWS_Web/OhmyStar/at_pg.aspx?CNTN_CD=A0003236974 (3-4-3·5-4-1·선수 기용·직선 패턴)", "https://www.mt.co.kr/sports/2026/05/09/2026050913095382120 (3-4-3·조직적 간격)"] },
+    { "claim": "무패 행진은 8경기(6승2무)에서 6/6 수원 삼성전 1-2 역전패로 마감", "sources": ["https://www.mt.co.kr/sports/2026/06/06/2026060617540137746", "https://www.starnewskorea.com/sports/2026/06/06/... 동일 사안 스타뉴스 보도"] },
+    { "claim": "지도자 경력 연표: 2016 슈틸리케호 전력분석관→2018 러시아WC 경기분석관→2019 오산고 감독→2021 FC서울 유스 강화실장→2023 클린스만호 코치·테크니컬 어드바이저", "sources": ["https://star.ohmynews.com/NWS_Web/OhmyStar/at_pg.aspx?CNTN_CD=A0003167829 (연표 전체)", "나무위키 차두리/지도자 경력(검색 스니펫 교차)"] }
+  ],
+  "variables": {
+    "keyword": "차두리 감독 전술",
+    "headline_finding": "SERP 12개 중 경력+전술 원리+2026 돌풍을 통합한 글 0개(전부 경기 단신·위키·영상) — 통합 분석과 이정효 비교가 정보 게인",
+    "serp_analysis": "12개 시도 8개 직접 열람(나무위키 3종 Cloudflare 403, 유튜브 1)",
+    "differentiation": "①분석관→유스→코치 10년 루트 재조명(이름값 오해 반박 프레임) ②포메이션 표기가 자료마다 다른 이유 해설(팁 박스) ③2026 돌풍 타임라인 표 ④감독 시리즈 1편 이정효와 스타일 비교 섹션",
+    "timeliness": "순위·기록은 6월 초 기준으로 시점 명시, 최신 순위는 구단 공식 사이트로 안내"
+  },
+  "hermes_score": 91
+}
