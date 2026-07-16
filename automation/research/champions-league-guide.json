@@ -1,0 +1,35 @@
+{
+  "type": "guide",
+  "serp": [
+    { "url": "https://ko.wikipedia.org/wiki/UEFA_챔피언스리그", "opened": true, "note": "정의(1955~, UEFA 주관)·최다 우승 순위(레알15·밀란7·바이에른6·리버풀6·바르사5)·최근 5년 우승·빅 이어" },
+    { "url": "https://en.wikipedia.org/wiki/2025–26_UEFA_Champions_League", "opened": true, "note": "25-26 일정 — 리그 페이즈 9/16~1/28, PO 2월, 16강 3월, 8강 4월, 4강 4월말~5월초, 결승 5/30 부다페스트" },
+    { "url": "https://m-i.kr/news/articleView.html?idxno=1160405", "opened": true, "note": "새 포맷 — 36팀 단일 리그, 홈4·원정4 총 8경기, 총상금 24억3700만 유로(24-25)" },
+    { "url": "https://tsnkoreanews.com/news/article.html?no=27402", "opened": true, "note": "25-26 규정 — 챔스→유로파 드롭다운 폐지, 대회 간 이동 차단" },
+    { "url": "https://www.imaeil.com/page/view/2026053112471432886", "opened": true, "note": "결승 리포트 — PSG 승부차기 4-3(1-1), 하베르츠 선제·뎀벨레 PK, 이강인 결승 미출전" },
+    { "url": "https://en.wikipedia.org/wiki/2026_UEFA_Champions_League_final", "opened": true, "note": "결승 상세 — 5/30 푸슈카시 아레나, 61,035명, UCL 시대 2번째 백투백(레알 이후)" },
+    { "url": "https://sports.khan.co.kr/article/202606010000006", "opened": true, "note": "이강인 — 한국 선수 최초 챔스 2회 우승, 2년 연속 결승 0분, 시즌 39경기 4골5도움" },
+    { "url": "https://ko.wikipedia.org/wiki/2025-26년_UEFA_챔피언스리그", "opened": true, "note": "리그 페이즈 순위 — 아스날 1위(24점), PSG 11위(PO 루트로 우승). 일부 순위는 출처 간 상이해 글에는 1위·11위만 사용" },
+    { "url": "https://informationhot.kr/posts/챔피언스리그-새-포맷-완벽/", "opened": false, "note": "403 차단 — 경쟁 블로그(새 포맷 해설, 24-25 시점이라 25-26 결과 미반영 추정)" },
+    { "url": "https://www.newdaily.co.kr/site/data/html/2026/01/22/2026012200380.html", "opened": false, "note": "404 — 헤드라인만 참고(PSG 직행 실패), 본문 순위는 미사용" },
+    { "url": "https://www.uefa.com/uefachampionsleague/news/02a5-20901454177c-738c0ac757df-1000--paris-win-champions-league-meet-the-2025-26-victors/", "opened": false, "note": "503" },
+    { "url": "https://www.olympics.com/en/news/football-uefa-mens-champions-league-final-2026-arsenal-psg-results", "opened": false, "note": "ECONNRESET — 검색 요약으로 결승 결과 교차확인만" }
+  ],
+  "factcheck": [
+    { "claim": "새 포맷 — 36팀 단일 리그 페이즈 8경기, 1~8위 16강 직행, 9~24위 PO, 25위 이하 탈락", "sources": ["https://m-i.kr/news/articleView.html?idxno=1160405", "https://tsnkoreanews.com/news/article.html?no=27402", "https://en.wikipedia.org/wiki/2025–26_UEFA_Champions_League"] },
+    { "claim": "2025-26 일정 — 리그 페이즈 9월 중순~1월 말, 결승 2026-05-30 부다페스트 푸슈카시 아레나", "sources": ["https://en.wikipedia.org/wiki/2025–26_UEFA_Champions_League", "https://en.wikipedia.org/wiki/2026_UEFA_Champions_League_final"] },
+    { "claim": "2025-26 결승 — PSG가 아스날에 1-1 후 승부차기 4-3 승, UCL 시대 2번째 백투백", "sources": ["https://en.wikipedia.org/wiki/2026_UEFA_Champions_League_final", "https://www.imaeil.com/page/view/2026053112471432886"] },
+    { "claim": "최다 우승 — 레알 15회, 밀란 7회, 바이에른·리버풀 6회, 바르사 5회", "sources": ["https://ko.wikipedia.org/wiki/UEFA_챔피언스리그", "https://en.wikipedia.org/wiki/2026_UEFA_Champions_League_final"] },
+    { "claim": "이강인 — 한국 선수 최초 챔스 2회 우승(24-25·25-26), 두 결승 모두 미출전", "sources": ["https://sports.khan.co.kr/article/202606010000006", "https://www.imaeil.com/page/view/2026053112471432886"] },
+    { "claim": "챔스→유로파 이동(드롭다운) 25-26시즌부터 폐지", "sources": ["https://tsnkoreanews.com/news/article.html?no=27402", "https://en.wikipedia.org/wiki/2025–26_UEFA_Champions_League"] },
+    { "claim": "국내 챔스 중계 SPOTV(2026 기준) — 자사 검증 글과 정합", "sources": ["https://sportskingdom24.com/how-to-watch-overseas-football/", "https://www.spotvnow.co.kr/"] }
+  ],
+  "variables": {
+    "keyword": "챔피언스리그란",
+    "cluster": ["챔피언스리그 방식", "리그 페이즈", "챔피언스리그 일정", "챔피언스리그 우승팀", "챔스 최다 우승", "빅이어", "챔스 중계", "챔피언스리그 출전권", "챔스 결승", "챔스 16강 진출 방식"],
+    "headline_finding": "새 포맷 해설 글들은 전부 24-25 시점 — 25-26 완주 결과(PSG 백투백·PO 루트 우승·아스날 1위 준우승)까지 반영한 입문 글이 없음",
+    "korean_angle": "이강인 한국 최초 챔스 2회 우승 + 국내 중계 SPOTV + 한국시간 새벽 킥오프 — 한국 독자 각도",
+    "misconception": "챔스 탈락하면 유로파리그로 내려간다는 옛 상식 — 25-26부터 폐지된 사실로 정정",
+    "decision_tool": "옛 조별리그 vs 새 리그 페이즈 비교표 + 단계별 일정표 + 최다 우승·최근 우승 표"
+  },
+  "hermes_score": 92
+}
