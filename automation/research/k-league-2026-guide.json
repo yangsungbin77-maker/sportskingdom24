@@ -1,0 +1,35 @@
+{
+  "type": "guide",
+  "serp": [
+    { "url": "https://ko.wikipedia.org/wiki/2026%EB%85%84_K%EB%A6%AC%EA%B7%B81", "opened": true, "note": "2026 K리그1 12팀 명단·33R+파이널·2/28~12/6·김천 재창단 강등 확인" },
+    { "url": "https://www.kleague.com/news_view.do?seq=94022", "opened": true, "note": "공식 — 2026 달라지는 점: 29구단, 외국인 한도 폐지(출전 K1 5명), 외국인 GK 27년만 허용, 승강 방식 변경" },
+    { "url": "https://sportstrends.co.kr/k-league-tickets/", "opened": true, "note": "경쟁글1 — 예매 절차 스크린샷 강점. 약점: 제목에 가격 총정리인데 가격대 미제시 → 우리 차별화" },
+    { "url": "https://www.kleague.com/news_view.do?seq=94180", "opened": true, "note": "공식 — 슈퍼컵 2026: 2/21 전주, 전북(2025 더블) vs 대전(준우승·역대 최고), 쿠팡플레이 중계" },
+    { "url": "https://combyun.com/2025-k%EB%A6%AC%EA%B7%B8-%EC%98%88%EB%A7%A4-%EB%B0%A9%EB%B2%95-%EC%B4%9D%EC%A0%95%EB%A6%AC/", "opened": true, "note": "경쟁글2 — 할인·환불 강점, 좌석 가격대 표 있음(K1 일반석 1.5만~3만 등). 약점: 2025 기준, 2026 변화 미반영" },
+    { "url": "https://www.kleague.com/news_view.do?seq=94117", "opened": true, "note": "공식 — 2026 일정: 2/28 개막(인천-서울 등 6카드), 정규 33R 198경기, 파이널 34~38R, ACL 순연 가능" },
+    { "url": "https://ko.wikipedia.org/wiki/2026%EB%85%84_K%EB%A6%AC%EA%B7%B82", "opened": true, "note": "K리그2 17팀(김해·용인·파주 신규), 수원FC·대구 강등, 1·2위 자동승격+3~6위 PO(2027 14팀 확대)" },
+    { "url": "https://ko.wikipedia.org/wiki/%EB%8C%80%ED%95%9C%EB%AF%BC%EA%B5%AD%EC%9D%98_%EC%8A%A4%ED%8F%AC%EC%B8%A0_%EC%A4%91%EA%B3%84%EA%B6%8C", "opened": true, "note": "K리그1 중계 — 쿠팡플레이(2022.5~) + JTBC SPORTS·IB·ENA·지상파 TV 편성" },
+    { "url": "https://namu.wiki/w/%ED%95%98%EB%82%98%EC%9D%80%ED%96%89%20K%EB%A6%AC%EA%B7%B81%202026", "opened": false, "note": "403 차단" },
+    { "url": "https://zenithworlds.com/쿠팡플레이-축구-중계-보는방법/", "opened": false, "note": "403 차단" },
+    { "url": "https://brunch.co.kr/@3bedc0369558451/1188", "opened": false, "note": "접근 제한된 브런치" },
+    { "url": "https://www.ticketlink.co.kr/sports/football/schedule", "opened": true, "note": "티켓링크 축구 예매 페이지 존재 확인(구단 목록은 JS 렌더라 미추출)" }
+  ],
+  "factcheck": [
+    { "claim": "2026 K리그1은 2월 28일 개막, 12월 6일 폐막, 정규 33R+파이널 5R(팀당 38경기)", "sources": ["https://www.kleague.com/news_view.do?seq=94117", "https://ko.wikipedia.org/wiki/2026%EB%85%84_K%EB%A6%AC%EA%B7%B81"] },
+    { "claim": "2026 K리그1 12팀 = 전북·대전·울산·서울·포항·강원·광주·제주SK·안양·김천·인천·부천 (인천·부천 승격, 수원FC·대구 강등)", "sources": ["https://ko.wikipedia.org/wiki/2026%EB%85%84_K%EB%A6%AC%EA%B7%B81", "https://ko.wikipedia.org/wiki/2026%EB%85%84_K%EB%A6%AC%EA%B7%B82"] },
+    { "claim": "슈퍼컵 2026: 2/21 전주월드컵, 전북(2025 리그·코리아컵 더블) vs 대전(준우승, 구단 역대 최고 성적)", "sources": ["https://www.kleague.com/news_view.do?seq=94180", "https://m.ekn.kr/view.php?key=20260119025450035"] },
+    { "claim": "K리그·국대 경기는 쿠팡 와우 멤버십(월 7,890원)만으로 시청 가능, 스포츠 패스는 해외 리그용", "sources": ["https://www.coupangplay.com/promotion/sportspass", "https://news.coupang.com/archives/38866/"] },
+    { "claim": "2026시즌 29구단 체제(K1 12+K2 17), 외국인 보유 한도 폐지(출전 K1 5명), 외국인 GK 약 27년 만 허용", "sources": ["https://www.kleague.com/news_view.do?seq=94022", "https://sports.news.nate.com/view/20260106n10512"] },
+    { "claim": "K리그1 티켓 일반석 대체로 1만5천~3만 원대(구단·좌석·경기별 상이, 블로그 집계 기준 2곳 일치)", "sources": ["https://sportstrends.co.kr/k-league-tickets/", "https://combyun.com/2025-k리그-예매-방법-총정리/"] },
+    { "claim": "티켓링크 취급 구단에 전북·인천·대전·서울·울산·포항·광주 포함(인천은 좌석 등급별로 구단 홈 병행), 강원은 인터파크", "sources": ["https://www.ticketlink.co.kr/sports/football/schedule", "https://sportstrends.co.kr/k-league-tickets/", "https://www.incheonutd.com/ticket/ticket_intro.php"] }
+  ],
+  "variables": {
+    "keyword": "K리그 입문",
+    "cluster": ["K리그 일정", "K리그 티켓 예매", "K리그 티켓 가격", "K리그 중계", "쿠팡플레이 K리그", "K리그1 팀", "K리그 승강제", "K리그1 K리그2 차이", "K리그 직관", "2026 K리그 개막"],
+    "headline_finding": "상위 글들이 '가격 총정리'를 약속하고도 가격대를 안 줌 — 좌석별 가격 범위 표 + 2026 시즌 완전 최신 반영(승강·슈퍼컵 부활·제도 변화)이 차별화",
+    "gap_2026": "경쟁글 전부 2025 기준으로 팀 목록·중계 정보가 낡음 — 2026 12팀 표·2/28 개막 카드 6경기를 공식 발표로 반영",
+    "misconception": "K리그 시청에 쿠팡플레이 스포츠 패스가 필요하다는 오해 — 와우 멤버십만으로 시청 가능함을 공식 출처로 정정",
+    "decision_tool": "입문자 팀 고르기 3기준(연고지·스타일·라이벌전) + 좌석 등급별 '이런 분께' 결정표"
+  },
+  "hermes_score": 96
+}
