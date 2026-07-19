@@ -1,5 +1,6 @@
 [
   { "label": "대한축구협회(KFA)", "url": "https://www.kfa.or.kr/", "tags": ["축구", "국가대표", "규칙", "협회"] },
+  { "label": "한국프로축구연맹(K리그)", "url": "https://www.kleague.com/", "tags": ["축구", "K리그", "직관", "티켓", "일정"] },
   { "label": "프리미어리그 공식", "url": "https://www.premierleague.com/", "tags": ["축구", "해외축구", "epl", "프리미어리그"] },
   { "label": "FIFA 공식", "url": "https://www.fifa.com/", "tags": ["축구", "월드컵", "국제", "규칙"] },
   { "label": "KBO(한국야구위원회)", "url": "https://www.koreabaseball.com/", "tags": ["야구", "프로야구", "기록", "일정"] },

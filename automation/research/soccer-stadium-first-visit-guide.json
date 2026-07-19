@@ -1,0 +1,40 @@
+{
+  "type": "guide",
+  "serp": [
+    { "url": "https://ssong79.com/14", "opened": true, "note": "FC서울 직관 준비물 체크리스트 — 필수/응원/날씨/어린이 구분, 계절별 세분화가 강점. 예매·좌석·가격 없음" },
+    { "url": "https://www.clien.net/service/board/kin/18418445", "opened": true, "note": "첫 직관 준비물 Q&A — 방한 중무장·우비·화장실 타이밍·차량 자제 등 실전 조언" },
+    { "url": "https://chblife.co.kr/3분-만에-끝내는-k리그-예매-핵심-방법/", "opened": true, "note": "K리그 예매 절차(회원가입→좌석→결제→모바일티켓)+실패 원인. 구단별 할인·좌석도 없음" },
+    { "url": "https://sportstrends.co.kr/k-league-tickets/", "opened": true, "note": "2026 예매처(인터파크·티켓링크) 구단별 구분, 5일 전 오픈, 취소수수료 당일 무료·이후 10%. 가격대 미제시" },
+    { "url": "https://mediahub.seoul.go.kr/archives/1292680", "opened": true, "note": "서울월드컵경기장 반입금지(유리병·캔·페트) — 2020 코로나 문맥이라 응원 규정은 구식, 반입 규정만 참고" },
+    { "url": "https://www.fmkorea.com/best/2685020433", "opened": true, "note": "구역별 좌석 특징(N서포터/W벤치·지붕·중계시점/E흐름·햇빛/S원정)+층수·중앙 팁. insane-search+브라우저로 확보. 준비물·예매 없음" },
+    { "url": "https://www.ticketlink.co.kr/help/guide/reservation/soccer", "opened": true, "note": "JS 렌더 페이지라 본문 미추출 — 예매처 실존 확인용" },
+    { "url": "https://soccerline.kr/board/16514484", "opened": true, "note": "좌석 선정 팁 글 — 본문 lazy-load로 미추출, 검색 요약(2층·중앙 추천)만 참고" },
+    { "url": "https://balrocha.com/first-time-europe-soccer-tips/", "opened": false, "note": "DNS 불능(사이트 사망 추정)" },
+    { "url": "https://sports.todayblog100.com/11", "opened": false, "note": "DNS 불능" },
+    { "url": "https://www.jejuskfc.com/resources/common/policy/K리그 안전가이드라인.pdf", "opened": true, "note": "1차 출처 — K리그 안전 가이드라인 원문 PDF(29p). 반입금지물 목록 p.18 확보" },
+    { "url": "https://theqoo.net/ksoccer/2028785155", "opened": false, "note": "403 후 브라우저 로드 중 탭 행 — 포기" }
+  ],
+  "serp_summary": {
+    "intent": "정보/How-to — 첫 축구(K리그) 직관 준비 통합 가이드",
+    "common_must": ["필수 준비물(티켓·신분증·보조배터리)", "날씨·계절 복장", "응원용품(머플러)", "예매처(인터파크·티켓링크)", "좌석 구역 특징", "도착 시간", "반입금지"],
+    "gap": "상위 글이 준비물/예매/좌석 중 하나씩만 다룸 — 셋+타임라인+에티켓을 한 편에 통합한 글 부재. 가격은 전 SERP 공통 누락(상대 비교로만 커버)",
+    "our_angle": "첫 직관 A to Z 단일 완결편 + 성향별 좌석 결정표 + 킥오프 역산 타임라인 표 + 공식 가이드라인 기반 반입금지"
+  },
+  "factcheck": [
+    { "claim": "반입금지 = 주류 일체(장내 공식판매만 허용), 유리병·캔류·600ml 초과 PET(인정 개인용기 예외), 무기·정치표현물·반려동물·대형풍선", "sources": ["K리그 안전 가이드라인 PDF p.18 (jejuskfc.com 사본, 원문 직접 추출)", "steelers.co.kr 동일 문서", "mediahub.seoul.go.kr/archives/1292680 (유리병·캔·페트 금지 취지 일치)"] },
+    { "claim": "예매처는 구단별로 인터파크 티켓/티켓링크로 나뉘고 오픈은 통상 경기 5일 전 안팎(구단별 상이)", "sources": ["https://sportstrends.co.kr/k-league-tickets/", "https://chblife.co.kr/3분-만에-끝내는-k리그-예매-핵심-방법/"] },
+    { "claim": "좌석 특성 — N석 홈서포터·입석 응원, S석 원정석, W석 벤치 뒤·지붕·해 등짐·중계카메라 시점, E석 흐름 좋으나 낮경기 직사광선, 위층일수록 전술 시야", "sources": ["https://www.fmkorea.com/best/2685020433 (본문+베스트댓글)", "soccerline.kr 좌석팁 글 검색 요약"] },
+    { "claim": "취소 수수료는 예매 당일 무료가 일반적, 이후 수수료 발생(예매처·구단별 상이) — 글에서는 단정 없이 헤지 표현", "sources": ["https://sportstrends.co.kr/k-league-tickets/", "4evergorgeous.com K리그 직관 꿀팁 (검색 결과 요약)"] },
+    { "claim": "도착은 킥오프 1~2시간 전 권장(보안검색·입장 대기)", "sources": ["https://ssong79.com/14", "발로차닷컴 등 검색 결과 다수 일치"] }
+  ],
+  "variables": {
+    "keyword": "축구 직관",
+    "cluster": ["축구 직관 준비물", "K리그 직관", "K리그 티켓 예매", "축구장 좌석 추천", "서포터석", "원정석", "경기장 반입금지 물품", "직관 꿀팁", "축구 직관 데이트", "직관 복장", "K리그 티켓 가격", "첫 직관"],
+    "headline_finding": "상위 SERP는 준비물·예매·좌석을 각각 따로 다룸 — 통합 완결편 + 공식 안전가이드라인 1차 출처(600ml 규정)가 정보 게인",
+    "first_person_hook": "예매처·좌석 암호 때문에 헤맨 리서치 경험 + 캔커피 반입 오해",
+    "decision_tools": "성향별 좌석 결정표, 준비물 3묶음 체크리스트, 킥오프 역산 타임라인, 최종 한눈 정리표",
+    "primary_source": "K리그 안전 가이드라인 PDF 원문 직접 추출(반입금지물 p.18) — 검색 요약에 돌던 '500ml' 오류를 600ml로 교정"
+  },
+  "hermes_score": 92,
+  "hermes_notes": "A 35/40(가격 미커버 → FAQ 가격 문항 추가로 보강), B 28/30(데이트 태그 불일치 → FAQ에 데이트 문장 추가), C 14/15, D 15/15. 지적 2건 발행 전 반영 완료"
+}
