@@ -1,0 +1,38 @@
+{
+  "type": "profile",
+  "serp": [
+    { "url": "https://ko.wikipedia.org/wiki/김민재_(1996년생_축구_선수)", "opened": true, "note": "1차 프로필 — 1996-11-15, 190cm, CB, 바이에른 #3, 클럽 경력·이적료(나폴리 €20M·바이에른 €50M), K리그1 2회·세리에A 우승, 별명 괴물. A매치는 판마다 편차라 영문위키와 교차" },
+    { "url": "https://en.wikipedia.org/wiki/Kim_Min-jae_(footballer)", "opened": true, "note": "영문 위키 — 82캡 4골, 2022·2026 월드컵, 분데스리가 우승 2024-25·2025-26, 세리에A 베스트 수비수, 바이에른 €50M 아시아 최고 이적료. 핵심 수치 확정 소스" },
+    { "url": "https://www.fourfourtwo.co.kr/news/articleView.html?idxno=94394", "opened": true, "note": "포포투 — 2026-27 바이에른 예상 베스트11에서 김민재 후보 분류, 타·우파메카노와 주전 경쟁, 잔류 의사·이적설 없음. 현재 위치 근거" },
+    { "url": "https://football-eu-fun.com/?p=128", "opened": true, "note": "등번호 정리 — 전북·페네르바흐체·나폴리·바이에른 3번, 베이징 궈안만 2번, 국가대표 4번(팬 위해 유지). 등번호 섹션 근거" },
+    { "url": "https://kr.soccerway.com/player/kim-min-jae/vkXC6mad", "opened": true, "note": "소커웨이 — 바이에른, 계약 2028-06-30, 2023-07-18 나폴리서 €50M 이적. 계약·이적료 교차확인" },
+    { "url": "https://sports.daum.net/player/seriea/1663754", "opened": true, "note": "다음스포츠 — 바이에른, CB, 등번호 3번, 190cm 81kg. 신체·번호 교차확인" },
+    { "url": "https://www.goal.com/en-us/player/m-kim/2p1pns6j6id4nx3nbi7fv0wrt", "opened": true, "note": "goal.com 프로필 — 바이에른, defender, 1996-11-15, shirt 3. 기본 프로필 교차" },
+    { "url": "https://www.goal.com/kr/뉴스/키미히-재계약-기사", "opened": true, "note": "goal.com 기사 — 2025-03 시점 김민재가 바이에른 소속임 확인(본문은 팀동료 키미히 소식). 소속 확인 보조" },
+    { "url": "https://namu.wiki/w/김민재", "opened": false, "note": "나무위키 — 클라우드플레어 챌린지로 차단(insane-search·WebFetch 모두 403). 위키·기록사이트로 대체 교차확인" },
+    { "url": "https://namu.wiki/w/김민재/클럽 경력", "opened": false, "note": "나무위키 클럽경력 — 403. 위키백과 클럽 경력 표로 대체" }
+  ],
+  "serp_summary": {
+    "intent": "정보 — 김민재 소속팀·포지션·기록 확인",
+    "common_must": ["현 소속팀(바이에른)", "포지션(CB)", "클럽 이적 경로·이적료", "등번호", "우승 기록", "국가대표 기록"],
+    "gap": "상위가 나무위키·기록사이트 위주라 등번호(클럽3/국대4) 혼동·이적료 출처 편차를 정리해준 글이 드묾. 우승을 리그별로 묶고 시점 헤지한 요약표가 정보 게인",
+    "our_angle": "소속팀·포지션·등번호·이적경로·우승·국대를 표 3개로 압축 + 클럽3/국대4 등번호 혼동 해소 + 시점 헤지"
+  },
+  "factcheck": [
+    { "claim": "김민재 현 소속팀 바이에른 뮌헨(2023-07 나폴리서 약 €50M 이적, 아시아 최고 이적료), 계약 2028년 여름까지 표기", "sources": ["en.wikipedia.org/wiki/Kim_Min-jae_(footballer)", "kr.soccerway.com/player/kim-min-jae/vkXC6mad"] },
+    { "claim": "1996-11-15생, 190cm, 포지션 센터백, 클럽 등번호 3번·국가대표 4번(베이징 궈안 시절만 2번)", "sources": ["ko.wikipedia 김민재(1996)", "sports.daum.net 프로필", "football-eu-fun.com 등번호 정리"] },
+    { "claim": "우승 — 전북 K리그1 2회(2017·2018), 나폴리 세리에A(2022-23)·세리에A 베스트 수비수, 바이에른 분데스리가 우승", "sources": ["en.wikipedia (K League 1 2017·2018, Serie A 22-23, Bundesliga 24-25·25-26, Serie A Best Defender)", "ko.wikipedia 클럽 경력"] },
+    { "claim": "국가대표 A매치 82경기 4골, 2022·2026 월드컵 참가(집계 시점 기준, 이후 갱신)", "sources": ["en.wikipedia.org/wiki/Kim_Min-jae_(footballer)", "ko.wikipedia 김민재(1996)"] },
+    { "claim": "2026-27시즌 현지 예상 베스트11에서 후보 분류, 타·우파메카노와 주전 경쟁, 잔류 의사·이적설 없음", "sources": ["fourfourtwo.co.kr/news/articleView.html?idxno=94394", "goal.com/kr 2025-03 기사(바이에른 소속 확인)"] }
+  ],
+  "variables": {
+    "keyword": "김민재 소속팀",
+    "cluster": ["김민재 포지션", "김민재 등번호", "김민재 기록", "바이에른 뮌헨", "센터백", "김민재 이적료", "김민재 나폴리", "김민재 국가대표", "분데스리가", "괴물 수비수"],
+    "headline_finding": "등번호가 클럽 3번·국대 4번으로 갈리는 혼동과 이적료 출처 편차를 정리 — 이게 정보 게인",
+    "decision_tools": "프로필 요약표 + 소속팀 변천표 + 핵심 요약표 3종, 등번호 혼동 해소 섹션",
+    "first_person_hook": "전북·나폴리·바이에른·등번호 혼동으로 헤맨 리서치 경험",
+    "primary_source": "영문·한국어 위키백과 교차확인 + 소커웨이 계약/이적료. 나무위키는 CF 차단으로 대체",
+    "image_note": "실존 인물 — Higgsfield·구글 이미지 금지. Wikimedia Commons CC BY-SA 4.0 바이에른 시절 사진(Werner100359) 캡션·출처 표기해 사용"
+  },
+  "hermes_score": 96
+}
