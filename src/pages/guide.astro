@@ -31,11 +31,10 @@ const clusters = [
 		title: '포지션 · 전술',
 		emoji: '🧠',
 		items: [
-			link('kim-minjae-profile', '김민재 소속팀·포지션·기록 정리'),
-			link('soccer-positions-guide', '포지션 완전 정리 — GK부터 윙어까지'),
-			link('soccer-formation-basics', '포메이션 기초 — 4-4-2와 4-3-3'),
 			link('soccer-formation-counters', '포메이션 상성 — 맞불 전술'),
 			link('soccer-formation-pros-cons', '포메이션 장단점 정리'),
+			link('soccer-positions-guide', '포지션 완전 정리 — GK부터 윙어까지'),
+			link('soccer-formation-basics', '포메이션 기초 — 4-4-2와 4-3-3'),
 			link('soccer-pressing-tactics', '게겐프레싱·티키타카 전술 트렌드'),
 			link('soccer-buildup', '빌드업 축구란?'),
 		],
@@ -55,26 +54,24 @@ const clusters = [
 		emoji: '🏆',
 		items: [
 			link('champions-league-guide', '챔피언스리그란? 방식·일정·우승팀'),
-			link('league-comparison', '라리가 vs EPL vs 분데스리가 비교'),
 			link('epl-prize-money', '프리미어리그 우승 상금 구조'),
 			link('la-liga-prize-money', '라리가 우승 상금 총정리'),
 			link('bundesliga-prize-money', '분데스리가 상금 규모'),
 			link('worldcup-2026-prize-money-champions', '2026 월드컵 상금·역대 우승국'),
-			link('euro-guide', '유로(유럽 선수권) 완전 정리'),
 			link('soccer-trophy-types', '축구 트로피 종류 총정리'),
 			link('al-ittihad-squad', '알이티하드 선수 명단 — 사우디 리그'),
+			link('league-comparison', '라리가 vs EPL vs 분데스리가 비교'),
+			link('euro-guide', '유로(유럽 선수권) 완전 정리'),
 		],
 	},
 	{
 		title: '관전 · 중계',
 		emoji: '📺',
 		items: [
-			link('soccer-stadium-first-visit-guide', '축구 직관 가이드 — 처음 경기장 갈 때 준비물과 꿀팁'),
 			link('k-league-2026-guide', 'K리그 입문 — 팀·일정·티켓·중계 보는 법'),
+			link('soccer-stadium-first-visit-guide', '축구 직관 가이드 — 처음 경기장 갈 때 준비물과 꿀팁'),
 			link('how-to-watch-overseas-football', '해외축구 중계 보는 법 — 2026 리그별 총정리'),
 			link('coupang-play-sports-pass', '쿠팡플레이 스포츠 패스 요금·가입법'),
-			link('soccer-stadium-guide', '축구 직관 가이드 — 준비물·꿀팁'),
-			link('kleague-guide', 'K리그 입문 — 팀·일정·티켓·중계'),
 		],
 	},
 	{
@@ -82,20 +79,21 @@ const clusters = [
 		emoji: '⭐',
 		items: [
 			link('son-heung-min-profile', '손흥민 소속팀·등번호·기록'),
-			link('kim-min-jae-profile', '김민재 소속팀·포지션·기록'),
+			link('kim-minjae-profile', '김민재 소속팀·포지션·기록'),
 			link('lee-kang-in-atletico-madrid', '이강인 아틀레티코 이적 분석 — 시메오네 궁합'),
-				link('messi-vs-ronaldo-career-stats', '메시 vs 호날두 통산 기록 비교'),
+			link('messi-vs-ronaldo-career-stats', '메시 vs 호날두 통산 기록 비교'),
+			link('korean-beauty-athletes', '한국 미녀 운동선수 9인 — 실력으로 증명한 스타'),
 		],
 	},
 	{
 		title: '이슈 · 핫토픽',
-			emoji: '⚡',
-			items: [
-				link('kfa-innovation-committee-2026', '축구협회 혁신위 총정리 — 정몽규 사퇴·박지성'),
-			],
-		},
-		{
-			title: '장비 · 풋살 · 용어',
+		emoji: '⚡',
+		items: [
+			link('kfa-innovation-committee-2026', '축구협회 혁신위 총정리 — 정몽규 사퇴·박지성'),
+		],
+	},
+	{
+		title: '장비 · 풋살 · 용어',
 		emoji: '🥅',
 		items: [
 			link('soccer-shoes-guide', '축구화 고르는 법 — 잔디·풋살용'),
@@ -131,26 +129,39 @@ const liveCount = posts.length;
 
 			<div class="clusters">
 				{
-					clusters.map((c) => (
-						<section class="cluster">
-							<h2>
-								<span class="c-emoji">{c.emoji}</span> {c.title}
-							</h2>
-							<ul>
-								{c.items.map((it) =>
-									it.live ? (
+					// 발행글이 많은 클러스터를 앞으로. 0편짜리(전부 준비 중)는 빈 카드가 되므로 숨긴다.
+					clusters
+						.map((c) => ({ ...c, live: c.items.filter((it) => it.live), soon: c.items.filter((it) => !it.live) }))
+						.filter((c) => c.live.length > 0)
+						.sort((a, b) => b.live.length - a.live.length)
+						.map((c) => {
+						const { live, soon } = c;
+						return (
+							<section class="cluster">
+								<h2>
+									<span class="c-emoji">{c.emoji}</span> {c.title}
+									<span class="c-count">{live.length}</span>
+								</h2>
+								<ul>
+									{live.map((it) => (
 										<li>
 											<a href={`/${it.slug}/`}>{it.label}</a>
 										</li>
-									) : (
-										<li class="soon">
-											{it.label} <span class="badge">준비 중</span>
-										</li>
-									),
+									))}
+								</ul>
+								{soon.length > 0 && (
+									<details class="soon-wrap">
+										<summary>준비 중 {soon.length}편</summary>
+										<ul class="soon-list">
+											{soon.map((it) => (
+												<li class="soon">{it.label}</li>
+											))}
+										</ul>
+									</details>
 								)}
-							</ul>
-						</section>
-					))
+							</section>
+						);
+					})
 				}
 			</div>
 
@@ -242,6 +253,39 @@ const liveCount = posts.length;
 	}
 	.cluster a:hover {
 		border-bottom-color: #c8ff00;
+	}
+	.c-count {
+		margin-left: auto;
+		font-size: 0.78rem;
+		font-weight: 700;
+		background: #c8ff00;
+		border: 1px solid var(--ink, #1a1a1a);
+		border-radius: 999px;
+		padding: 0.05em 0.55em;
+	}
+	.soon-wrap {
+		margin-top: 0.7rem;
+		border-top: 1px dashed rgba(26, 26, 26, 0.25);
+		padding-top: 0.6rem;
+	}
+	.soon-wrap summary {
+		font-size: 0.85rem;
+		font-weight: 600;
+		opacity: 0.6;
+		cursor: pointer;
+		list-style: none;
+	}
+	.soon-wrap summary::-webkit-details-marker {
+		display: none;
+	}
+	.soon-wrap summary::before {
+		content: '▸ ';
+	}
+	.soon-wrap[open] summary::before {
+		content: '▾ ';
+	}
+	.soon-list {
+		margin-top: 0.5rem !important;
 	}
 	.soon {
 		opacity: 0.5;
