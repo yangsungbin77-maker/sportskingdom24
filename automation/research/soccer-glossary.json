@@ -1,0 +1,154 @@
+{
+  "type": "guide",
+  "keyword_root": "축구 용어",
+  "keyword_cluster": [
+    "축구 용어 사전",
+    "xG 뜻",
+    "기대득점 뜻",
+    "클린시트 뜻",
+    "축구 xG 계산",
+    "페널티킥 xG",
+    "xGOT 뜻",
+    "PPDA 뜻",
+    "키패스 뜻",
+    "프로그레시브 패스",
+    "K리그 데이터포털",
+    "축구 중계 용어"
+  ],
+  "serp": [
+    {
+      "url": "https://soccernoja.com/축구-용어-100개/",
+      "opened": true,
+      "note": "용어 100개를 25개씩 4구간으로 나열. 한 줄 설명뿐이고 표 없음. 결정적으로 xG를 아예 다루지 않음(클린시트만 있음) — 최대 갭"
+    },
+    {
+      "url": "https://ko.wikipedia.org/wiki/축구_용어_목록",
+      "opened": true,
+      "note": "자모음순 링크 나열. xG·클린시트·PPDA 모두 없음. 설명은 링크 수준으로 매우 얕음"
+    },
+    {
+      "url": "https://namu.wiki/w/축구_용어",
+      "opened": false,
+      "note": "403 차단으로 직접 열기 실패. 검색 스니펫상 포지션·포메이션 중심, 데이터 지표는 개별 문서로 분산"
+    },
+    {
+      "url": "https://ko.wikipedia.org/wiki/무실점",
+      "opened": true,
+      "note": "클린시트 정의·어원·집계 조건 확보. 0-0에서도 양팀 인정, 골키퍼 개인기록 산출 — 팩트 근거로 사용"
+    },
+    {
+      "url": "https://theanalyst.com/articles/what-is-expected-goals-xg",
+      "opened": true,
+      "note": "Opta 공식. xG 0~1 스케일, 변수 20개+, 페널티킥 고정 0.79, 흔한 오해 3종 확보 — 핵심 근거"
+    },
+    {
+      "url": "https://theanalyst.com/articles/what-are-expected-goals-on-target-xgot",
+      "opened": true,
+      "note": "xGOT 정의와 xG와의 차이(슛 이후 골문 도달 지점 반영), xG 0.1→xGOT 0.81 예시, 골키퍼 평가 연결 확보"
+    },
+    {
+      "url": "https://theanalyst.com/articles/opta-football-stats-definitions",
+      "opened": true,
+      "note": "xA·프로그레시브 패스(25% 전진)·PPDA·빅찬스·빌드업 어택 공식 정의 확보"
+    },
+    {
+      "url": "https://www.statsperform.com/opta-event-definitions/",
+      "opened": true,
+      "note": "키패스·인터셉트·클리어런스·태클·듀얼 공식 정의 확보. 표의 근거"
+    },
+    {
+      "url": "https://www.kleague.com/news_view.do?seq=2918",
+      "opened": true,
+      "note": "K리그 데이터포털 portal.kleague.com 및 부가데이터 항목(키패스·인터셉트·볼경합 등) 확인. 국내 독자 전용 차별화 근거"
+    },
+    {
+      "url": "https://www.a-ha.io/questions/414a325a770a2c85883e90762b72380e",
+      "opened": true,
+      "note": "클린시트 질문형 Q&A가 상위 노출 = 질문형 헤딩·FAQ 수요 검증"
+    }
+  ],
+  "serp_analysis": {
+    "intent": "정보성 — 중계·기사에서 본 용어의 뜻을 확인하려는 의도",
+    "common_items": [
+      "용어 목록",
+      "기본 규칙 용어",
+      "클린시트"
+    ],
+    "gaps": [
+      "1위 글(용어 100개)이 xG를 전혀 다루지 않음 — 현대 중계의 핵심 지표 공백",
+      "상위 글 전부 한 줄 나열식이라 '왜 그 숫자인지'를 설명하지 않음(페널티킥 0.79 근거 등)",
+      "PPDA는 낮을수록 강한 압박이라는 방향성 설명이 어디에도 없음",
+      "K리그 팬이 실제로 기록을 볼 수 있는 경로(데이터포털)를 아무도 안내하지 않음",
+      "xGOT·xA 등 파생 지표와 xG의 관계를 정리한 글 없음"
+    ],
+    "avg_length": "한 줄 나열형 100개 항목 수준, 설명 깊이는 얕음",
+    "serp_features": "PAA(클린시트 뜻·xG 뜻), 나무위키·위키백과 상위 점유"
+  },
+  "factcheck": [
+    {
+      "claim": "xG는 0~1 스케일이며 약 100만 개의 과거 슛 데이터를 학습해 산출한다",
+      "sources": [
+        "https://theanalyst.com/articles/what-is-expected-goals-xg",
+        "https://www.statsperform.com/insights/expected-goals-xg-the-football-metric-changing-analysis-betting-and-fan-engagement/"
+      ]
+    },
+    {
+      "claim": "페널티킥에는 0.79의 고정 xG 값이 부여된다",
+      "sources": [
+        "https://theanalyst.com/articles/what-is-expected-goals-xg",
+        "https://www.statsperform.com/opta-event-definitions/"
+      ]
+    },
+    {
+      "claim": "클린시트는 자기 팀 득점과 무관하게 무실점이면 인정되며 0-0에서는 양 팀 골키퍼가 모두 기록한다",
+      "sources": [
+        "https://ko.wikipedia.org/wiki/무실점",
+        "https://www.a-ha.io/questions/414a325a770a2c85883e90762b72380e"
+      ]
+    },
+    {
+      "claim": "PPDA는 수비 액션 한 번당 허용 패스 수로, 값이 낮을수록 압박 강도가 높다",
+      "sources": [
+        "https://theanalyst.com/articles/opta-football-stats-definitions",
+        "https://www.statsperform.com/opta-event-definitions/"
+      ]
+    },
+    {
+      "claim": "프로그레시브 패스는 공격 진영에서 공을 골문 쪽으로 25% 이상 전진시킨 성공 패스다",
+      "sources": [
+        "https://theanalyst.com/articles/opta-football-stats-definitions",
+        "https://www.statsperform.com/opta-event-definitions/"
+      ]
+    },
+    {
+      "claim": "K리그는 portal.kleague.com에서 공식기록과 부가데이터(키패스·인터셉트·볼경합 등)를 로그인 없이 공개한다",
+      "sources": [
+        "https://www.kleague.com/news_view.do?seq=2918",
+        "https://portal.kleague.com"
+      ]
+    },
+    {
+      "claim": "xGOT는 슛 이후 공이 골문에 도달하는 지점까지 반영하며, xG 0.1짜리 슛도 구석으로 향하면 0.81까지 올라간다",
+      "sources": [
+        "https://theanalyst.com/articles/what-are-expected-goals-on-target-xgot",
+        "https://www.statsperform.com/insights/introducing-expected-goals-on-target/"
+      ]
+    },
+    {
+      "claim": "2022-23시즌 산체스와 네베스는 페널티 제외 슈팅 63개로 동일했으나 12골(xG 10.2) vs 3골(xG 2.8)로 갈렸다",
+      "sources": [
+        "https://theanalyst.com/articles/what-is-expected-goals-xg",
+        "https://www.statsperform.com/insights/expected-goals-xg-the-football-metric-changing-analysis-betting-and-fan-engagement/"
+      ]
+    }
+  ],
+  "variables": {
+    "keyword": "축구 용어",
+    "headline_finding": "용어 100개를 다루는 1위 글이 정작 xG를 한 번도 다루지 않는다 — 중계에서 가장 자주 막히는 지표가 기존 용어사전에서 통째로 빠져 있음",
+    "unique_angle": "가나다순 나열이 아니라 '중계에서 나오는 순서'로 배치하고, 각 숫자가 왜 그 값인지(페널티킥 0.79 등)까지 설명",
+    "local_hook": "K리그 데이터포털(portal.kleague.com)에서 실제로 볼 수 있는 부가데이터 항목을 표 용어와 1:1로 연결",
+    "honest_limit": "K리그 공식 부가데이터 목록에 xG는 포함되지 않는다는 점을 숨기지 않고 명시, 사이트별 xG 수치 차이의 원인(모델 차이)도 함께 설명",
+    "actionable_tool": "용어를 외우지 않고 익히는 3단계(경기 후 4개 지표만 → 주당 용어 1개 → 선수 1명 추적)"
+  },
+  "hermes_score": 96
+}
