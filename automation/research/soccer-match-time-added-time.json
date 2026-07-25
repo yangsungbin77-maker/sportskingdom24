@@ -1,0 +1,37 @@
+{
+  "type": "guide",
+  "serp": [
+    { "url": "https://thepfsa.co.uk/ko/how-long-is-a-football-match/", "opened": true, "note": "PFSA 한국어 — 전반45·하프15·후반45=90, 추가시간 전후반 각 5~10분, 연장 15분×2=30분(중간 1분 이내 음료휴식), 승부차기, 유소년 연령별 시간표. 구조 1차 근거" },
+    { "url": "https://ko.wikipedia.org/wiki/축구", "opened": true, "note": "위키백과 — 45분×2=90, 하프15, 추가시간 심판 재량 보통 1~5분 최대 10, 연장 전후반 15분씩 30분, 승부차기 5명 교대. 핵심 수치 교차확정" },
+    { "url": "https://www.theifab.com/news/the-ifab-tackles-goalkeeper-time-wasting/", "opened": true, "note": "1차 출처(IFAB) — 골키퍼 8초룰: 8초 초과 시 상대 코너킥, 심판 5초 남았을 때 손 들어 카운트다운, 기존 6초 간접프리킥 대체, 2025-07-01 발효(2025 클럽월드컵부터). 최신 규칙 근거" },
+    { "url": "https://www.judgemate.com/en/guides/new-rules-at-the-2026-world-cup", "opened": true, "note": "2026 월드컵 신규 시간 규칙 — 8초룰(코너킥), 스로인 5초·골킥 5초 제한, 교체선수 10초 내 퇴장, 2022식 긴 추가시간 대신 지연 원천차단 방향. 정보게인 근거" },
+    { "url": "https://sports.news.nate.com/view/20100310n17705", "opened": true, "note": "네이트 사커브레이크 — 추가시간 심판 재량 계산 요소(중단·교체·부상·시간낭비), 두 개 시계 사용, 통계 사례(전반 평균 2.57분·후반 4.72분). 재량·계산 근거" },
+    { "url": "https://www.skysports.com/football/news/11095/13321150/eight-second-rule-to-reduce-time-wasting-by-goalkeepers-approved-for-next-season", "opened": true, "note": "스카이스포츠 — 8초룰 2025-26 시즌 발효, 6초 간접프리킥 대체, 트라이얼(PL2·몰타·이탈리아) 수백 경기서 위반 4건뿐, 심판 5초 카운트다운. 8초룰 교차확정" },
+    { "url": "https://learnthepitch.com/rules/goalkeeper-eight-second-rule", "opened": true, "note": "8초룰 세부 — 확실히 잡은 순간부터 카운트(퍼블/펌블은 시작 안 함), 5초에 손들고 카운트다운, 0에서 코너킥, 6초 간접프리킥 대체. 트리거 조건 교차" },
+    { "url": "https://m.cafe.daum.net/solfc/EK0j/9", "opened": true, "note": "다음카페 축구상식 — 용어 구분: 추가시간(공식 add time) vs 인저리타임(원래 '부상 시간'만 뜻하는 좁은 개념)vs 스토피지/로스타임. 추가시간 1~4분 보통·최대 10, 두 시계 관리. 용어 정리 정보게인 근거" },
+    { "url": "https://namu.wiki/w/축구/규칙", "opened": false, "note": "나무위키 축구/규칙 — 클라우드플레어 차단 추정, 미열람. 위키백과·PFSA로 대체" },
+    { "url": "https://huisdot.com/축구-시간/", "opened": false, "note": "축구 시간 블로그 — 연결 거부(ECONNREFUSED), 미열람" }
+  ],
+  "serp_summary": {
+    "intent": "정보 — 축구 경기 시간·추가시간이 어떻게 되는지 확인",
+    "common_must": ["정규 90분(45+45)", "하프타임 15분", "추가시간 개념·심판 재량", "연장전 30분", "승부차기"],
+    "gap": "상위 대부분이 90분·추가시간 기본만 다루고, ①인저리타임/추가시간/스토피지 용어 구분 ②2022 이후 추가시간 증가 배경 ③2025-26 골키퍼 8초룰·리스타트 카운트다운 같은 최신 규칙을 함께 정리한 글이 드묾. 이 셋이 우리 차별점",
+    "our_angle": "기본 구조 + 추가시간 재량 + 용어 3종 정리 + 2022 증가 배경 + 2025-26 8초룰/시간규칙 + 연장·승부차기를 표와 함께 완결"
+  },
+  "factcheck": [
+    { "claim": "정규 경기 전후반 각 45분=90분, 하프타임 15분, 성인 표준(유소년은 연령별로 단축)", "sources": ["https://thepfsa.co.uk/ko/how-long-is-a-football-match/", "https://ko.wikipedia.org/wiki/축구"] },
+    { "claim": "추가시간은 심판 재량으로 고정값 없음, 보통 1~5분 범위(그 이상 가능), 표시 시간 내 추가 지연 시 더 흘려보냄", "sources": ["https://ko.wikipedia.org/wiki/축구", "https://sports.news.nate.com/view/20100310n17705", "https://m.cafe.daum.net/solfc/EK0j/9"] },
+    { "claim": "추가시간(additional time)이 공식에 가까운 표현, 인저리타임은 원래 부상 시간만 뜻하던 좁은 말이 관용적으로 전체를 가리키게 됨, 스토피지/로스타임도 동의 관용어", "sources": ["https://m.cafe.daum.net/solfc/EK0j/9", "https://sports.news.nate.com/view/20100310n17705"] },
+    { "claim": "골키퍼 8초룰(2025-26~): 골키퍼가 공 8초 초과 소유 시 상대 코너킥, 심판 5초 카운트다운, 기존 6초 간접프리킥 대체, 2025-07-01 발효", "sources": ["https://www.theifab.com/news/the-ifab-tackles-goalkeeper-time-wasting/", "https://www.skysports.com/football/news/11095/13321150/eight-second-rule-to-reduce-time-wasting-by-goalkeepers-approved-for-next-season", "https://learnthepitch.com/rules/goalkeeper-eight-second-rule"] },
+    { "claim": "토너먼트 90분 뒤 동점이면 연장 전후반 15분씩 30분, 그래도 동점이면 승부차기(5명 교대 후 서든데스), 골든골은 현재 미사용", "sources": ["https://thepfsa.co.uk/ko/how-long-is-a-football-match/", "https://ko.wikipedia.org/wiki/축구"] }
+  ],
+  "variables": {
+    "keyword": "축구 경기 시간",
+    "cluster": ["추가시간", "인저리타임", "스토피지타임", "축구 연장전", "승부차기", "하프타임", "골키퍼 8초룰", "축구 규칙", "축구 후반전", "축구 경기 시간 규칙"],
+    "headline_finding": "상위글은 90분·추가시간 기본만 — 용어 3종 구분 + 2022 이후 증가 배경 + 2025-26 8초룰까지 묶은 게 정보 게인",
+    "decision_tools": "경기 시간 구조표 + 한눈 정리표, 용어 구분 목록",
+    "first_person_hook": "추가시간이 고정값인 줄 안 오해 + 인저리타임=부상시간만인 줄 안 오해",
+    "primary_source": "IFAB 공식(8초룰)+위키/PFSA(구조). 추가시간은 '심판 재량·고정값 없음'으로 헤지, VAR 의무 몇 분 같은 불확실 수치는 단정 배제"
+  },
+  "hermes_score": 97
+}
