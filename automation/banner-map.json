@@ -1,0 +1,8 @@
+[
+  { "pattern": "트로피|상금|우승", "file": "banner-04-trophy.png" },
+  { "pattern": "야구", "file": "banner-02-baseball.png" },
+  { "pattern": "농구", "file": "banner-03-basketball.png" },
+  { "pattern": "러닝|마라톤|달리기", "file": "banner-05-running.png" },
+  { "pattern": "골프", "file": "banner-06-golf.png" },
+  { "pattern": "축구|K리그|리그|월드컵|챔피언스|직관|선수|감독|포메이션|포지션|풋살|이적|유로|VAR|오프사이드|세트피스|파울|유니폼|축구화|경기 시간|추가시간", "file": "banner-01-soccer.png" }
+]

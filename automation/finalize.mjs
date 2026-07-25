@@ -37,6 +37,11 @@ const checks = [
   [bodyLen >= MIN_BODY, `본문이 너무 짧습니다(공백 제외 ${bodyLen}자). 최소 ${MIN_BODY}자 이상으로 충실하게 쓰세요.`],
   [h2Count >= MIN_H2, `소제목(##)이 ${h2Count}개뿐입니다. 5~7개로 구성하세요.`],
 ];
+
+// description 길이 게이트(SERP 스니펫 최적 120~155자) — 심판 반복 지적을 코드로 강제(2026-07-25)
+const __descRaw = (post.match(/\ndescription:\s*'((?:''|[^'])*)'/) || [])[1] || '';
+const __desc = __descRaw.replace(/''/g, "'");
+checks.push([__desc.length >= 120 && __desc.length <= 155, `description이 ${__desc.length}자입니다. 120~155자(키워드 포함)로 맞추세요.`]);
 const failed = checks.filter(([ok]) => !ok).map(([, msg]) => msg);
 if (failed.length) {
   console.error('FINALIZE_ERROR: 발행 조건 미충족\n- ' + failed.join('\n- '));
@@ -131,6 +136,25 @@ if (new RegExp(`link\\('${slug}'`).test(guideSrc)) {
 // 1) 빌드가 깨지면 발행 중단.
 console.log('▶ 빌드 검증...');
 run('npm run build');
+
+// ── 렌더 품질 게이트(빌드 후·커밋 전): 볼드버그·FAQ 스키마를 코드로 강제(2026-07-25) ──
+{
+  const __distHtmlPath = join(root, 'dist', slug, 'index.html');
+  if (!existsSync(__distHtmlPath)) {
+    console.error(`FINALIZE_ERROR: 빌드 결과물이 없습니다 → dist/${slug}/index.html`);
+    process.exit(1);
+  }
+  const __distHtml = readFileSync(__distHtmlPath, 'utf8');
+  const __distFails = [];
+  if (__distHtml.includes('**')) __distFails.push('빌드 HTML에 리터럴 **가 노출됩니다(CJK 볼드버그). 볼드 안의 괄호·따옴표를 밖으로 빼세요(예: **이름**(영문) O / **이름(영문)** X).');
+  if (!__distHtml.includes('"@type":"FAQPage"')) __distFails.push('FAQPage 스키마가 생성되지 않았습니다. 이 사이트의 FAQ 형식(1줄/2줄)을 기존 글과 대조하세요.');
+  if (__distFails.length) {
+    console.error('FINALIZE_ERROR: 렌더 품질 게이트 미충족(커밋 전 차단)\n- ' + __distFails.join('\n- '));
+    process.exit(1);
+  }
+  console.log('✔ 렌더 게이트 통과 — 볼드버그 0 · FAQPage 스키마 OK');
+}
+
 
 // 2) 주제 큐에서 방금 쓴 주제를 발행 완료로 표시.
 const topicsPath = join(__dirname, 'topics.md');

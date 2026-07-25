@@ -27,8 +27,17 @@ const state = JSON.parse(readFileSync(statePath, 'utf8'));
 // 3) 이미지 풀에서 아직 안 쓴 배너를 고른다(다 썼으면 가장 오래전 것부터 다시 순환).
 const pool = readdirSync(poolDir).filter((f) => /\.(png|jpg|jpeg|webp)$/i.test(f)).sort();
 if (pool.length === 0) fail('src/assets/pool 에 이미지가 없습니다.');
+
+// 배너 키워드 맵(banner-map.json, 선택): 주제에 맞는 배너를 우선 지정 — 순환 오배정(예: 축구 글에 농구 배너) 방지(2026-07-25)
+let __mappedBanner = null;
+try {
+  for (const m of JSON.parse(readFileSync(join(__dirname, 'banner-map.json'), 'utf8'))) {
+    if (new RegExp(m.pattern).test(topic) && pool.includes(m.file)) { __mappedBanner = m.file; break; }
+  }
+} catch {}
 let image = pool.find((f) => !state.usedImages.includes(f));
 if (!image) image = pool[state.usedImages.length % pool.length];
+if (__mappedBanner) image = __mappedBanner;
 
 // 4) 내부링크용 기존 글을 고른다(주제 단어와 제목이 가장 많이 겹치는 글, 없으면 첫 글).
 const words = topic.replace(/[^\p{L}\p{N} ]/gu, ' ').split(/\s+/).filter((w) => w.length >= 2);
@@ -42,6 +51,15 @@ const posts = readdirSync(blogDir)
 if (posts.length === 0) fail('내부링크로 걸 기존 글이 없습니다.');
 const scorePost = (p) => words.reduce((s, w) => s + (p.title.includes(w) ? 1 : 0), 0);
 const internal = posts.slice().sort((a, b) => scorePost(b) - scorePost(a))[0];
+
+// 기발행 중복 가드: 주제 단어가 기존 글 제목과 과반 겹치면 경고 — 자동발행분이 큐에 대기로 남는 함정(2026-07-25)
+const __dup = posts
+  .map((p) => ({ p, r: words.length ? words.filter((w) => p.title.includes(w)).length / words.length : 0 }))
+  .sort((a, b) => b.r - a.r)[0];
+if (__dup && words.length >= 3 && __dup.r >= 0.6) {
+  console.warn(`⚠️ 기발행 의심(${Math.round(__dup.r * 100)}% 겹침): "${__dup.p.title}" (/${__dup.p.slug}/) — 중복이면 쓰지 말고 topics.md에서 [x] 처리 후 prepare를 다시 돌리세요.`);
+}
+
 
 // 5) 외부링크를 고른다(주제 단어와 태그가 가장 많이 겹치는 출처, 없으면 순환 선택).
 const sources = JSON.parse(readFileSync(join(__dirname, 'sources.json'), 'utf8'));
