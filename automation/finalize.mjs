@@ -88,13 +88,24 @@ const gate = [
 // 리뷰·비교 글(type=review/comparison/리뷰/비교)은 데이터 변수 주입을 게이트로 강제. 그 외 유형은 권장(경고만).
 if (isReview) gate.push([varCount >= VAR_MIN, `리뷰·비교 글(type=${RG.type})은 데이터 변수 주입(variables) ${VAR_MIN}개 이상이 필요합니다. 현재 ${varCount}개 — research.json의 variables를 채우세요.`]);
 
+// ── 심판루프 안전장치(2026-08-17): 횟수 한도·무진전 중단을 코드로 강제(JUDGE.md 안전장치 4겹) ──
+// score_history = 라운드별 심판 점수 기록(초판 포함, 최대 4개). 예: "score_history": [84, 88, 91]
+const scoreHistory = Array.isArray(RG.score_history) ? RG.score_history.map(Number) : null;
+if (!scoreHistory || scoreHistory.length === 0 || scoreHistory.some((n) => !Number.isFinite(n))) {
+  gate.push([false, '심판 점수 이력이 없습니다. research.json에 라운드별 점수를 "score_history": [초판, 재채점, ...] 숫자 배열로 기록하세요(최대 4개).']);
+} else {
+  if (scoreHistory.length > 4) gate.push([false, `심판 호출이 ${scoreHistory.length}회 기록됐습니다. 한도는 4회(초판 1 + 재채점 3)입니다 — 횟수 한도 위반.`]);
+  if (scoreHistory[scoreHistory.length - 1] !== hermes) gate.push([false, `score_history 마지막 값(${scoreHistory[scoreHistory.length - 1]})이 hermes_score(${RG.hermes_score})와 다릅니다. 실제 최종 점수만 기록하세요.`]);
+  const stallIdx = scoreHistory.findIndex((s, i) => i > 0 && s - scoreHistory[i - 1] < 2);
+  if (stallIdx !== -1 && stallIdx < scoreHistory.length - 1) gate.push([false, `무진전 중단 위반: 재채점이 +2점 미만 상승(${scoreHistory[stallIdx - 1]}→${scoreHistory[stallIdx]})이면 그 자리에서 루프를 멈추고 보고해야 하는데 계속 돌렸습니다.`]);
+}
 const gateFailed = gate.filter(([ok]) => !ok).map(([, m]) => m);
 if (gateFailed.length) {
   console.error('FINALIZE_ERROR: 글쓰기 절차 증거 게이트 미충족\n- ' + gateFailed.join('\n- '));
   process.exit(1);
 }
 if (!isReview && varCount < VAR_MIN) console.warn(`⚠️ 데이터 변수 주입이 ${varCount}개뿐입니다(권장 5개). 리뷰·비교 글이면 research.json에 "type":"review"를 넣어 강제하세요.`);
-console.log(`✔ 증거 게이트 통과 — SERP ${openedCount}개 열람 · 팩트체크 ${factcheck.length}건 · 헤르메스 ${hermes}점${isReview ? ` · 변수 ${varCount}개(리뷰형)` : ''}`);
+console.log(`✔ 증거 게이트 통과 — SERP ${openedCount}개 열람 · 팩트체크 ${factcheck.length}건 · 헤르메스 ${hermes}점${scoreHistory ? ` · 심판 ${scoreHistory.length}라운드` : ''}${isReview ? ` · 변수 ${varCount}개(리뷰형)` : ''}`);
 
 const run = (cmd) => execSync(cmd, { cwd: root, stdio: 'inherit' });
 
