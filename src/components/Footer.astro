@@ -9,11 +9,21 @@ const today = new Date();
 			<a href="/">홈</a>
 			<a href="/blog">전체 글</a>
 			<a href="/about">소개</a>
+			<a href="/author">운영자 소개</a>
 			<a href="/privacy">개인정보처리방침</a>
 			<a href="/contact">문의하기</a>
 			<a href="/rss.xml">RSS</a>
 		</nav>
 		<span class="copy">&copy; {today.getFullYear()} 스포츠킹덤24</span>
+	</div>
+	<div class="meta">
+		<p class="desc">
+			축구의 규칙·포지션·전술·리그·선수·중계 보는 법을 초보자 눈높이로 정리하는 축구 전문 블로그입니다.
+		</p>
+		<p class="who">
+			운영자 <strong>Sungbin</strong> · 문의
+			<a href="mailto:yangsungbin77@gmail.com">yangsungbin77@gmail.com</a>
+		</p>
 	</div>
 </footer>
 <style>
@@ -47,4 +57,22 @@ const today = new Date();
 	}
 	.links a:hover { color: var(--accent); }
 	.copy { color: var(--text-dim); font-size: 0.85rem; }
+	.meta {
+		width: var(--maxw);
+		max-width: calc(100% - 2.5em);
+		margin: 0 auto;
+		padding: 0 0 2.5rem;
+		border-top: 1px solid var(--border, rgba(0, 0, 0, 0.1));
+		padding-top: 1.2rem;
+		margin-top: -1rem;
+	}
+	.meta p {
+		margin: 0 0 0.4rem;
+		color: var(--text-dim);
+		font-size: 0.85rem;
+		line-height: 1.6;
+	}
+	.meta .who strong { color: var(--text-muted); }
+	.meta a { color: var(--text-muted); font-weight: 600; }
+	.meta a:hover { color: var(--accent); }
 </style>
