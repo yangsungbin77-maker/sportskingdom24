@@ -85,6 +85,33 @@ const gate = [
   [factOk, `팩트체크가 부족합니다. 핵심 수치/사실 ${FACTCHECK_MIN}건 이상을 각각 출처 2곳 이상으로 교차한 기록(factcheck[].sources)이 필요합니다.`],
   [Number.isFinite(hermes) && hermes >= HERMES_PASS, `헤르메스 심판 점수가 ${RG.hermes_score ?? '없음'}입니다. ${HERMES_PASS}점 이상이어야 발행됩니다.`],
 ];
+// ── 키워드 3필터 게이트(2026-08-21): 경쟁·수요·의도 확인 증거를 코드로 강제 ──
+// 배경: 8/21 진단 — 헤드 키워드(best chatgpt alternatives·마사지건 추천 등)가 필터 실행 기록 없이
+// 발행돼 색인·노출 실패. 스킬의 3필터를 research.json 증거 없이는 통과 못 하게 막는다.
+const kwf = RG.keyword_filter;
+if (!kwf || typeof kwf !== 'object') {
+  gate.push([false, `keyword_filter가 없습니다. 발행 전 키워드 3필터(경쟁·수요·의도)를 실제로 확인하고 research.json에 기록해야 발행됩니다.
+"keyword_filter": {
+  "keyword": "최종 루트 키워드",
+  "competition": { "method": "allintitle/serp-scan", "evidence": "allintitle 결과 수, 1페이지 구성(개인 블로그·포럼 존재 여부)", "pass": true },
+  "demand":      { "method": "autocomplete/gsc/trends", "evidence": "구글 자동완성 노출·GSC 쿼리 등 수요 근거", "pass": true },
+  "intent":      { "method": "serp-scan", "evidence": "상위 결과가 블로그·정보글 위주라는 근거", "pass": true }
+}
+불합격 필터가 있으면 그 키워드를 버리고 더 롱테일한 키워드로 좁혀 다시 검증하세요(헤드 키워드 발행 금지).`]);
+} else {
+  for (const k of ['competition', 'demand', 'intent']) {
+    const f = kwf[k];
+    if (!f || f.pass !== true) {
+      gate.push([false, `키워드 필터 "${k}"가 통과(pass:true)로 기록되지 않았습니다. 실제로 확인해 기록하고, 불합격이면 더 롱테일한 키워드로 바꿔 재검증하세요.`]);
+    } else if (typeof f.evidence !== 'string' || f.evidence.trim().length < 15) {
+      gate.push([false, `키워드 필터 "${k}"의 evidence가 부실합니다(구체 근거 15자 이상). "확인함" 같은 형식 기록은 통과할 수 없습니다.`]);
+    }
+  }
+  if (typeof kwf.keyword !== 'string' || !kwf.keyword.trim()) {
+    gate.push([false, 'keyword_filter.keyword(최종 루트 키워드)가 비어 있습니다. 실제 검증한 키워드를 기록하세요.']);
+  }
+}
+
 // 리뷰·비교 글(type=review/comparison/리뷰/비교)은 데이터 변수 주입을 게이트로 강제. 그 외 유형은 권장(경고만).
 if (isReview) gate.push([varCount >= VAR_MIN, `리뷰·비교 글(type=${RG.type})은 데이터 변수 주입(variables) ${VAR_MIN}개 이상이 필요합니다. 현재 ${varCount}개 — research.json의 variables를 채우세요.`]);
 
@@ -98,6 +125,50 @@ if (!scoreHistory || scoreHistory.length === 0 || scoreHistory.some((n) => !Numb
   if (scoreHistory[scoreHistory.length - 1] !== hermes) gate.push([false, `score_history 마지막 값(${scoreHistory[scoreHistory.length - 1]})이 hermes_score(${RG.hermes_score})와 다릅니다. 실제 최종 점수만 기록하세요.`]);
   const stallIdx = scoreHistory.findIndex((s, i) => i > 0 && s - scoreHistory[i - 1] < 2);
   if (stallIdx !== -1 && stallIdx < scoreHistory.length - 1) gate.push([false, `무진전 중단 위반: 재채점이 +2점 미만 상승(${scoreHistory[stallIdx - 1]}→${scoreHistory[stallIdx]})이면 그 자리에서 루프를 멈추고 보고해야 하는데 계속 돌렸습니다.`]);
+}
+// ── 구성 회전·빈틈 3개·이미지 변주 게이트(2026-10-02, 도토리AI 영상분석에서 도입) ──
+// 배경: AI 글은 뼈대·사진 수가 매번 같아서 티가 나고, 상위 글 요약 재조합이면 새 정보가 없다.
+{
+  const STRUCTURES = ['결론먼저', '궁금증추적', '문제해결', '비교선택', '장면출발', '오해바로잡기', '과정따라가기', '핵심발견확장', '질문연결', '관점제시'];
+  const resDir = join(__dirname, 'research');
+  const { readdirSync, statSync } = await import('node:fs');
+  // 직전 글 2편(이 글 제외, research 파일 수정시각 최신순, 글 파일이 실제로 있는 것만)
+  const prev = readdirSync(resDir)
+    .filter((f) => f.endsWith('.json') && f !== `${slug}.json`)
+    .map((f) => ({ f, t: statSync(join(resDir, f)).mtimeMs }))
+    .sort((a, b) => b.t - a.t)
+    .map(({ f }) => f.replace(/\.json$/, ''))
+    .filter((s) => existsSync(join(root, 'src', 'content', 'blog', `${s}.md`)))
+    .slice(0, 2);
+  const readJson = (s) => { try { return JSON.parse(readFileSync(join(resDir, `${s}.json`), 'utf8')); } catch { return {}; } };
+  const imgCount = (md) => 1 + (md.replace(/^---[\s\S]*?\n---\s*/, '').match(/!\[[^\]]*\]\([^)]+\)/g) || []).length; // 히어로 1 + 본문
+
+  // ① 글 구성 10종 중 1개를 기록, 직전 2편과 같은 구성 금지
+  const st = String(RG.structure || '').replace(/\s/g, '');
+  if (!STRUCTURES.includes(st)) {
+    gate.push([false, `research.json에 "structure"(글 구성)가 없거나 틀렸습니다. 다음 10개 중 하나: ${STRUCTURES.join('·')}`]);
+  } else {
+    const used = prev.map((s) => String(readJson(s).structure || '').replace(/\s/g, '')).filter(Boolean);
+    if (used.includes(st)) gate.push([false, `글 구성 "${st}"는 직전 글(${prev.join(', ')})에서 이미 썼습니다. 다른 구성으로 바꾸세요(뼈대 반복 = AI 티).`]);
+  }
+
+  // ② 상위 글이 빠뜨린 빈틈 3개 + 우리 글 어느 소제목에서 채웠는지
+  const gaps = Array.isArray(RG.gaps) ? RG.gaps : [];
+  const goodGaps = gaps.filter((g) => g && typeof g.gap === 'string' && g.gap.trim().length >= 15
+    && typeof g.covered_in === 'string' && g.covered_in.trim() && post.includes(g.covered_in.trim()));
+  if (goodGaps.length < 3) {
+    gate.push([false, `빈틈 기록이 ${goodGaps.length}개뿐입니다. 상위 글들이 빠뜨린 것 3개 이상을 research.json에 기록하세요.
+"gaps": [ { "gap": "상위 10개 중 아무도 안 다룬 구체 내용(15자+)", "covered_in": "그걸 채운 우리 글의 소제목 문구(본문에 그대로 있어야 함)" }, ... ]`]);
+  }
+
+  // ③ 이미지 2~4장, 직전 2편과 장수가 셋 다 같으면 차단
+  const myImgs = imgCount(post);
+  if (myImgs < 2 || myImgs > 4) gate.push([false, `이미지가 ${myImgs}장입니다(히어로 포함). 2~4장으로 맞추세요.`]);
+  const prevImgs = prev.map((s) => imgCount(readFileSync(join(root, 'src', 'content', 'blog', `${s}.md`), 'utf8')));
+  if (prevImgs.length === 2 && prevImgs.every((n) => n === myImgs)) {
+    gate.push([false, `이미지 장수가 직전 2편과 똑같이 ${myImgs}장입니다. 장수를 바꾸세요(2~4장 사이, 비율도 16:9·4:3·1:1 섞기).`]);
+  }
+  if (!gate.some(([ok]) => !ok)) console.log(`✔ 구성 ${st} · 빈틈 ${goodGaps.length}개 · 이미지 ${myImgs}장(직전 ${prevImgs.join('/') || '-'})`);
 }
 const gateFailed = gate.filter(([ok]) => !ok).map(([, m]) => m);
 if (gateFailed.length) {
