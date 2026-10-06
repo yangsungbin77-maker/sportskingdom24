@@ -58,7 +58,7 @@ if (type === 'article') {
 		image: imageURL.href,
 		datePublished: publishedTime?.toISOString(),
 		dateModified: (modifiedTime ?? publishedTime)?.toISOString(),
-			author: { '@type': 'Person', name: '킹덤', url: new URL('/about/', Astro.site).href, worksFor: { '@type': 'Organization', name: SITE_TITLE, url: Astro.site?.href } },
+			author: { '@type': 'Person', name: 'Sungbin', url: new URL('/author/', Astro.site).href, worksFor: { '@type': 'Organization', name: SITE_TITLE, url: Astro.site?.href } },
 		publisher: {
 			'@type': 'Organization',
 			name: SITE_TITLE,
