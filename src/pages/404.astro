@@ -1,0 +1,43 @@
+---
+// 없는 주소로 들어온 방문자를 가이드·전체 글로 안내하는 404 오류 페이지(광고·색인 제외)
+import BaseHead from '../components/BaseHead.astro';
+import Footer from '../components/Footer.astro';
+import Header from '../components/Header.astro';
+import { SITE_TITLE } from '../consts';
+---
+
+<!doctype html>
+<html lang="ko">
+	<head>
+		<BaseHead
+			title={`페이지를 찾을 수 없습니다 · ${SITE_TITLE}`}
+			description="요청하신 주소의 페이지가 없거나 옮겨졌습니다."
+			noAds
+			noindex
+		/>
+	</head>
+	<body>
+		<Header />
+		<main>
+			<section class="nf">
+				<h1>페이지를 찾을 수 없습니다</h1>
+				<p>주소가 바뀌었거나 삭제된 글일 수 있어요. 아래에서 다시 찾아보세요.</p>
+				<ul>
+					<li><a href="/guide">축구 가이드 — 주제별 글 지도</a></li>
+					<li><a href="/blog">전체 글 목록</a></li>
+					<li><a href="/">홈으로</a></li>
+				</ul>
+			</section>
+		</main>
+		<Footer />
+	</body>
+</html>
+
+<style>
+	.nf { max-width: 640px; margin: 2rem auto; }
+	.nf h1 { font-size: clamp(1.5rem, 4vw, 2rem); margin-bottom: 0.5rem; }
+	.nf p { color: var(--text-muted); }
+	.nf ul { padding-left: 1.2em; }
+	.nf li { margin: 0.3em 0; }
+	.nf a { display: inline-flex; align-items: center; min-height: 44px; font-weight: 600; }
+</style>
