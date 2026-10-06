@@ -84,3 +84,12 @@
 - 핵심 과제(게임월드7 구축+배포+도메인+디자인) 완료. 글은 `src/content/blog/`에 .md 추가 후 push하면 자동 게시.
 - Higgsfield MCP는 claude.ai 커넥터로 연결됨(이미지 생성). 코딩 세션에서 쓰려면 앱 재시작 후 반영.
 - 두 번째 사이트 `sportskingdom24.com`은 이 사이트 동일 틀로 복제 예정(Namecheap일 가능성 높음).
+
+## 2026-10-06 — 애드센스 승인 준비 점검
+
+- 상세 기록은 루트 `adsense-review.md`(비공개, dist에 포함 안 됨).
+- 404 페이지 신설 + `wrangler.jsonc` `not_found_handling: "404-page"`. 404에는 `BaseHead`의 `noAds`·`noindex`로 광고 스크립트와 색인을 뺐다(오류 화면 광고는 정책상 피하는 게 안전).
+- `astro.config.mjs` 사이트맵 filter가 frontmatter `noindex: true` 글을 뺀다. noindex 글을 사이트맵에 넣으면 서치 콘솔 경고가 나기 때문.
+- 개인정보처리방침은 실제로 로드되는 것(GA4·애드센스·Cloudflare)만 적었다. 외부 임베드·외부 글꼴은 없음. 새 외부 서비스를 넣으면 방침도 같이 고칠 것.
+- 구조화 데이터 author는 AI 페르소나 "킹덤"이 아니라 실제 운영자 "Sungbin"(/author)으로 통일. 소개·운영자 페이지에 생성형 AI 활용을 고지했다.
+- 페르소나 지침(`_context/01_페르소나_보이스.md`)이 직관·시청 "경험"을 1인칭으로 섞게 해서 골프 글 등에 실제 확인되지 않은 경험 문장이 들어가 있다. 지우지 않고 `adsense-review.md` 6절에 목록화만 함 — 운영자 확인 필요.
