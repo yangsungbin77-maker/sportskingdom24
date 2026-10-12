@@ -1,0 +1,418 @@
+{
+  "type": "comparison",
+  "keyword": "축구선수 몸값 순위",
+  "structure": "오해바로잡기",
+  "keyword_filter": {
+    "keyword": "축구선수 몸값 순위",
+    "competition": {
+      "method": "serp-scan",
+      "evidence": "allintitle은 구글 자동 조회 차단으로 미측정. 대신 관련 쿼리 SERP 스캔 결과 상위가 스포츠경향·일간스포츠·뉴시스 등 단건 뉴스(2021~2026 시점 혼재)와 다모앙 커뮤니티 글·나무위키로 구성. 2026년 최신값을 갱신일과 함께 정리한 블로그형 종합 글은 확인되지 않아 진입 여지 있음(머리 키워드라 상위는 중장기 목표)",
+      "pass": true
+    },
+    "demand": {
+      "method": "autocomplete",
+      "evidence": "구글 자동완성(2026-10-12)에 '축구선수 몸값 순위 2026', '축구선수 몸값 순위 사이트', '한국 축구선수 몸값 순위', '아시아 축구선수 몸값 순위', '김민재 몸값 순위', '이강인 몸값 변화', '손흥민 몸값 2026', '센터백 몸값 순위', '축구선수 연봉 순위 2026', '트랜스퍼마크트 몸값' 노출",
+      "pass": true
+    },
+    "intent": {
+      "method": "serp-scan",
+      "evidence": "상위 결과가 순위표·수치 확인용 정보 기사와 커뮤니티 정리글이며 쇼핑·지도·공식 서비스 카드 없음. 자동완성에 '사이트·2026·한국·연봉' 변형이 붙어 정보성(순위·수치 확인) 의도 확정",
+      "pass": true
+    }
+  },
+  "cluster": [
+    "축구선수 몸값 순위 2026",
+    "한국 축구선수 몸값 순위",
+    "축구선수 몸값 사이트",
+    "이강인 몸값",
+    "김민재 몸값",
+    "손흥민 몸값",
+    "센터백 몸값 순위",
+    "축구선수 연봉 순위 2026",
+    "트랜스퍼마크트 몸값",
+    "축구선수 몸값 1위",
+    "웨인 루니 주급"
+  ],
+  "serp": [
+    {
+      "url": "https://sports.khan.co.kr/article/202601081635003",
+      "opened": true,
+      "note": "스포츠경향 2026-01-08. CIES 60개 리그 시장가치, 야말 3억4310만·홀란 2억5510만·음바페 2억130만 유로, K리그 강상윤 350만. 트랜스퍼마크트와 기준 차이 설명 없음"
+    },
+    {
+      "url": "https://isplus.com/article/view/isp202211140011",
+      "opened": true,
+      "note": "일간스포츠 2022-11. 트랜스퍼마크트 최고가치 베스트11(홀란 1억7000만). 구자료, 한국 선수·연봉 구분 없음"
+    },
+    {
+      "url": "https://sports.khan.co.kr/article/202109291542003",
+      "opened": true,
+      "note": "스포츠경향 2021-09. 트랜스퍼마크트 순위(음바페 1억6000만), 손흥민 8500만 공동 13위. 갱신 안 된 옛 순위가 여전히 노출되는 근거"
+    },
+    {
+      "url": "https://v.daum.net/v/20251017120514791",
+      "opened": true,
+      "note": "풋볼리스트 2025-10. 포브스 수입 TOP10(호날두 2.8억 달러). 몸값과의 차이 설명 없음"
+    },
+    {
+      "url": "https://weekly.khan.co.kr/article/202508011417011",
+      "opened": true,
+      "note": "주간경향 2025-08. 야말 시장가치 2억·바이아웃 10억·연봉 구분. 몸값/바이아웃/연봉 3분리는 있으나 순위표 없음"
+    },
+    {
+      "url": "https://www.newsis.com/view/NISX20260521_0003639765",
+      "opened": true,
+      "note": "뉴시스 2026-05. 대표팀 26명 트랜스퍼마크트 가치(이강인 2800만·김민재 2500만·손흥민 1700만·오현규 1500만·황희찬/황인범 800만), 총액 2390억. 갱신일별 차이 미표기"
+    },
+    {
+      "url": "https://sports.news.nate.com/view/20261005n16651",
+      "opened": true,
+      "note": "인터풋볼 2026-10-05. 이강인 2800만→3500만 유로(+700만), 개인 최고치 경신. 한국 선수 전체 표 없음"
+    },
+    {
+      "url": "https://www.wikitree.co.kr/articles/1164148",
+      "opened": true,
+      "note": "위키트리 2026-10-06. 이강인 3500만 유로, 아시아 3위. 단건 뉴스"
+    },
+    {
+      "url": "https://www.xportsnews.com/article/2153959",
+      "opened": true,
+      "note": "엑스포츠뉴스 2026-05-28. 김민재 6000만(2023-06)→2500만→2000만 유로, 출전시간 감소 원인. 센터백 비교 없음"
+    },
+    {
+      "url": "https://damoang.net/free/659093",
+      "opened": false,
+      "note": "다모앙 커뮤니티 트랜스퍼마크트 몸값 순위 글. 403 차단"
+    },
+    {
+      "url": "https://namu.wiki/w/Transfermarkt",
+      "opened": false,
+      "note": "나무위키. 403 차단, 영문 위키백과로 산정 방식 대체 확인"
+    },
+    {
+      "url": "https://www.transfermarkt.com/spieler-statistik/wertvollstespieler/marktwertetop",
+      "opened": false,
+      "note": "1차 출처지만 봇 검증(WAF) 페이지만 반환. 우회하지 않고 갱신 보도 4건으로 교차 확인"
+    }
+  ],
+  "serp_summary": {
+    "intent": "정보성. 현재 몸값 1위·순위표, 한국 선수 몸값, 사이트별 기준 확인",
+    "common_items": [
+      "세계 몸값 TOP N 표",
+      "트랜스퍼마크트 출처 표기",
+      "한국 선수 몸값",
+      "원화 환산"
+    ],
+    "weakness": "대부분 단건 뉴스라 시점이 제각각(2021~2026 혼재)이고, 몸값·이적료·연봉 구분, CIES와 트랜스퍼마크트 차이, 선수별 갱신일, 포지션별 상한을 한 글에 묶은 정리글 부재",
+    "avg_depth": "뉴스 1,000~1,500자 단건 위주"
+  },
+  "factcheck": [
+    {
+      "claim": "2026년 10월 트랜스퍼마크트 TOP10: 야말·홀란 2억2000만, 음바페 2억, 올리세 1억8000만, 벨링엄 1억6000만, 페드리 1억5000만, 네베스·크바라츠헬리아·비티냐 1억4000만, 비니시우스 1억3000만 유로(라리가 10월 5일 갱신)",
+      "sources": [
+        "https://sports.yahoo.com/articles/barcelona-superstar-remains-footballer-highest-120500730.html (Barca Universal, 2026-10-05)",
+        "https://en.axar.az/news/sports/1137437.html (2026-10-09)",
+        "https://zamin.uz/en/sport/224151-top-10-most-expensive-football-players-in-the-world-revealed.html (2026-10-10)",
+        "https://beinsports.com/en-us/soccer/la-liga/articles/from-200m-to-130m-vinicius-stunning-market-value-slide-2026-10-08"
+      ]
+    },
+    {
+      "claim": "이강인 트랜스퍼마크트 시장가치 2800만→3500만 유로(2026-10-05 갱신), 직전 최고 3000만(2024-10), 아시아 3위",
+      "sources": [
+        "https://sports.news.nate.com/view/20261005n16651 (인터풋볼)",
+        "https://www.wikitree.co.kr/articles/1164148",
+        "https://www.allfootballapp.com/articles/5516836-transfermarkt-lee-kang-ins-market-value"
+      ]
+    },
+    {
+      "claim": "이강인 2026-07-25 아틀레티코 공식 이적, 2031년 6월까지 계약, 이적료 기본 3500만+보너스 최대 500만(총 약 4000만) 유로 보도, 구단 미공개",
+      "sources": [
+        "https://www.khan.co.kr/en/article/202607261511127",
+        "https://english.ahram.org.eg/News/573443.aspx (AFP)",
+        "https://en.nocutnews.co.kr/news/6552179"
+      ]
+    },
+    {
+      "claim": "김민재 시장가치 2023-06 최고 6000만→2026-05 말 2000만 유로(직전 2500만), 출전시간 감소, 바이에른 잔류",
+      "sources": [
+        "https://www.xportsnews.com/article/2153959",
+        "https://sports.news.nate.com/view/20260528n37528",
+        "https://sports.khan.co.kr/article/202607141011003 (잔류)"
+      ]
+    },
+    {
+      "claim": "한국 선수 트랜스퍼마크트 시장가치(2026-06-12 뉴시스): 김민재 2000만, 손흥민·오현규 1500만, 황인범 700만, 설영우 650만, 황희찬 600만 유로. 카스트로프 600만(2026-05-21 뉴시스). 배준호 400만(2026-07, TransferFeed가 전한 트랜스퍼마크트 값)",
+      "sources": [
+        "https://www.newsis.com/view/NISX20260612_0003667670",
+        "https://www.newsis.com/view/NISX20260521_0003639765",
+        "https://www.transferfeed.com/players/bae-jun-ho/1042381",
+        "https://www.koreatimes.co.kr/amp/sports/20260619/world-cup-opening-week-fuels-transfer-buzz-for-lee-kang-in-lee-han-beom"
+      ]
+    },
+    {
+      "claim": "포브스 2026(2025-05~2026-05, 세전, SI 보도): 호날두 3억(경기장 2.35억), 메시 1.4억, 벤제마 1.04억, 음바페 9500만, 홀란 8000만, 비니시우스 6000만 달러. 야말 4300만(경기장 3300만)은 2026년 6월 포브스 월드컵 출전 선수 수입 집계",
+      "sources": [
+        "https://www.si.com/soccer/highest-paid-soccer-players-world-ranked-2026",
+        "https://www.forbes.com.au/news/sport/the-highest-paid-players-at-the-2026-world-cup/"
+      ]
+    },
+    {
+      "claim": "호날두 트랜스퍼마크트 시장가치 약 1000만~1200만 유로(2026-02 1200만 유로, 2026-06 1150만 달러로 하락 보도)",
+      "sources": [
+        "https://www.beinsports.com/en-us/soccer/articles/what-is-cristiano-ronaldo-s-market-value-2026-02-04",
+        "https://worldsoccertalk.com/world-cup/cristiano-ronaldo-loses-2-3-million-in-value-despite-saudi-pro-league-title-but-remains-worlds-most-valuable-over-40-player-in-pre-2026-world-cup-market-update/"
+      ]
+    },
+    {
+      "claim": "센터백 1억 유로 도달은 트랜스퍼마크트 역사상 반 다이크(2019)·살리바(2026-06)·쿠바르시(2026-07) 3명, 쿠바르시는 10월 5일 갱신에서 1억 유지",
+      "sources": [
+        "https://www.allfootballapp.com/articles/4868843-cubarsi-becomes-transfermarkts-third-100-million",
+        "https://barcauniversal.com/barcelona-market-value-update-lamine-remains-at-the-top-at-e220m-cubarsi-breaks-e100m-barrier/",
+        "https://sports.yahoo.com/articles/barcelona-superstar-remains-footballer-highest-120500730.html"
+      ]
+    },
+    {
+      "claim": "손흥민 2026 MLS 보장연봉 1115만 달러(4월 16일 기준, 리그 2위), 메시 2833만 달러",
+      "sources": [
+        "https://www.heraldk.com/article/2026051218174361545",
+        "https://www.koreadaily.com/article/20260513093113457"
+      ]
+    },
+    {
+      "claim": "CIES 2026-01: 야말 3억4310만·홀란 2억5510만·음바페 2억130만 유로, 트랜스퍼마크트(커뮤니티 기반·공식 없음·2000년 함부르크)와 산정 방식 다름",
+      "sources": [
+        "https://sports.khan.co.kr/article/202601081635003",
+        "https://en.wikipedia.org/wiki/Transfermarkt"
+      ]
+    },
+    {
+      "claim": "웨인 루니 2014-02 맨유 재계약 최대 주급 약 30만 파운드 보도(연봉 섹션 한 문장, AP·BBC 인용 보도)",
+      "sources": [
+        "https://www.banglanews24.com/english/sports/news/bd/16322.details (BBC 인용)",
+        "https://m.washingtontimes.com/news/2014/feb/21/wayne-rooney-signs-new-man-united-deal/ (AP)"
+      ]
+    },
+    {
+      "claim": "2026년 여름 이적: 황인범 7월 21일 페예노르트→FC 포르투(450만+보너스 50만 유로, 2029년 6월까지), 설영우 즈베즈다→아우크스부르크(2030년 6월까지), 황희찬 울버햄프턴→샬케 임대(2027년 6월 30일까지), 배준호 리옹행 무산·스토크 잔류(9월 3일 보도)",
+      "sources": [
+        "https://www.flashscore.com/news/fc-porto-announce-signing-of-feyenoord-midfielder-hwang-in-beom/UqWRsVUj/",
+        "https://www.dailian.co.kr/news/view/1683928",
+        "https://www.newdaily.co.kr/site/data/html/2026/09/02/2026090200012.html",
+        "https://www.starnewskorea.com/en/sports/2026/09/03/2026090313172759319"
+      ]
+    },
+    {
+      "claim": "이강인 풋볼트랜스퍼스 예상 이적료(ETV) 3100만 유로, 범위 2790만~3400만, 2026-10-01 갱신",
+      "sources": [
+        "https://www.footballtransfers.com/en/players/lee-kangin",
+        "https://www.fotmob.com/players/940976/kang-lee (같은 3100만 표기)"
+      ]
+    },
+    {
+      "claim": "오현규 시장가치 700만→1500만 유로, 2026-03-06 트랜스퍼마크트 갱신(2월 베식타시 이적 한 달 뒤)",
+      "sources": [
+        "https://sports.news.nate.com/view/20260306n22643",
+        "https://m.news.nate.com/view/20260306n31984"
+      ]
+    },
+    {
+      "claim": "김민재 2025-26시즌 주급 19만9952파운드(약 20만 파운드, 기브미스포츠 집계)",
+      "sources": [
+        "https://www.newdaily.co.kr/site/data/html/2025/07/30/2025073000060.html",
+        "https://www.newdaily.co.kr/site/data/html/2025/07/30/2025073000060.amp.html"
+      ]
+    },
+    {
+      "claim": "CIES 모델은 출전 시간·골 등 경기 기록과 나이·계약을 변수로 사용, 2017년 1월 포지션별 1위 네이마르 2억4680만 vs 센터백 바란 6400만 유로",
+      "sources": [
+        "https://football-observatory.com/IMG/sites/b5wp/2016/172/en/",
+        "https://football-observatory.com/IMG/sites/b5wp/2019/wp279/en/ (모델 변수 설명)"
+      ]
+    }
+  ],
+  "gaps": [
+    {
+      "gap": "상위 10개 중 같은 선수의 몸값과 연봉(경기장 수입)을 나란히 비교해 몸값=연봉 오해를 숫자로 깬 글이 없음",
+      "covered_in": "오해 1. 몸값이 곧 연봉일까요?"
+    },
+    {
+      "gap": "몸값과 실제 이적료가 위아래로 벌어지는 사례를 이강인·김민재·오현규 실제 이적으로 계산한 글이 없음",
+      "covered_in": "오해 2. 몸값만큼 이적료를 받을까요?"
+    },
+    {
+      "gap": "CIES(야말 3억4310만)와 트랜스퍼마크트(2억2000만) 수치가 왜 다른지, 사이트별 산정 방식을 비교한 글이 없음",
+      "covered_in": "오해 3. 몸값 순위는 어느 사이트나 같을까요?"
+    },
+    {
+      "gap": "한국 선수 몸값 표에 선수별 마지막 갱신일이 서로 다르다는 점(10월 vs 5월)을 표기한 글이 없음",
+      "covered_in": "한국 축구선수 몸값 순위는 어떻게 되나요?"
+    },
+    {
+      "gap": "센터백 몸값의 상한(역대 1억 유로 3명)을 공격수 2억2000만 유로와 비교한 포지션별 분석이 없음",
+      "covered_in": "센터백 몸값 순위로 보면"
+    }
+  ],
+  "variables": {
+    "keyword": "축구선수 몸값 순위",
+    "headline_finding": "몸값 1위 야말(2억2000만 유로)의 경기장 수입은 3300만 달러로, 몸값 1000만 유로 안팎인 호날두(2억3500만 달러)의 7분의 1. 몸값과 연봉은 거꾸로 움직일 수 있음",
+    "fee_vs_value": "이강인 이적료가 당시 몸값보다 25~43% 높음(3500만~4000만 vs 2800만), 김민재는 바이아웃으로 몸값(6000만)보다 낮은 약 5000만, 오현규는 몸값(약 700만)의 두 배 이적료 후 3월 6일 갱신에서 1500만으로 따라 오름",
+    "site_gap": "같은 야말이 CIES 3억4310만 vs 트랜스퍼마크트 2억2000만, 이강인은 트랜스퍼마크트 3500만 vs 풋볼트랜스퍼스 3100만",
+    "position_ceiling": "센터백 1억 유로 = 공격수 1위 2억2000만의 절반 이하, 역대 3명",
+    "update_date_mix": "한국 선수 표에서 이강인만 10월 5일 값, 나머지는 5~7월 값. 황인범(포르투)·설영우(아우크스부르크)·황희찬(샬케 임대)은 이적 전 값",
+    "fx_effect": "같은 2800만 유로가 5월 기사 490억 원, 10월 기사 421억 원으로 환산",
+    "first_person_hook": "'몸값 2억 유로면 1년에 그만큼 버나' 헤맨 오해 + 갱신 보도 4건 대조 + 이강인 사이트별 비교 + 갱신일 정리에 애먹은 리서치 과정(실화 범위)",
+    "primary_source_note": "transfermarkt.com 직접 열람은 봇 검증 페이지로 막혀 우회하지 않음. 트랜스퍼마크트를 인용한 2026-10-05~10 보도 4건으로 교차 확인"
+  },
+  "chart_data": [
+    {
+      "file": "football-player-market-value-top10.webp",
+      "title": "축구선수 몸값 순위 TOP 10 (2026년 10월)",
+      "unit": "백만 유로",
+      "items": [
+        [
+          "라민 야말",
+          220
+        ],
+        [
+          "엘링 홀란",
+          220
+        ],
+        [
+          "킬리안 음바페",
+          200
+        ],
+        [
+          "마이클 올리세",
+          180
+        ],
+        [
+          "주드 벨링엄",
+          160
+        ],
+        [
+          "페드리",
+          150
+        ],
+        [
+          "주앙 네베스",
+          140
+        ],
+        [
+          "흐비차 크바라츠헬리아",
+          140
+        ],
+        [
+          "비티냐",
+          140
+        ],
+        [
+          "비니시우스 주니오르",
+          130
+        ]
+      ],
+      "note": "트랜스퍼마크트 시장가치. 2026-10-05~10 갱신 보도(Barca Universal·Axar·Zamin·beIN) 기준, 라리가는 10월 5일 갱신값, 기타 리그는 각 리그 마지막 갱신값"
+    },
+    {
+      "file": "korean-player-market-value-chart.webp",
+      "title": "한국 축구선수 몸값 순위 (2026년 10월 현재)",
+      "unit": "백만 유로",
+      "items": [
+        [
+          "이강인",
+          35
+        ],
+        [
+          "김민재",
+          20
+        ],
+        [
+          "손흥민",
+          15
+        ],
+        [
+          "오현규",
+          15
+        ],
+        [
+          "황인범",
+          7
+        ],
+        [
+          "설영우",
+          6.5
+        ],
+        [
+          "황희찬",
+          6
+        ],
+        [
+          "옌스 카스트로프",
+          6
+        ],
+        [
+          "배준호",
+          4
+        ]
+      ],
+      "note": "트랜스퍼마크트 시장가치, 선수마다 갱신일 다름. 이강인 2026-10-05(인터풋볼), 김민재 2026-05 말(엑스포츠뉴스), 손흥민·오현규·황인범·설영우·황희찬 2026-06-12(뉴시스), 카스트로프 2026-05-21(뉴시스), 배준호 2026-07(TransferFeed 인용). 황인범·설영우·황희찬은 여름 이적 전 소속팀 시절 값"
+    },
+    {
+      "file": "market-value-vs-salary.webp",
+      "title": "축구선수 몸값과 연봉 비교",
+      "unit": "백만 유로",
+      "series": [
+        "몸값(트랜스퍼마크트)",
+        "경기장 수입(포브스, 연봉+보너스)"
+      ],
+      "items": [
+        [
+          "라민 야말",
+          220,
+          29.4
+        ],
+        [
+          "엘링 홀란",
+          220,
+          53.5
+        ],
+        [
+          "킬리안 음바페",
+          200,
+          62.5
+        ],
+        [
+          "비니시우스 주니오르",
+          130,
+          35.7
+        ],
+        [
+          "크리스티아누 호날두",
+          10,
+          209.7
+        ]
+      ],
+      "note": "몸값=트랜스퍼마크트 2026년 10월 보도값(호날두는 2026년 6월 보도 약 1,000만 유로). 경기장 수입=포브스 2026년 5월 발표(2025-05~2026-05, 세전, 연봉+보너스)를 ECB 2026-10-09 환율 1유로=1.1206달러로 유로 환산",
+      "legend": [
+        "몸값(트랜스퍼마크트)",
+        "경기장 수입(포브스, 유로 환산)"
+      ]
+    }
+  ],
+  "links": {
+    "internal": "/lee-kang-in-atletico-madrid/",
+    "internal_extra": [
+      "/kim-minjae-profile/",
+      "/son-heung-min-profile/"
+    ],
+    "external": "https://www.transfermarkt.com/spieler-statistik/wertvollstespieler/marktwertetop",
+    "external_extra": [
+      "https://www.si.com/soccer/highest-paid-soccer-players-world-ranked-2026"
+    ]
+  },
+  "hermes_score": 96,
+  "score_history": [
+    77,
+    96
+  ],
+  "judge": "헤르메스 77→96(2라운드, 2026-10-12). 1차 지적: 황인범 소속 오류(7/21 포르투 이적), 한국 선수 옛 값·설영우 누락, 출처 없는 숫자(풋볼트랜스퍼스·우파메카노), 포브스 링크 불일치, 김민재 주급 통화 혼용, 루니 FAQ 끼워넣기. 작가가 재조사해 전부 수정 후 96점. 잔여 개선 2건(배준호 출처 표기, 이한범 제외 고지) 반영."
+}
