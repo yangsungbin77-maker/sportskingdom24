@@ -1,0 +1,347 @@
+{
+  "type": "comparison",
+  "keyword": "축구 감독 연봉 순위",
+  "structure": "궁금증추적",
+  "keyword_filter": {
+    "keyword": "축구 감독 연봉 순위",
+    "competition": {
+      "method": "serp-scan",
+      "evidence": "구글 1페이지 9개가 전부 언론 기사(엑스포츠뉴스·파이낸셜뉴스·아시아경제·SBS Biz·한국경제·위키트리 2건)와 낡은 글(데일리안 2016년, 세계일보 2022년)이고 위키·공식기관은 없음. 언론 기사는 6~7월 월드컵 대표팀 감독 순위 단발 보도뿐이라 클럽+대표팀을 2026년 10월 기준으로 묶은 한국어 정리글이 비어 있음. allintitle 수치는 구글 직접 조회가 막혀 미측정, SERP 구성으로 판단",
+      "pass": true
+    },
+    "demand": {
+      "method": "autocomplete/gsc",
+      "evidence": "구글 자동완성 '축구 감독 연봉' 1순위가 '축구 감독 연봉 순위', 이어 '축구 감독 연봉 1위·세금·평균', '2026 축구 감독 연봉 순위', '세계/국가대표/월드컵/유럽 축구 감독 연봉 순위'가 뜸. '홍명보 연봉'은 반납·순위·세금·30억 등 10개 변형, '시메오네 연봉 높은 이유'도 노출. 옛 사이트 같은 주제 글이 구글 노출 380회(사용자 GSC)",
+      "pass": true
+    },
+    "intent": {
+      "method": "serp-scan",
+      "evidence": "상위가 모두 순위·수치를 알려주는 정보성 기사·정리글(48개국 감독 연봉 순위, 역대 대표팀 감독 연봉 TOP5 등)이고 쇼핑탭·지도팩·공식 사이트 이동 결과 없음. 영어 SERP도 Front Office Sports·Football Earnings 등 순위 정리글 위주",
+      "pass": true
+    }
+  },
+  "serp": [
+    {
+      "url": "https://v.daum.net/v/20260626144318118",
+      "opened": true,
+      "note": "엑스포츠뉴스 2026-06-26. 샐러리 리크스 48개국 감독 추정치. 홍명보 216만 유로(약 38억) 16위, 아기레 250만, 데 라 푸엔테·로렌소 각 200만, 브로스 90만, 모리야스 82만1천(29위), 안첼로티 950만(1위), 아드보카트 9만6천(최하위), 클린스만 220만 달러 비교. 대표팀 한정, 클럽 감독 없음"
+    },
+    {
+      "url": "https://www.fnnews.com/news/202606262027080019",
+      "opened": true,
+      "note": "파이낸셜뉴스 2026-06-27. 같은 샐러리 리크스 수치를 표처럼 나열, 산정 방식 설명 없음. 강점=조별 비교, 약점=세전/세후·보너스 기준 미표기, 클럽 감독 없음"
+    },
+    {
+      "url": "https://view.asiae.co.kr/article/2026062715440135274",
+      "opened": true,
+      "note": "아시아경제 2026-06-27. 샐러리 리크스가 공개 계약서·협회 발표·언론 보도 기반, 기본 연봉만 포함하고 보너스·인센티브 제외라고 명시(기준 확인용 핵심 출처). 대표팀 한정"
+    },
+    {
+      "url": "https://www.hankyung.com/article/2026062714767",
+      "opened": false,
+      "note": "한국경제 홍명보 연봉 기사. 403 Forbidden으로 미열람"
+    },
+    {
+      "url": "https://www.wikitree.co.kr/articles/1146231",
+      "opened": true,
+      "note": "위키트리 2026-07-18. 미국 AS 집계(달러): 안첼로티 1,130만, 나겔스만 790만, 포체티노 680만, 투헬 650만, 홍명보 247만(16위). 홍명보 사퇴·조별리그 1승2패 탈락, 일본 조1위 대비. 추정치 한계 명시. 클럽 감독 없음"
+    },
+    {
+      "url": "https://biz.sbs.co.kr/amp/article/20000319261",
+      "opened": true,
+      "note": "SBS Biz 2026-06-28. 홍명보 216만 유로·모리야스 82만1천·안첼로티 950만, 성과급 제외 기준. 짧은 단신"
+    },
+    {
+      "url": "https://www.wikitree.co.kr/articles/964596",
+      "opened": true,
+      "note": "위키트리 2024-07-03. 역대 한국 대표팀 감독 연봉 TOP5(클린스만 약 29억, 벤투 18억, 슈틸리케 15억, 히딩크·아드보카트 12억). 출처 대부분 '알려졌다' 수준, 2026 최신성 없음"
+    },
+    {
+      "url": "https://www.dailian.co.kr/news/view/596614/",
+      "opened": true,
+      "note": "데일리안 2016-11-06. 과르디올라 214억·무리뉴 197억 등 2016년 클럽 감독 TOP10. 10년 전 자료가 아직 1페이지 노출 = 최신 클럽 순위 빈자리 근거"
+    },
+    {
+      "url": "https://www.segye.com/newsView/20221122504533",
+      "opened": true,
+      "note": "세계일보 2022-11-22. 파이낸스 풋볼 카타르 월드컵 32개국 감독 연봉(플리크 650만 유로 1위, 벤투 130만 11위). 낡은 자료"
+    },
+    {
+      "url": "https://frontofficesports.com/highest-paid-soccer-managers/",
+      "opened": true,
+      "note": "Front Office Sports, 제목은 2026이지만 2025-03-13 갱신본. 시메오네 3,350만 달러 1위, 과르디올라 2위, 인자기(인터밀란) 17위 등 낡은 소속. 영어 SERP 1위권, '제목 연도≠갱신일' 사례로 본문 활용"
+    },
+    {
+      "url": "https://footballearnings.com/rankings/highest-paid-football-managers-in-the-world-2026-ranking/",
+      "opened": true,
+      "note": "Football Earnings 2026년 6월 갱신. 2025-26 세전 기본급 TOP25(시메오네 3,030만, 인자기 2,960만, 과르디올라 2,420만, 아르테타 1,830만 유로…), 보너스 제외 명시. 출처 미표기, 과르디올라 퇴장·아르테타 재계약 미반영"
+    },
+    {
+      "url": "https://www.footgoal.co/blog-posts/the-highest-paid-manager-in-the-premier-league-and-the-2026-coaching-wealth-gap",
+      "opened": true,
+      "note": "Footgoal 2026-07-21(8월 갱신). 과르디올라 퇴장 후 PL 감독 연봉 TOP10(아르테타 1,000만 파운드 1위, 데 제르비·에메리 800만). 출처 미표기, 10월 아르테타 재계약 이전 자료"
+    }
+  ],
+  "serp_summary": {
+    "intent": "정보 — 감독 연봉 1위·순위·특정 감독(홍명보·시메오네·과르디올라) 연봉 확인",
+    "common_must": [
+      "연봉 1위 감독",
+      "순위 표",
+      "추정치라는 한계",
+      "홍명보·대표팀 감독 비교",
+      "안첼로티 대표팀 1위"
+    ],
+    "gap": "한국어 상위는 대표팀 감독 단발 기사뿐이고 클럽 감독 순위는 2016년 자료가 남아 있음. 영어 상위도 과르디올라 퇴장(2026-05)·아르테타 재계약(2026-10-07)·루이스 엔리케 재계약(2026-09) 미반영",
+    "our_angle": "2026년 10월 현직 감독만으로 클럽+대표팀 통합 TOP10, 출처별 범위 표기, 1위가 출처에 따라 갈리는 이유, 세전·보너스 기준 해설, 모레노 임시 체제까지"
+  },
+  "factcheck": [
+    {
+      "claim": "인자기는 2025년 6월 알힐랄과 계약, 시즌당 약 2,600만 유로(로마노는 세후, SalaryLeaks는 세전 표기), 계약 2027년 6월까지. 2026년 10월에도 알힐랄 지휘",
+      "sources": [
+        "https://x.com/FabrizioRomano/status/1930377109702169041",
+        "https://www.salaryleaks.com/football/managers/simone-inzaghi",
+        "https://www.okaz.com.sa/sport/na/2237054"
+      ]
+    },
+    {
+      "claim": "시메오네 연봉은 SalaryLeaks 기본급 2,350만 유로+보너스 최대 250만, 레퀴프(2026-04) 2,980만 유로로 출처별 차이. 계약 2027년 6월까지, 2026-10-10 알라베스전 2-1 승리 지휘",
+      "sources": [
+        "https://www.salaryleaks.com/football/managers/diego-simeone",
+        "https://sports.yahoo.com/articles/psg-close-extending-luis-enriques-182707278.html",
+        "https://www.intothecalderon.com/atletico-madrid-quotes/28739/diego-simeone-alaves-atletico-madrid-la-liga-press-conference"
+      ]
+    },
+    {
+      "claim": "아르테타 2026-10-07 아스널과 2030년까지 재계약, 연 약 2,000만 파운드(더 타임스·텔레그래프 보도), 과르디올라 퇴장 후 PL 최고 연봉 감독",
+      "sources": [
+        "https://sports.yahoo.com/articles/mikel-arteta-reaches-status-super-110038689.html",
+        "https://www.washingtonpost.com/sports/soccer/2026/10/07/arteta-arsenal-contract/2a7a43fc-c242-11f1-8170-681419af1cc9_story.html",
+        "https://www.sportbible.com/football/football-news/arsenal/mikel-arteta-arsenal-contract-salary-highest-paid-managers-364688-20260922"
+      ]
+    },
+    {
+      "claim": "루이스 엔리케 PSG 2030년까지 재계약(2026-09), 연봉 약 1,200만→2,000만 유로 세전(레퀴프 2026-04 전망치와 일치)",
+      "sources": [
+        "https://sports.yahoo.com/articles/psg-close-extending-luis-enriques-182707278.html",
+        "https://www.fichajes.net/en/news/psg-to-double-luis-enriques-salary-20260906.html",
+        "https://www.softfootball.com/psg-hand-luis-enrique-huge-salary-increase-in-new-contract/"
+      ]
+    },
+    {
+      "claim": "과르디올라 2026년 5월 맨시티 퇴장 발표, 시티 풋볼 그룹 글로벌 앰배서더, 6월 29일 마레스카 3년 계약 선임",
+      "sources": [
+        "https://www.aljazeera.com/sports/2026/6/29/enzo-maresca-appointed-man-city-manager-to-succeed-pep-guardiola",
+        "https://www.skysports.com/football/news/13548773/enzo-maresca-man-city-appoint-former-chelsea-head-coach-as-pep-guardiolas-successor-at-etihad-stadium",
+        "https://www.football-espana.net/2026/05/22/pep-guardiola-announces-manchester-city-departure-after-10-years-i-wont-train-for-a-while"
+      ]
+    },
+    {
+      "claim": "샐러리 리크스(2026-06-26) 월드컵 48개국 감독 추정: 안첼로티 950만 유로 1위, 홍명보 216만 유로(약 38억) 16위, 모리야스 82만1천 29위, 아드보카트 9만6천 최하위, 기본급만·보너스 제외. AS 집계도 홍명보 약 247만 달러 16위",
+      "sources": [
+        "https://view.asiae.co.kr/article/2026062715440135274",
+        "https://www.fnnews.com/news/202606262027080019",
+        "https://v.daum.net/v/20260626144318118",
+        "https://www.wikitree.co.kr/articles/1146231"
+      ]
+    },
+    {
+      "claim": "무리뉴 레알 마드리드 복귀, 연 약 1,200만 유로 세전(+보너스 최대 300만, SalaryLeaks가 빌트 인용)",
+      "sources": [
+        "https://sports.yahoo.com/articles/lower-wages-benfica-mourinho-signs-212200270.html",
+        "https://www.salaryleaks.com/football/managers/jose-mourinho"
+      ]
+    },
+    {
+      "claim": "글라스너 노팅엄 포레스트 연봉 SalaryLeaks 1,150만 파운드 vs 더 선 약 1,300만 파운드(범위로 표기)",
+      "sources": [
+        "https://www.salaryleaks.com/football/managers",
+        "https://www.goal.com/en-us/lists/nottingham-forest-confirm-oliver-glasner-new-head-coach-ex-crystal-palace/blt12eb78573907e7f0"
+      ]
+    },
+    {
+      "claim": "알론소 2026년 5월 첼시 4년 계약(1월 레알 마드리드 상호 합의 결별), 연봉 SalaryLeaks 1,150만 파운드 vs Rabona 860만 파운드",
+      "sources": [
+        "https://www.aljazeera.com/sports/2026/5/17/chelsea-appoint-xabi-alonso-as-new-manager-premier-league-club-says",
+        "https://www.bluechampions.com/xabi-alonso-salary-chelsea/",
+        "https://www.salaryleaks.com/football/managers/xabi-alonso"
+      ]
+    },
+    {
+      "claim": "모레노 임시 감독 2026-09-01 협회 이사회 선임, 계약 11월 27일까지·6경기 평가 후 2027 아시안컵 연장 가능, 연봉 비공개",
+      "sources": [
+        "https://v.daum.net/v/20260901134732621",
+        "https://www.olympics.com/ko/news/roberto-moreno-appointed-interim-coach-korea-national-football-team",
+        "https://www.issuevalley.com/news/articleView.html?idxno=56318"
+      ]
+    },
+    {
+      "claim": "안첼로티 2026-05-14 브라질과 2030 월드컵까지 연장, 16강 탈락 뒤에도 유임",
+      "sources": [
+        "https://www.espn.com/soccer/story/_/id/48770451/brazil-coach-carlo-ancelotti-contract-extension-2030-world-cup",
+        "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/carlo-ancelotti-brazil-contract-extension"
+      ]
+    },
+    {
+      "claim": "포체티노 2026-08 미국과 2030년까지 재계약, 투헬 2026-02 잉글랜드와 유로 2028까지 연장. 투헬 원계약 연 500만 파운드는 세후 약 260만 파운드(GB 뉴스)",
+      "sources": [
+        "https://www.ussoccer.com/stories/2026/08/usmnt/mauricio-pochettino-head-coach-new-contract-through-2030",
+        "https://www.fifa.com/en/news/articles/thomas-tuchel-new-england-contract",
+        "https://www.gbnews.com/sport/football/thomas-tuchel-salary-tax-bill"
+      ]
+    },
+    {
+      "claim": "가스페리니 AS 로마 현직(2026-10), 2026-27 세전 약 900만 유로(money.it·트랜스퍼마르크트), SalaryLeaks 930만 유로",
+      "sources": [
+        "https://www.money.it/stipendi-allenatori-serie-a-classifica-2026-2027",
+        "https://www.salaryleaks.com/football/managers"
+      ]
+    }
+  ],
+  "gaps": [
+    {
+      "gap": "상위 10개 중 2026년 과르디올라 퇴장·마레스카 선임·알론소 첼시행·아르테타 10월 재계약을 반영한 순위가 하나도 없음",
+      "covered_in": "2026년 감독 대이동, 순위가 어떻게 바뀌었나요?"
+    },
+    {
+      "gap": "같은 감독 연봉이 출처별로 600만 유로 넘게 차이 나는 이유(세전·세후, 보너스, 환산 통화, 집계 시점)를 설명한 글이 없음",
+      "covered_in": "같은 감독인데 왜 보도마다 숫자가 다를까요?"
+    },
+    {
+      "gap": "클럽 1위 감독과 국가대표 감독 연봉을 같은 단위로 놓고 배수(37%, 10배, 100배)를 계산한 글이 없음",
+      "covered_in": "국가대표 감독 연봉은 클럽보다 얼마나 적을까?"
+    },
+    {
+      "gap": "홍명보 사퇴 이후 모레노 임시 감독 체제의 계약 기간·연봉 비공개 현황을 순위 글에서 다룬 곳이 없음",
+      "covered_in": "홍명보 연봉과 지금 한국 대표팀 감독 연봉은?"
+    },
+    {
+      "gap": "감독 연봉의 세후 실수령액(투헬 500만→260만 파운드)과 사우디 무소득세 차이를 짚은 순위 글이 없음",
+      "covered_in": "감독 연봉에 세금과 보너스는 포함될까?"
+    }
+  ],
+  "variables": {
+    "keyword": "축구 감독 연봉 순위",
+    "cluster": [
+      "축구 감독 연봉",
+      "축구 감독 연봉 1위",
+      "2026 축구 감독 연봉 순위",
+      "펩 과르디올라 연봉",
+      "시메오네 연봉",
+      "시메오네 연봉 높은 이유",
+      "아르테타 연봉",
+      "안첼로티 연봉",
+      "홍명보 연봉",
+      "국가대표 감독 연봉",
+      "월드컵 감독 연봉 순위",
+      "축구 감독 연봉 세금"
+    ],
+    "headline_finding": "1위는 출처에 따라 인자기(2,600만 유로)와 시메오네(2,350만~2,980만 유로)로 갈리고, 과르디올라는 2026년 5월 퇴장으로 순위에서 빠짐",
+    "top4_cliff": "상위 4명 2,000만 유로 안팎 → 5위부터 1,000만 유로대 초반",
+    "club_vs_national": "대표팀 1위 안첼로티 950만 유로 = 클럽 1위의 37%, 대표팀 2위 아기레 250만 유로 = 클럽 1위의 약 1/10, 대표팀 최하위와 1위 약 100배",
+    "korea": "홍명보 216만 유로(약 38억 원) 16위, 모리야스 82만1천 유로 29위, 현 모레노 임시 감독 연봉 비공개",
+    "tax_example": "투헬 연 500만 파운드 → 세후 약 260만 파운드(GB 뉴스 계산)",
+    "fx_basis": "원화 환산 1유로≈1,759원(2026년 6월 국내 기사 기준), 그래프용 파운드→유로는 1파운드≈1.15유로 단순 환산",
+    "first_person_hook": "과르디올라가 1위인 줄 알고 찾다가 퇴장 기사를 보고 표를 다시 짠 과정, 세후 실수령액으로 오해했던 경험(리서치 과정만, 경험 날조 없음)"
+  },
+  "chart_data": [
+    {
+      "file": "soccer-manager-salary-top10-chart.webp",
+      "title": "클럽 감독 연봉 순위 TOP 10 (2026년 10월)",
+      "unit": "백만 유로",
+      "items": [
+        [
+          "인자기 (알힐랄)",
+          26.0
+        ],
+        [
+          "시메오네 (아틀레티코)",
+          23.5
+        ],
+        [
+          "아르테타 (아스널)",
+          23.0
+        ],
+        [
+          "루이스 엔리케 (PSG)",
+          20.0
+        ],
+        [
+          "글라스너 (노팅엄)",
+          13.2
+        ],
+        [
+          "알론소 (첼시)",
+          13.2
+        ],
+        [
+          "무리뉴 (레알 마드리드)",
+          12.0
+        ],
+        [
+          "포스테코글루 (알나스르)",
+          11.7
+        ],
+        [
+          "마레스카 (맨시티)",
+          11.5
+        ],
+        [
+          "스팔레티 (유벤투스)",
+          11.2
+        ]
+      ],
+      "note": "SalaryLeaks·언론 보도 기본급 추정치(보너스 제외), 2026년 10월 12일 기준. 파운드는 1파운드≈1.15유로 환산, 범위로 보도된 감독은 많이 인용된 값. 시메오네는 르파리지앵 2,980만 유로 집계도 있음"
+    },
+    {
+      "file": "soccer-manager-salary-compare-chart.webp",
+      "title": "2026 월드컵 국가대표 감독 연봉 비교",
+      "unit": "백만 유로",
+      "items": [
+        [
+          "안첼로티 (브라질)",
+          9.5
+        ],
+        [
+          "아기레 (멕시코)",
+          2.5
+        ],
+        [
+          "홍명보 (한국)",
+          2.16
+        ],
+        [
+          "데 라 푸엔테 (스페인)",
+          2.0
+        ],
+        [
+          "로렌소 (콜롬비아)",
+          2.0
+        ],
+        [
+          "브로스 (남아공)",
+          0.9
+        ],
+        [
+          "모리야스 (일본)",
+          0.821
+        ],
+        [
+          "아드보카트 (퀴라소)",
+          0.096
+        ]
+      ],
+      "note": "주요 감독 발췌(전체 순위 아님). 샐러리 리크스 2026년 6월 26일 발표 추정치(기본급, 보너스 제외). 홍명보는 대회 후 사퇴"
+    }
+  ],
+  "links": {
+    "internal": "/kfa-innovation-committee-2026/",
+    "internal_extra": "/epl-prize-money/",
+    "external": "https://www.espn.com/soccer/story/_/id/48770451/brazil-coach-carlo-ancelotti-contract-extension-2030-world-cup"
+  },
+  "hermes_score": 96,
+  "score_history": [
+    83,
+    96
+  ],
+  "judge": "헤르메스 83→96(2라운드, 2026-10-12). 1차 지적: 일본 F조 2위 오기, 아기레 '2위' 오기, TOP10에서 마레스카·스팔레티 누락, 2,980만·2,380만 출처를 레퀴프로 오표기(실제 르파리지앵). 전부 수정 후 96점. 잔여 개선 3건(A조 명시, 16행 문장 분리, 아르테타 범위 통일) 반영."
+}
