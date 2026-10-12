@@ -1,0 +1,341 @@
+{
+  "type": "comparison",
+  "keyword": "축구 구단 가치 순위",
+  "structure": "핵심발견확장",
+  "keyword_filter": {
+    "keyword": "축구 구단 가치 순위",
+    "competition": {
+      "method": "serp-scan",
+      "evidence": "2026-10-12 WebSearch 1페이지가 미주중앙일보(koreadaily) 2건, 골닷컴 코리아 2021년 트랜스퍼마크트 기사, 스포츠경향 2021·2024년 기사, 포브스 호주판, 스포티코 데이터 페이지, 브랜드 파이낸스 보도자료 등 단발 뉴스 위주. 나무위키·위키백과 없음, 2026년 수치를 표로 정리한 블로그·정보글은 1페이지에 없음. 상위 다수가 2021~2024년 낡은 수치라 최신·구분형 글로 진입 여지 큼",
+      "pass": true
+    },
+    "demand": {
+      "method": "autocomplete",
+      "evidence": "구글 자동완성(hl=ko)에서 '축구 구단 가치'가 '축구 구단 가치 순위', '축구 구단 가치 순위 2026', '세계 축구 구단 가치 순위', '유럽 축구 구단 가치 순위'를 제시. '축구 구단 순위'도 '축구 구단 가치 순위'·'축구 구단 수익 순위'를 제시. 위성 '포브스 축구 구단 가치', '맨유 구단가치 1위', '토트넘 구단 가치 순위', 'k리그 구단 가치 순위', '바르셀로나 구단 가치', '스쿼드 가치 순위'도 자동완성 노출. 옛 사이트 2023 구단 가치 순위 글이 구글 노출을 받던 주제",
+      "pass": true
+    },
+    "intent": {
+      "method": "serp-scan",
+      "evidence": "상위 결과가 전부 순위·금액을 알려주는 정보성 뉴스·데이터 페이지(포브스 순위, 스포티코 표, 국내 기사). 쇼핑탭·지도팩·제품 카드 없음. 독자는 '몇 위·얼마'를 확인하려는 정보 의도라 블로그 정리글로 충족 가능",
+      "pass": true
+    }
+  },
+  "cluster": [
+    "축구 구단 가치 순위 2026",
+    "세계 축구 구단 가치 순위",
+    "유럽 축구 구단 가치 순위",
+    "포브스 축구 구단 가치",
+    "레알 마드리드 구단 가치",
+    "맨유 구단 가치",
+    "바르셀로나 구단 가치",
+    "토트넘 구단 가치 순위",
+    "스쿼드 가치 순위",
+    "k리그 구단 가치",
+    "축구 구단 수익 순위"
+  ],
+  "serp": [
+    {
+      "url": "https://www.koreadaily.com/article/20260530002138672",
+      "opened": false,
+      "note": "미주중앙일보 2026-05-30 포브스 2026 보도(검색 스니펫상 레알 95억 달러 약 14조 3천억 원, 바르사 75억, 맨유 72억, 리버풀 62억). WebFetch 시 HTTP 410 Gone으로 미열람"
+    },
+    {
+      "url": "https://www.koreadaily.com/article/20260530145026188",
+      "opened": false,
+      "note": "미주중앙일보 같은 날 후속 기사(맨유 2024-25 EPL 15위·매출 8억 6,500만 달러 언급). HTTP 410 Gone, 미열람"
+    },
+    {
+      "url": "https://www.goal.com/kr/%EB%89%B4%EC%8A%A4/%EB%A9%94%EC%8B%9C%EC%9D%98-psg%EA%B0%80-%EC%95%84%EB%8B%88%EB%9D%BC%EB%8B%88-%EC%A0%84-%EC%84%B8%EA%B3%84-%EA%B5%AC%EB%8B%A8-%EA%B0%80%EC%B9%98-1%EC%9C%84-%ED%81%B4%EB%9F%BD%EC%9D%80/6rvr1dvtv3iu1ttlnn0kxkoca",
+      "opened": true,
+      "note": "골닷컴 코리아 2021-08 트랜스퍼마크트 '구단 가치' 1위 맨시티 10억 6천만 유로. 실제로는 선수단 총 가치인데 '구단 가치'로 표기 — 용어 혼동의 대표 사례, 우리 핵심 발견의 근거"
+    },
+    {
+      "url": "https://sports.khan.co.kr/article/202108121115013",
+      "opened": true,
+      "note": "스포츠경향 2021-08-12 트랜스퍼마크트 순위(맨시티 €1.06B, PSG €993.75M, 토트넘 10위 €705M). 구단 가치/스쿼드 가치 구분 없음, 5년 전 수치"
+    },
+    {
+      "url": "https://sports.khan.co.kr/article/202405130100026/amp",
+      "opened": true,
+      "note": "스포츠경향 2024-05-13 스포티코 2024 순위(맨유 62억 달러 1위). 방법론(수익·시장 규모·좌석 점유율·브랜드·시설·부채) 설명은 좋으나 2년 전 수치, 스쿼드 가치와 구분 없음"
+    },
+    {
+      "url": "https://www.forbes.com.au/news/sport/ranking-worlds-most-valuable-soccer-teams-2026/",
+      "opened": true,
+      "note": "포브스 2026 원문(호주판 전재, 원 게재 2026-05-29). 30개 구단 가치·전년 대비·매출 전체, 방법론(기업 가치=지분+순부채, 2024-25 매출, 선수 판매·경기장 부동산 제외, 시즌 평균 환율). 1차 출처"
+    },
+    {
+      "url": "https://d3data.sportico.com/SoccerValuations/SoccerValuationsList2026.html",
+      "opened": true,
+      "note": "스포티코 2026 50개 구단(2026-04-22). 데이터 CSV(SoccerValuations2026.csv) 직접 열어 톱10·전년 값 확인. 레알 77억 달러, 합계 955억 달러, 상위 15개 전부 유럽"
+    },
+    {
+      "url": "https://brandfinance.com/press-releases/footballs-elite-pull-further-ahead-as-global-brand-value-nears-e24-billion-and-european-hierarchy-shifts",
+      "opened": true,
+      "note": "브랜드 파이낸스 Football 50 2026(2026-08-20). 레알 브랜드 가치 24억 유로 3년 연속 1위, 브랜드 가치 정의(로열티 면제법). 세 번째 숫자 종류의 근거"
+    },
+    {
+      "url": "https://nocutnews.co.kr/news/4591877",
+      "opened": true,
+      "note": "노컷뉴스 2016-05 포브스(레알 36억 5천만 달러 1위). 상위 5개만, 10년 전 수치 — 국내 상위 글의 노후화 사례"
+    },
+    {
+      "url": "https://m.dailian.co.kr/news/view/712489",
+      "opened": true,
+      "note": "데일리안 2018-05 브랜드 파이낸스 브랜드 가치(맨유 1위)를 '가치'로 소개. 기업 가치·브랜드 가치 혼용 사례"
+    }
+  ],
+  "serp_extra_opened": [
+    {
+      "url": "https://www.si.com/soccer/30-most-valuable-soccer-teams-2026-ranked",
+      "note": "SI 2026-05-29 포브스 2026 톱30 재정리, 스쿼드 가치와 구분 없음"
+    },
+    {
+      "url": "https://capital.com/en-au/analysis/top-10-football-club-stocks",
+      "note": "2026-08-12 포브스 톱10 표, 기업 가치 vs 시가총액 설명(맨유만 NYSE 상장), 레알은 회원제라 주식 평가 아님"
+    },
+    {
+      "url": "https://footballbenchmark.com/e/blog/28466/805032",
+      "note": "풋볼 벤치마크 2026-05-28 유럽 32개 구단 EV, 레알 77억 유로 1위, 바르사 2위, 맨유 첫 3위 밖"
+    },
+    {
+      "url": "https://www.si.com/soccer/most-valuable-squads-world-summer-transfer-window",
+      "note": "SI 2026-09-04 트랜스퍼마크트 기반 스쿼드 가치 톱10(달러)"
+    },
+    {
+      "url": "https://en.prothomalo.com/sports/football/rts4yvlsxx",
+      "note": "프로톰 알로 2026-09-06 트랜스퍼마크트 이적시장 마감 후 스쿼드 가치 톱10(유로)"
+    }
+  ],
+  "serp_summary": {
+    "intent": "정보 — 2026년 세계 축구 구단 가치 순위와 금액 확인",
+    "common_must": [
+      "1위 레알 마드리드와 금액",
+      "톱10 순위표",
+      "전년 대비 변화",
+      "맨유·바르사·리버풀 순위",
+      "평가 기관(포브스 등)"
+    ],
+    "weakness": "국내 상위 다수가 2016~2024년 낡은 수치이고, 포브스 기업 가치·트랜스퍼마크트 스쿼드 가치·브랜드 파이낸스 브랜드 가치를 모두 '구단 가치'로 뭉뚱그림. 원화 환산 환율 기준일 미표기",
+    "our_angle": "포브스 2026 톱10 + 같은 구단의 트랜스퍼마크트 스쿼드 가치를 한 표로 맞춰 '비싼 구단 ≠ 비싼 스쿼드' 발견을 먼저 던지고, 세 숫자 정의·기관 비교·구단별 사례·K리그로 확장"
+  },
+  "factcheck": [
+    {
+      "claim": "포브스 2026(2026-05-29 발표) 톱10 구단 가치: 레알 95억, 바르사 75억, 맨유 72억, 리버풀 62억, PSG 58억, 바이에른 57억, 맨시티 55억, 아스널 54억, 첼시 42억, 토트넘 30억 달러. 레알 5년 연속 1위, 전년 대비 +41%, 토트넘 -9%로 톱10 중 유일 하락",
+      "sources": [
+        "https://www.forbes.com.au/news/sport/ranking-worlds-most-valuable-soccer-teams-2026/",
+        "https://www.si.com/soccer/30-most-valuable-soccer-teams-2026-ranked",
+        "https://capital.com/en-au/analysis/top-10-football-club-stocks"
+      ]
+    },
+    {
+      "claim": "포브스 구단 가치는 기업 가치(지분+순부채), 유럽 구단은 2024-25 매출 기준, 선수 판매 수익·경기장 부동산 제외. 레알 2024-25 매출 12억 6,500만 달러(사상 최고), 바르사 10억 6,300만 달러로 10억 달러 넘긴 두 번째 구단, 맨유 매출 8억 6,500만 달러",
+      "sources": [
+        "https://www.forbes.com.au/news/sport/ranking-worlds-most-valuable-soccer-teams-2026/",
+        "https://capital.com/en-au/analysis/top-10-football-club-stocks"
+      ]
+    },
+    {
+      "claim": "스포티코 2026(2026-04-22): 레알 77억 달러 1위, 바르사 66억 5천만, 맨유 64억 7천만 달러로 1~3위 포브스와 동일, 9위 첼시·10위 토트넘도 동일. 토트넘 36억 8천만→35억 달러로 하락. 50개 합계 955억 달러, LAFC 14억 달러 17위",
+      "sources": [
+        "https://d3data.sportico.com/SoccerValuations/SoccerValuationsList2026.html",
+        "https://d3data.sportico.com/SoccerValuations/SoccerValuations2026.csv"
+      ]
+    },
+    {
+      "claim": "풋볼 벤치마크 2026(2026-05-28): 레알 기업 가치 77억 유로 1위, 바르사 2위, 맨유 처음으로 3위 밖. 세 평가 공통값 = 레알 1위·바르사 2위",
+      "sources": [
+        "https://footballbenchmark.com/e/blog/28466/805032",
+        "https://www.forbes.com.au/news/sport/ranking-worlds-most-valuable-soccer-teams-2026/",
+        "https://d3data.sportico.com/SoccerValuations/SoccerValuations2026.csv"
+      ]
+    },
+    {
+      "claim": "트랜스퍼마크트 스쿼드 시장가치(2026년 9월 이적시장 마감 직후): 레알 14억 6천만, 맨시티 14억 3천만, PSG 13억 6천만, 아스널 13억 3천만, 바르사 12억 6천만, 첼시 10억 8천만, 바이에른 10억 4천만, 리버풀 10억 3천만, 맨유 9억 2,430만, 토트넘 8억 2,400만 유로",
+      "sources": [
+        "https://en.prothomalo.com/sports/football/rts4yvlsxx",
+        "https://www.si.com/soccer/most-valuable-squads-world-summer-transfer-window"
+      ]
+    },
+    {
+      "claim": "브랜드 파이낸스 2026(2026-08-20): 레알 브랜드 가치 24억 유로, 3년 연속 1위. 브랜드 가치는 로열티 면제법으로 산정한 무형자산 가치로 기업 가치와 다름",
+      "sources": [
+        "https://brandfinance.com/press-releases/footballs-elite-pull-further-ahead-as-global-brand-value-nears-e24-billion-and-european-hierarchy-shifts",
+        "https://www.realmadrid.com/en-US/news/club/latest-news/el-real-madrid-es-por-tercer-ano-consecutivo-la-marca-de-futbol-mas-valiosa-del-mundo-y-por-quinto-ano-la-marca-mas-fuerte-segun-brand-finance-20-08-2026",
+        "https://www.beinsports.com/en-us/soccer/articles/top-10-the-most-valuable-brands-in-world-football-2026-08-20"
+      ]
+    },
+    {
+      "claim": "K리그1 11개 구단(김천 제외) 2025시즌 연봉 총액 약 1,368억 원, 최다 울산 HD 약 206억 원 (한국프로축구연맹 2025-12-30 발표)",
+      "sources": [
+        "https://www.twig24.com/news/2025/12/30/20251230500153",
+        "https://www.jjan.kr/articleAmp/20251230500020"
+      ]
+    },
+    {
+      "claim": "환율: 유럽중앙은행 2026-10-09 기준 1달러=1,341.49원, 1유로=1,503.27원, 1유로=1.1206달러. 원화 환산·스쿼드 가치 달러 환산·배수 계산에 사용",
+      "sources": [
+        "https://api.frankfurter.app/latest?from=USD&to=KRW,EUR",
+        "https://open.er-api.com/v6/latest/USD"
+      ]
+    }
+  ],
+  "variables": {
+    "keyword": "축구 구단 가치 순위",
+    "headline_finding": "가장 비싼 구단과 가장 비싼 스쿼드는 순서가 다르다 — 맨유는 구단 가치 3위·스쿼드 9위, 맨시티는 구단 가치 7위·스쿼드 2위",
+    "own_calculation": "톱10 구단 가치(포브스 달러) ÷ 스쿼드 가치(트랜스퍼마크트 유로를 ECB 2026-10-09 1.1206으로 달러 환산) = 3.2~7.0배. 맨유 7.0배 최고, 토트넘 3.2배 최저",
+    "cross_source": "포브스·스포티코 톱10 비교 — 1~3위·9~10위 일치, 4~8위만 엇갈림. 레알 금액 차 18억 달러. 스포티코 77억 달러와 풋볼 벤치마크 77억 유로는 단위가 다른 우연의 일치",
+    "fx_basis": "원화 환산은 ECB 2026-10-09(1달러 1,341원). 5월 국내 보도의 14조 원대와 1조 원 이상 차이 = 환율 시점 차이",
+    "revenue_paradox": "토트넘 매출 7억 3,300만 달러 > 첼시 6억 3,700만 달러인데 구단 가치는 토트넘이 낮음",
+    "k_league_scale": "레알 2024-25 매출 약 1조 7천억 원(10/9 환율) vs K리그1 11개 구단 연봉 총액 약 1,368억 원 → 12배 이상",
+    "first_person_hook": "검색하니 1위가 맨시티라는 글, 레알 15억 유로라는 글이 섞여 헤맨 경험 → 두 숫자가 다른 걸 잰다는 발견"
+  },
+  "gaps": [
+    {
+      "gap": "상위 10개 중 포브스 구단 가치와 트랜스퍼마크트 스쿼드 시장가치를 같은 구단끼리 한 표로 나란히 비교한 글이 없음",
+      "covered_in": "가장 비싼 구단과 가장 비싼 스쿼드는 왜 다를까?"
+    },
+    {
+      "gap": "기업 가치·스쿼드 시장가치·브랜드 가치 세 숫자의 정의와 출처를 구분해 정리한 한국어 글이 없음(대부분 셋 다 '구단 가치'로 표기)",
+      "covered_in": "구단 가치·스쿼드 시장가치·브랜드 가치, 무엇을 재는 숫자인가"
+    },
+    {
+      "gap": "포브스·스포티코·풋볼 벤치마크의 2026년 수치를 교차 비교해 공통값(레알 1위·바르사 2위)을 뽑은 글이 없음",
+      "covered_in": "포브스와 스포티코, 평가 기관마다 숫자가 다른 이유"
+    },
+    {
+      "gap": "K리그 구단이 세계 구단 가치 순위표에 왜 없는지, 연맹 공식 연봉 자료로 규모를 가늠한 글이 없음",
+      "covered_in": "K리그 구단 가치 순위는 왜 없을까"
+    },
+    {
+      "gap": "토트넘이 매출은 첼시보다 많은데 구단 가치는 낮고 두 평가 모두에서 하락한 점을 짚은 글이 없음",
+      "covered_in": "토트넘은 왜 톱10에서 유일하게 가치가 떨어졌나"
+    }
+  ],
+  "chart_data": {
+    "top10": {
+      "file": "football-club-value-top10-chart.webp",
+      "title": "2026 축구 구단 가치 순위 TOP 10 (포브스)",
+      "unit": "억 달러",
+      "items": [
+        [
+          "레알 마드리드",
+          95
+        ],
+        [
+          "바르셀로나",
+          75
+        ],
+        [
+          "맨체스터 유나이티드",
+          72
+        ],
+        [
+          "리버풀",
+          62
+        ],
+        [
+          "파리 생제르맹",
+          58
+        ],
+        [
+          "바이에른 뮌헨",
+          57
+        ],
+        [
+          "맨체스터 시티",
+          55
+        ],
+        [
+          "아스널",
+          54
+        ],
+        [
+          "첼시",
+          42
+        ],
+        [
+          "토트넘 홋스퍼",
+          30
+        ]
+      ],
+      "note": "출처 Forbes 'The World's Most Valuable Soccer Teams 2026'(2026-05-29 발표). 기업 가치(지분+순부채), 유럽 구단 2024-25 시즌 매출 기준"
+    },
+    "comparison": {
+      "file": "club-value-vs-squad-value.webp",
+      "title": "구단 가치 vs 스쿼드 시장가치 (2026)",
+      "unit": "억 달러",
+      "series": [
+        "구단 가치(포브스)",
+        "스쿼드 시장가치(트랜스퍼마크트)"
+      ],
+      "items": [
+        [
+          "레알 마드리드",
+          95,
+          16.4
+        ],
+        [
+          "바르셀로나",
+          75,
+          14.1
+        ],
+        [
+          "맨체스터 유나이티드",
+          72,
+          10.4
+        ],
+        [
+          "리버풀",
+          62,
+          11.5
+        ],
+        [
+          "파리 생제르맹",
+          58,
+          15.2
+        ],
+        [
+          "바이에른 뮌헨",
+          57,
+          11.7
+        ],
+        [
+          "맨체스터 시티",
+          55,
+          16.0
+        ],
+        [
+          "아스널",
+          54,
+          14.9
+        ],
+        [
+          "첼시",
+          42,
+          12.1
+        ],
+        [
+          "토트넘 홋스퍼",
+          30,
+          9.2
+        ]
+      ],
+      "note": "구단 가치=Forbes 2026(2026-05-29). 스쿼드 시장가치=Transfermarkt 2026년 9월 이적시장 마감 직후 유로 값(Prothom Alo 2026-09-06·SI 2026-09-04 보도)을 ECB 2026-10-09 환율 1유로=1.1206달러로 환산"
+    }
+  },
+  "links": {
+    "internal": "/la-liga-prize-money/",
+    "internal_extra": [
+      "/epl-prize-money/",
+      "/bundesliga-prize-money/",
+      "/k-league-2026-guide/"
+    ],
+    "external": "https://www.forbes.com/sites/justinteitelbaum/2026/05/29/the-worlds-most-valuable-soccer-teams-2026/"
+  },
+  "hermes_score": 92,
+  "score_history": [
+    92
+  ],
+  "judge": "헤르메스 92/100 1라운드 통과(2026-10-12). 틀린 사실 0건(Forbes·Sportico·Football Benchmark·Brand Finance·연맹 수치 원문 대조). 값싼 개선 7건 반영: 삭제된 기사 의존 문장→직접 계산, forbes.com.au 링크, 배수 '제 계산' 표기, K리그1 11개 구단 명시, 환율 기준 차이 고지, 선수 몸값 글 내부링크+기준일, 해시태그 교체."
+}
