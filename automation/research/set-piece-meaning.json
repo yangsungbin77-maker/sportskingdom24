@@ -1,0 +1,201 @@
+{
+  "type": "정보",
+  "keyword_filter": {
+    "keyword": "축구 세트피스 뜻",
+    "competition": {
+      "method": "serp-scan",
+      "evidence": "세트피스 뜻 1페이지가 2010~2012년 옛 신문 기사·다음 카페·아하 질문답변·사전이라 전문 해설 블로그가 거의 없음",
+      "pass": true
+    },
+    "demand": {
+      "method": "autocomplete",
+      "evidence": "구글 자동완성 '세트피스' 1순위가 '세트피스 뜻'이고 '축구 세트피스 뜻'도 별도로 떠 뜻 검색 수요가 분명함(2026-10-15)",
+      "pass": true
+    },
+    "intent": {
+      "method": "serp-scan",
+      "evidence": "상위 결과가 정의·용어 설명 정보형이고, 세트피스 전술은 FM 게임 검색이라 루트에서 제외함",
+      "pass": true
+    }
+  },
+  "serp": [
+    {
+      "url": "https://namu.wiki/w/세트피스",
+      "opened": false,
+      "note": "403 차단, 어원(체스 기물 세팅) 설명"
+    },
+    {
+      "url": "https://wordrow.kr/의미/세트 피스/",
+      "opened": false,
+      "note": "403, 사전식 한 줄"
+    },
+    {
+      "url": "https://www.jjan.kr/article/20120201425388",
+      "opened": true,
+      "note": "2012 순화어 칼럼(맞춤 전술), 정의만"
+    },
+    {
+      "url": "https://brunch.co.kr/@pipinporm/4",
+      "opened": true,
+      "note": "2018 효율 분석, 2018 월드컵 세트피스 34% 인용"
+    },
+    {
+      "url": "https://www.segye.com/newsView/20100625003709",
+      "opened": true,
+      "note": "2010 칼럼, 용어 유래"
+    },
+    {
+      "url": "https://www.nongmin.com/article/20100628022671",
+      "opened": true,
+      "note": "2010 용어풀이, 짧음"
+    },
+    {
+      "url": "https://www.a-ha.io/questions/430ef4b6495e43539828b19b719a09b4",
+      "opened": true,
+      "note": "질문답변 850자"
+    },
+    {
+      "url": "https://m.cafe.daum.net/ango23/5pV8/3749",
+      "opened": true,
+      "note": "카페 글, 세트플레이 일본식·9.15m=10야드"
+    },
+    {
+      "url": "https://www.gqkorea.co.kr/?p=342196",
+      "opened": true,
+      "note": "2025-10 아스날 미식축구식 블로킹, PL 28.4%"
+    },
+    {
+      "url": "https://v.daum.net/v/20260304115425184",
+      "opened": true,
+      "note": "2026-03 슬롯·과르디올라 논쟁, 27.5%"
+    },
+    {
+      "url": "https://brunch.co.kr/@wkdwk1/1300",
+      "opened": true,
+      "note": "영단어 글, 무관"
+    },
+    {
+      "url": "https://sports.khan.co.kr/article/201006232118463/amp",
+      "opened": true,
+      "note": "2010 대표팀 프리킥 골 기사"
+    },
+    {
+      "url": "https://wiki.onul.works/w/프리킥_(축구)",
+      "opened": false,
+      "note": "403, AI 위키"
+    }
+  ],
+  "factcheck": [
+    {
+      "claim": "간접 프리킥 팔 들기 신호, 직접 골이면 골킥",
+      "sources": [
+        "https://www.theifab.com/laws/latest/free-kicks/",
+        "https://www.readingrefs.org.uk/ftm/ftmpages/FTM11.html"
+      ]
+    },
+    {
+      "claim": "벽 9.15m, 3명 이상 벽이면 공격수 1m(2019/20)",
+      "sources": [
+        "https://www.theifab.com/laws/latest/free-kicks/",
+        "https://www.scottishfa.co.uk/news/updates-to-laws-of-the-game-2019-20/"
+      ]
+    },
+    {
+      "claim": "골키퍼 8초 규칙→상대 코너킥, 5초 카운트(2025/26)",
+      "sources": [
+        "https://www.theifab.com/laws/latest/fouls-and-misconduct/",
+        "https://hayters.com/goalkeepers-to-face-new-eight-second-rule-from-2025-26-season/"
+      ]
+    },
+    {
+      "claim": "2026/27 스로인·골킥 5초 카운트다운, 코너킥 VAR 옵션",
+      "sources": [
+        "https://theifab.com/news/the-ifab-introduces-further-measures-to-improve-match-flow-and-player-behaviour/",
+        "https://www.concacaf.com/competitions/concacaf/news/concacaf-confirms-implementation-of-the-ifab-2026-27-laws-of-the-game-amendments"
+      ]
+    },
+    {
+      "claim": "PL 2025-26 세트피스 27.4%(전 시즌 20.6%), 코너킥 18%(전 12.1%), 인스윙 2,643 아웃스윙 541",
+      "sources": [
+        "https://theanalyst.com/articles/fpl-set-piece-stats-projections-tips-premier-league-2026-27",
+        "https://v.daum.net/v/20260304115425184"
+      ]
+    },
+    {
+      "claim": "아스날 68골 중 28골 데드볼, 코너킥 골 18골 PL 한 시즌 신기록(2026-05-19), 종전 16골(올덤·WBA·아스날)",
+      "sources": [
+        "https://theanalyst.com/articles/how-arsenal-won-premier-league-title-10-numbers-stats",
+        "https://theanalyst.com/articles/arsenal-most-goals-from-corners-premier-league-season-record"
+      ]
+    },
+    {
+      "claim": "페널티 두 번 닿기 정리(알바레스 사건 계기)",
+      "sources": [
+        "https://www.manutd.com/en/news/detail/ifab-confirm-another-rule-change-to-kick-in-during-2025",
+        "https://www.nbcnewyork.com/news/sports/soccer/soccer-law-penalties-updated-double-touch/6288368/?amp=1"
+      ]
+    },
+    {
+      "claim": "니콜라 조베르 2021년 7월 아스날 합류, 브렌트퍼드·맨시티 경력",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Nicolas_Jover",
+        "https://www.skysports.com/football/news/15118/13125688/nicolas-jover-arsenals-set-piece-genius-has-transformed-premier-league-title-challengers-threat-from-free-kicks-and-corners"
+      ]
+    }
+  ],
+  "variables": {
+    "keyword": "축구 세트피스 뜻",
+    "headline_finding": "2025-26 PL 세트피스 27.4%·코너킥 18% 역대 최고",
+    "arsenal_share": "28/68=41.2%, 리그 평균의 1.5배",
+    "law_changes": "8초 규칙→코너킥, 5초 카운트다운, 코너킥 VAR",
+    "inswing_ratio": "인스윙 2,643 vs 아웃스윙 541"
+  },
+  "structure": "질문연결",
+  "gaps": [
+    {
+      "gap": "골키퍼 8초 규칙·스로인 골킥 5초 카운트다운·코너킥 VAR 같은 2025~2026 개정을 다룬 상위 글이 없음",
+      "covered_in": "## 2025~2026년 규칙 개정으로 세트피스는 무엇이 바뀌었나요?"
+    },
+    {
+      "gap": "직접·간접 프리킥 차이와 수비벽 9.15m·공격수 1m 규칙을 표와 그림으로 정리한 글이 없음",
+      "covered_in": "## 프리킥 수비벽은 몇 m 떨어져야 하나요?"
+    },
+    {
+      "gap": "인스윙·아웃스윙·니어포스트 플릭·지역 대인 혼합 방어 같은 코너킥 전술 용어를 설명한 한국어 글이 없음",
+      "covered_in": "## 코너킥은 어떤 규칙과 전술로 차나요?"
+    },
+    {
+      "gap": "2025-26 프리미어리그 세트피스 27.4%·코너킥 18% 같은 출처 있는 최신 통계가 없고 대부분 2010년 자료",
+      "covered_in": "## 세트피스 득점은 실제로 얼마나 많나요?"
+    },
+    {
+      "gap": "세트피스가 경기규칙 공식 용어가 아니라 분석 용어이고 통계 범위가 다르다는 점을 설명한 글이 없음",
+      "covered_in": "## 세트피스와 세트플레이는 같은 말인가요?"
+    }
+  ],
+  "own_evidence": [
+    {
+      "type": "table",
+      "desc": "IFAB 11·13~17조를 대조해 재개 장면별 직접 골·오프사이드 적용 여부를 표로 직접 정리",
+      "proof": "| 간접 프리킥 | 위험한 플레이, 진로 방해, 골키퍼 반칙 일부 | 다른 선수가 닿아야 인정 | 있음 |"
+    },
+    {
+      "type": "calc",
+      "desc": "Opta 두 시즌 수치로 세트피스 1.33배·코너킥 1.49배 증가와 아스날 41.2%를 직접 계산",
+      "proof": "코너킥 비중은 12.1%에서 18.0%로 1.49배가 됐습니다"
+    }
+  ],
+  "hermes_score": 93,
+  "score_history": [
+    87,
+    93
+  ],
+  "factcheck_override": [
+    {
+      "line_claim": "골키퍼 한 발 일부가 골라인에 닿거나 일직선이거나 뒤",
+      "checker": "WRONG(골라인 뒤 불허)",
+      "primary_source": "https://www.theifab.com/laws/latest/the-penalty-kick/ 원문 'at least part of one foot touching, in line with, or behind, the goal line'",
+      "decision": "1차 출처 우선, 글 유지"
+    }
+  ]
+}
