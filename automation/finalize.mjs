@@ -170,6 +170,124 @@ if (!scoreHistory || scoreHistory.length === 0 || scoreHistory.some((n) => !Numb
   }
   if (!gate.some(([ok]) => !ok)) console.log(`✔ 구성 ${st} · 빈틈 ${goodGaps.length}개 · 이미지 ${myImgs}장(직전 ${prevImgs.join('/') || '-'})`);
 }
+// ── 구글 신뢰 게이트(2026-10-15): 구글 색인 연구 규칙집 G1·G3·G4·G6·G8·G9·G10을 코드로 강제 ──
+// 배경: 블로그 색인률 17~69%·28일 노출 0~5. 구글은 "누구나 쓸 수 있는 글"을 색인하지 않는다.
+// 규칙집: C:\Users\use\클로드 코드\블로그자동발행-full\구글-색인-규칙집-2026-10.md
+{
+  const { readdirSync: __rd, statSync: __st } = await import('node:fs');
+  const { dirname: __dn } = await import('node:path');
+  const blogDir = join(root, 'src', 'content', 'blog');
+  const bodyOf = (md) => md.replace(/^---[\s\S]*?\n---\s*/, '');
+  const fmVal = (md, key) => {
+    const m = md.match(new RegExp(`\\n${key}:\\s*(.+)`));
+    if (!m) return '';
+    return m[1].trim().replace(/^(['"])([\s\S]*)\1$/, '$2').replace(/''/g, "'");
+  };
+  const others = __rd(blogDir)
+    .filter((f) => /\.mdx?$/.test(f) && f.replace(/\.mdx?$/, '') !== slug)
+    .map((f) => ({ s: f.replace(/\.mdx?$/, ''), md: readFileSync(join(blogDir, f), 'utf8') }));
+  const myBody = bodyOf(post);
+
+  // G1 우리만 가진 증거 1개 이상(직접 찍은 사진·캡처·직접 만든 표·계산·테스트·자체 데이터)
+  const OWN_TYPES = ['photo', 'screenshot', 'table', 'calc', 'test', 'data'];
+  const own = Array.isArray(RG.own_evidence) ? RG.own_evidence : [];
+  const ownOk = [];
+  for (const e of own) {
+    if (!e || !OWN_TYPES.includes(e.type) || typeof e.desc !== 'string' || e.desc.trim().length < 15
+      || typeof e.proof !== 'string' || !e.proof.trim()) {
+      gate.push([false, `own_evidence 항목 형식이 틀렸습니다: ${JSON.stringify(e).slice(0, 80)} — type(${OWN_TYPES.join('/')})·desc(15자+)·proof가 모두 필요합니다.`]);
+      continue;
+    }
+    const p = e.proof.trim();
+    if (e.type === 'photo' || e.type === 'screenshot') {
+      const file = p.startsWith('/') ? join(root, 'public', p) : join(__dn(postPath), p);
+      const name = p.split('/').pop();
+      const reused = others.filter((o) => o.md.includes(name)).map((o) => o.s);
+      if (!post.includes(p)) gate.push([false, `own_evidence 이미지 "${p}"가 글에 들어 있지 않습니다. 본문이나 heroImage에 그 경로 그대로 넣으세요.`]);
+      else if (!existsSync(file)) gate.push([false, `own_evidence 이미지 파일이 없습니다 → ${file}`]);
+      else if (/banner|default|placeholder/i.test(name) || reused.length) gate.push([false, `own_evidence 이미지 "${name}"는 공용 배너거나 다른 글(${reused.slice(0, 3).join(', ')})도 쓰는 사진입니다. 이 글 전용으로 직접 찍거나 캡처한 사진이어야 합니다.`]);
+      else ownOk.push(e);
+    } else if (p.length < 10 || !myBody.includes(p)) {
+      gate.push([false, `own_evidence(${e.type})의 proof 문구가 본문에 그대로 없습니다(10자+): "${p.slice(0, 40)}"`]);
+    } else ownOk.push(e);
+  }
+  if (!ownOk.length) {
+    gate.push([false, `우리만 가진 증거가 없습니다(G1 — 구글은 "누구나 쓸 수 있는 글"을 색인하지 않음). research.json에 1개 이상 기록하세요.
+"own_evidence": [
+  { "type": "photo|screenshot|table|calc|test|data", "desc": "무엇을 직접 했는지(15자+)", "proof": "이미지 경로(본문에 그대로) 또는 직접 만든 표·계산이 담긴 본문 문구(10자+)" }
+]
+공용 배너·AI 그림·남의 사진은 증거가 아닙니다.`]);
+  }
+  // G8 리뷰·비교 글은 직접 써 본 증거(캡처·테스트)가 꼭 있어야 한다
+  if (isReview && !ownOk.some((e) => e.type === 'screenshot' || e.type === 'test')) {
+    gate.push([false, `리뷰·비교 글(type=${RG.type})은 직접 써 본 증거가 필요합니다(G8). own_evidence에 type "screenshot"(직접 캡처) 또는 "test"(직접 잰 숫자)를 1개 이상 넣으세요.`]);
+  }
+
+  // G3 틀에 박힌 가짜 경험 문장 금지(실제로 한 일만 1인칭으로)
+  const FAKE = [
+    /한참\s*(을\s*)?(헤맸|헷갈렸)/,
+    /(저도|제가)\s*처음\s*(찾아|검색|알아)[^.\n]{0,20}(헤맸|헷갈|몰랐)/,
+    /솔직히\s*(말하면\s*)?저도\s*처음/,
+    /\bI (was|got) (totally |so |pretty )?(confused|lost) when I first\b/i,
+    /\bWhen I first (started )?(looking|researching|searching|digging)\b/i,
+    /\bI spent (hours|days) (researching|digging|comparing|reading)\b/i,
+  ];
+  const fakeHits = FAKE.map((r) => (myBody.match(r) || [])[0]).filter(Boolean);
+  if (fakeHits.length) gate.push([false, `틀에 박힌 가짜 경험 문장이 있습니다(G3): "${fakeHits.join('", "')}" — 지우고, 실제로 한 일(직접 계산·캡처·사진·표)만 1인칭으로 쓰세요.`]);
+
+  // G4 첫 줄 틀 반복 금지: 직전 2편과 첫 줄 앞부분이 셋 다 같으면 차단
+  const resDir = join(__dirname, 'research');
+  const prev2 = (existsSync(resDir) ? __rd(resDir) : [])
+    .filter((f) => f.endsWith('.json') && f !== `${slug}.json`)
+    .map((f) => ({ s: f.replace(/\.json$/, ''), t: __st(join(resDir, f)).mtimeMs }))
+    .sort((a, b) => b.t - a.t)
+    .map(({ s }) => others.find((o) => o.s === s))
+    .filter(Boolean)
+    .slice(0, 2);
+  const openSig = (md) => {
+    const line = bodyOf(md).split('\n').map((l) => l.trim())
+      .find((l) => l && !l.startsWith('![') && !l.startsWith('import ') && !l.startsWith('<')) || '';
+    return line.replace(/[*_>#`\s:：.!?。]/g, '').slice(0, 8);
+  };
+  const mySig = openSig(post);
+  if (mySig && prev2.length === 2 && prev2.every((o) => openSig(o.md) === mySig)) {
+    gate.push([false, `첫 줄이 직전 2편(${prev2.map((o) => o.s).join(', ')})과 똑같이 "${mySig}…"로 시작합니다(G4 — 같은 틀 반복 = AI 티). 시작 방식을 바꾸세요.`]);
+  }
+
+  // G9 대표 이미지는 이 글 전용(공용 배너·다른 글과 같은 이미지 금지)
+  const heroName = fmVal(post, 'heroImage').split('/').pop();
+  if (heroName) {
+    const heroUsers = others.filter((o) => fmVal(o.md, 'heroImage').split('/').pop() === heroName).map((o) => o.s);
+    if (heroUsers.length) gate.push([false, `대표 이미지 ${heroName}를 다른 글(${heroUsers.slice(0, 3).join(', ')})도 씁니다(G9). 이 글 전용 이미지로 바꾸세요.`]);
+    else if (/^banner[-_]/i.test(heroName)) gate.push([false, `대표 이미지 ${heroName}가 공용 배너입니다(G9). 이 글 전용 이미지로 바꾸세요.`]);
+  }
+
+  // G10 같은 사이트에 비슷한 제목의 글이 있으면 새로 쓰지 말고 기존 글 보강(사유를 남기면 통과)
+  const STOP = new Set(['the', 'and', 'for', 'with', 'how', 'what', 'best', 'vs', 'your', 'you', '2025', '2026', '정리', '총정리', '가이드', '방법', '추천', '완벽', '한눈에', '이유', '차이']);
+  const toks = (t) => new Set(t.toLowerCase().replace(/[^\p{L}\p{N}\s]/gu, ' ').split(/\s+/).filter((w) => w.length >= 2 && !STOP.has(w)));
+  const myTitle = fmVal(post, 'title');
+  const myToks = toks(myTitle);
+  const twins = others.map((o) => {
+    const ot = toks(fmVal(o.md, 'title'));
+    const inter = [...myToks].filter((w) => ot.has(w)).length;
+    return { s: o.s, r: myToks.size && ot.size ? inter / Math.min(myToks.size, ot.size) : 0 };
+  }).filter((x) => x.r >= 0.6);
+  const overlapReason = typeof RG.overlap_ok === 'string' && RG.overlap_ok.trim().length >= 20;
+  if (twins.length && !overlapReason) {
+    gate.push([false, `제목이 비슷한 기존 글이 있습니다(G10): ${twins.map((x) => `${x.s}(${Math.round(x.r * 100)}%)`).join(', ')}. 새로 쓰지 말고 그 글을 보강하세요. 정말 다른 글이면 research.json에 "overlap_ok": "무엇이 어떻게 다른지(20자+)"를 남기세요.`]);
+  }
+
+  // G6 제목에 실제 검색어(keyword_filter.keyword)가 들어 있어야 한다
+  const kw = String((RG.keyword_filter && RG.keyword_filter.keyword) || '').toLowerCase().trim();
+  if (kw && myTitle) {
+    const tNorm = myTitle.toLowerCase().replace(/\s/g, '');
+    const kwToks = kw.split(/\s+/).filter(Boolean);
+    const hit = kwToks.filter((w) => tNorm.includes(w)).length;
+    if (hit / kwToks.length < 0.7) gate.push([false, `제목에 실제 검색어 "${kw}"가 거의 없습니다(G6, ${hit}/${kwToks.length}단어). 사람들이 치는 말 그대로 제목 앞쪽에 넣으세요.`]);
+  }
+
+  if (!gate.some(([ok]) => !ok)) console.log(`✔ 구글 신뢰 게이트 — 자체 증거 ${ownOk.length}개(${ownOk.map((e) => e.type).join('/')}) · 틀 문장 0 · 대표 이미지 전용 · 겹치는 제목 ${twins.length ? '사유 기록' : '없음'}`);
+}
 const gateFailed = gate.filter(([ok]) => !ok).map(([, m]) => m);
 if (gateFailed.length) {
   console.error('FINALIZE_ERROR: 글쓰기 절차 증거 게이트 미충족\n- ' + gateFailed.join('\n- '));
