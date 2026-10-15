@@ -1,0 +1,558 @@
+{
+  "file": "var-reviewable-decisions.md",
+  "checked_at": "2026-10-15T13:16:42",
+  "as_of": "",
+  "language": "Korean",
+  "counts": {
+    "supported": 24,
+    "contradicted": 0,
+    "outdated": 0,
+    "overstated": 0,
+    "unverifiable": 1
+  },
+  "blocking": 0,
+  "seconds": 99.8,
+  "cost": {
+    "model": "claude-opus-5-5",
+    "api_calls": 8,
+    "input_tokens": 285762,
+    "output_tokens": 16169,
+    "web_searches": 14,
+    "web_fetches": 9,
+    "estimated_usd": 1.606
+  },
+  "results": [
+    {
+      "line": 8,
+      "group": "IFAB 2026/27 VAR changes",
+      "claim": "From July 1, 2026, the IFAB 2026/27 Laws of the Game expanded VAR reviewable categories from four to five.",
+      "quote": "2026년 7월 1일부터 **축구 VAR 판독 대상**은 4가지에서 5가지로 늘었습니다.",
+      "kind": "policy",
+      "volatile": true,
+      "verdict": "supported",
+      "severity": "low",
+      "correct_value": "",
+      "explanation": "IFAB 2026/27 VAR 프로토콜에 판독 대상 범주가 '네 가지'에서 '다섯 가지'로 바뀐 것으로 표시되어 있고, 개정 규칙은 2026년 7월 1일부터 시행됩니다.",
+      "fix": "",
+      "evidence": [
+        {
+          "url": "https://www.theifab.com/laws/latest/video-assistant-referee-var-protocol/",
+          "quote": "The referee may receive assistance from the VAR only in relation to four five categories of match-changing decisions/incidents."
+        },
+        {
+          "url": "https://legal.fifa.com/media-releases/ifab-introduces-further-measures-improve-match-flow-player-behaviour",
+          "quote": "the next edition of the Laws of the Game, effective from 1 July 2026"
+        }
+      ]
+    },
+    {
+      "line": 22,
+      "group": "IFAB 2026/27 VAR changes",
+      "claim": "Under IFAB 2026/27 laws, VAR can review sending-offs resulting from a clearly wrong second yellow card.",
+      "quote": "명백히 잘못 준 두 번째 경고 퇴장도 포함",
+      "kind": "policy",
+      "volatile": true,
+      "verdict": "supported",
+      "severity": "low",
+      "correct_value": "",
+      "explanation": "IFAB 총회는 명백히 잘못 준 두 번째 경고로 인한 퇴장을 VAR이 확인·판독할 수 있도록 승인했고, 프로토콜의 레드카드 항목에도 이 내용이 추가되었습니다.",
+      "fix": "",
+      "evidence": [
+        {
+          "url": "https://legal.fifa.com/media-releases/ifab-introduces-further-measures-improve-match-flow-player-behaviour",
+          "quote": "red cards arising from a clearly incorrect second yellow card"
+        },
+        {
+          "url": "https://www.theifab.com/laws/latest/video-assistant-referee-var-protocol/",
+          "quote": "clearly incorrect second caution"
+        }
+      ]
+    },
+    {
+      "line": 34,
+      "group": "IFAB 2026/27 VAR changes",
+      "claim": "The IFAB 2026/27 VAR protocol removed the words 'of the offending team' from the mistaken identity category, so cards given to a player of either team can be corrected.",
+      "quote": "사람 착오 항목에서 \"반칙한 팀의\"라는 말이 지워졌습니다.",
+      "kind": "policy",
+      "volatile": true,
+      "verdict": "supported",
+      "severity": "low",
+      "correct_value": "",
+      "explanation": "IFAB 개정 문서에 따르면 반칙을 실제로 한 선수가 어느 팀이든 상관없이, 다른 선수에게 잘못 준 카드는 사람 착오로 판독할 수 있게 됐습니다. 그래서 '반칙한 팀의'라는 한정어가 빠졌다는 설명은 개정 내용과 맞습니다.",
+      "fix": "",
+      "evidence": [
+        {
+          "url": "https://downloads.theifab.com/downloads/changes-to-the-laws-of-the-game-202627?l=en",
+          "quote": "Mistaken identity reviewable when a player is shown a yellow/red card but the offence for which the card was shown was committed by another player of either team"
+        }
+      ],
+      "cached": true
+    },
+    {
+      "line": 38,
+      "group": "IFAB 2026/27 VAR changes",
+      "claim": "The IFAB 2026/27 VAR protocol added clearly wrongly awarded corner kicks as a competition-optional review category, correctable only if it can be done immediately without delaying the restart.",
+      "quote": "대회 주최 측이 이 옵션을 택해야 하고, 판정을 즉시 바꿀 수 있으며 재개를 늦추지 않을 때만 정정합니다.",
+      "kind": "policy",
+      "volatile": true,
+      "verdict": "supported",
+      "severity": "low",
+      "correct_value": "",
+      "explanation": "프로토콜의 e항은 명백히 잘못 준 코너킥을 대회 선택 사항으로 규정합니다. 판정을 즉시 바꿀 수 있고 재개를 늦추지 않을 때에만 정정할 수 있습니다.",
+      "fix": "",
+      "evidence": [
+        {
+          "url": "https://www.theifab.com/laws/latest/video-assistant-referee-var-protocol/",
+          "quote": "Clearly incorrectly awarded corner kick if the decision can be changed immediately and without delaying the restart (competition option)"
+        }
+      ]
+    },
+    {
+      "line": 32,
+      "group": "IFAB 2026/27 VAR changes",
+      "claim": "The IFAB VAR protocol wording changed from 'direct red card (not second yellow)' to 'sending-off (including clearly wrong second yellow)'.",
+      "quote": "\"직접 퇴장(명백히 잘못 준 두 번째 경고는 제외)\"에서 \"퇴장(명백히 잘못 준 두 번째 경고 포함)\"으로 바뀌었습니다.",
+      "kind": "policy",
+      "volatile": true,
+      "verdict": "supported",
+      "severity": "low",
+      "correct_value": "",
+      "explanation": "공식 프로토콜의 변경 표시를 보면 '직접 레드카드(두 번째 경고 제외)'가 '레드카드'로 바뀌었고, 하위 항목에 '명백히 잘못 준 두 번째 경고'가 추가되었습니다. 블로그의 요약은 이 변경 취지와 일치합니다.",
+      "fix": "",
+      "evidence": [
+        {
+          "url": "https://www.theifab.com/laws/latest/video-assistant-referee-var-protocol/",
+          "quote": "c. Direct red Red cards (not second yellow card/caution)"
+        }
+      ]
+    },
+    {
+      "line": 30,
+      "group": "IFAB 2026/27 VAR changes",
+      "claim": "IFAB approved the 2026/27 amendments at its 140th Annual General Meeting on February 28, 2026.",
+      "quote": "IFAB는 2026년 2월 28일 제140차 연례총회에서 개정안을 승인했고",
+      "kind": "date",
+      "volatile": false,
+      "verdict": "supported",
+      "severity": "low",
+      "correct_value": "",
+      "explanation": "FIFA 보도자료는 2026년 2월 28일(토) 자로 발표되었으며, 제140차 IFAB 연례총회에서 개정안이 승인되었다고 밝힙니다.",
+      "fix": "",
+      "evidence": [
+        {
+          "url": "https://legal.fifa.com/media-releases/ifab-introduces-further-measures-improve-match-flow-player-behaviour",
+          "quote": "At its 140th Annual General Meeting (AGM), The International Football Association Board (The IFAB) approved a package of measures"
+        }
+      ]
+    },
+    {
+      "line": 30,
+      "group": "IFAB 2026/27 VAR changes",
+      "claim": "The 2026 FIFA World Cup in North America was played under the 2026/27 IFAB laws including the expanded VAR scope.",
+      "quote": "2026 북중미 월드컵도 이 규칙으로 치러졌습니다.",
+      "kind": "other",
+      "volatile": false,
+      "verdict": "supported",
+      "severity": "low",
+      "correct_value": "",
+      "explanation": "IFAB가 승인한 2026/27 경기 규칙 개정안(경고 누적 퇴장 오심, 선수 오인, 잘못 선언된 코너킥에 대한 VAR 개입 확대 포함)은 2026-27 시즌 이전인 2026년 6월 11일 개막한 북중미 월드컵부터 적용됐다는 보도가 여러 신뢰할 만한 매체에서 확인됩니다.",
+      "fix": "",
+      "evidence": [
+        {
+          "url": "https://www.aljazeera.com/sports/2026/6/1/which-football-rule-changes-will-be-implemented-during-the-world-cup",
+          "quote": "changes to the laws of the game that will be applied from the 2026-2027 season onwards as well as at the World Cup"
+        },
+        {
+          "url": "https://www.skysports.com/football/news/12098/13549645/world-cup-ifab-confirm-new-var-powers-10-second-substitutions-and-tactical-timeout-ban-in-major-rule-changes",
+          "quote": "VAR will now be able to intervene for wrongly-awarded second yellow cards, mistaken identity incidents and incorrectly-awarded corner kicks."
+        },
+        {
+          "url": "https://www.sportresolutions.com/news/ifab-2026-world-cup-rule-changes",
+          "quote": "implemented from the 2026-27 season onwards as well as at the FIFA World Cup 2026"
+        }
+      ]
+    },
+    {
+      "line": 40,
+      "group": "World Cup 2026 Switzerland-Argentina incident",
+      "claim": "In the 2026 World Cup quarter-final Switzerland vs Argentina, a yellow card initially given to Leandro Paredes was changed via VAR to a simulation yellow for Breel Embolo, who was sent off for a second yellow (ESPN, July 2026).",
+      "quote": "2026 북중미 월드컵 8강 스위스-아르헨티나전에서 주심은 처음에 아르헨티나의 레안드로 파레데스에게 태클 경고를 줬습니다.",
+      "kind": "attribution",
+      "volatile": false,
+      "verdict": "supported",
+      "severity": "low",
+      "correct_value": "",
+      "explanation": "ESPN 등 여러 매체에 따르면 2026년 7월 11일 8강전에서 주심 주앙 피녜이루는 처음에 파레데스에게 경고를 줬습니다. 이후 VAR 검토를 거쳐 엠볼로에게 시뮬레이션에 따른 두 번째 경고가 주어졌고 엠볼로는 퇴장당했습니다. 다만 IFAB는 7월 28일, 엠볼로가 퇴장당하지 말았어야 했다는 지침 해석을 내놓았습니다. 글에 이 내용을 덧붙이면 더 정확해집니다.",
+      "fix": "",
+      "evidence": [
+        {
+          "url": "https://www.espn.com/soccer/story/_/id/49339724/switzerland-breel-embolo-red-card-diving-var-argentina-2026-world-cup",
+          "quote": "Breel Embolo was sent off ... after a video review found him guilty of simulation"
+        },
+        {
+          "url": "https://www.foxsports.com/stories/soccer/switzerlands-breel-embolo-receives-red-card-diving-against-argentina",
+          "quote": "Referee Joao Pedro Silva Pinheiro initially issued a yellow card to Paredes for the challenge."
+        },
+        {
+          "url": "https://www.espn.com/soccer/story/_/id/49468627/ifab-var-process-red-card-switzerland-embolo-vs-argentina-wrong",
+          "quote": "IFAB clarified its guidance to referees which confirmed Switzerland forward Breel Embolo should not have been sent off"
+        }
+      ]
+    },
+    {
+      "line": 48,
+      "group": "VAR protocol principles",
+      "claim": "The IFAB VAR protocol sets no time limit for reviews and states that accuracy is more important than speed.",
+      "quote": "규칙서는 시간 제한도 두지 않습니다. 프로토콜은 정확한 결정이 빠른 결정보다 중요하다고 적고 있습니다.",
+      "kind": "policy",
+      "volatile": true,
+      "verdict": "supported",
+      "severity": "low",
+      "correct_value": "",
+      "explanation": "IFAB VAR 프로토콜 원칙 6항에 정확성이 속도보다 중요하므로 리뷰 과정에 시간 제한이 없다고 적혀 있습니다.",
+      "fix": "",
+      "evidence": [
+        {
+          "url": "https://www.theifab.com/laws/latest/video-assistant-referee-var-protocol/",
+          "quote": "There is no time limit for the review process as accuracy is more important than speed."
+        }
+      ]
+    },
+    {
+      "line": 44,
+      "group": "VAR protocol principles",
+      "claim": "The IFAB VAR protocol states the original decision is not changed unless video clearly shows a clear and obvious error.",
+      "quote": "\"주심의 원래 판정은 영상이 명백한 오류를 분명히 보여 주지 않는 한 바뀌지 않는다\"",
+      "kind": "policy",
+      "volatile": true,
+      "verdict": "supported",
+      "severity": "low",
+      "correct_value": "",
+      "explanation": "프로토콜 원칙 3항 내용과 같습니다.",
+      "fix": "",
+      "evidence": [
+        {
+          "url": "https://www.theifab.com/laws/latest/video-assistant-referee-var-protocol/",
+          "quote": "The original decision given by the referee will not be changed unless the video review clearly shows that the decision was a 'clear and obvious error'."
+        }
+      ]
+    },
+    {
+      "line": 59,
+      "group": "VAR protocol principles",
+      "claim": "Under the IFAB VAR protocol, decisions cannot be reviewed after play restarts except for mistaken identity and sending-offs for violent conduct, spitting, biting or extremely offensive behaviour.",
+      "quote": "예외는 사람 착오, 그리고 폭력 행위·침 뱉기·물기·극도로 모욕적인 행동 같은 퇴장 상황뿐입니다.",
+      "kind": "policy",
+      "volatile": true,
+      "verdict": "supported",
+      "severity": "low",
+      "correct_value": "",
+      "explanation": "원칙 10항에 따르면 경기가 재개된 뒤에는 사람 착오, 그리고 폭력 행위·침 뱉기·물기·극도로 모욕적이거나 욕설적인 행동에 따른 퇴장 가능 상황에 대해서만 리뷰할 수 있습니다.",
+      "fix": "",
+      "evidence": [
+        {
+          "url": "https://www.theifab.com/laws/latest/video-assistant-referee-var-protocol/",
+          "quote": "If play has stopped and been restarted, the referee may not undertake a 'review' except for a case of mistaken identity or for a potential sending-off offence relating to violent conduct, spitting, biting or extremely offensive, insulting and/or abusive action(s)."
+        }
+      ]
+    },
+    {
+      "line": 80,
+      "group": "VAR protocol principles",
+      "claim": "Under IFAB laws only the referee can initiate a VAR review; players and coaches cannot request one, and players excessively making the TV signal can be cautioned.",
+      "quote": "규칙서는 리뷰를 시작할 수 있는 사람을 주심 한 명으로 정해 두었습니다.",
+      "kind": "policy",
+      "volatile": true,
+      "verdict": "supported",
+      "severity": "low",
+      "correct_value": "",
+      "explanation": "프로토콜에 리뷰는 주심만 시작할 수 있고 VAR는 권고만 할 수 있다고 적혀 있습니다. 또 'TV 신호'를 과도하게 보이는 선수나 팀 관계자는 경고를 받는다고 명시돼 있습니다.",
+      "fix": "",
+      "evidence": [
+        {
+          "url": "https://www.theifab.com/laws/latest/video-assistant-referee-var-protocol/",
+          "quote": "Only the referee can initiate a 'review'; the VAR (and other match officials) can only recommend a 'review' to the referee."
+        },
+        {
+          "url": "https://www.theifab.com/laws/latest/video-assistant-referee-var-protocol/",
+          "quote": "excessively shows the 'TV signal' or enters the RRA will be cautioned"
+        }
+      ]
+    },
+    {
+      "line": 67,
+      "group": "VAR protocol principles",
+      "claim": "Factual decisions such as offside position, ball out of play, and foul location inside/outside the box can be corrected by VAR-only review, while subjective decisions require an on-field review.",
+      "quote": "VAR 정보로 정정(VAR-only 리뷰) | 사실을 확인하는 판정",
+      "kind": "policy",
+      "volatile": true,
+      "verdict": "supported",
+      "severity": "low",
+      "correct_value": "",
+      "explanation": "프로토콜은 오프사이드 위치, 접촉 지점, 페널티 박스 안팎 위치, 볼 아웃 같은 사실 판정에는 보통 VAR-only 리뷰가 적절하고, 주관적 판정에는 온필드 리뷰가 적절하다고 봅니다. 다만 원문 표현은 '의무'가 아니라 '적절하다'이고, 사실 판정에도 온필드 리뷰를 쓸 수 있습니다.",
+      "fix": "",
+      "evidence": [
+        {
+          "url": "https://www.theifab.com/laws/latest/video-assistant-referee-var-protocol/",
+          "quote": "For factual decisions e.g. position of an offence or player (offside), point of contact (handball/foul), location (inside or outside the penalty area), ball out of play etc. a 'VAR-only review' is usually appropriate"
+        }
+      ]
+    },
+    {
+      "line": 84,
+      "group": "FIFA Football Video Support",
+      "claim": "FIFA's Football Video Support (FVS) allows coaches two review requests per match, retained if the decision is overturned.",
+      "quote": "감독이 경기당 2번 판독을 요청할 수 있고 판정이 바뀌면 요청 횟수가 그대로 남습니다.",
+      "kind": "policy",
+      "volatile": true,
+      "verdict": "supported",
+      "severity": "low",
+      "correct_value": "",
+      "explanation": "FIFA 공식 설명에 따르면 시범 운영 단계에서 각 팀은 경기당 2번 판독을 요청할 수 있습니다. 주심이 판독한 뒤 판정이 바뀌면 그 요청 횟수는 줄어들지 않고 유지됩니다. 요청 주체는 팀(감독)이므로 게시글 내용과 맞습니다.",
+      "fix": "",
+      "evidence": [
+        {
+          "url": "https://inside.fifa.com/news/what-is-football-video-support",
+          "quote": "each team will be able to make two requests per match... the team retains (does not lose) that review request"
+        }
+      ]
+    },
+    {
+      "line": 84,
+      "group": "FIFA Football Video Support",
+      "claim": "Money Today reported in September 2026 that the Korea Football Association was told VAR and FVS cannot be used together in one competition.",
+      "quote": "VAR과 FVS는 한 대회에서 함께 쓸 수 없다는 답을 받았다는 머니투데이 보도도 있었습니다(2026년 9월).",
+      "kind": "attribution",
+      "volatile": false,
+      "verdict": "supported",
+      "severity": "low",
+      "correct_value": "",
+      "explanation": "머니투데이 기사는 2026년 9월 9일에 나왔습니다. 기사에 따르면 축구협회가 FIFA에 공식 질의했고, IFAB 결정에 따라 VAR과 FVS를 함께 시행할 수 없다는 회신을 받았습니다.",
+      "fix": "",
+      "evidence": [
+        {
+          "url": "https://www.mt.co.kr/sports/2026/09/09/2026082814063840304",
+          "quote": "IFAB의 결정사항으로 VAR과 FVS의 병행 시행은 불가하다는 회신을 받았다"
+        }
+      ]
+    },
+    {
+      "line": 74,
+      "group": "Image credits",
+      "claim": "The on-field review photo is from a 2018 MLS match (Seattle Sounders vs Sporting Kansas City, Baldomero Toledo) by SounderBruce under CC BY-SA 4.0 on Wikimedia Commons.",
+      "quote": "2018년 MLS 경기에서 주심이 경기장 옆 모니터로 온필드 리뷰를 하는 장면 — 사진 ⓒ SounderBruce, CC BY-SA 4.0 (Wikimedia Commons)",
+      "kind": "attribution",
+      "volatile": false,
+      "verdict": "unverifiable",
+      "severity": "low",
+      "correct_value": "",
+      "explanation": "Wikimedia Commons의 해당 사진 파일 페이지를 찾지 못해 촬영자(SounderBruce), 라이선스(CC BY-SA 4.0), 경기(2018 시애틀 사운더스 대 스포팅 캔자스시티), 주심(발도메로 톨레도) 정보를 직접 확인할 수 없었습니다. 검색에서 찾은 것은 톨레도가 대기심으로 나선 2019년 사운더스-SKC 경기 기록뿐이어서 이 사진을 확인하는 데는 쓸 수 없습니다. SounderBruce가 Flickr에서 옮겨 온 사진은 CC BY-SA 2.0인 경우도 있으므로 원본 파일 페이지에서 라이선스를 다시 확인할 필요가 있습니다.",
+      "fix": "2018년 MLS 경기에서 주심이 경기장 옆 모니터로 온필드 리뷰를 하는 장면 — 사진 ⓒ SounderBruce, [Commons 파일 페이지에 표시된 라이선스] (Wikimedia Commons, 파일 링크 첨부)",
+      "evidence": [
+        {
+          "url": "https://www.soundersfc.com/news/match-recap-sounders-fc-drops-hard-fought-match-sporting-kansas-city-3-2-loss",
+          "quote": "Sunday, August 4, 2019 ... Referee: Ismail Elfath ... Fourth Official: Baldomero Toledo"
+        }
+      ]
+    },
+    {
+      "line": 92,
+      "group": "VAR history timeline",
+      "claim": "K League 1 (then K League Classic) introduced VAR on July 1, 2017.",
+      "quote": "2017년 7월 1일 | K리그1(당시 K리그 클래식) VAR 도입",
+      "kind": "date",
+      "volatile": false,
+      "verdict": "supported",
+      "severity": "low",
+      "correct_value": "",
+      "explanation": "한국프로축구연맹은 2017년 7월 1일 K리그 클래식 18라운드(대구-강원, 울산-수원, 인천-광주전)부터 1부 전 경기에 VAR을 적용했습니다.",
+      "fix": "",
+      "evidence": [
+        {
+          "url": "https://www.mksports.co.kr/news/sports/7867429",
+          "quote": "7월 1일 열리는 대구FC-강원FC전, 울산현대-수원삼성전, 인천유나이티드-광주FC전부터 VAR이 적용된다. K리그 클래식 전 경기가 대상이다."
+        },
+        {
+          "url": "https://www.seoul.co.kr/news/sport/soccer/2017/06/20/20170620031009",
+          "quote": "7월 1일 18라운드 이후 K리그 클래식(1부 리그) 모든 경기에 VAR을 시행한다고 밝혔다."
+        }
+      ]
+    },
+    {
+      "line": 93,
+      "group": "VAR history timeline",
+      "claim": "IFAB's 132nd AGM on March 3, 2018 officially incorporated VAR into the Laws of the Game.",
+      "quote": "2018년 3월 3일 | IFAB 제132차 연례총회, VAR을 경기규칙에 공식 포함",
+      "kind": "date",
+      "volatile": false,
+      "verdict": "supported",
+      "severity": "low",
+      "correct_value": "",
+      "explanation": "IFAB는 2018년 3월 3일 취리히에서 열린 제132차 연례총회에서 VAR을 경기규칙에 공식 포함하기로 의결했습니다.",
+      "fix": "",
+      "evidence": [
+        {
+          "url": "https://www.nbcsports.com/soccer/news/historic-call-var-voted-into-laws-of-the-game",
+          "quote": "VAR voted into Laws of the Game (IFAB 132nd AGM, 3 March 2018)"
+        }
+      ]
+    },
+    {
+      "line": 94,
+      "group": "VAR history timeline",
+      "claim": "The 2018 Russia World Cup in June 2018 was the first World Cup to use VAR.",
+      "quote": "2018년 6월 | 러시아 월드컵, 월드컵 첫 VAR 사용",
+      "kind": "date",
+      "volatile": false,
+      "verdict": "supported",
+      "severity": "low",
+      "correct_value": "",
+      "explanation": "2018 러시아 월드컵은 VAR을 사용한 첫 월드컵이었습니다(2018년 6월 14일 개막).",
+      "fix": "",
+      "evidence": [
+        {
+          "url": "https://www.segye.com/newsView/20180606003193",
+          "quote": "러시아 월드컵에서 처음으로 VAR 도입"
+        }
+      ],
+      "cached": true
+    },
+    {
+      "line": 95,
+      "group": "VAR history timeline",
+      "claim": "K League 2 introduced VAR in the 2018 season.",
+      "quote": "2018시즌 | K리그2 VAR 도입",
+      "kind": "date",
+      "volatile": false,
+      "verdict": "supported",
+      "severity": "low",
+      "correct_value": "",
+      "explanation": "프로축구연맹은 2018시즌부터 2부리그(K리그2)에도 VAR을 도입했고, 2018시즌 K리그2 182경기에서 판독이 실시됐습니다.",
+      "fix": "",
+      "evidence": [
+        {
+          "url": "https://www.nocutnews.co.kr/news/4904230",
+          "quote": "K리그, 2018시즌부터 2부리그 챌린지도 VAR 가동"
+        },
+        {
+          "url": "https://www.hankyung.com/article/201812188322Y",
+          "quote": "지난해 7월 K리그1(1부리그)에 도입했던 VAR를 올해에는 K리그2(2부리그)로 전면 확대"
+        }
+      ],
+      "cached": true
+    },
+    {
+      "line": 96,
+      "group": "VAR history timeline",
+      "claim": "The 2022 Qatar World Cup (November 2022) was the first World Cup to use semi-automated offside technology.",
+      "quote": "2022년 11월 | 카타르 월드컵, 월드컵 첫 반자동 오프사이드 사용",
+      "kind": "date",
+      "volatile": false,
+      "verdict": "supported",
+      "severity": "low",
+      "correct_value": "",
+      "explanation": "반자동 오프사이드 기술(SAOT)은 2022 카타르 월드컵에서 월드컵 사상 처음으로 쓰였습니다. 대회는 2022년 11월에 개막했습니다.",
+      "fix": "",
+      "evidence": [
+        {
+          "url": "https://legal.fifa.com/innovation/world-cup-2022/semi-automated-offside-technology",
+          "quote": "Semi-automated offside technology to be used at FIFA World Cup 2022"
+        }
+      ]
+    },
+    {
+      "line": 97,
+      "group": "VAR history timeline",
+      "claim": "From July 1, 2025, referee in-stadium announcements of VAR review decisions became a formal competition option in the IFAB laws.",
+      "quote": "2025년 7월 1일 | 주심의 판독 결과 장내 발표가 대회 선택 사항으로 정식화",
+      "kind": "date",
+      "volatile": false,
+      "verdict": "supported",
+      "severity": "low",
+      "correct_value": "",
+      "explanation": "2025년 7월 1일부터 시행된 2025/26 경기규칙의 VAR 프로토콜 변경 사항에는 VAR '리뷰'나 오래 걸린 '체크' 뒤에 주심이 장내 발표를 할 수 있도록 하는 대회 선택 사항이 들어 있습니다.",
+      "fix": "",
+      "evidence": [
+        {
+          "url": "https://downloads.theifab.com/downloads/changes-to-the-laws-of-the-game-2025-26?l=en",
+          "quote": "Competitions have the option for the referee to make an announcement after a VAR 'review' or lengthy VAR 'check'."
+        },
+        {
+          "url": "https://downloads.theifab.com/downloads/laws-of-the-game-2025-26-single-pages?l=en",
+          "quote": "Laws of the Game 25/26 Effective from 1st July 2025"
+        }
+      ]
+    },
+    {
+      "line": 100,
+      "group": "VAR history timeline",
+      "claim": "IFAB permitted VAR trials starting in 2016, in which K League participated.",
+      "quote": "IFAB가 2016년부터 허용한 VAR 시험 운영 기간에 참여했기 때문입니다.",
+      "kind": "date",
+      "volatile": false,
+      "verdict": "supported",
+      "severity": "low",
+      "correct_value": "",
+      "explanation": "IFAB는 2016년 3월 VAR 시험 운영을 승인했고 2018년 3월에 경기규칙에 정식 반영했습니다. K리그는 그 사이인 2017년 7월에 VAR을 도입했으므로 시험 운영 기간에 참여한 것이 맞습니다.",
+      "fix": "",
+      "evidence": [
+        {
+          "url": "https://www.newsis.com/view/?id=NISX20180707_0000357251&cID=10503&pID=10500",
+          "quote": "K리그는 지난해 7월 VAR을 도입"
+        },
+        {
+          "url": "https://www.nbcsports.com/soccer/news/historic-call-var-voted-into-laws-of-the-game",
+          "quote": "VAR이 2018년 3월 IFAB 총회 의결로 경기규칙에 포함됨(시험 운영은 2016년부터)"
+        }
+      ],
+      "cached": true
+    },
+    {
+      "line": 100,
+      "group": "VAR history timeline",
+      "claim": "In August 2025 K League piloted referee in-stadium announcements explaining VAR decisions.",
+      "quote": "2025년 8월에는 K리그도 주심이 판독 이유를 장내에 직접 알리는 VAR 판정 방송을 시범 운영했습니다.",
+      "kind": "date",
+      "volatile": false,
+      "verdict": "supported",
+      "severity": "low",
+      "correct_value": "시범 운영은 2025년 7월 13일 K리그2 안산-서울 이랜드전에서 시작됐습니다. 실제 첫 장내 발표는 2025년 8월 8일 K리그1 FC서울-대구FC전에서 나왔습니다.",
+      "explanation": "K리그 VAR PA 시범 운영은 2025년 7월 13일에 시작됐지만, 처음 5경기 동안에는 실제 발표가 한 번도 없었습니다. 첫 발표는 8월 8일 서울-대구전에서 나왔고, 그 뒤 8월 중 시범 운영 기간에 여러 차례 이어졌습니다. 따라서 '8월에 시범 운영했다'는 내용은 대체로 맞지만, 시작 시점을 더 정확히 쓰면 좋습니다.",
+      "fix": "2025년 7월부터 K리그도 주심이 판독 이유를 장내에 직접 알리는 VAR 판정 방송(VAR PA)을 시범 운영했고, 8월 8일 FC서울-대구FC전에서 첫 장내 발표가 나왔습니다.",
+      "evidence": [
+        {
+          "url": "https://www.hansbiz.co.kr/news/articleView.html?idxno=760723",
+          "quote": "13일 안산 와스타디움에서 열리는 K리그2(2부) 안산 그리너스와 서울 이랜드의 경기에서 VAR PA를 시범 운영"
+        },
+        {
+          "url": "https://v.daum.net/v/20250811145304331",
+          "quote": "약 1달간 5경기 시범운영에도 진행되지 않던 VAR PA가 지난주말에는 K리그1과 2를 합쳐 총 4번 가동됐다."
+        }
+      ]
+    },
+    {
+      "line": 100,
+      "group": "VAR history timeline",
+      "claim": "The K League VAR introduction date is based on Goal.com (June 2017) and Kyongbuk Maeil (January 2018) reports.",
+      "quote": "K리그 도입일은 골닷컴(2017년 6월)과 경북매일(2018년 1월) 보도를 기준으로 했습니다.",
+      "kind": "attribution",
+      "volatile": false,
+      "verdict": "supported",
+      "severity": "low",
+      "correct_value": "",
+      "explanation": "경북매일 2018년 1월 16일 기사에는 VAR이 '작년 하반기부터' K리그 클래식에 도입되었다고 나옵니다. 이는 2017년 7월 도입이라는 다른 보도들과도 맞습니다. 골닷컴 2017년 6월 기사는 직접 확인하지 못했지만, 이와 어긋나는 자료는 없었습니다.",
+      "fix": "",
+      "evidence": [
+        {
+          "url": "https://kbmaeil.com/article/201801160211837",
+          "quote": "작년 하반기부터 프로축구 K리그 클래식(1부리그)에 도입된 비디오판독(VAR)이 올 시즌에는 챌린지(2부리그)로 확대된다."
+        },
+        {
+          "url": "https://www.nocutnews.co.kr/news/4904230",
+          "quote": "2017시즌 하반기부터 1부리그 K리그 클래식에 한해 VAR을 운영했던 K리그"
+        }
+      ],
+      "cached": true
+    }
+  ]
+}

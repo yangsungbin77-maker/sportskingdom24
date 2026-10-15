@@ -1,0 +1,208 @@
+{
+  "type": "정보",
+  "keyword_filter": {
+    "keyword": "축구 VAR 판독 대상",
+    "competition": {
+      "method": "serp-scan",
+      "evidence": "VAR 판독 대상 1페이지가 위키·나무위키·2019년 대학신문·암호화폐 회사 블로그(plisio)라 최신 축구 전문 개인 블로그가 들어갈 틈이 있음",
+      "pass": true
+    },
+    "demand": {
+      "method": "autocomplete",
+      "evidence": "구글 자동완성 '축구 var'에 기준·신청·횟수·원리·도입 시기가 모두 떠 같은 주제 수요가 확인됨(suggestqueries hl=ko 2026-10-15)",
+      "pass": true
+    },
+    "intent": {
+      "method": "serp-scan",
+      "evidence": "상위 12개 전부 VAR 정의·대상·절차를 설명하는 정보형이고 쇼핑·거래 결과는 없음",
+      "pass": true
+    }
+  },
+  "serp": [
+    {
+      "url": "https://namu.wiki/w/VAR(축구)",
+      "opened": false,
+      "note": "403·보안확인으로 열람 실패"
+    },
+    {
+      "url": "https://zenhousemedia.com/blog/var",
+      "opened": false,
+      "note": "수상한 도메인 리다이렉트, 열지 않음"
+    },
+    {
+      "url": "https://ko.wikipedia.org/wiki/비디오_판독심",
+      "opened": true,
+      "note": "짧음. 대상 4종·침묵의 체크·리그별 도입. K리그·2026 개정 없음"
+    },
+    {
+      "url": "https://ko.wikipedia.org/wiki/비디오_판독",
+      "opened": true,
+      "note": "다종목, 축구 부분 짧음. 횟수 무제한 언급. 2026 개정 없음"
+    },
+    {
+      "url": "http://www.hynews.ac.kr/news/articleView.html?idxno=9883",
+      "opened": true,
+      "note": "2019 칼럼 1,500자 찬반 위주, 절차 없음"
+    },
+    {
+      "url": "https://plisio.net/ko/education/what-is-var",
+      "opened": true,
+      "note": "2026-10 가장 충실(7단계·OFR·SAOT·FAQ). 출처 없는 수치, K리그 없음"
+    },
+    {
+      "url": "https://www.goal.com/kr (VAR에 대한 11가지 궁금증 2017-06-19)",
+      "opened": true,
+      "note": "Q&A형, K리그 2017-07-01 시행, 주심만 요청. 오래됨"
+    },
+    {
+      "url": "https://v.daum.net/v/20250811145304331",
+      "opened": true,
+      "note": "2025-08 K리그 VAR PA 시범. 제도 설명 없음"
+    },
+    {
+      "url": "https://www.segye.com/newsView/20180606003193",
+      "opened": true,
+      "note": "2018 월드컵 카메라 33대·판독실. 명백한 오심 기준 없음"
+    },
+    {
+      "url": "https://sports.khan.co.kr/article/201806261043003/amp",
+      "opened": true,
+      "note": "2018 월드컵 논란 사례 위주"
+    },
+    {
+      "url": "https://www.goal.com/kr (FIFA 러시아 월드컵 VAR 도입 확정 2018-03)",
+      "opened": true,
+      "note": "단신, 대상에 경고 넣는 부정확 표현"
+    },
+    {
+      "url": "https://sports.khan.co.kr/article/202405170831003/amp",
+      "opened": true,
+      "note": "2024 EPL 폐지 투표, 정확도 82→96%"
+    },
+    {
+      "url": "https://www.gqkorea.co.kr/?p=141416",
+      "opened": true,
+      "note": "2019 칼럼, 수치 출처 없음"
+    }
+  ],
+  "factcheck": [
+    {
+      "claim": "2026/27 VAR 판독 대상 5범주(퇴장에 잘못된 두 번째 경고 포함·사람 착오 양 팀·코너킥 대회 선택)",
+      "sources": [
+        "https://www.theifab.com/laws/latest/video-assistant-referee-var-protocol/",
+        "https://downloads.theifab.com/downloads/changes-to-the-laws-of-the-game-202627?l=en",
+        "https://legal.fifa.com/media-releases/ifab-introduces-further-measures-improve-match-flow-player-behaviour"
+      ]
+    },
+    {
+      "claim": "2026-02-28 IFAB 제140차 연례총회 승인, 2026-07-01 시행",
+      "sources": [
+        "https://legal.fifa.com/media-releases/ifab-introduces-further-measures-improve-match-flow-player-behaviour",
+        "https://www.irishfa.com/news/2026/march/ifab-introduces-measures-to-improve-match-flow"
+      ]
+    },
+    {
+      "claim": "2018-03-03 IFAB 제132차 총회에서 VAR 경기규칙 포함, 2018 러시아 월드컵 첫 사용",
+      "sources": [
+        "https://downloads.theifab.com/downloads/circular-13_en?l=en",
+        "https://www.nbcsports.com/soccer/news/historic-call-var-voted-into-laws-of-the-game"
+      ]
+    },
+    {
+      "claim": "K리그1 2017-07-01 도입, K리그2 2018시즌 도입",
+      "sources": [
+        "골닷컴 VAR 11가지 궁금증(2017-06-19)",
+        "https://kbmaeil.com/article/201801160211837"
+      ]
+    },
+    {
+      "claim": "명백한 오류·놓친 중대 사건 원칙, 주심만 리뷰 시작, 최종 결정은 주심, 시간 제한 없음",
+      "sources": [
+        "https://www.theifab.com/laws/latest/video-assistant-referee-var-protocol/",
+        "https://www.premierleague.com/en/news/4373884"
+      ]
+    },
+    {
+      "claim": "SAOT 2022 카타르 월드컵 첫 사용, EPL 2025-04-12 32라운드부터",
+      "sources": [
+        "https://legal.fifa.com/innovation/world-cup-2022/semi-automated-offside-technology",
+        "https://www.whufc.com/news/premier-league-statement-semi-automated-offside-technology"
+      ]
+    },
+    {
+      "claim": "FVS 감독 경기당 2회 요청, VAR과 병행 불가 회신(2026-09 보도)",
+      "sources": [
+        "https://inside.fifa.com/news/what-is-football-video-support",
+        "https://www.mt.co.kr/sports/2026/09/09/2026082814063840304"
+      ]
+    },
+    {
+      "claim": "판독 결과 장내 발표 2025/26 대회 선택 사항 정식화, K리그 2025-08 VAR PA 시범",
+      "sources": [
+        "https://theifab.com/news/the-ifab-tackles-goalkeeper-time-wasting/",
+        "https://v.daum.net/v/20250811145304331"
+      ]
+    },
+    {
+      "claim": "2026 월드컵 8강 스위스-아르헨티나전 파레데스 경고가 사람 착오로 엠볼로 시뮬레이션 경고로 바뀌어 두 번째 경고 퇴장",
+      "sources": [
+        "https://global.espn.com/football/story/_/id/49339724/switzerland-breel-embolo-red-card-diving-var-argentina-2026-world-cup",
+        "https://www.timeslive.co.za/sport/fifa-world-cup-2026/2026-06-01-law-changes-that-will-come-into-effect-at-the-2026-world-cup/"
+      ]
+    },
+    {
+      "claim": "경기 재개 후 되돌릴 수 있는 것은 사람 착오와 폭력·침 뱉기·물기·극도로 모욕적 행동 퇴장뿐",
+      "sources": [
+        "https://www.theifab.com/laws/latest/video-assistant-referee-var-protocol/",
+        "https://www.theifab.com/laws/latest/the-referee/"
+      ]
+    }
+  ],
+  "variables": {
+    "keyword": "축구 VAR 판독 대상",
+    "headline_finding": "2026/27부터 판독 대상 4→5가지(구글 상위 한국어 글 12개 중 반영 0)",
+    "law_diff": "직접 퇴장→퇴장(잘못된 두 번째 경고 포함), 사람 착오 '반칙한 팀의' 삭제, 코너킥 추가",
+    "timeline": "2017 K리그1 → 2018 IFAB·월드컵 → 2022 SAOT → 2025 장내발표 → 2026 대상 확대",
+    "review_types": "사실 판정=VAR 단독, 주관 판정=OFR"
+  },
+  "structure": "핵심발견확장",
+  "gaps": [
+    {
+      "gap": "2026/27 IFAB 개정으로 두 번째 경고 퇴장·사람 착오 양 팀·코너킥이 판독 대상이 된 사실을 다룬 한국어 상위 글이 없음",
+      "covered_in": "## 2026/27 개정으로 VAR 판독 대상이 어떻게 늘었나요?"
+    },
+    {
+      "gap": "온필드 리뷰와 VAR 단독 판정을 사실 판정과 주관 판정으로 나누는 공식 기준을 표로 설명한 글이 없음",
+      "covered_in": "## 온필드 리뷰와 VAR-only 리뷰는 어떻게 다른가요?"
+    },
+    {
+      "gap": "명백한 오류 기준이 실제로 무슨 뜻이고 왜 어떤 판독은 길고 어떤 판독은 짧은지 설명한 글이 거의 없음",
+      "covered_in": "## '명백한 오류' 기준은 무슨 뜻인가요?"
+    },
+    {
+      "gap": "K리그1 2017·K리그2 2018·2025 장내 발표·2026 개정까지 한국 기준 연표를 정리한 글이 없음",
+      "covered_in": "## VAR은 언제 도입됐고 K리그는 언제부터 썼나요?"
+    },
+    {
+      "gap": "VAR이 없는 대회용 FVS(감독 요청 2회)와 VAR 병행 불가 회신을 다룬 글이 없음",
+      "covered_in": "## 선수나 감독이 VAR을 요청할 수 있나요?"
+    }
+  ],
+  "own_evidence": [
+    {
+      "type": "table",
+      "desc": "IFAB VAR 프로토콜 2025/26판과 2026/27판의 삭제·추가 문구를 대조해 비교표로 직접 정리",
+      "proof": "| 퇴장 | 레드카드를 줘야 했는지, 잘못 줬는지 | 명백히 잘못 준 두 번째 경고 퇴장도 포함 |"
+    },
+    {
+      "type": "data",
+      "desc": "IFAB 개정 이력과 K리그 도입 시점을 맞춰 한국 기준 VAR 연표를 직접 작성",
+      "proof": "| 2026년 7월 1일 | 판독 대상 4가지에서 5가지로 확대 |"
+    }
+  ],
+  "hermes_score": 96,
+  "score_history": [
+    86,
+    96
+  ]
+}
