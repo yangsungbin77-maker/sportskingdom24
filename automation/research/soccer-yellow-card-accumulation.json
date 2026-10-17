@@ -1,0 +1,216 @@
+{
+  "type": "guide",
+  "keyword": "축구 경고 누적",
+  "keyword_filter": {
+    "keyword": "축구 경고 누적",
+    "cluster": [
+      "축구 경고 누적 퇴장",
+      "축구 경고 누적 규칙",
+      "축구 옐로카드 규칙",
+      "축구 옐로카드 리셋",
+      "축구 레드카드 받으면",
+      "축구 레드카드 다음 경기",
+      "축구 레드카드 징계",
+      "epl 경고 누적 퇴장 징계",
+      "옐로카드 2장",
+      "축구 옐로카드 벌금",
+      "챔스 경고 누적",
+      "월드컵 경고 초기화"
+    ],
+    "competition": {
+      "method": "serp-scan",
+      "evidence": "네이버 1페이지 '축구 경고 누적'은 소형 니치사이트 bbingefc가 웹 1위, 개인 네이버 블로그(pangya1212·jumper_99·knight13th·hidew777)와 카페·뉴스가 섞임. 대형 사이트만 있는 구성이 아니라 진입 가능. 구글은 봇차단으로 직접 확인 불가, allintitle 미확인",
+      "pass": true
+    },
+    "demand": {
+      "method": "autocomplete",
+      "evidence": "구글 자동완성 '축구 경고 누적'→경고 누적 퇴장·규칙, '축구 옐로카드'→규칙·리셋·누적·벌금, '축구 레드카드'→받으면·징계·다음 경기, '경고 누적 퇴장'→징계·epl 경고 누적 퇴장 징계 노출(2026-10-17)",
+      "pass": true
+    },
+    "intent": {
+      "method": "serp-scan",
+      "evidence": "상위가 규칙 설명 블로그·니치 정보사이트·뉴스 해설로 정보성 의도(몇 장이면 결장·언제 리셋). 쇼핑·지도팩 없음",
+      "pass": true
+    }
+  },
+  "serp": [
+    {
+      "url": "https://bbingefc.com/football-made-easy/yellow-card-accumulation-rules-league-ucl-world-cup/",
+      "opened": true,
+      "note": "벤치마크 6천자·출처 21개, 5대리그·UCL 2026/27·월드컵 리셋·K리그. 레드카드 사유별 표·EPL 반복 퇴장 가중·코칭스태프·벌금 표 없음"
+    },
+    {
+      "url": "https://m.blog.naver.com/pangya1212/224427928994",
+      "opened": true,
+      "note": "한 경기 2장 vs 누적 구분, 승부차기 리셋. 대회별 숫자 없음"
+    },
+    {
+      "url": "https://m.blog.naver.com/jumper_99/224440663192",
+      "opened": true,
+      "note": "Law 12 상세·VAR 두번째 경고. 누적 숫자 모호, 표 없음"
+    },
+    {
+      "url": "https://m.blog.naver.com/knight13th/224394336932",
+      "opened": true,
+      "note": "EPL 5/19·10/32. UCL 구버전, 직접퇴장 최소 3경기 오류"
+    },
+    {
+      "url": "https://m.blog.naver.com/knight13th/224394341248",
+      "opened": true,
+      "note": "2차 경고 vs 다이렉트 비교, 벌금 없음 오류(K리그 100만원)"
+    },
+    {
+      "url": "https://m.blog.naver.com/hidew777/224391379732",
+      "opened": true,
+      "note": "입문 Q&A 다수, 대회별 수치 거의 없음"
+    },
+    {
+      "url": "https://m.blog.naver.com/movie_damda/223289425496",
+      "opened": true,
+      "note": "5대 리그 비교 2023, 구버전 규정"
+    },
+    {
+      "url": "https://kicktalk.xyz/news/cards-rules.html",
+      "opened": true,
+      "note": "매우 짧음, 보통 2장만"
+    },
+    {
+      "url": "https://unisquads.io/w/퇴장",
+      "opened": true,
+      "note": "퇴장 사유 분류, 현행 기준 없음"
+    },
+    {
+      "url": "https://m.blog.naver.com/swiri4637/224443271693",
+      "opened": true,
+      "note": "레드카드 징계 대회별 소화 사례"
+    },
+    {
+      "url": "https://www.hani.co.kr/arti/sports/soccer/1256193.html",
+      "opened": true,
+      "note": "월드컵 리셋 제안 기사(결정 전)"
+    },
+    {
+      "url": "https://m.blog.naver.com/popcorn_spoiler/224429915684",
+      "opened": true,
+      "note": "규칙 개요, 카드 한 줄"
+    },
+    {
+      "url": "https://namu.wiki/w/레드카드",
+      "opened": false,
+      "note": "403"
+    }
+  ],
+  "factcheck": [
+    {
+      "claim": "IFAB 제12조 같은 경기 두 번째 경고=퇴장, 경고는 승부차기로 이월 안 됨, 팀 임원 카드·선임 지도자 책임",
+      "sources": [
+        "https://www.theifab.com/laws/latest/fouls-and-misconduct/",
+        "https://m.blog.naver.com/jumper_99/224440663192"
+      ]
+    },
+    {
+      "claim": "EPL 2026/27 경고 누적 19R까지 5장 1경기·32R까지 10장 2경기·15장 3경기·20장 위원회, 컵대회 별도",
+      "sources": [
+        "https://www.thefa.com/-/media/files/thefaportal/governance-docs/player-essentials/2026-27/essential-information-for-players-2026-27---english-version.ashx",
+        "https://www.premierleague.com/en/news/4425344/which-players-are-suspended-or-close-to-a-ban-in-fantasy"
+      ]
+    },
+    {
+      "claim": "EPL 레드카드 기본 출장정지 두번째 경고 1·DOGSO 1·언행 2·SFP 3·폭력 3·침 6, 시즌 두번째 퇴장 +1·세번째 +2",
+      "sources": [
+        "https://www.thefa.com/-/media/files/thefaportal/governance-docs/player-essentials/2026-27/essential-information-for-players-2026-27---english-version.ashx",
+        "https://www.90min.com (2023 EPL red card ban explainer, 1/1/3 일치)"
+      ]
+    },
+    {
+      "claim": "UCL 2026/27 리그 페이즈부터 4번째 경고 1경기·이후 짝수, 예선은 3장·홀수, 리그 페이즈 시작 때 예선 경고 소멸, 8강 뒤 경고 소멸",
+      "sources": [
+        "https://documents.uefa.com/r/Regulations-of-the-UEFA-Champions-League-2026/27/Article-63-Yellow-and-red-cards-Online",
+        "https://www.uefa.com/uefaeuropaleague/news/0295-1cd661bbe9cd-ded5a1c8b04d-1000--champions-league-europa-league-conference-league-yellow-/"
+      ]
+    },
+    {
+      "claim": "2026 월드컵 서로 다른 경기 2장 1경기, 경고 1장은 조별리그 뒤·8강 뒤 두 번 소멸(2022는 8강 뒤 한 번)",
+      "sources": [
+        "https://inside.fifa.com/organisation/fifa-council/news/council-update-regulations-world-cup-2026",
+        "https://www.aljazeera.com/amp/sports/2026/4/29/fifa-confirms-new-world-cup-rule-on-yellow-cards-to-reduce-suspensions"
+      ]
+    },
+    {
+      "claim": "K리그1 2026 대회요강 제39조 5회·8회·이후 2회마다 1경기, 경고2 퇴장 1경기·100만원(누적 미산입), 직접퇴장 2경기·120만원, 경고 후 직접퇴장 2경기·150만원, 코칭스태프 3·5·이후 매회, 누적 제재금 70만원",
+      "sources": [
+        "https://www.kleague.com/about/competition.do",
+        "https://osen.co.kr/article/G1111287112",
+        "https://bbingefc.com/football-made-easy/yellow-card-accumulation-rules-league-ucl-world-cup/"
+      ]
+    },
+    {
+      "claim": "UEFA 2019년 2월 라모스 고의 경고로 누적 1경기 포함 2경기 출장정지",
+      "sources": [
+        "https://www.skysports.com/football/news/11095/11651208/real-madrid-captain-sergio-ramos-banned-for-two-european-matches-for-deliberate-booking",
+        "https://www.si.com/soccer/2019/02/28/sergio-ramos-slapped-extended-ban-uefa-after-admitting-deliberate-yellow-card"
+      ]
+    },
+    {
+      "claim": "EPL 한 경기 경고 6장 이상 클럽 벌금 2만5천 파운드(보도 기준)",
+      "sources": [
+        "arise.tv 보도",
+        "Flashscore 보도"
+      ]
+    }
+  ],
+  "variables": {
+    "keyword": "축구 경고 누적",
+    "headline_finding": "챔스 2026/27부터 첫 출장정지 3장→4장, 월드컵 2026 리셋 1회→2회",
+    "epl_threshold": "19R까지 5장",
+    "ucl_threshold": "4장 이후 짝수",
+    "wc_reset": "조별리그 뒤+8강 뒤",
+    "kleague_steps": "5·8·이후 2장마다",
+    "red_card_range": "EPL 1~6경기"
+  },
+  "structure": "오해바로잡기",
+  "gaps": [
+    {
+      "gap": "상위 10개 중 EPL 레드카드 출장정지를 퇴장 사유별(1·2·3·6경기)로 나눈 표가 없음",
+      "covered_in": "오해 2. 축구 레드카드는 무조건 3경기 출장정지다?"
+    },
+    {
+      "gap": "경고 2장 퇴장 시 그 경고가 누적에 들어가는지 대회별(K리그 미산입·챔스 미산입) 설명 없음",
+      "covered_in": "오해 1. 옐로카드 2장이면 다음 경기도 못 나온다?"
+    },
+    {
+      "gap": "EPL·챔스·월드컵·K리그 4개 대회를 같은 항목으로 나란히 놓은 2026/27 기준 비교표 없음",
+      "covered_in": "대회별 축구 경고 누적 기준, 한 장으로 비교"
+    },
+    {
+      "gap": "K리그 코칭스태프 경고 누적(3·5·이후 매회) 규정을 다룬 글 없음",
+      "covered_in": "오해 5. K리그도 경고 3장마다 쉰다?"
+    },
+    {
+      "gap": "K리그 카드 제재금 단계와 EPL 클럽 벌금 구조를 정리한 글 없음",
+      "covered_in": "축구 옐로카드 벌금도 있나요?"
+    }
+  ],
+  "own_evidence": [
+    {
+      "type": "table",
+      "desc": "EPL·챔스·월드컵·K리그 4개 규정 원문 숫자를 같은 항목으로 재정리한 비교표",
+      "proof": "제가 각 규정 원문에서 숫자만 뽑아 같은 칸에 맞춘 표예요"
+    },
+    {
+      "type": "calc",
+      "desc": "같은 선수가 경고 5장을 받을 때 대회별 결장 시점을 직접 대입해 계산",
+      "proof": "결장 없음(4장째에 이미 1경기 쉼, 다음은 6장째)"
+    }
+  ],
+  "images": [
+    "soccer-yellow-card-accumulation.webp(히어로, Commons CC BY-SA 4.0 Tadeáš Bednarz, 16:9 크롭)",
+    "soccer-red-card-suspension.webp(Commons CC0, 약 3:2)",
+    "soccer-card-rules-comparison.webp(직접 제작 1:1)"
+  ],
+  "hermes_score": 95,
+  "score_history": [
+    89,
+    95
+  ]
+}

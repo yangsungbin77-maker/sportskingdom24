@@ -1,0 +1,629 @@
+{
+  "file": "soccer-yellow-card-accumulation.md",
+  "checked_at": "2026-10-17T13:19:59",
+  "as_of": "2026/27 season",
+  "language": "Korean",
+  "counts": {
+    "supported": 27,
+    "contradicted": 0,
+    "outdated": 0,
+    "overstated": 0,
+    "unverifiable": 2
+  },
+  "blocking": 0,
+  "seconds": 160.2,
+  "cost": {
+    "model": "claude-opus-5-5",
+    "api_calls": 13,
+    "input_tokens": 975687,
+    "output_tokens": 28314,
+    "web_searches": 23,
+    "web_fetches": 14,
+    "estimated_usd": 4.699
+  },
+  "results": [
+    {
+      "line": 8,
+      "group": "EPL yellow card accumulation",
+      "claim": "In the 2026/27 Premier League, a player is suspended for 1 match after 5 yellow cards accumulated by Round 19.",
+      "quote": "EPL은 5장",
+      "kind": "number",
+      "volatile": true,
+      "verdict": "supported",
+      "severity": "low",
+      "correct_value": "",
+      "explanation": "FA의 2026-27 선수 필수 정보 문서에 프리미어리그 경기 19경기까지(포함) 경고 5장이면 1경기 출장정지라고 나와 있습니다.",
+      "fix": "",
+      "evidence": [
+        {
+          "url": "https://resources.premierleague.pulselive.com/premierleague/document/2026/08/24/0b09bd2a-249f-453c-bbdf-1ba6d1d7a01d/essential-information-for-players-2026-27-english-version.pdf",
+          "quote": "Premier League 5 19 Premier League Matches 1 Match"
+        },
+        {
+          "url": "https://www.premierleague.com/en/news/4425344/which-players-are-suspended-or-close-to-a-ban-in-fantasy",
+          "quote": "any player who earns five bookings from their side's first 19 Premier League matches of a season serves a one-match ban"
+        }
+      ]
+    },
+    {
+      "line": 65,
+      "group": "EPL yellow card accumulation",
+      "claim": "In the Premier League, 10 yellow cards by Round 32 brings a 2-match ban, 15 by season end brings a 3-match ban, and 20 is referred to the disciplinary commission.",
+      "quote": "32라운드까지 10장이면 2경기, 시즌 끝까지 15장이면 3경기를 쉬고, 20장이면 규율위원회가 정합니다",
+      "kind": "number",
+      "volatile": true,
+      "verdict": "supported",
+      "severity": "low",
+      "correct_value": "",
+      "explanation": "FA 문서 표를 보면 32경기까지 10장이면 2경기, 시즌 마지막 날까지 15장이면 3경기이고, 20장이면 규율위원회(Regulatory Commission)가 징계를 정합니다.",
+      "fix": "",
+      "evidence": [
+        {
+          "url": "https://resources.premierleague.pulselive.com/premierleague/document/2026/08/24/0b09bd2a-249f-453c-bbdf-1ba6d1d7a01d/essential-information-for-players-2026-27-english-version.pdf",
+          "quote": "10 32 Premier League Matches 2 Matches 15 Last day of the same playing season 3 Matches 20 ... As determined by a Regulatory Commission"
+        }
+      ]
+    },
+    {
+      "line": 65,
+      "group": "EPL yellow card accumulation",
+      "claim": "Domestic cup yellow cards in England are counted separately from Premier League yellow cards.",
+      "quote": "국내 컵대회 경고는 리그와 따로 셉니다.",
+      "kind": "policy",
+      "volatile": true,
+      "verdict": "supported",
+      "severity": "low",
+      "correct_value": "",
+      "explanation": "FA 문서는 컵대회 경고를 대회별로 따로 센다고 명시하고 있고, 프리미어리그 공식 사이트도 리그 경고가 EFL컵이나 FA컵으로 넘어가지 않는다고 설명합니다.",
+      "fix": "",
+      "evidence": [
+        {
+          "url": "https://resources.premierleague.pulselive.com/premierleague/document/2026/08/24/0b09bd2a-249f-453c-bbdf-1ba6d1d7a01d/essential-information-for-players-2026-27-english-version.pdf",
+          "quote": "Yellow Cards in each cup competition are counted separately"
+        },
+        {
+          "url": "https://www.premierleague.com/en/news/4425344/which-players-are-suspended-or-close-to-a-ban-in-fantasy",
+          "quote": "Premier League yellow cards are not carried over to the EFL Cup or FA Cup."
+        }
+      ]
+    },
+    {
+      "line": 67,
+      "group": "EPL yellow card accumulation",
+      "claim": "A Premier League player who receives a 5th yellow card in Round 20 or later receives no suspension because the 5-card threshold only applies through Round 19.",
+      "quote": "EPL에서 19라운드까지 경고 4장이던 선수가 20라운드에 5번째 경고를 받으면 출장정지가 없습니다",
+      "kind": "policy",
+      "volatile": true,
+      "verdict": "supported",
+      "severity": "low",
+      "correct_value": "",
+      "explanation": "경고 5장 기준은 소속팀의 19번째 리그 경기까지만 적용되므로 20번째 경기에서 5번째 경고를 받으면 출장정지가 없습니다. 이후 32경기까지 10장을 채우면 2경기 정지 기준이 적용됩니다. 기준은 정확히 말하면 '라운드'가 아니라 소속팀의 경기 수입니다.",
+      "fix": "",
+      "evidence": [
+        {
+          "url": "https://resources.premierleague.pulselive.com/premierleague/document/2026/08/24/0b09bd2a-249f-453c-bbdf-1ba6d1d7a01d/essential-information-for-players-2026-27-english-version.pdf",
+          "quote": "CUT OFF POINT (UP TO AND INCLUDING) ... 5 19 Premier League Matches 1 Match"
+        }
+      ]
+    },
+    {
+      "line": 26,
+      "group": "EPL red card suspensions",
+      "claim": "The FA 2026-27 player guide gives a 1-match suspension for a second-caution sending-off in the Premier League.",
+      "quote": "EPL은 두 번째 경고 퇴장에 1경기 출장정지를 줍니다",
+      "kind": "policy",
+      "volatile": true,
+      "verdict": "supported",
+      "severity": "low",
+      "correct_value": "",
+      "explanation": "FA 2026-27 선수 안내서의 자동 출장정지 표에 '같은 경기에서 두 번째 경고'는 1경기로 나와 있습니다.",
+      "fix": "",
+      "evidence": [
+        {
+          "url": "https://www.thefa.com/-/media/files/thefaportal/governance-docs/player-essentials/2026-27/essential-information-for-players-2026-27---english-version.ashx",
+          "quote": "Receiving a second caution in the same match — 1 Match"
+        }
+      ]
+    },
+    {
+      "line": 39,
+      "group": "EPL red card suspensions",
+      "claim": "In the Premier League, denying an obvious goal-scoring opportunity (by handball or foul) carries a 1-match standard suspension.",
+      "quote": "명백한 득점 기회 저지(핸드볼) | 1경기",
+      "kind": "number",
+      "volatile": true,
+      "verdict": "supported",
+      "severity": "low",
+      "correct_value": "",
+      "explanation": "FA 2026-27 안내서는 핸드볼로 인한 명백한 득점 기회 저지와 프리킥 반칙으로 인한 저지 모두 1경기로 정하고 있습니다.",
+      "fix": "",
+      "evidence": [
+        {
+          "url": "https://www.thefa.com/-/media/files/thefaportal/governance-docs/player-essentials/2026-27/essential-information-for-players-2026-27---english-version.ashx",
+          "quote": "Denying the opposing team a goal or an obvious goal-scoring opportunity by a handball offence — 1 Match"
+        }
+      ]
+    },
+    {
+      "line": 41,
+      "group": "EPL red card suspensions",
+      "claim": "In the Premier League, offensive, insulting or abusive language or gestures carries a 2-match standard suspension.",
+      "quote": "공격적·모욕적 언행이나 몸짓 | 2경기",
+      "kind": "number",
+      "volatile": true,
+      "verdict": "supported",
+      "severity": "low",
+      "correct_value": "",
+      "explanation": "FA 2026-27 안내서에서 공격적·모욕적·욕설성 언행이나 몸짓은 2경기 출장정지로 나와 있습니다.",
+      "fix": "",
+      "evidence": [
+        {
+          "url": "https://www.thefa.com/-/media/files/thefaportal/governance-docs/player-essentials/2026-27/essential-information-for-players-2026-27---english-version.ashx",
+          "quote": "Using offensive, insulting or abusive language and/or gestures — 2 Matches"
+        }
+      ]
+    },
+    {
+      "line": 42,
+      "group": "EPL red card suspensions",
+      "claim": "In the Premier League, serious foul play and violent conduct each carry a 3-match standard suspension.",
+      "quote": "심각한 반칙 플레이 | 3경기",
+      "kind": "number",
+      "volatile": true,
+      "verdict": "supported",
+      "severity": "low",
+      "correct_value": "",
+      "explanation": "FA 2026-27 안내서에서 심각한 반칙 플레이와 폭력 행위는 각각 3경기 출장정지입니다.",
+      "fix": "",
+      "evidence": [
+        {
+          "url": "https://www.thefa.com/-/media/files/thefaportal/governance-docs/player-essentials/2026-27/essential-information-for-players-2026-27---english-version.ashx",
+          "quote": "Serious foul play — 3 Matches ... Violent conduct — 3 Matches"
+        }
+      ]
+    },
+    {
+      "line": 44,
+      "group": "EPL red card suspensions",
+      "claim": "In the Premier League, spitting carries a 6-match standard suspension.",
+      "quote": "침 뱉기 | 6경기",
+      "kind": "number",
+      "volatile": true,
+      "verdict": "supported",
+      "severity": "low",
+      "correct_value": "",
+      "explanation": "FA 2026-27 안내서에서 상대 선수나 다른 사람에게 침을 뱉는 행위는 6경기 출장정지입니다.",
+      "fix": "",
+      "evidence": [
+        {
+          "url": "https://www.thefa.com/-/media/files/thefaportal/governance-docs/player-essentials/2026-27/essential-information-for-players-2026-27---english-version.ashx",
+          "quote": "Spitting at an opponent or any other person — 6 Matches"
+        }
+      ]
+    },
+    {
+      "line": 46,
+      "group": "EPL red card suspensions",
+      "claim": "In the Premier League, a player's second sending-off in a season adds 1 extra match and a third adds 2 extra matches, and red card bans apply across league and domestic cups.",
+      "quote": "EPL은 한 시즌에 두 번째로 퇴장당하면 1경기, 세 번째면 2경기를 더 얹습니다. 레드카드 출장정지는 리그와 국내 컵대회에 함께 적용돼요.",
+      "kind": "policy",
+      "volatile": true,
+      "verdict": "supported",
+      "severity": "low",
+      "correct_value": "",
+      "explanation": "FA의 선수용 필수 정보 문서에 따르면 레드카드 출장정지는 리그와 컵대회에 함께 적용되고, 한 시즌 두 번째 퇴장 시 1경기, 세 번째 퇴장 시 2경기가 추가됩니다. 다만 EFL 트로피나 내셔널리그 컵에서 받은 퇴장은 해당 대회에서만 징계를 소화한다는 예외가 있지만, EPL 선수에게는 사실상 해당되지 않습니다.",
+      "fix": "",
+      "evidence": [
+        {
+          "url": "https://resources.premierleague.pulselive.com/premierleague/document/2025/09/26/7751cadf-db83-4fa5-a45a-b513cfb5128b/essential-information-for-players-2025-26-english-version.pdf",
+          "quote": "Players who are dismissed for a second time in a season will receive an additional match suspension... a third time will receive two additional matches"
+        },
+        {
+          "url": "https://matchxi.com/guides/premier-league-suspension-rules",
+          "quote": "A second dismissal in the same season adds one match to the standard sanction, a third adds two, and so on."
+        }
+      ]
+    },
+    {
+      "line": 118,
+      "group": "EPL club fines",
+      "claim": "Reportedly, a Premier League club receiving 6 or more yellow cards in one match is fined £25,000, rising for repeat offences.",
+      "quote": "한 팀이 경고 6장 이상을 받으면 클럽에 2만5천 파운드 벌금을 물리고",
+      "kind": "price",
+      "volatile": true,
+      "verdict": "supported",
+      "severity": "low",
+      "correct_value": "",
+      "explanation": "여러 출처에서 프리미어리그 클럽이 한 경기에 경고 6장 이상을 받으면 FA가 2만5천 파운드 벌금을 물리고, 재범이면 금액이 더 커진다고 전합니다. 다만 글쓴이가 인용한 FA 2026-27 선수 안내 문서에는 이 금액이 나와 있지 않고, 근거는 2차 출처뿐입니다. 글에도 '알려진 바로는'이라고 단서를 달아 두었으므로 사실로 봅니다.",
+      "fix": "",
+      "evidence": [
+        {
+          "url": "https://refsix.com/news/yellow-card-fine-premier-league",
+          "quote": "In the English Premier League, teams are fined just £25,000 if they receive six or more yellow cards."
+        },
+        {
+          "url": "https://sqaf.club/premier-league-player-fines-yellow-red-cards/",
+          "quote": "Premier League sides can be fined up to £25,000 by the FA if the team has six or more players cautioned or dismissed"
+        }
+      ]
+    },
+    {
+      "line": 53,
+      "group": "UCL yellow card rules 2026/27",
+      "claim": "From the 2026/27 season, UEFA raised the Champions League yellow card suspension threshold from 3 to 4 cards from the league phase onward.",
+      "quote": "UEFA는 2026/27 시즌부터 리그 페이즈 이후 기준을 3장에서 4장으로 올렸어요",
+      "kind": "policy",
+      "volatile": true,
+      "verdict": "supported",
+      "severity": "low",
+      "correct_value": "",
+      "explanation": "UEFA 공식 해설 기사에 따르면 리그 페이즈부터 4장에서 정지되는 규정은 2026/27 시즌 시작과 함께 새로 바뀐 것이고, 이전 시즌에는 3장이 기준이었습니다.",
+      "fix": "",
+      "evidence": [
+        {
+          "url": "https://www.uefa.com/uefaeuropaleague/news/0295-1cd661bbe9cd-ded5a1c8b04d-1000--champions-league-europa-league-conference-league-yellow-/",
+          "quote": "This is a new rule change as of the start of the 2026/27 season, with players in previous seasons suspended after three yellow cards."
+        }
+      ]
+    },
+    {
+      "line": 55,
+      "group": "UCL yellow card rules 2026/27",
+      "claim": "Under Article 63 of the 2026/27 UEFA Champions League regulations, from the league phase a player is suspended after the 4th yellow card and then every even-numbered card (6th, 8th, ...).",
+      "quote": "리그 페이즈부터는 4번째 경고에서 1경기 출장정지, 그다음은 6번째, 8번째처럼 짝수 장마다 1경기를 쉽니다",
+      "kind": "policy",
+      "volatile": true,
+      "verdict": "supported",
+      "severity": "low",
+      "correct_value": "",
+      "explanation": "제63.02조에 따르면 리그 페이즈 첫 경기부터는 4번째 경고 이후, 그리고 그다음 짝수 번째 경고(6번째, 8번째 등)마다 다음 경기에 출장정지됩니다.",
+      "fix": "",
+      "evidence": [
+        {
+          "url": "https://www.uefa.com/uefaeuropaleague/news/0295-1cd661bbe9cd-ded5a1c8b04d-1000--champions-league-europa-league-conference-league-yellow-/",
+          "quote": "suspended for the next competition match after four yellow cards... as well as after any subsequent even-numbered yellow cards (sixth, eighth, etc.)"
+        }
+      ]
+    },
+    {
+      "line": 55,
+      "group": "UCL yellow card rules 2026/27",
+      "claim": "In 2026/27 Champions League qualifying and play-offs, suspensions still occur at the 3rd yellow card and every odd number thereafter, and these cards are wiped at the start of the league phase.",
+      "quote": "예선과 플레이오프는 여전히 3번째 경고부터 홀수 장마다 정지이고 이 경고들은 리그 페이즈가 시작될 때 지워집니다",
+      "kind": "policy",
+      "volatile": true,
+      "verdict": "supported",
+      "severity": "low",
+      "correct_value": "",
+      "explanation": "2026/27 규정 제63조는 리그 페이즈 이전에는 3번째 경고와 그 뒤 홀수 번째 경고마다 정지된다고 정하고 있습니다. UEFA 해설 기사도 리그 페이즈가 시작되면 예선에서 받은 경고와 경고 누적 정지가 소멸된다고 설명합니다.",
+      "fix": "",
+      "evidence": [
+        {
+          "url": "https://documents.uefa.com/r/Regulations-of-the-UEFA-Champions-League-2026/27/Article-63-Yellow-and-red-cards-Online",
+          "quote": "before the league phase, players and team officials are suspended for the next competition match after three yellow cards... following any subsequent odd-numbered"
+        },
+        {
+          "url": "https://www.uefa.com/uefaeuropaleague/news/0295-1cd661bbe9cd-ded5a1c8b04d-1000--champions-league-europa-league-conference-league-yellow-/",
+          "quote": "At the start of the league phase, any yellow cards and yellow card suspensions received in the qualifying rounds are wiped out."
+        }
+      ]
+    },
+    {
+      "line": 57,
+      "group": "UCL yellow card rules 2026/27",
+      "claim": "In the Champions League, accumulated yellow cards are wiped after the quarter-finals, but suspensions already triggered in the quarter-finals are served in the semi-finals.",
+      "quote": "8강이 끝나면 쌓인 옐로카드가 모두 지워집니다. 8강에서 이미 확정된 출장정지는 4강에서 그대로 쉬어야 하고요",
+      "kind": "policy",
+      "volatile": true,
+      "verdict": "supported",
+      "severity": "low",
+      "correct_value": "",
+      "explanation": "제63.04조에 따라 모든 경고는 8강이 끝나면 소멸됩니다. UEFA 해설 기사도 경고 누적으로 이미 생긴 출장정지는 그대로 적용된다고 밝히고 있습니다.",
+      "fix": "",
+      "evidence": [
+        {
+          "url": "https://www.uefa.com/uefaeuropaleague/news/0295-1cd661bbe9cd-ded5a1c8b04d-1000--champions-league-europa-league-conference-league-yellow-/",
+          "quote": "Yellow cards expire on completion of the quarter-finals... (although any suspension resulting from cumulated yellow cards remains applicable)"
+        }
+      ]
+    },
+    {
+      "line": 28,
+      "group": "UCL yellow card rules 2026/27",
+      "claim": "In the Champions League, only yellow cards that did not lead to a sending-off count toward accumulation.",
+      "quote": "챔피언스리그는 퇴장으로 이어지지 않은 옐로카드만 누적 장수로 셉니다",
+      "kind": "policy",
+      "volatile": true,
+      "verdict": "supported",
+      "severity": "low",
+      "correct_value": "",
+      "explanation": "제63.02조는 누적 대상이 되는 경고를 '레드카드로 이어지지 않은(that did not result in a red card)' 옐로카드로 한정하고 있습니다.",
+      "fix": "",
+      "evidence": [
+        {
+          "url": "https://documents.uefa.com/r/Regulations-of-the-UEFA-Champions-League-2026/27/Article-63-Yellow-and-red-cards-Online",
+          "quote": "after three yellow cards, that did not result in a red card"
+        }
+      ]
+    },
+    {
+      "line": 46,
+      "group": "UCL yellow card rules 2026/27",
+      "claim": "In the Champions League, a red card brings an automatic 1-match suspension in the next UEFA club competition match, which UEFA can extend.",
+      "quote": "챔피언스리그는 다음 UEFA 클럽 대회 1경기가 자동 정지이고, UEFA가 더 늘릴 수 있어요",
+      "kind": "policy",
+      "volatile": true,
+      "verdict": "supported",
+      "severity": "low",
+      "correct_value": "",
+      "explanation": "UEFA 챔피언스리그 2026/27 규정 제63.01조에 따르면, 퇴장당한 선수는 원칙적으로 다음 UEFA 클럽 대회 경기 1경기에 자동으로 출전 정지돼요. 반칙이 심각한 경우에는 UEFA 징계 기구가 정지 기간을 늘릴 수 있다고 되어 있어서 글의 내용과 맞아요.",
+      "fix": "",
+      "evidence": [
+        {
+          "url": "https://documents.uefa.com/r/Regulations-of-the-UEFA-Champions-League-2026/27/Article-63-Yellow-and-red-cards-Online",
+          "quote": "a player or team official sent off by the referee is automatically suspended for the next match in a UEFA club competition"
+        },
+        {
+          "url": "https://documents.uefa.com/r/Regulations-of-the-UEFA-Champions-League-2026/27/Article-63-Yellow-and-red-cards-Online",
+          "quote": "In the event of a serious offence, the UEFA disciplinary bodies are entitled to augment"
+        }
+      ]
+    },
+    {
+      "line": 63,
+      "group": "World Cup 2026 card amnesty",
+      "claim": "In April 2026 the FIFA Council changed the 2026 World Cup regulations so single yellow cards were wiped twice: after the group stage and after the quarter-finals.",
+      "quote": "FIFA 평의회가 2026년 4월 규정을 바꿔 경고를 두 번 지웠어요",
+      "kind": "date",
+      "volatile": false,
+      "verdict": "supported",
+      "severity": "low",
+      "correct_value": "",
+      "explanation": "AP 기사(알자지라, 2026년 4월 29일)를 보면 FIFA 평의회가 2026 월드컵 규정 개정을 확정했어요. 개정 내용은 단일 경고를 조별리그 뒤와 8강 뒤, 두 번 지우는 거예요.",
+      "fix": "",
+      "evidence": [
+        {
+          "url": "https://www.aljazeera.com/amp/sports/2026/4/29/fifa-confirms-new-world-cup-rule-on-yellow-cards-to-reduce-suspensions",
+          "quote": "single yellow cards in the final competition will be cancelled after the group stage and then again after the quarterfinals"
+        }
+      ]
+    },
+    {
+      "line": 63,
+      "group": "World Cup 2026 card amnesty",
+      "claim": "At the 2026 World Cup, two yellow cards in different matches resulted in a 1-match suspension.",
+      "quote": "서로 다른 경기에서 옐로카드 2장이면 1경기 출장정지인 건 같지만",
+      "kind": "policy",
+      "volatile": false,
+      "verdict": "supported",
+      "severity": "low",
+      "correct_value": "",
+      "explanation": "서로 다른 경기에서 경고 2장을 받으면 1경기 출장정지라는 원칙은 그대로이고, 바뀐 건 경고를 지우는 시점뿐이라고 보도됐어요.",
+      "fix": "",
+      "evidence": [
+        {
+          "url": "https://www.aljazeera.com/amp/sports/2026/4/29/fifa-confirms-new-world-cup-rule-on-yellow-cards-to-reduce-suspensions",
+          "quote": "players had to serve a one-game ban if they were shown a yellow card in two different games"
+        }
+      ]
+    },
+    {
+      "line": 63,
+      "group": "World Cup 2026 card amnesty",
+      "claim": "At the 2022 Qatar World Cup, yellow cards were wiped only once, after the quarter-finals.",
+      "quote": "2022 카타르 대회는 8강 뒤 한 번만 지웠어요",
+      "kind": "policy",
+      "volatile": false,
+      "verdict": "supported",
+      "severity": "low",
+      "correct_value": "",
+      "explanation": "지난 대회(2022 카타르)에서는 단일 경고를 8강 뒤에 한 번만 지웠다고 같은 기사에 나와 있어요.",
+      "fix": "",
+      "evidence": [
+        {
+          "url": "https://www.aljazeera.com/amp/sports/2026/4/29/fifa-confirms-new-world-cup-rule-on-yellow-cards-to-reduce-suspensions",
+          "quote": "although single yellow cards were cancelled after the quarterfinals"
+        }
+      ]
+    },
+    {
+      "line": 18,
+      "group": "IFAB Law 12",
+      "claim": "Under IFAB Laws, a player receiving a second caution in the same match is sent off and cannot be replaced, and cautions carry into extra time but not into penalty shootouts.",
+      "quote": "전반에 받은 경고는 후반과 연장전까지 그대로 이어지고 승부차기에는 넘어가지 않는다고 규칙에 적혀 있습니다",
+      "kind": "policy",
+      "volatile": true,
+      "verdict": "supported",
+      "severity": "low",
+      "correct_value": "",
+      "explanation": "IFAB 규칙 12조는 같은 경기에서 두 번째 경고를 받으면 퇴장으로 정하고, 3조에 따라 킥오프 이후 퇴장당한 선수는 교체할 수 없습니다. 10조(2020/21 개정)는 경기 중 받은 경고와 주의가 승부차기로 넘어가지 않는다고 명시합니다. 연장전은 경기의 일부라서 경고가 그대로 유지됩니다. 다만 '연장전까지 이어진다'는 문구가 규칙에 그대로 적혀 있지는 않고, '같은 경기'라는 정의에서 따라 나오는 결론입니다.",
+      "fix": "",
+      "evidence": [
+        {
+          "url": "https://www.theifab.com/laws/latest/fouls-and-misconduct/",
+          "quote": "receiving a second caution in the same match"
+        },
+        {
+          "url": "https://albertasoccer.com/wp-content/uploads/2020-21-LOTG-Insert.pdf",
+          "quote": "warnings and cautions issued during the match are not carried forward into kicks from the penalty mark"
+        }
+      ]
+    },
+    {
+      "line": 75,
+      "group": "IFAB Law 12",
+      "claim": "IFAB Laws allow cards to be shown to team officials, and if the offender cannot be identified the senior coach in the technical area receives it.",
+      "quote": "누가 했는지 모르면 기술 지역의 선임 지도자가 받는다고 정합니다",
+      "kind": "policy",
+      "volatile": true,
+      "verdict": "supported",
+      "severity": "low",
+      "correct_value": "",
+      "explanation": "IFAB 규칙 12조의 '팀 임원' 항목에 따르면 기술 지역에서 일어난 반칙의 행위자를 특정할 수 없을 때 기술 지역에 있는 선임 지도자가 징계를 받습니다.",
+      "fix": "",
+      "evidence": [
+        {
+          "url": "https://www.theifab.com/laws/latest/fouls-and-misconduct/",
+          "quote": "the offender cannot be identified, the senior team coach present in the technical area will receive the sanction"
+        }
+      ]
+    },
+    {
+      "line": 71,
+      "group": "K League 1 accumulation",
+      "claim": "K League 1 dropped the 'every 3 cautions' rule from the 2020 season and moved the first suspension to 5 yellow cards.",
+      "quote": "K리그1은 2020 시즌부터 \"3회마다\"를 버리고 첫 출장정지를 5장으로 늦췄어요",
+      "kind": "date",
+      "volatile": false,
+      "verdict": "supported",
+      "severity": "low",
+      "correct_value": "",
+      "explanation": "한국프로축구연맹은 2019년에 규정을 개정해 2020시즌부터 적용했습니다. 기존 '경고 3회마다 1경기'를 '5·3·2회 누적마다 1경기'로 바꿨고, 첫 출장정지 기준도 3회에서 5회로 늘렸습니다.",
+      "fix": "",
+      "evidence": [
+        {
+          "url": "https://www.dailysportshankook.co.kr/news/articleView.html?idxno=241494",
+          "quote": "기존 '경고 누적 3회당 1경기 출장 정지'에서 '경고 누적 5·3·2회 당 1경기씩 출장 정지'로 변경"
+        },
+        {
+          "url": "https://edaily.co.kr/News/Read?mediaCodeNo=258&newsId=01161126625634112",
+          "quote": "기존에는 3회 경고누적마다 1경기 출장정지가 부과됐지만 올 시즌부터는 처음 5회 경고누적 시 1경기 출장정지"
+        }
+      ]
+    },
+    {
+      "line": 73,
+      "group": "K League 1 accumulation",
+      "claim": "Under Article 39 of the K League 2026 competition rules, suspensions come at the 5th caution, the 8th caution, then every 2 cautions (10th, 12th...), with a ₩700,000 fine from the 10th caution, accumulated over all 38 rounds.",
+      "quote": "처음 5회 경고에서 1경기, 그 뒤 3회가 더 쌓이면(8회) 1경기, 그 뒤로는 2회마다(10회, 12회…) 1경기를 쉽니다",
+      "kind": "policy",
+      "volatile": true,
+      "verdict": "supported",
+      "severity": "low",
+      "correct_value": "",
+      "explanation": "K리그1 2026 대회요강을 보면 처음 5회, 이어서 3회 경고가 쌓일 때 각각 1경기 출전정지이고, 그 뒤로는 2회마다 1경기 출전정지와 제재금 70만원이 붙습니다. 정지는 최종 라운드(1~38R)까지 이어서 적용됩니다. 다만 조항 번호가 제39조인지는 원문 페이지에서 직접 확인하지 못했습니다.",
+      "fix": "",
+      "evidence": [
+        {
+          "url": "https://www.kleague.com/about/competition.do",
+          "quote": "선수는 처음 각 5회, 3회의 경고누적 시 다음 1경기가 출전정지 되며, 이후 매 2회 누적마다 다음 1경기 출전정지와 제재금 칠십만원(700,000원)이 부과된다."
+        },
+        {
+          "url": "https://www.kleague.com/about/competition.do",
+          "quote": "출전정지는 최종 라운드(1~38R)까지 연계 적용한다"
+        }
+      ]
+    },
+    {
+      "line": 46,
+      "group": "K League 1 red card fines",
+      "claim": "In K League 1, a second-caution sending-off brings 1 match and ₩1,000,000, a direct red 2 matches and ₩1,200,000, and a direct red after a caution 2 matches and ₩1,500,000.",
+      "quote": "K리그1은 경고 2장 퇴장 1경기와 100만원, 직접 퇴장 2경기와 120만원, 경고 뒤 직접 퇴장 2경기와 150만원이 기본이고",
+      "kind": "price",
+      "volatile": true,
+      "verdict": "supported",
+      "severity": "low",
+      "correct_value": "",
+      "explanation": "K리그 공식 대회요강(2026)과 언론 보도에 따르면 경고 2회 퇴장은 1경기 출전정지와 100만원, 직접 퇴장은 2경기 출전정지와 120만원, 경고 1회 후 직접 퇴장은 2경기 출전정지와 150만원입니다. 주장과 일치합니다.",
+      "fix": "",
+      "evidence": [
+        {
+          "url": "https://www.kleague.com/about/competition.do",
+          "quote": "직접 퇴장에 의한 출전정지는 다음 2경기가 출전 정지되며, 제재금은 일백이십만원(1,200,000원)이 부과된다."
+        },
+        {
+          "url": "https://www.dailysportshankook.co.kr/news/articleView.html?idxno=241494",
+          "quote": "'경고 2회 퇴장에 따른 출장 정지'의 경우 다음 1경기 출장이 정지되고, 제재금 100만원이 부과된다."
+        }
+      ]
+    },
+    {
+      "line": 26,
+      "group": "K League 1 red card fines",
+      "claim": "K League rules state that the two cautions leading to a second-yellow dismissal do not count toward accumulation, while a caution followed by a direct red remains valid and counts.",
+      "quote": "\"이 경고는 누적에 산입되지 않는다\"",
+      "kind": "policy",
+      "volatile": true,
+      "verdict": "supported",
+      "severity": "low",
+      "correct_value": "",
+      "explanation": "K리그 규정상 경고 2회 퇴장 시 해당 경고 2장은 누적 경고 수에 산입되지 않습니다. 반면 2026 K리그1 대회요강은 경고 1회 후 직접 퇴장의 경우 그 경고 1회는 유효하며 누적에 산입된다고 명시합니다.",
+      "fix": "",
+      "evidence": [
+        {
+          "url": "https://www.kleague.com/about/competition.do",
+          "quote": "경고 1회는 유효하며, 누적에 산입된다."
+        },
+        {
+          "url": "https://www.dailysportshankook.co.kr/news/articleView.html?idxno=241494",
+          "quote": "이 경우 2개의 경고는 앞서 언급한 누적 경고 수에 산입되지 않는다."
+        }
+      ]
+    },
+    {
+      "line": 75,
+      "group": "K League 1 accumulation",
+      "claim": "In K League, coaching staff are suspended for 1 match at the 3rd caution, then the 5th, then every caution thereafter.",
+      "quote": "감독이나 코치는 3번째 경고에서 1경기, 그 뒤 5번째, 그다음부터는 경고마다 벤치에 앉지 못해요",
+      "kind": "policy",
+      "volatile": true,
+      "verdict": "unverifiable",
+      "severity": "low",
+      "correct_value": "",
+      "explanation": "K리그 대회요강 페이지는 내용이 중간에 잘린 채로만 불러와져서, 코칭스태프 경고누적 조항(3회·5회·이후 매회)의 원문을 확인하지 못했습니다. 이 내용을 뒷받침하거나 반박하는 다른 신뢰할 만한 출처도 찾지 못했습니다.",
+      "fix": "",
+      "evidence": [
+        {
+          "url": "https://www.kleague.com/about/competition.do",
+          "quote": "출전정지제재 중이거나 경기 중 퇴장 조치된 코칭스태프는 공식경기에서 관중석을 제외한 지역에 대해 출입이 제한되며"
+        }
+      ]
+    },
+    {
+      "line": 112,
+      "group": "Sergio Ramos UEFA ban",
+      "claim": "UEFA banned Sergio Ramos for 2 matches (including 1 accumulation ban) for deliberately getting booked in the February 2019 Champions League round-of-16 first leg against Ajax.",
+      "quote": "UEFA는 2019년 2월 아약스와의 16강 1차전에서 일부러 경고를 받은 것으로 판단한 세르히오 라모스에게 누적 결장 1경기를 포함해 2경기 출장정지를 내렸어요",
+      "kind": "attribution",
+      "volatile": false,
+      "verdict": "supported",
+      "severity": "low",
+      "correct_value": "",
+      "explanation": "UEFA 징계위원회는 2019년 2월 13일 암스테르담에서 열린 아약스와의 16강 1차전에서 라모스가 일부러 경고를 받았다고 판단했어요. 그 결과 경고 누적으로 원래 받을 1경기 결장에 1경기를 더해 모두 2경기 출장정지를 내렸어요. 그래서 라모스는 16강 2차전과 8강 1차전에 나오지 못하게 됐어요. 글의 내용은 이 보도들과 맞아요.",
+      "fix": "",
+      "evidence": [
+        {
+          "url": "https://www.fotmob.com/news/world/8p45l9upvmc814653ure2lco6-%F0%9F%94%A5+BREAKING+NEWS:+Ramos+gets+two-match+ban+for+deliberate+yellow+card",
+          "quote": "UEFA has issued a two-match suspension to Sergio Ramos after finding him guilty of getting booked deliberately against Ajax."
+        },
+        {
+          "url": "https://espn.com/soccer/uefa-champions-league/story/3774818/real-madrids-sergio-ramos-could-face-two-match-ban-for-intentional-booking",
+          "quote": "admitting to deliberately picking up a late booking in Wednesday's round-of-16 first leg against Ajax"
+        }
+      ]
+    },
+    {
+      "line": 49,
+      "group": "Image credits",
+      "claim": "The red card photo is by Samson Ssemakadde, released CC0 on Wikimedia Commons, and the yellow card photo is by Tadeáš Bednarz under CC BY-SA 4.0.",
+      "quote": "사진 Samson Ssemakadde, CC0 (Wikimedia Commons)",
+      "kind": "attribution",
+      "volatile": false,
+      "verdict": "unverifiable",
+      "severity": "low",
+      "correct_value": "",
+      "explanation": "Samson Ssemakadde가 Wikimedia Commons에 사진을 CC0 1.0으로 올리는 기여자인 것은 맞고, Tadeáš Bednarz도 Commons에서 활동하는 체코 사진가이자 축구 심판이라는 점은 확인됩니다. 다만 글에 쓰인 레드카드·옐로카드 사진 파일 페이지를 찾지 못해, 각 사진의 촬영자와 라이선스(CC0, CC BY-SA 4.0)가 맞는지는 직접 확인하지 못했습니다.",
+      "fix": "사진 Samson Ssemakadde, CC0 (Wikimedia Commons) — 해당 파일 페이지 링크를 함께 적고, 옐로카드 사진도 파일 페이지에 표시된 촬영자와 라이선스를 그대로 표기",
+      "evidence": [
+        {
+          "url": "https://commons.wikimedia.org/wiki/File:Uganda_women's_national_football_team.jpg",
+          "quote": "Samson Ssemakadde. Licensing. This file is made available under the Creative Commons CC0 1.0 Universal Public Domain Dedication"
+        },
+        {
+          "url": "https://commons.wikimedia.org/wiki/Category:Tade%C3%A1%C5%A1_Bednarz",
+          "quote": "Czech photographer and football referee"
+        }
+      ]
+    }
+  ]
+}
