@@ -1,7 +1,16 @@
 {
   "name": "sportskingdom24",
   "compatibility_date": "2025-06-01",
+  "workers_dev": true,
+  // www.로 들어오면 맨 주소로 301 (worker/index.js). 2026-10-20 www 접속 불가(DNS 없음) 수정.
+  "main": "./worker/index.js",
   "assets": {
-    "directory": "./dist"
-  }
+    "directory": "./dist",
+    "binding": "ASSETS",
+    "run_worker_first": true
+  },
+  "routes": [
+    { "pattern": "sportskingdom24.com", "custom_domain": true },
+    { "pattern": "www.sportskingdom24.com", "custom_domain": true }
+  ]
 }
