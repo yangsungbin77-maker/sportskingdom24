@@ -1,0 +1,180 @@
+{
+ "keyword": "4-4-2 4-3-3 차이",
+ "structure": "결론먼저",
+ "keyword_filter": {
+  "keyword": "4-4-2 4-3-3 차이",
+  "competition": {
+   "method": "serp-scan",
+   "evidence": "구글 상위 10개 중 상업 블로그·개인 축구 가이드·FM형 서브사이트가 과반(formtheteam, hoopsking, playclubsoccer, ekkonocoaching, footballgpt). 공식기관·대형매체는 Yahoo Sports 1건뿐이고 한글 결과는 나무위키 2개가 전부라 롱테일 공략 가능.",
+   "pass": true
+  },
+  "demand": {
+   "method": "autocomplete",
+   "evidence": "구글 자동완성에 '4-4-2 4-3-3 차이', '4-4-2 vs 4-3-3', '4-3-3 vs 4-4-2 포메이션'이 모두 뜨고, 자매 글(soccer-formation-pros-cons·soccer-formation-counters)이 이미 포메이션 비교 트래픽을 받고 있어 세로 롱테일 수요가 안정적.",
+   "pass": true
+  },
+  "intent": {
+   "method": "serp-scan",
+   "evidence": "상위 10개가 모두 '설명·비교·장단점' 정보형 블로그·가이드이고, 영상·쇼핑·사이트 이동 결과가 거의 없어 글로 충족 가능한 정보 의도. 추천 스니펫·PAA(함께 묻는 질문)도 '중원 숫자'·'윙어 역할' 중심.",
+   "pass": true
+  }
+ },
+ "serp": [
+  {
+   "url": "https://namu.wiki/w/4-4-2",
+   "opened": false,
+   "note": "HTTP 403 — namu.wiki 봇 차단으로 WebFetch 실패. 한국어 결과 상단 포지션."
+  },
+  {
+   "url": "https://namu.wiki/w/4-3-3",
+   "opened": false,
+   "note": "HTTP 403 — namu.wiki 봇 차단으로 WebFetch 실패."
+  },
+  {
+   "url": "https://sports.yahoo.com/articles/4-4-2-vs-4-072500373.html",
+   "opened": true,
+   "note": "4-4-2는 2 미드/투톱·수비 조직 강점, 4-3-3은 3 미드/쓰리톱·압박·점유. 중원 2대3 수적 열세를 4-4-2의 핵심 약점으로 지목."
+  },
+  {
+   "url": "https://hoopsking.com/blogs/default-blog/soccer-formations-explained-4-4-2-4-3-3-guide",
+   "opened": true,
+   "note": "4-4-2 선택 기준은 '빠른 공격수 2명', 4-3-3은 '기술 미드 3명'. 측면 미드가 수비 복귀 필수."
+  },
+  {
+   "url": "https://pitch-master.app/guide/soccer-formation-guide",
+   "opened": true,
+   "note": "조기축구 가이드. 4-4-2를 기본값, 4-3-3은 '빠른 측면 자원'이 있는 팀에 추천. 인원 부족 시 3-3-3 등으로 축소."
+  },
+  {
+   "url": "https://playclubsoccer.org/blog/understanding-soccer-formations-4-3-3-vs-4-4-2-vs-3-5-2-explained-for-parents",
+   "opened": true,
+   "note": "학부모 대상 설명. 4-4-2 '명확한 파트너 연결', 4-3-3 '패스 삼각형'. 4-3-3은 측면 역습에 취약하다고 명시."
+  },
+  {
+   "url": "https://formtheteam.com/blog/4-3-3-vs-4-4-2",
+   "opened": true,
+   "note": "핵심 차이=미드필더 숫자. '포제션 우위 팀=4-3-3, 직접 플레이 팀=4-4-2' 결론."
+  },
+  {
+   "url": "https://allaboutfootball.net/4-4-2-vs-4-3-3-formation-comparison/",
+   "opened": true,
+   "note": "두 라인 수평 구조 vs 삼각형 연결 대비, 4-3-3의 3대2 수적 우위를 '가장 중요한 전투'로 짚음."
+  },
+  {
+   "url": "https://footballgpt.co/compare/4-3-3-vs-4-4-2",
+   "opened": true,
+   "note": "4-3-3=공격형(측면 넓이+중원 우위), 4-4-2=균형(투톱 파트너십+카운터)."
+  },
+  {
+   "url": "https://ekkonocoaching.com/4-3-3-formation-vs-other-systems/",
+   "opened": true,
+   "note": "4-3-3 대 다른 시스템 대응법 카탈로그. 압박 트리거·폴스9 전술 강조."
+  },
+  {
+   "url": "https://www.goal.com/en-us/lists/the-4-4-2-formation-in-soccer-explained-pros-cons-and-tactical-variations/bltffe8817213aba6f4",
+   "opened": true,
+   "note": "4-4-2 종합 가이드. 중원 3명 상대 수적 열세 명시, 4-4-1-1·다이아몬드 변형 소개."
+  },
+  {
+   "url": "https://en.wikipedia.org/wiki/Formation_(association_football)",
+   "opened": true,
+   "note": "역사 고증. 4-3-3=1962 브라질(자갈로)·1970s 아약스 미헐스·2008/09 바르샤 과르디올라. 4-4-2는 1990~2000년대 주류."
+  }
+ ],
+ "factcheck": [
+  {
+   "claim": "4-3-3는 1962 월드컵 브라질이 마리오 자갈로를 공격 라인에서 미드필더로 내리며 4-2-4가 변형되어 만들어졌다.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Formation_(association_football)",
+    "WebSearch snippet: '4-3-3 formation first appeared in Brazil in the early 1960s, when the Brazilian national team changed their 4-2-4 setup into a 4-3-3 by moving Mário Zagallo from the attacking line into midfield for the 1962 World Cup'"
+   ]
+  },
+  {
+   "claim": "리뉘스 미헐스의 아약스는 1971·1972·1973 세 시즌 연속 유러피언컵 우승을 기록했다.",
+   "sources": [
+    "WebSearch snippet (Coaches' Voice·b-42): 'Ajax won the European Cup of National Champions three times in a row from 1971 to 1973'",
+    "https://en.wikipedia.org/wiki/Formation_(association_football) — '~famous Ajax team of the early 1970s, which won three European Cups with Johan Cruyff'"
+   ]
+  },
+  {
+   "claim": "펩 과르디올라의 2008-09 FC 바르셀로나는 라리가·코파 델 레이·UEFA 챔피언스리그를 모두 우승해 스페인 축구 최초의 콘티넨털 트레블을 기록했다.",
+   "sources": [
+    "https://ko.wikipedia.org/wiki/펩_과르디올라",
+    "https://en.wikipedia.org/wiki/2009_UEFA_Champions_League_final",
+    "https://namu.wiki/w/FC%20바르셀로나/2008-09%20시즌/트레블"
+   ]
+  },
+  {
+   "claim": "4-4-2의 상징적 완성형은 1966 월드컵 알프 램지 감독의 잉글랜드 '윙리스 원더스'로, 전통적 윙어 대신 미드필드를 두껍게 깐 체제로 월드컵을 우승했다.",
+   "sources": [
+    "https://footballkit.lazada.sg/world-cup-archives/how-did-the-1966-wingless-wonders-engineer-the-modern-4-4-2-formation/",
+    "https://worldinsport.com/the-english-4-4-2-evolution-from-world-cup-triumph-1966-to-modern-tactics/",
+    "https://www.sportmonks.com/glossary/the-4-4-2-formation-explained/"
+   ]
+  },
+  {
+   "claim": "엘링 홀란드는 2022/23 EPL 데뷔 시즌 36골로 38경기 체제 프리미어리그 한 시즌 최다 득점 신기록을 세웠다.",
+   "sources": [
+    "https://www.premierleague.com/stats/top/players/goals?se=489",
+    "자매 글 /soccer-positions-guide/ 교차(공식 집계 링크 그대로 사용)"
+   ]
+  }
+ ],
+ "variables": {
+  "keyword": "4-4-2 4-3-3 차이",
+  "central_mid_442": "2명 (DM 1 + CM 1)",
+  "central_mid_433": "3명 (DM 1 + CM 1 + AM 1)",
+  "attack_442": "2명 (투톱)",
+  "attack_433": "3명 (CF 1 + LW/RW 2)",
+  "era_442": "1966 England Wingless Wonders (Alf Ramsey)",
+  "era_433_birth": "1962 Brazil (Mario Zagallo midfielder shift)",
+  "era_433_fame": "1971-73 Ajax 3-peat (Rinus Michels, Total Football)",
+  "era_433_modern": "2008-09 Barcelona treble (Pep Guardiola)",
+  "haaland_record": "2022/23 EPL 36 goals (38-game season record)"
+ },
+ "gaps": [
+  {
+   "gap": "1966 알프 램지의 잉글랜드 '윙리스 원더스'가 어떻게 4-4-2를 완성했는지 서사로 묶어 보여준 글이 상위 10개 중 거의 없다. 대부분 '요즘 4-4-2' 설명만 한다.",
+   "covered_in": "역사로 보는 두 포메이션"
+  },
+  {
+   "gap": "4-3-3가 1962 브라질 자갈로의 미드필더 이동에서 태어났다는 기원과, 1970s 아약스·2008 바르샤로 이어지는 세 세대 흐름을 한 글에서 함께 다루는 한국어 자료가 드물다.",
+   "covered_in": "역사로 보는 두 포메이션 (1966 영국·1962 브라질·2008 바르샤)"
+  },
+  {
+   "gap": "4-3-3 전방 압박이 뚫렸을 때 라인 간 간격이 벌어지면서 역습에 취약해지는 2차 효과를 구체적으로 짚은 한글 설명이 거의 없다.",
+   "covered_in": "전방 압박이 실패하면 벌어지는 일"
+  },
+  {
+   "gap": "조기축구·아마추어 환경에서는 체력·전술 이해도 조건상 4-3-3보다 4-4-2가 왜 안전한지 선수 자원 질문 세 가지로 자가진단할 수 있는 틀을 제시한 글이 거의 없다.",
+   "covered_in": "어떤 팀에 어떤 포메이션이 맞을까"
+  }
+ ],
+ "own_evidence": [
+  {
+   "type": "photo",
+   "desc": "4-4-2와 4-3-3의 자리 차이를 그라운드 다이어그램으로 직접 제작(HTML/CSS → PNG)",
+   "proof": "../../assets/posts/soccer-formation-442-vs-433-1.png"
+  },
+  {
+   "type": "photo",
+   "desc": "수비 조직(두 줄 수비 vs 전방 압박)을 비교하는 데이터 카드 인포그래픽 직접 제작",
+   "proof": "../../assets/posts/soccer-formation-442-vs-433-2.png"
+  },
+  {
+   "type": "table",
+   "desc": "10개 항목으로 4-4-2 vs 4-3-3을 비교한 자체 비교표 구성(상위 글 어디에도 없는 항목 조합)",
+   "proof": "| 공격 숫자 | **2명** (투톱) | **3명** (CF 1 + LW/RW 2) |"
+  },
+  {
+   "type": "data",
+   "desc": "1966 영국·1962 브라질·1971-73 아약스·2008-09 바르샤 역사 데이터를 한 글에 교차",
+   "proof": "1971·1972·1973 세 시즌 연속으로 유러피언컵"
+  }
+ ],
+ "overlap_ok": "자매 글 /soccer-formation-pros-cons/는 6종 포메이션 전체 장단점을, /soccer-formation-counters/는 포메이션끼리 상성(누가 누구에 강한가)을 다룬다. 이 글은 '4-4-2와 4-3-3 두 가지의 차이'만 중원·측면·수비·역사·자원 조건으로 깊게 비교해 롱테일 쿼리를 분리 공략한다.",
+ "hermes_score": 88,
+ "score_history": [
+  88
+ ]
+}
