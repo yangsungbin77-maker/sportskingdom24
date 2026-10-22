@@ -1,0 +1,228 @@
+{
+ "type": "정보",
+ "keyword": "축구 포지션",
+ "keyword_filter": {
+  "keyword": "축구 포지션",
+  "cluster": [
+   "축구 포지션 정리",
+   "축구 포지션 종류",
+   "축구 포지션 역할",
+   "축구 포지션 약자",
+   "축구 세부 포지션",
+   "윙어 뜻",
+   "센터백 뜻",
+   "풀백 윙백 차이",
+   "공격형 미드필더",
+   "수비형 미드필더",
+   "가짜 9번",
+   "축구 등번호 의미"
+  ],
+  "competition": {
+   "method": "serp-scan",
+   "evidence": "SERP 1페이지는 위키백과·PFSA 한국어 가이드·개인 블로그(안양한)·유니폼 쇼핑몰(로보스포츠)·카페 글·DC 갤러리 등으로 섞여 있고, 포지션 전체를 2022년 교체 5명 영구화·전통 등번호 1~11번 매핑·가짜 9번·레지스타·메짤라까지 함께 다룬 글이 상위에 없음(2026-10-22)",
+   "pass": true
+  },
+  "demand": {
+   "method": "autocomplete",
+   "evidence": "구글 자동완성 '축구 포지션'→'축구 포지션 역할·종류·정리·약자' 노출, '축구 포지션 완전 정리' 숏폼 유튜브 다수, PFSA 한국어 가이드 상위 노출로 입문자 수요 분명(2026-10-22)",
+   "pass": true
+  },
+  "intent": {
+   "method": "serp-scan",
+   "evidence": "상위 결과가 위키백과·입문 블로그·용어 설명 위주로 정보성 의도, 쇼핑·중계 티켓 결과 없음. 포지션 '구매'가 아닌 '역할 이해'가 핵심 의도",
+   "pass": true
+  }
+ },
+ "serp": [
+  {
+   "url": "https://ko.wikipedia.org/wiki/%EC%B6%95%EA%B5%AC%EC%9D%98_%ED%8F%AC%EC%A7%80%EC%85%98",
+   "opened": true,
+   "note": "4대 분류(GK/DF/MF/FW)와 세부 포지션(센터백·풀백·윙백·스위퍼·DM·CM·AM·CF·SS·윙어·폴스나인) 체계적 정리. 2-3-5 자리순 등번호 유래 포함"
+  },
+  {
+   "url": "https://thepfsa.co.uk/ko/football-positions-explained/",
+   "opened": true,
+   "note": "경기장 위에서 아래로 포지션 설명, 대표 선수(야신·반 다이크·로드리·지단·시어러·홀란드·메시) 매핑. 1928 아스날·1954 월드컵 의무화·EPL 1993/94 고정번호 숫자 명확"
+  },
+  {
+   "url": "https://namu.wiki/w/%EC%B6%95%EA%B5%AC/%ED%8F%AC%EC%A7%80%EC%85%98",
+   "opened": false,
+   "note": "403 차단 — 접근 불가(2026-10-22 봇 차단)"
+  },
+  {
+   "url": "https://lobo.soccer/%EC%B6%95%EA%B5%AC%EC%9D%98-%ED%8F%AC%EC%A7%80%EC%85%98-%EC%A0%95%EB%A6%AC/",
+   "opened": true,
+   "note": "유니폼 쇼핑몰 블로그 — GK·DF·MF·FW 4분류·세부(센터백·풀백·윙백 등) 간단히. 리베로·플레이메이커 안 다룸, 등번호 관례만 명시"
+  },
+  {
+   "url": "https://m.cafe.daum.net/Saintfc/Cw8h/5",
+   "opened": true,
+   "note": "세인트FC 카페 — 11명 4분류, 세부(센터백·스위퍼·풀백·윙백·DM/CM/AM/LM/윙어·CF·ST·섀도) 짧게. 전술 설명 전 포지션 이해 전제"
+  },
+  {
+   "url": "https://gall.dcinside.com/mgallery/board/view/?id=fantasystar&no=13",
+   "opened": true,
+   "note": "뭉쳐야찬다 환타지스타 갤러리 — 포메이션 5종(4-4-2·4-3-3·4-2-3-1·3-5-2·4-1-4-1)별 포지션 약자(GK/CB/LB/RB/CM/ST) 뜻 간단 매칭"
+  },
+  {
+   "url": "https://anyangred.com/asured_review/151578",
+   "opened": true,
+   "note": "안양한 — 공격수 유형 3가지(돌파형=호날두/오웬, 타겟맨=르반도프스키/드록바, 복합형=이브라히모비치) 분류·메시 70cm 드리블 사례"
+  },
+  {
+   "url": "https://dfirejobs.com/entry/%EC%B6%95%EA%B5%AC%EC%84%A0%EC%88%98-%EB%93%B1%EB%B2%88%ED%98%B8-%EC%9D%98%EB%AF%B8-%ED%8F%AC%EC%A7%80%EC%85%98-%EB%8C%80%ED%91%9C%EC%84%A0%EC%88%98",
+   "opened": true,
+   "note": "전통 등번호 1~11번 포지션·대표 선수 매핑. 1번 체흐·카시야스, 2~3 측면수비, 4~6 센터·미들, 10번 에이스, 11 빠른 윙어"
+  },
+  {
+   "url": "https://theqoo.net/square/1225038228",
+   "opened": false,
+   "note": "403 차단 — 접근 불가. '등번호 숨겨진 의미' 블로그"
+  },
+  {
+   "url": "https://www.ldkchina.com/ko/news/112682/",
+   "opened": true,
+   "note": "등번호 분포 — 1 GK, 2~3 풀백, 4~5 CB, 6 DM(피벗), 8 CM, 10 AM, 7/11 윙어, 9 CF. '관례일 뿐 보편 규칙 아님' 명시"
+  },
+  {
+   "url": "https://ko.wikipedia.org/wiki/%EC%B6%95%EA%B5%AC_%EA%B2%BD%EA%B8%B0_%EA%B7%9C%EC%B9%99",
+   "opened": true,
+   "note": "경기규칙 — 양 팀 11명, GK 1명, 7명 미만 중단. 2022년 교체 5명 영구화, 교체 기회 3회(하프타임 별도), 연장 +1명 +1회, 성인 A매치 12명 명단"
+  },
+  {
+   "url": "http://www.footballist.co.kr/news/articleView.html?idxno=17",
+   "opened": true,
+   "note": "축구어 사전 '가짜 9번' — 9번 자리를 비우는 지표, 스팔레티-토티 AS 로마 4-6-0, 퍼거슨 맨유, 바르셀로나 메시 2008/09 사례"
+  }
+ ],
+ "factcheck": [
+  {
+   "claim": "IFAB 경기규칙 제3조 — 한 팀 최대 11명·골키퍼 1명, 7명 미만이면 경기 중단",
+   "sources": [
+    "https://www.theifab.com/laws/latest/the-players/",
+    "https://ko.wikipedia.org/wiki/%EC%B6%95%EA%B5%AC_%EA%B2%BD%EA%B8%B0_%EA%B7%9C%EC%B9%99"
+   ]
+  },
+  {
+   "claim": "2022년 7월 IFAB 교체 선수 5명 영구화, 교체 기회 3회(하프타임 포함 안 됨), 연장 +1명 +1회, A매치 12명 명단",
+   "sources": [
+    "https://www.hankyung.com/article/202206149218Y",
+    "https://ko.wikipedia.org/wiki/%EC%B6%95%EA%B5%AC_%EA%B2%BD%EA%B8%B0_%EA%B7%9C%EC%B9%99"
+   ]
+  },
+  {
+   "claim": "전통 등번호 1~11번 — 1928년 아스날 vs 셰필드 웬즈데이 하이버리에서 처음, 2-3-5 포메이션 자리순, 1954 월드컵 의무화, EPL 1993/94 고정 번호제",
+   "sources": [
+    "https://thepfsa.co.uk/ko/football-positions-explained/",
+    "https://dfirejobs.com/entry/%EC%B6%95%EA%B5%AC%EC%84%A0%EC%88%98-%EB%93%B1%EB%B2%88%ED%98%B8-%EC%9D%98%EB%AF%B8-%ED%8F%AC%EC%A7%80%EC%85%98-%EB%8C%80%ED%91%9C%EC%84%A0%EC%88%98",
+    "https://www.ldkchina.com/ko/news/112682/"
+   ]
+  },
+  {
+   "claim": "가짜 9번(폴스 9) — 스팔레티 감독이 AS 로마에서 토티를 4-6-0 중앙으로 쓴 2005~2007년, 과르디올라 체제 바르셀로나 메시 2008/09로 전 세계적으로 알려짐",
+   "sources": [
+    "http://www.footballist.co.kr/news/articleView.html?idxno=17",
+    "https://www.danbinews.com/news/articleView.html?idxno=3503"
+   ]
+  },
+  {
+   "claim": "메짤라·레지스타·트레콰르티스타 뜻 — mezzala='하프 윙'(측면 지향 중앙 미드), regista=후방 설계 플레이메이커, trequartista='3/4 지점' 공격 조립",
+   "sources": [
+    "https://www.juventus.kr/special/5274986",
+    "https://serieamania.com/g2/bbs/board.php?bo_table=calciotalk&wr_id=2315843"
+   ]
+  },
+  {
+   "claim": "골키퍼 손 공 소지 8초 룰(2025/26 경기규칙) — 넘기면 상대 코너킥, 마지막 5초 손 카운트",
+   "sources": [
+    "https://www.theifab.com/laws/latest/fouls-and-misconduct/",
+    "https://hayters.com/goalkeepers-to-face-new-eight-second-rule-from-2025-26-season/"
+   ]
+  },
+  {
+   "claim": "레프 야신 — 소련(USSR) 소속 골키퍼로 1963년 발롱도르 수상, 역대 유일한 골키퍼 발롱도르 수상자",
+   "sources": [
+    "https://ko.wikipedia.org/wiki/%EB%A0%88%ED%94%84_%EC%95%BC%EC%8B%A0",
+    "https://en.wikipedia.org/wiki/Lev_Yashin"
+   ]
+  },
+  {
+   "claim": "로드리(맨체스터 시티) 2024년 발롱도르 수상 — 수비 포지션 수상자로는 2006년 센터백 파비오 칸나바로 이후 처음",
+   "sources": [
+    "https://www.francefootball.fr/news/2024-ballon-d-or-rodri/",
+    "https://ko.wikipedia.org/wiki/2024%EB%85%84_%EB%B0%9C%EB%A1%B1%EB%8F%84%EB%A5%B4"
+   ]
+  },
+  {
+   "claim": "엘링 홀란드 2022/23 EPL 데뷔 시즌 36골 — 38경기 체제(1995/96~) 프리미어리그 한 시즌 득점 신기록",
+   "sources": [
+    "https://www.premierleague.com/stats/top/players/goals?se=489",
+    "https://en.wikipedia.org/wiki/List_of_Premier_League_top_scorers_by_season"
+   ]
+  },
+  {
+   "claim": "2026 월드컵 교체 선수 10초 룰 — IFAB 제138차 총회(2024년 3월)에서 확정, 북중미 월드컵부터 적용",
+   "sources": [
+    "https://www.theifab.com/news/outcomes-of-the-138th-ifab-agm/",
+    "https://inside.fifa.com/legal/football-regulatory/laws-of-the-game"
+   ]
+  }
+ ],
+ "variables": {
+  "keyword": "축구 포지션",
+  "headline_finding": "큰 분류 4개(GK/DF/MF/FW)·세부 11개, IFAB 규칙은 'GK1+필드10'만 정의",
+  "sub_rule": "2022-07 교체 5명 영구화·3회 기회(하프타임 별도)·연장 +1명 +1회·A매치 12명 명단",
+  "numbers_origin": "1928 아스날 하이버리 2-3-5 자리순, 1954 월드컵 의무화, EPL 1993/94 고정 번호제",
+  "false9_origin": "AS 로마 스팔레티-토티 2005~2007 → 바르셀로나 과르디올라-메시 2008/09"
+ },
+ "structure": "비교선택",
+ "gaps": [
+  {
+   "gap": "IFAB 경기규칙 제3조가 'GK 1 + 필드 10'만 정의하고 수비수·미드필더·공격수 분류는 전술 언어라는 점을 짚은 포지션 글이 상위에 없음",
+   "covered_in": "축구 포지션은 몇 가지로 나뉘나요?"
+  },
+  {
+   "gap": "2022년 7월 IFAB 교체 5명 영구화와 2026 월드컵 교체 10초 룰을 포지션 전환 교체 맥락과 묶어 다룬 글이 상위에 없음",
+   "covered_in": "포지션 교체는 몇 명까지 되나요?"
+  },
+  {
+   "gap": "레지스타·메짤라·트레콰르티스타 같은 이탈리아 전술 용어의 뜻과 실제 자리를 한국어 포지션 가이드에 묶은 설명이 없음",
+   "covered_in": "미드필더(MF) — 수비형·중앙·공격형·측면의 4층 구조"
+  },
+  {
+   "gap": "전통 등번호 1~11번과 1928년 아스날 2-3-5 포메이션 유래, 1954 월드컵·EPL 1993/94 고정번호제 연표를 포지션 역할과 함께 묶은 표가 없음",
+   "covered_in": "전통 등번호 1~11번과 포지션 매핑"
+  },
+  {
+   "gap": "가짜 9번(폴스 9)의 역사와 스팔레티-토티·과르디올라-메시 사례, 인버티드 윙어의 현대 측면 공격 전환을 포지션 글에서 다룬 사례가 없음",
+   "covered_in": "공격수(FW) — 센터포워드·세컨드 스트라이커·윙어"
+  }
+ ],
+ "own_evidence": [
+  {
+   "type": "photo",
+   "desc": "4-3-3 포메이션 포지션 지도(히어로) — 11개 자리에 등번호 매핑을 직접 디자인해 PNG로 제작",
+   "proof": "../../assets/posts/soccer-positions-guide-hero.png"
+  },
+  {
+   "type": "table",
+   "desc": "PFSA·위키백과·풋볼리스트 자료를 교차해 11개 세부 포지션의 역할·커버 구역·대표 선수를 한 장의 비교표로 재구성",
+   "proof": "11개 세부 포지션의 주 역할·커버 구역·대표 선수를 한 장으로 묶었습니다"
+  },
+  {
+   "type": "data",
+   "desc": "1928년 아스날 2-3-5 포메이션 자리순으로 유래한 전통 등번호 1~11번을 현대 포지션과 매핑해 인포그래픽으로 직접 제작",
+   "proof": "2-3-5에서 유래한 전통 등번호 1~11번과 현대 포지션 매핑"
+  }
+ ],
+ "images": [
+  "soccer-positions-guide-hero.png (히어로, 자체 제작 인포그래픽 16:9)",
+  "soccer-positions-role-table.png (본문, 자체 제작 비교표 16:9)",
+  "soccer-positions-numbers.png (본문, 자체 제작 등번호 그리드 16:9)"
+ ],
+ "hermes_score": 90,
+ "score_history": [
+  87,
+  90
+ ]
+}
