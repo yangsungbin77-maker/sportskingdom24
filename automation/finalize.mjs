@@ -67,7 +67,7 @@ if (!existsSync(researchPath)) {
 const RG = JSON.parse(readFileSync(researchPath, 'utf8'));
 const SERP_MIN_OPENED = 8; // 직접 연 경쟁글 최소 수(상위 10개 시도, 서버차단 2개까지 허용)
 const FACTCHECK_MIN = 3;   // 1차/신뢰 출처로 교차한 핵심 수치 최소 개수
-const HERMES_PASS = 90;    // 독립 심판(헤르메스) 통과 점수
+const HERMES_PASS = 88;    // 독립 심판(헤르메스) 통과 점수 (10/22 사용자 지시로 90→88)
 
 const serp = Array.isArray(RG.serp) ? RG.serp : [];
 const openedCount = serp.filter((s) => s && s.opened === true).length;
