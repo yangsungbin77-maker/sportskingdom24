@@ -1,0 +1,199 @@
+{
+ "slug": "soccer-build-up-play-basics",
+ "topic": "빌드업 축구란? — 후방 빌드업의 원리와 핵심",
+ "structure": "과정따라가기",
+ "keyword_filter": {
+  "keyword": "빌드업 축구란",
+  "competition": {
+   "method": "serp-scan",
+   "evidence": "구글 상위 10개 중 공식/대형 매체는 ko.wikipedia '빌드업(축구)' 1개뿐이고 나머지는 brunch.co.kr 칼럼·interfootball.co.kr 전술 기사·kharasportsdaily.com·cupello.com·the-footballanalyst.com 같은 중소 블로그와 티스토리 글. 공식·위키 상위권 점유가 낮아 롱테일 승산 유의미.",
+   "pass": true
+  },
+  "demand": {
+   "method": "autocomplete/serp-scan",
+   "evidence": "'빌드업 축구'로 검색 시 자동완성에 '뜻·전술·란·축구란' 묶음이 함께 노출되고, 상위 10개가 '정의·방법·전술 분석' 글로 구성돼 월간 꾸준한 정보 수요 확인. 영문 'build-up play meaning / in football'도 cupello·zone14 등 설명 글이 상위를 다수 차지.",
+   "pass": true
+  },
+  "intent": {
+   "method": "serp-scan",
+   "evidence": "상위 10개가 전부 '정의/How-to/전술 해설' 정보성 글. 쇼핑·다운로드·사이트 이동 결과 없음. '포지션 플레이'·'살리다 라볼피아나'·'3-2-5' 같은 세부 전술 용어 검색의도도 함께 겹쳐 블로그 글이 1위를 노릴 수 있는 SERP 구성.",
+   "pass": true
+  }
+ },
+ "serp": [
+  {
+   "url": "https://ko.wikipedia.org/wiki/%EB%B9%8C%EB%93%9C%EC%97%85_(%EC%B6%95%EA%B5%AC)",
+   "opened": true,
+   "note": "한국어 위키백과 '빌드업(축구)' 항목. '상대 압박 극복 후 적진 진출 과정'이라는 기본 정의와 '자기 진영/미드필드' 이원 분류만 짧게 기재. 역사·감독·세부 패턴 전무해 콘텐츠 갭 큼."
+  },
+  {
+   "url": "https://namu.wiki/w/%EB%B9%8C%EB%93%9C%EC%97%85",
+   "opened": false,
+   "note": "나무위키 '빌드업' 항목. HTTP 403으로 WebFetch 차단, 검색 스니펫만으로 '포지션 플레이·공 점유 축구와 연결'이라는 서술만 확인."
+  },
+  {
+   "url": "https://brunch.co.kr/@kamugo92/19",
+   "opened": true,
+   "note": "브런치 축구 전술 칼럼. 독일식 4단계 분류(Spieleröffnung → Herausspielen)로 후방·중원 빌드업 체계 설명. 다만 과르디올라 3-2-5 같은 포메이션 구조 수치화는 부재."
+  },
+  {
+   "url": "https://www.interfootball.co.kr/news/articleView.html?idxno=246835",
+   "opened": true,
+   "note": "인터풋볼 2022 벤투호 전술 분석. 4-2-1-3 포메이션에서 수비형 미드가 센터백 사이로 내려오고 풀백이 넓게 올라가는 '유럽식 빌드업'을 벤투 감독 공식 전술로 서술. 벤투호 사례 1차 근거."
+  },
+  {
+   "url": "https://zone14.ai/en/glossary/what-is-build-up-play-in-football/",
+   "opened": true,
+   "note": "영문 축구 용어집. 빌드업을 '골킥 후 수비 3분의 1 → 공격 3분의 1까지 공을 운반하는 과정'으로 정의. 공 소유 여부에 따른 포메이션 동적 변화 언급."
+  },
+  {
+   "url": "https://the-footballanalyst.com/how-to-coach-effective-build-up-play-from-the-back-in-football/",
+   "opened": true,
+   "note": "영문 코칭 가이드. 압박 인원별(1→2→3명) 대응 전략, CDM 드롭으로 삼각형·마름모 형성, 플레이 전환 원리 상세. 우리 글의 '세 조각' 섹션 1차 근거."
+  },
+  {
+   "url": "https://www.cupello.com/blog/how-build-play",
+   "opened": true,
+   "note": "영문 코칭 블로그. 빌드업 5대 원리(수비수 숏패스·중원 움직임·윙 활용·인내심)로 분해. 다만 구체적 포메이션 수치나 역사적 사례는 거의 없음."
+  },
+  {
+   "url": "https://kharasportsdaily.com/build-up-play-in-football-explained/",
+   "opened": true,
+   "note": "7가지 전술 요소(구조·스페이싱·우위·압박 의사결정·백3·인버티드 풀백·수직 빌드업)로 빌드업 분해. 리버풀·아스날·맨시티 사례 포함."
+  },
+  {
+   "url": "https://www.footballizer.com/academy/build-up-play/",
+   "opened": false,
+   "note": "축구 아카데미 플랫폼. 보안 인증 차단으로 WebFetch 실패. 검색 스니펫에서 '포메이션별 빌드업 변형'만 확인."
+  },
+  {
+   "url": "https://nucleartip.com/entry/%EB%B9%8C%EB%93%9C%EC%97%85-%EB%9C%BB-%EC%99%84%EB%B2%BD-%EC%A0%95%EB%A6%AC-%EC%B6%95%EA%B5%AC-%EB%B0%8F-%EA%B8%B0%ED%83%80",
+   "opened": true,
+   "note": "티스토리 '빌드업 뜻 완벽 정리' 글. 축구 외 비즈니스 맥락까지 혼용된 정보성 페이지로 전술 깊이는 부족하지만 '빌드업 축구란' 검색의도가 '뜻+전술 입문'에 걸쳐 있음을 확인."
+  },
+  {
+   "url": "https://en.wikipedia.org/wiki/Johan_Cruyff",
+   "opened": true,
+   "note": "영문 위키백과 요한 크루이프 항목. 1988~1996 바르셀로나 감독 재임, '드림팀' 라리가 4회·유러피언컵 1회(1992) 우승. 포지션 플레이·가짜 9번 등 전술사적 뿌리 확인."
+  },
+  {
+   "url": "https://en.wikipedia.org/wiki/Pep_Guardiola",
+   "opened": true,
+   "note": "영문 위키백과 과르디올라 항목. 바르셀로나 라리가 3회(2008/09·09/10·10/11)·CL 2회(2009·2011), 바이에른 분데스 3연패(2013-16), 맨시티 EPL 6회·2023 CL 우승. '포지셔널 플레이·인버티드 풀백·3-2-5' 서술."
+  },
+  {
+   "url": "https://en.wikipedia.org/wiki/Ricardo_La_Volpe",
+   "opened": true,
+   "note": "영문 위키백과 라 볼페 항목. 아르헨티나 출신 멕시코 감독, 멕시코 대표팀 2002~2006 재임, 2003 CONCACAF Gold Cup 우승, 2006 월드컵 '최우수 감독' 평가. Lavolpismo 전술 체계 서술."
+  },
+  {
+   "url": "https://en.wikipedia.org/wiki/Paulo_Bento",
+   "opened": true,
+   "note": "영문 위키백과 파울루 벤투 항목. 한국 대표팀 감독 2018.8.17~2022.12.5, 2022 카타르 월드컵 포르투갈 2-1·브라질 1-4로 16강(12년 만). 'proactive football·longer possession' 전술 서술."
+  }
+ ],
+ "factcheck": [
+  {
+   "claim": "펩 과르디올라가 바르셀로나 감독으로 라리가 3회(2008/09·2009/10·2010/11), UEFA 챔피언스리그 2회(2009·2011) 우승 — 바이에른 뮌헨 분데스리가 3연패(2013/14·14/15·15/16), 맨체스터 시티 EPL 6회(2017/18·18/19·20/21·21/22·22/23·23/24)·2023 CL 우승",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Pep_Guardiola",
+    "https://en.wikipedia.org/wiki/2008%E2%80%9309_FC_Barcelona_season"
+   ]
+  },
+  {
+   "claim": "요한 크루이프가 1988~1996년 FC 바르셀로나 감독으로 '드림팀' 라리가 4연패(1990/91~1993/94)와 1992년 웸블리 유러피언컵(현 UEFA 챔피언스리그의 전신) 우승 — 라마시아의 포지션 플레이 뼈대 수립",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Johan_Cruyff",
+    "https://www.myfootballfacts.com/world-football/the-evolution-of-football/tiki-taka-to-the-high-press/"
+   ]
+  },
+  {
+   "claim": "리카르도 라 볼페는 아르헨티나 출신 멕시코 감독으로 2002~2006년 멕시코 대표팀을 지휘, 2003 CONCACAF Gold Cup 우승·2006 월드컵 16강 — 그의 이름을 딴 'Salida Lavolpiana'(CDM이 CB 사이로 내려와 3백을 만드는 빌드업 패턴) 체계화",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Ricardo_La_Volpe",
+    "https://www.martiperarnau.com/la-salida-lavolpiana/"
+   ]
+  },
+  {
+   "claim": "과르디올라가 선수 커리어 황혼기였던 2005/06 시즌 멕시코 2부 Dorados de Sinaloa에서 뛰며 라 볼페의 전술을 가까이서 관찰·흡수했고, 2008/09 바르셀로나 1군 감독 부임 후 세르히오 부스케츠를 그 자리에 세움",
+   "sources": [
+    "https://www.martiperarnau.com/la-salida-lavolpiana/",
+    "https://www.futbolidealists.com/blog/tactical-theory-the-concept-of-la-salida-lavolpiana"
+   ]
+  },
+  {
+   "claim": "파울루 벤투 감독 재임기간 2018.8.17~2022.12.5, 2022 FIFA 카타르 월드컵 조별리그 최종전 포르투갈 2-1 승·16강 진출(12년 만), 16강 브라질에 1-4 패배. 'proactive football·longer possession'을 공식 지향",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Paulo_Bento",
+    "https://www.interfootball.co.kr/news/articleView.html?idxno=246835"
+   ]
+  },
+  {
+   "claim": "현대 빌드업의 기본 구조는 공을 가진 순간 3-2-5(수비 3·중원 2·공격 5)로 자동 변환되며, 변환 방식은 '인버티드 풀백'(풀백 1명이 중앙 CDM 옆으로 이동)과 '살리다 라볼피아나'(CDM이 CB 사이로 내려감) 두 가지",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Pep_Guardiola",
+    "https://kharasportsdaily.com/build-up-play-in-football-explained/"
+   ]
+  }
+ ],
+ "variables": {
+  "keyword": "빌드업 축구란",
+  "headline_finding": "현대 빌드업의 핵심 패턴 '살리다 라볼피아나'는 멕시코 라 볼페(2002~2006 멕시코 대표팀)가 체계화하고, 과르디올라가 2005/06 Dorados de Sinaloa 선수 시절에 흡수해 유럽으로 수입한 전술이라는 전술사적 뿌리",
+  "guardiola_titles": "바르셀로나 라리가 3회(2008/09·09/10·10/11)·CL 2회(2009·2011), 바이에른 분데스리가 3연패(2013-16), 맨시티 EPL 6회(2017/18·18/19·20/21·21/22·22/23·23/24)·2023 CL",
+  "lavolpe_era": "리카르도 라 볼페 멕시코 대표팀 감독 2002~2006, 2003 CONCACAF Gold Cup 우승·2006 월드컵 16강",
+  "cruyff_barca_era": "요한 크루이프 FC 바르셀로나 감독 1988~1996, '드림팀' 라리가 4연패(1990/91~1993/94)·1992 유러피언컵 우승",
+  "bento_korea": "파울루 벤투 한국 대표팀 감독 2018.8.17~2022.12.5, 2022 카타르 월드컵 포르투갈 2-1·16강(12년 만)·브라질 1-4",
+  "structure_name": "3-2-5(수비 3·중원 2·공격 5), 인버티드 풀백 또는 살리다 라볼피아나로 구현",
+  "three_pieces": "후방 빌드업의 세 조각 — 골키퍼·센터백 2명·수비형 미드필더(피벗)",
+  "possession_range": "과르디올라 체제 바르셀로나·맨시티 평균 점유율 65% 이상"
+ },
+ "gaps": [
+  {
+   "gap": "살리다 라볼피아나의 어원·역사와 과르디올라가 멕시코 Dorados de Sinaloa 선수 시절(2005/06)에 라 볼페 전술을 직접 흡수한 전술사적 뿌리 — 한국어 상위 글 어디에도 다뤄지지 않음",
+   "covered_in": "살리다 라볼피아나 — 과르디올라가 멕시코에서 배워 온 CDM 드롭"
+  },
+  {
+   "gap": "과르디올라의 3-2-5 구조가 '인버티드 풀백 방식'과 '살리다 라볼피아나 방식' 두 가지로 구현된다는 분기 기준과, 상대 압박 라인 높이·수에 따른 선택 로직",
+   "covered_in": "과르디올라의 3-2-5 — 현대 빌드업의 표준"
+  },
+  {
+   "gap": "파울루 벤투가 2022 카타르 월드컵에서 후방 빌드업으로 포르투갈 2-1을 꺾고 12년 만의 16강 진출을 만든 구체 숫자와, 광주FC 이정효 감독의 '2-3 빌드업' 같은 K리그 사례",
+   "covered_in": "벤투호와 K리그 — 한국 축구가 받아들인 빌드업"
+  },
+  {
+   "gap": "완성형 빌드업을 그대로 복제하지 않고 '골키퍼 짧은 롤패스 선택지 추가 / CDM 역할 1명 지정 / 압박 심하면 안전하게 걷어내기' 식으로 원리 1~2개만 떼어 쓰는 조기축구·아마추어 적용법",
+   "covered_in": "조기축구·아마추어라면 어디서부터 적용할까"
+  }
+ ],
+ "own_evidence": [
+  {
+   "type": "screenshot",
+   "desc": "sportskingdom24가 이 글 전용으로 직접 만든 '빌드업 축구 후방 전개' 히어로 카드 PNG(1200x675, 3-2-5·라 볼페 2002~06·크루이프 1988~96·벤투호 16강 핵심 수치)",
+   "proof": "../../assets/posts/soccer-build-up-play-basics-hero.png"
+  },
+  {
+   "type": "screenshot",
+   "desc": "sportskingdom24가 직접 그린 '후방 빌드업 세 조각' 인포그래픽 PNG — GK·CB·CDM 삼각형 패스 길과 역할 설명 사이드 패널 포함(1200x675)",
+   "proof": "../../assets/posts/soccer-build-up-play-basics-1.png"
+  },
+  {
+   "type": "screenshot",
+   "desc": "sportskingdom24가 직접 그린 '살리다 라볼피아나 CDM 드롭' 2단계 비교 다이어그램 PNG — '압박 시작(2 대 2)' vs 'CDM 드롭(3 대 2)' 두 패널(1200x675)",
+   "proof": "../../assets/posts/soccer-build-up-play-basics-2.png"
+  },
+  {
+   "type": "table",
+   "desc": "상위 10개 글이 공통으로 짚는 지표를 11줄로 묶어 직접 만든 비교표(정의·반대 개념·핵심 자리·목표·구조·대표 패턴·체계화 감독·대표 성과·한국 사례·치명적 약점·조기축구 적합성)",
+   "proof": "| 자주 쓰는 구조 | 3-2-5 (인버티드 풀백 또는 살리다 라볼피아나) |"
+  },
+  {
+   "type": "data",
+   "desc": "요한 크루이프·과르디올라·라 볼페·벤투 네 감독의 공식 재임기간과 트로피 숫자를 교차해 묶은 연표 데이터(1971 아약스 → 2024 광주FC까지)",
+   "proof": "1971~73년 아약스 유러피언컵 3연패"
+  }
+ ],
+ "hermes_score": 91,
+ "score_history": [
+  91
+ ]
+}
